@@ -24,6 +24,10 @@ _Avoid_: HK company when referring only to the instrument.
 The full set of listed securities eligible for a given analysis run.
 _Avoid_: all stocks when eligibility rules are part of the meaning.
 
+**Universe Snapshot**:
+A timestamped capture of securities returned by a named data provider for a universe construction run, with source provenance retained for auditability.
+_Avoid_: current stock list when provider and retrieval time matter.
+
 **Watchlist**:
 The set of listed companies retained for ongoing attention after business-quality screening.
 _Avoid_: buy list, target list.
@@ -56,6 +60,7 @@ _Avoid_: report date when the specific event type matters.
 
 - A **Listed Company** can have one or more **Securities**.
 - A **Universe** contains **Securities**, but a **Watchlist** contains **Listed Companies**.
+- A **Universe Snapshot** records the **Securities** available from a provider at retrieval time and can be used as input to later screening.
 - **Moat Screening** determines whether a **Listed Company** deserves attention; **Valuation Assessment** determines whether a **Security** may be attractively priced.
 - **Market Data** belongs to a **Security** and trading date.
 - **Corporate Actions** belong to a **Security** or **Listed Company** and affect how **Market Data** should be interpreted.

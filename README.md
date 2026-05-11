@@ -31,3 +31,13 @@ The project is intended to support a reproducible equity-research workflow: buil
 ## Development Workflow
 
 Read the project docs before making changes. After modifying files, run the most targeted useful local check available and commit the completed change batch. Do not push to a remote unless explicitly requested.
+
+## Scripts
+
+Fetch the current mainland China A-share security universe:
+
+```bash
+python3 scripts/fetch_a_share_universe.py --output data/raw/a_share_securities.csv
+```
+
+The CSV records security code, exchange, board, listed-company name, security name, listing date, industry, region, source provider, retrieval time, and raw provider identifier useful for later screening.
