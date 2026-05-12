@@ -41,3 +41,11 @@ python3 scripts/fetch_a_share_universe.py --output data/raw/a_share_securities.c
 ```
 
 The CSV records security code, exchange, board, listed-company name, security name, listing date, industry, region, source provider, retrieval time, and raw provider identifier useful for later screening.
+
+Fetch the current Hong Kong listed equity security universe:
+
+```bash
+python3 scripts/fetch_hong_kong_universe.py --output data/raw/hong_kong_securities.csv
+```
+
+The Hong Kong CSV is security-level and keeps separate counters, share classes, and trading currencies as separate **Hong Kong Securities**.
