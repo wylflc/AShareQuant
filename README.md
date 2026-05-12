@@ -1,12 +1,12 @@
 # AShareQuant
 
-AShareQuant is a research and data-analysis project for listed companies in mainland China and Hong Kong equity markets.
+AShareQuant is a research and data-analysis project for listed companies in mainland China, Hong Kong, and U.S. equity markets.
 
 The project is intended to support a reproducible equity-research workflow: build an investable universe, identify companies worth following based on durable business quality, collect market and fundamental data, and keep the analysis auditable over time.
 
 ## Scope
 
-- Build and maintain universes for A-share and Hong Kong listed securities.
+- Build and maintain universes for A-share, Hong Kong, and U.S. listed securities.
 - Distinguish listed companies from their tradable securities, share classes, exchanges, and identifiers.
 - Screen listed companies for durable business advantages before any valuation decision.
 - Track watchlists as research outputs, not as buy recommendations.
@@ -49,3 +49,11 @@ python3 scripts/fetch_hong_kong_universe.py --output data/raw/hong_kong_securiti
 ```
 
 The Hong Kong CSV is security-level and keeps separate counters, share classes, and trading currencies as separate **Hong Kong Securities**.
+
+Fetch the current U.S. listed security universe:
+
+```bash
+python3 scripts/fetch_us_universe.py --output data/raw/us_securities.csv
+```
+
+The U.S. CSV combines Nasdaq Trader `nasdaqlisted.txt` and `otherlisted.txt`, excludes provider test issues by default, and keeps ETF/status/exchange fields for later screening.

@@ -1,6 +1,6 @@
 # AShareQuant
 
-AShareQuant models listed-company research for mainland China and Hong Kong equity markets. This context keeps stable domain language separate from changing implementation plans and task-specific requirements.
+AShareQuant models listed-company research for mainland China, Hong Kong, and U.S. equity markets. This context keeps stable domain language separate from changing implementation plans and task-specific requirements.
 
 ## Language
 
@@ -19,6 +19,10 @@ _Avoid_: China stock when the exchange and share class matter.
 **Hong Kong Security**:
 A security listed on the Hong Kong market and traded under that market's rules.
 _Avoid_: HK company when referring only to the instrument.
+
+**U.S. Security**:
+A security listed on a U.S. exchange and represented by its listing exchange, symbol, share class or security type, and provider identifiers.
+_Avoid_: U.S. company when referring only to the listed instrument.
 
 **Universe**:
 The full set of listed securities eligible for a given analysis run.
