@@ -108,6 +108,11 @@ The third A-share peer-group calibration output is high-end medical devices and 
 - `data/processed/a_share_medical_device_peer_group_decisions.csv`
 - `docs/peer-group-calibration/a-share-medical-device.md`
 
+The fourth A-share peer-group calibration output is listed banks:
+
+- `data/processed/a_share_bank_peer_group_calibration.csv`
+- `docs/peer-group-calibration/a-share-bank.md`
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
