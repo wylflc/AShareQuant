@@ -34,44 +34,52 @@ The calibration therefore separates three ideas:
 | Stable but reclassified | 工商银行, 建设银行 | Reclassify into future value/dividend work, not current quality watch |
 | Reject for now | 中信银行, 平安银行, 兴业银行, 江苏银行, 杭州银行, 成都银行 | Do not include in the current quality watchlist unless reviewer supplies a stronger differentiated thesis |
 
-The structured calibration table is `data/processed/a_share_bank_peer_group_calibration.csv`.
+The structured calibration table is `data/processed/a_share_bank_peer_group_calibration.csv`. The structured reviewer decision table is `data/processed/a_share_bank_peer_group_decisions.csv`.
 
-## 1.5 Reviewer Decision Status
+## 1.5 Reviewer Decision
 
-There is no reviewer decision yet for this group.
+Reviewer feedback explicitly retained:
 
-The initial analyst proposal is:
+- 招商银行
+- 宁波银行
+- 邮储银行
+- 常熟银行
 
-- Retain `招商银行` as the bank-sector quality anchor.
-- Retain `宁波银行` as a differentiated city-bank and SME/private-business service sample.
-- Keep `邮储银行` and `常熟银行` as boundary cases for reviewer challenge, because their potential moats are different from 招商银行 and 宁波银行.
-- Do not retain `工商银行` or `建设银行` in the quality watchlist at this stage. This is not a negative investment view; it means they belong more naturally in a future low-valuation or income-oriented bank review.
-- Reject `中信银行`, `平安银行`, `兴业银行`, `江苏银行`, `杭州银行`, and `成都银行` for now because the current evidence does not show an irreplaceable advantage not already covered by a retained bank.
+Reviewer feedback explicitly rejected all other companies in this group:
 
-## 1.6 Rule Hypotheses For Reviewer Challenge
+- 工商银行
+- 建设银行
+- 中信银行
+- 平安银行
+- 兴业银行
+- 江苏银行
+- 杭州银行
+- 成都银行
 
-These are hypotheses for reviewer challenge, not final rules.
+I accept this decision. It preserves a useful distinction between quality-bank watchlist candidates and large stable banks that may still matter in a later low-valuation or dividend workflow.
+
+## 1.6 Accepted Rules
 
 1. **Bank Core Watch** requires a differentiated liability base, customer ecosystem, risk culture, and business model that are hard for another funded player to replicate.
-2. **Retain Multiple Banks Only When Differentiated**: keep more than one bank only if each has a separate hard-to-replace advantage, such as retail wealth management, regional SME service, postal-network deposits, or granular microloan underwriting.
-3. **Reclassify Large Stable Banks**: system importance, state backing, and dividend stability are valid investment attributes, but they should be handled in a value/dividend workflow unless paired with a differentiated quality moat.
-4. **Reject Regional Beta**: a regional bank should not be retained only because its local economy is strong or loan growth is high. It needs evidence of customer stickiness, superior risk selection, liability advantage, or a model that remains strong across credit cycles.
-5. **Reject Weak Copies**: a bank that mostly imitates a retained leader's retail, wealth-management, or regional-bank strategy should be rejected unless it has a distinct and durable niche.
+2. `招商银行` is the accepted A-share bank quality anchor.
+3. `宁波银行` is retained as a differentiated city-bank sample because its SME and private-business customer service model is not merely a weaker copy of 招商银行.
+4. `邮储银行` is retained because the postal network and down-market deposit franchise are accepted as a separate moat, even though broad profitability quality is weaker than 招商银行.
+5. `常熟银行` is retained because the microloan and small-business model is accepted as a specialized niche worth observing.
+6. **Retain Multiple Banks Only When Differentiated**: keep more than one bank only if each has a separate hard-to-replace advantage, such as retail wealth management, regional SME service, postal-network deposits, or granular microloan underwriting.
+7. **Reclassify Large Stable Banks**: system importance, state backing, and dividend stability are valid investment attributes, but they should be handled in a value/dividend workflow unless paired with a differentiated quality moat.
+8. **Reject Regional Beta**: a regional bank should not be retained only because its local economy is strong or loan growth is high. It needs evidence of customer stickiness, superior risk selection, liability advantage, or a model that remains strong across credit cycles.
+9. **Reject Weak Copies**: a bank that mostly imitates a retained leader's retail, wealth-management, or regional-bank strategy should be rejected unless it has a distinct and durable niche.
 
 ## 1.7 Analyst Dissent Policy
 
-1. If `招商银行` is rejected solely because banks are low-growth or cyclical, I would strongly dissent. It remains the clearest A-share bank quality anchor.
-2. If `宁波银行` is rejected because it is smaller than 招商银行 or the state banks, I would dissent. Its regional SME and private-business franchise may be a different kind of moat.
-3. I would only softly dissent if `邮储银行` or `常熟银行` is rejected. Both need a reviewer judgment on whether their network or microloan models deserve attention despite lower broad-market compounding visibility.
-4. I would not dissent if `工商银行` or `建设银行` is excluded from the current quality watchlist, provided they remain available for a later value/dividend review.
-5. I would not dissent if `中信银行`, `平安银行`, `兴业银行`, `江苏银行`, `杭州银行`, or `成都银行` are rejected under the current evidence.
+1. No dissent on retaining `招商银行`, `宁波银行`, `邮储银行`, and `常熟银行`.
+2. No dissent on rejecting `中信银行`, `平安银行`, `兴业银行`, `江苏银行`, `杭州银行`, and `成都银行` under the current evidence.
+3. No dissent on excluding `工商银行` and `建设银行` from the quality watchlist, provided they remain available for a separate value/dividend or balance-sheet-stability review.
 
-## 1.8 Remaining Reviewer Questions
+## 1.8 Remaining Work
 
-1. Should the quality watchlist keep only `招商银行`, or should it also keep `宁波银行` as a differentiated city-bank sample?
-2. Does `邮储银行`'s postal-network and down-market deposit base qualify as an independent moat for this project, despite lower profitability quality than 招商银行?
-3. Does `常熟银行`'s microloan model qualify as a hard-to-replace capability, or should small regional banks be excluded unless they have national scalability?
-4. Should large state banks be reviewed later in a separate low-valuation, dividend, or balance-sheet-stability workflow?
+1. Apply these accepted bank rules when later calibrating Hong Kong and U.S. banks.
+2. Consider a separate value/dividend bank workflow later for large state banks and other stable financial institutions.
 
 ## 1.9 Sources
 
