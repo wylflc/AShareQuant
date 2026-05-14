@@ -123,6 +123,7 @@ The fifth A-share peer-group calibration output is semiconductor equipment:
 The sixth A-share peer-group calibration output is strategic resources and mining:
 
 - `data/processed/a_share_strategic_resources_peer_group_calibration.csv`
+- `data/processed/a_share_strategic_resources_peer_group_decisions.csv`
 - `docs/peer-group-calibration/a-share-strategic-resources.md`
 
 Fetch A-share screening evidence into resumable interim CSV files:
