@@ -2,7 +2,7 @@
 
 ## Status
 
-Accepted
+Accepted; final watchlist decision model superseded by ADR-0003.
 
 ## Context
 

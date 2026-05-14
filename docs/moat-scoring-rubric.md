@@ -2,21 +2,23 @@
 
 ## 1. Purpose
 
-This rubric defines the full-coverage business-quality screening standard for listed companies in the A-share, Hong Kong, and U.S. universes. It is not a valuation model and does not produce buy recommendations.
+This rubric defines the baseline full-coverage business-quality triage standard for listed companies in the A-share, Hong Kong, and U.S. universes. It is not a valuation model and does not produce buy recommendations.
 
-The goal is to score the real competitive strength of each listed company using comparable dimensions, reliable public evidence, and explicit reasoning.
+The goal is to produce a first-layer triage signal with comparable dimensions, reliable public evidence, and explicit reasoning. ADR-0003 moves the canonical final watchlist decision to a two-layer company review, where retained, borderline, or challenged companies receive a deep company review with common and special dimensions.
 
 ## 2. Scope
 
-The full-coverage runs apply to every eligible listed company or listed security represented in `data/raw/a_share_securities.csv`, `data/raw/hong_kong_securities.csv`, and `data/raw/us_securities.csv`.
+The baseline full-coverage triage runs apply to every eligible listed company or listed security represented in `data/raw/a_share_securities.csv`, `data/raw/hong_kong_securities.csv`, and `data/raw/us_securities.csv`.
 
 For the U.S. universe, raw Nasdaq Trader data contains many non-company or non-common-equity instruments. ETF, ETN, unit, warrant, right, preferred, closed-end fund, and similar instruments should remain in the processed output with a not-applicable screening status, but they should not receive listed-company moat scores.
 
-The raw universe remains immutable. Research queues, evidence summaries, dimensional scores, and derived watchlists belong in `data/interim/` and `data/processed/`.
+The raw universe remains immutable. Research queues, evidence summaries, triage scores, deep review outputs, and derived watchlists belong in `data/interim/` and `data/processed/`.
 
 ## 3. Evidence Standard
 
 Each company should be scored from reliable public evidence, including annual reports, quarterly reports, exchange filings, official investor-relations materials, regulator disclosures, credible media, industry association data, and reputable research institutions.
+
+For the deep-review layer introduced by ADR-0003, use company periodic reports, exchange announcements, regulator disclosures, official investor-relations materials, reputable institution reports, or professional research reports. Aggregator company introductions, including Eastmoney-style profile blurbs, can be used as discovery hints but must not be relied on as analysis evidence.
 
 `insufficient_disclosure` is allowed only when all conditions hold:
 

@@ -44,13 +44,33 @@ _Avoid_: valuation screen, cheap-stock screen.
 Reliable source-backed information used to support a **Moat Screening** decision.
 _Avoid_: unsourced notes, model guesses.
 
+**Authoritative Research Source**:
+A company filing, periodic report, exchange announcement, official investor-relations material, regulator disclosure, reputable institution report, or clearly attributed professional research report used as primary support for a company review.
+_Avoid_: aggregator company introductions, scraped profile blurbs, unsourced summaries.
+
 **Full-Coverage Screening Run**:
 A screening run that attempts to score every eligible listed company in a universe with the same rubric, rather than only companies that were manually selected first.
 _Avoid_: candidate sampling, partial watchlist when the run claims universe coverage.
 
+**Two-Layer Company Review**:
+A **Moat Screening** workflow with a broad first-layer triage across the universe and a second-layer deep review for companies that are retained, borderline, or explicitly challenged.
+_Avoid_: treating a fixed-weight score as the final research judgment.
+
+**Triage Review**:
+A fast first-layer review that assigns a preliminary attention decision from limited but reliable evidence and routes companies to reject, borderline, or deep review.
+_Avoid_: final score, full investment memo.
+
+**Deep Company Review**:
+A second-layer company-level review that reads authoritative sources, states a business thesis, tests counterarguments, scores common dimensions, and adds special dimensions where the company's real advantage is not captured by the common set.
+_Avoid_: one-size-fits-all scoring row.
+
 **Dimensional Score**:
 A 0-100 score for one explicit screening dimension, such as business moat, technology barrier, market position, business quality, operating quality, industry outlook, or governance and risk quality.
 _Avoid_: unweighted impression, single blended note.
+
+**Special Dimension**:
+A company-specific review dimension used in a **Deep Company Review** when a listed company's real advantage is specific to its business type, such as CRDMO platform depth, clinical adoption, vertical integration, scarce-origin brand power, or global resource development capability.
+_Avoid_: forcing every company into the same fixed dimensions.
 
 **Cyclicality Profile**:
 A screening label that identifies whether a listed company's industry is mainly stable, structurally growing, macro-credit cyclical, commodity cyclical, property/rate cyclical, capex cyclical, or demand/policy cyclical.
@@ -114,7 +134,10 @@ _Avoid_: report date when the specific event type matters.
 - A **Universe** contains **Securities**, but a **Watchlist** contains **Listed Companies**.
 - A **Universe Snapshot** records the **Securities** available from a provider at retrieval time and can be used as input to later screening.
 - **Screening Evidence** supports a **Moat Score**; a high enough **Moat Score** can produce a **Watchlist Candidate**.
-- A **Full-Coverage Screening Run** must produce **Dimensional Scores** for every eligible **Listed Company**, except the narrow **Insufficient Disclosure** case.
+- **Authoritative Research Sources** are required for a **Deep Company Review**; aggregator profile text can only be used as a discovery hint, not as analysis evidence.
+- A **Full-Coverage Screening Run** must produce at least a **Triage Review** for every eligible **Listed Company**, except the narrow **Insufficient Disclosure** case.
+- A **Two-Layer Company Review** sends retained, borderline, or challenged companies from **Triage Review** into **Deep Company Review**.
+- A **Deep Company Review** can include **Special Dimensions** in addition to common public dimensions.
 - A **Dimensional Score** should apply the **Capital Replicability Test** where relevant so the score reflects durable competitive strength rather than current size alone.
 - **Capability-First Scoring** keeps **Moat Screening** focused on real competitive capability before valuation or short-term earnings normalization.
 - **Cyclicality Profile** and **Compounding Profile** explain how the industry outlook contributes to **Moat Screening** without turning it into a valuation or market-momentum signal.
