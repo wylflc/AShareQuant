@@ -87,25 +87,29 @@ OUTPUT_COLUMNS = [
 
 WATCHLIST_COLUMNS = [
     "security_code",
-    "symbol",
-    "exchange",
-    "board",
-    "listed_company_name",
     "security_name",
-    "industry",
+    "score_total",
+    "score_business_moat",
+    "score_technology_barrier",
+    "score_market_position",
+    "score_business_quality",
+    "score_operating_quality",
+    "score_industry_outlook",
+    "score_governance_risk",
     "peer_group",
     "peer_relative_position",
-    "cyclicality_profile",
-    "compounding_profile",
-    "industry_outlook_score",
-    "industry_outlook_level",
-    "industry_outlook_reason",
-    "weighted_total_score",
-    "overall_level",
-    "overall_reason",
-    "source_urls",
-    "reviewed_at_utc",
     "scoring_model_version",
+]
+
+WATCHLIST_SCORE_FIELDS = [
+    ("score_total", "总分", "weighted_total_score"),
+    ("score_business_moat", "护城河", "business_moat_score"),
+    ("score_technology_barrier", "技术壁垒", "technology_barrier_score"),
+    ("score_market_position", "市场地位", "market_position_score"),
+    ("score_business_quality", "商业质量", "business_quality_score"),
+    ("score_operating_quality", "经营质量", "operating_quality_score"),
+    ("score_industry_outlook", "行业前景", "industry_outlook_score"),
+    ("score_governance_risk", "治理风险", "governance_risk_score"),
 ]
 
 
@@ -350,6 +354,19 @@ def peer_position(score: float) -> str:
     if score >= 30:
         return "below_average"
     return "weak"
+
+
+def watchlist_row(row: dict[str, str]) -> dict[str, str]:
+    result = {
+        "security_code": row["security_code"],
+        "security_name": row["security_name"],
+        "peer_group": row["peer_group"],
+        "peer_relative_position": row["peer_relative_position"],
+        "scoring_model_version": row["scoring_model_version"],
+    }
+    for output_column, label, source_column in WATCHLIST_SCORE_FIELDS:
+        result[output_column] = f"{label}-{row[source_column]}"
+    return result
 
 
 def score_row(
@@ -602,12 +619,13 @@ def run(args: argparse.Namespace) -> tuple[int, int, int]:
         raise ScoringError(f"{pending_count} A-share rows are still pending research evidence")
 
     write_csv(args.output, OUTPUT_COLUMNS, output_rows)
-    watchlist_rows = [
-        {column: row[column] for column in WATCHLIST_COLUMNS}
+    watchlist_source_rows = [
+        row
         for row in output_rows
         if row["screening_status"] == "scored" and row["weighted_total_score"] and float(row["weighted_total_score"]) >= args.candidate_threshold
     ]
-    watchlist_rows.sort(key=lambda row: (-float(row["weighted_total_score"]), row["security_code"]))
+    watchlist_source_rows.sort(key=lambda row: (-float(row["weighted_total_score"]), row["security_code"]))
+    watchlist_rows = [watchlist_row(row) for row in watchlist_source_rows]
     write_csv(args.watchlist, WATCHLIST_COLUMNS, watchlist_rows)
     return len(output_rows), scored_count, len(watchlist_rows)
 

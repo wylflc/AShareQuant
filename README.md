@@ -85,7 +85,7 @@ Generate dimensional A-share scores from fetched evidence:
 python3 scripts/run_a_share_full_coverage_scoring.py
 ```
 
-The scorer writes `data/processed/a_share_full_coverage_scores.csv` and `data/processed/a_share_full_coverage_watchlist.csv`. The outputs include `cyclicality_profile`, `compounding_profile`, and `industry_outlook_*` fields so cyclicals and compound-growth companies can be reviewed separately. Use `--require-complete` when the fetch queue is complete and the run should fail if any eligible A-share company remains unscored.
+The scorer writes `data/processed/a_share_full_coverage_scores.csv` and `data/processed/a_share_full_coverage_watchlist.csv`. The full scores file keeps the complete audit fields, including `cyclicality_profile`, `compounding_profile`, `industry_outlook_*`, reasons, sources, and timestamps. The watchlist is a compact reading view with security code, security name, labeled score fields, peer group, peer-relative position, and scoring model version. Use `--require-complete` when the fetch queue is complete and the run should fail if any eligible A-share company remains unscored.
 
 Fetch Hong Kong screening evidence into resumable interim CSV files:
 
@@ -101,7 +101,7 @@ Generate dimensional Hong Kong scores from fetched evidence:
 python3 scripts/run_hong_kong_full_coverage_scoring.py
 ```
 
-The scorer writes `data/processed/hong_kong_full_coverage_scores.csv` and `data/processed/hong_kong_full_coverage_watchlist.csv`. The Hong Kong outputs explicitly include `market_type`, `market_label`, `cyclicality_profile`, `compounding_profile`, and `industry_outlook_*` fields so they can be merged with other markets later without losing market identity or cycle/compound-growth context.
+The scorer writes `data/processed/hong_kong_full_coverage_scores.csv` and `data/processed/hong_kong_full_coverage_watchlist.csv`. The full scores file keeps market identity and complete audit fields. The watchlist is a compact reading view with security code, security name, labeled score fields, peer group, peer-relative position, and scoring model version.
 
 Fetch U.S. screening evidence into resumable interim CSV files:
 
@@ -117,4 +117,4 @@ Generate dimensional U.S. scores from fetched evidence:
 python3 scripts/run_us_full_coverage_scoring.py
 ```
 
-The scorer writes `data/processed/us_full_coverage_scores.csv` and `data/processed/us_full_coverage_watchlist.csv`. The U.S. outputs explicitly include `market_type`, `market_label`, `cyclicality_profile`, `compounding_profile`, and `industry_outlook_*` fields for later cross-market merging.
+The scorer writes `data/processed/us_full_coverage_scores.csv` and `data/processed/us_full_coverage_watchlist.csv`. The full scores file keeps market identity and complete audit fields. The watchlist is a compact reading view with security code, security name, labeled score fields, peer group, peer-relative position, and scoring model version.
