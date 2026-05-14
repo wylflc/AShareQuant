@@ -30,45 +30,57 @@ The same context argues for selectivity. Equipment is cyclical, capital-expendit
 | Lithography-track boundary case | 芯源微 | Watch if 涂胶显影 and customer validation are accepted as independent moat |
 | Reject or reclassify | 京仪装备, 金海通, 至纯科技 | Reject for now or move to narrower future groups |
 
-The structured calibration table is `data/processed/a_share_semiconductor_equipment_peer_group_calibration.csv`.
+The structured calibration table is `data/processed/a_share_semiconductor_equipment_peer_group_calibration.csv`. The structured reviewer decision table is `data/processed/a_share_semiconductor_equipment_peer_group_decisions.csv`.
 
-## 1.5 Reviewer Decision Status
+## 1.5 Reviewer Decision
 
-There is no reviewer decision yet for this group.
+Reviewer feedback explicitly retained:
 
-The initial analyst proposal is:
+- 北方华创
+- 中微公司
+- 华海清科
 
-- Retain `北方华创` and `中微公司` as the two core A-share semiconductor equipment anchors.
-- Retain `华海清科`, `拓荆科技`, and `盛美上海` because CMP, thin-film deposition, and cleaning/wet-process equipment are distinct high-barrier process steps.
-- Treat `华峰测控`, `长川科技`, `中科飞测`, `精测电子`, and `芯源微` as reviewer-calibration cases. I lean toward retaining at least some of them because testing, metrology, and lithography-track coating/developing are not covered by the core process leaders.
-- Reject `京仪装备`, `金海通`, and `至纯科技` for now because they either look like auxiliary systems, smaller back-end niches, or mixed system-integration businesses rather than first-priority core equipment moats.
+For the remaining companies, the reviewer asked the analyst to decide based on business-moat strength and the reasonable profitability of the specific equipment step. Short-term profit-margin volatility should not dominate the decision when the business has a high-barrier step and a reasonable stable gross-margin profile.
 
-## 1.6 Rule Hypotheses For Reviewer Challenge
+Additional analyst-retained companies:
 
-These are hypotheses for reviewer challenge, not final rules.
+- 拓荆科技: retained because thin-film deposition is a distinct front-end process step and 2025 margins remain consistent with high-value equipment economics.
+- 盛美上海: retained because cleaning, wet-process, plating, and advanced-packaging wet tools have strong process barriers and strong gross-margin quality.
+- 华峰测控: retained because ATE has platform-like software and hardware economics, a long installed base, and very high reasonable margins.
+- 长川科技: retained because testing, handlers, and probe-station coverage provide a different testing-equipment angle from 华峰测控.
+- 中科飞测: retained because inspection and metrology are scarce high-barrier steps; weak current net margin is acceptable given high gross margin and heavy R&D.
+- 精测电子: retained with monitoring because front-end metrology contracts for advanced storage and HBM are meaningful, although semiconductor-business purity must be tracked.
+- 芯源微: retained with lower conviction because 涂胶显影, front-end cleaning, and temporary bonding/debonding are scarce process steps; short-term net-margin weakness should not be treated as a direct rejection reason.
+
+Rejected or reclassified:
+
+- 京仪装备: rejected from this group because it is more like auxiliary semiconductor subsystems than core process equipment.
+- 金海通: rejected for now because high margins in a narrow test-handler niche are not enough when the broader testing-equipment platforms already cover the attention slot.
+- 至纯科技: rejected because mixed system integration, weak margin structure, and overlapping wet-process exposure do not justify core equipment watchlist attention.
+
+## 1.6 Accepted Rules
 
 1. **Core Equipment Watch** requires evidence of customer-qualified tools in high-value semiconductor manufacturing steps, repeat orders, process coverage, and roadmap expansion.
-2. **Retain Multiple Equipment Companies When Process Steps Differ**: 刻蚀、薄膜沉积、CMP、清洗湿法、测试、量检测、涂胶显影 are not interchangeable. A company should not be rejected only because a retained leader is larger in another process step.
-3. **Reject Pure Theme Exposure**: revenue growth from domestic substitution is not enough unless the company proves tool performance, customer qualification, and repeated commercial deployment.
-4. **Reject Weak Copies Within The Same Step**: within the same process step, keep only companies with a clear independent advantage or a niche not covered by stronger retained peers.
-5. **Do Not Over-Penalize Early Profitability**: for metrology, inspection, and other scarce high-barrier equipment, early losses or weak profit should not automatically reject the company if product validation is improving.
-6. **Reclassify Auxiliary Systems**: facility systems, high-purity gas/chemical delivery, temperature control, or components may be important, but they should not be mixed with core process-equipment watchlist rules unless their moat is equally hard to replicate.
+2. `北方华创`, `中微公司`, and `华海清科` are accepted semiconductor-equipment watchlist companies.
+3. **Retain Multiple Equipment Companies When Process Steps Differ**: 刻蚀、薄膜沉积、CMP、清洗湿法、测试、量检测、涂胶显影 are not interchangeable. A company should not be rejected only because a retained leader is larger in another process step.
+4. **Use Reasonable Step-Level Profitability**: evaluate margins by the economics of the equipment step. ATE, metrology, and high-value front-end tools can have very high gross margins; auxiliary systems and system integration normally deserve lower margin expectations.
+5. **Do Not Over-Penalize Early Profitability**: for metrology, inspection, lithography-track, and other scarce high-barrier equipment, early losses or weak net margin should not automatically reject the company if gross margin and customer validation indicate high-value equipment economics.
+6. **Reject Pure Theme Exposure**: revenue growth from domestic substitution is not enough unless the company proves tool performance, customer qualification, and repeated commercial deployment.
+7. **Reject Weak Copies Within The Same Step**: within the same process step, keep only companies with a clear independent advantage or a niche not covered by stronger retained peers.
+8. **High Margin Alone Is Not Enough**: a high-margin narrow niche can still be rejected if broader retained platforms cover the same attention slot and the moat is not clearly irreplaceable. `金海通` is the accepted example.
+9. **Reclassify Auxiliary Systems**: facility systems, high-purity gas/chemical delivery, temperature control, or components may be important, but they should not be mixed with core process-equipment watchlist rules unless their moat is equally hard to replicate.
 
 ## 1.7 Analyst Dissent Policy
 
-1. If `北方华创` is rejected mainly because 2025 net profit declined slightly, I would strongly dissent. It remains the A-share semiconductor equipment platform anchor.
-2. If `中微公司` is rejected because 北方华创 is already retained, I would strongly dissent. Etch equipment and high-end process validation justify a separate role.
-3. I would dissent if `华海清科`, `拓荆科技`, or `盛美上海` are rejected without addressing their separate CMP, thin-film deposition, and cleaning/wet-process moats.
-4. I would softly dissent if all testing and metrology companies are rejected. The final list may not need every one of `华峰测控`, `长川科技`, `中科飞测`, and `精测电子`, but at least one or two testing/metrology representatives likely deserve observation.
-5. I would not dissent if `京仪装备`, `金海通`, or `至纯科技` are rejected under the current evidence.
+1. No dissent on retaining `北方华创`, `中微公司`, `华海清科`, `拓荆科技`, `盛美上海`, `华峰测控`, `长川科技`, `中科飞测`, `精测电子`, and `芯源微`.
+2. I would dissent if `中科飞测`, `精测电子`, or `芯源微` are rejected solely because current net margins are low. Their gross margins and process scarcity matter more at this stage.
+3. I would not dissent if `京仪装备`, `金海通`, or `至纯科技` remain excluded under the current evidence.
 
-## 1.8 Remaining Reviewer Questions
+## 1.8 Remaining Work
 
-1. Do you agree that the core watch should include both `北方华创` and `中微公司`?
-2. Do you agree that `华海清科`, `拓荆科技`, and `盛美上海` should be retained because their process steps are different from each other?
-3. In testing equipment, should we retain both `华峰测控` and `长川科技`, only one, or neither?
-4. In metrology and inspection, should early-stage companies such as `中科飞测` and `精测电子` be included despite weaker current profitability?
-5. Should `芯源微` be retained for 涂胶显影 and lithography-track scarcity, or rejected because its current evidence is weaker than the core equipment leaders?
+1. Apply these process-step and profitability rules when later calibrating Hong Kong and U.S. semiconductor-equipment companies.
+2. Calibrate semiconductor materials, foundries, OSAT, and chip-design companies in separate peer groups rather than mixing them with equipment.
+3. Track retained early-stage companies for customer validation, recurring orders, and whether gross margins translate into stable operating profit as scale improves.
 
 ## 1.9 Sources
 
