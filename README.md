@@ -145,9 +145,10 @@ This group compares precursor, nickel-cobalt resource integration, electrolyte, 
 The ninth A-share peer-group calibration output is CXO and pharmaceutical R&D outsourcing:
 
 - `data/processed/a_share_cxo_peer_group_calibration.csv`
+- `data/processed/a_share_cxo_peer_group_decisions.csv`
 - `docs/peer-group-calibration/a-share-cxo.md`
 
-This group compares CRDMO, CRO, CDMO, clinical CRO, SMO, molecular-building-block, and pharmaceutical R&D service companies. It is preliminary and awaits reviewer decisions before a decision table is created.
+This group compares CRDMO, CRO, CDMO, clinical CRO, SMO, molecular-building-block, and pharmaceutical R&D service companies. Boundary companies are judged by margin quality, technical or service complexity, customer trust, regulatory/quality-system history, project continuity, and whether a larger retained platform could easily copy the service.
 
 Fetch A-share screening evidence into resumable interim CSV files:
 
