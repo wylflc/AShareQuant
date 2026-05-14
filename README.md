@@ -93,6 +93,7 @@ The A-share run writes `data/processed/a_share_company_triage_reviews.csv` and `
 The first A-share peer-group calibration output is baijiu:
 
 - `data/processed/a_share_baijiu_peer_group_calibration.csv`
+- `data/processed/a_share_baijiu_peer_group_decisions.csv`
 - `docs/peer-group-calibration/a-share-baijiu.md`
 
 Fetch A-share screening evidence into resumable interim CSV files:

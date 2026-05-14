@@ -30,7 +30,49 @@ Two calibration implications follow:
 | Possible turnaround or rule-boundary cases | 洋河股份, 口子窖 | Watch only if channel and price-system repair is evidenced |
 | Reject for now | 水井坊, 舍得酒业, 酒鬼酒, 老白干酒, 顺鑫农业, 金徽酒, 伊力特, 天佑德酒, 金种子酒, 皇台酒业, *ST岩石 | Do not include unless reviewer supplies stronger contrary evidence |
 
-## 1.5 Proposed Baijiu-Specific Rule Hypotheses
+## 1.5 Reviewer Decision
+
+Reviewer feedback accepts baijiu as an industry worth monitoring, but assigns it a weak long-term growth outlook. The key rationale is that younger consumers drink less, and their future gifting choices and beverage preferences may gradually pressure baijiu demand. The short-term impact may be limited, especially for high-end baijiu, but the secular risk should narrow the attention list.
+
+Accepted watch companies:
+
+- 贵州茅台
+- 五粮液
+- 山西汾酒
+
+Rejected after reviewer calibration:
+
+- 泸州老窖
+- 古井贡酒
+- 洋河股份
+- 今世缘
+- 迎驾贡酒
+- 口子窖
+- 水井坊
+- 舍得酒业
+- 酒鬼酒
+- 老白干酒
+- 顺鑫农业
+- 金徽酒
+- 伊力特
+- 天佑德酒
+- 金种子酒
+- 皇台酒业
+- *ST岩石
+
+The reviewer explicitly rejected the idea that smaller baijiu companies deserve attention because of oversold rebounds. The calibrated standard is that these companies can rebound during favorable windows but are likely to fall back during the next baijiu downcycle, so they should not consume watchlist attention.
+
+The structured reviewer decision table is `data/processed/a_share_baijiu_peer_group_decisions.csv`.
+
+## 1.6 Accepted Baijiu-Specific Rules
+
+1. Baijiu is a mature, culturally entrenched industry with real moat in leading brands, but its long-term growth outlook should be discounted because generational consumption and gifting preferences may shift away from the category.
+2. Only national top leaders or category-defining leaders should enter the watchlist.
+3. For the current A-share baijiu peer group, the watchlist is limited to `贵州茅台`, `五粮液`, and `山西汾酒`.
+4. Regional leaders, former leaders, small-cap baijiu companies, and turnaround candidates should be rejected by default even when their local brand or short-term rebound potential is visible.
+5. A non-top-three baijiu company can override this rule only if future evidence shows it has become a national/category leader with durable pricing power, channel control, and resilience through a full downcycle.
+
+## 1.7 Original Rule Hypotheses
 
 These are hypotheses for reviewer challenge, not final rules.
 
@@ -47,15 +89,15 @@ These are hypotheses for reviewer challenge, not final rules.
    - The company is concentrated in the most pressured price band and lacks evidence of channel repair.
    - Governance, risk-warning, or non-core business issues undermine comparability.
 
-## 1.6 Reviewer Questions
+## 1.8 Resolved Reviewer Questions
 
-1. Do you agree that `贵州茅台`, `五粮液`, and `山西汾酒` should be the first white-liquor core-watch group?
-2. Should `泸州老窖` stay in watch despite 2025 operating pressure?
-3. Among regional leaders, should `古井贡酒`, `今世缘`, and `迎驾贡酒` all remain watch candidates, or should some be downgraded?
-4. Should `洋河股份` be treated as a repairable former leader or rejected until clear channel repair is proven?
-5. Do you agree that the smaller regional and ST/problem companies should be rejected by default?
+1. `贵州茅台`, `五粮液`, and `山西汾酒` are retained as the baijiu watch group.
+2. `泸州老窖` is rejected despite strong brand assets because the reviewer wants only the top leaders in a weak long-term growth industry.
+3. `古井贡酒`, `今世缘`, and `迎驾贡酒` are rejected because regional leadership is not enough under the accepted baijiu standard.
+4. `洋河股份` and `口子窖` are rejected; repair or rebound potential is not sufficient.
+5. Smaller regional, ST, and problem companies are rejected by default.
 
-## 1.7 Sources
+## 1.9 Sources
 
 - KPMG and China Alcoholic Drinks Association, 2025 China Baijiu Market Mid-Term Research Report: `https://assets.kpmg.com/content/dam/kpmg/cn/pdf/zh/2025/06/mid-term-research-report-on-the-chinese-baijiu-market-2025.pdf`
 - 贵州茅台 2025 annual report: `https://big5.sse.com.cn/site/cht/www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-04-17/600519_20260417_9QS4.pdf`

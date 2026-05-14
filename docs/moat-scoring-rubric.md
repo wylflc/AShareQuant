@@ -201,6 +201,14 @@ The actual standard-setting step is **Peer-Group Calibration**:
 
 Peer-group calibration can use reviewer-challenged companies as ordinary examples when they belong to the selected industry, but it must not treat them as important merely because they were named earlier.
 
+### 10.1.1 Accepted Baijiu Calibration
+
+The first accepted A-share peer-group calibration is baijiu. The reviewer accepted baijiu as worth monitoring but assigned the industry a discounted long-term growth outlook because younger consumers drink less and may shift future gifting and beverage preferences away from traditional baijiu.
+
+The accepted A-share baijiu watch group is limited to `贵州茅台`, `五粮液`, and `山西汾酒`. Other A-share baijiu companies, including strong regional leaders, former leaders, smaller companies, and turnaround or oversold-rebound candidates, should be rejected by default. The reason is not that these companies cannot rebound; it is that a weak long-term industry outlook makes second-tier and regional names poor uses of watchlist attention across a full cycle.
+
+This rule can be overridden only when future evidence shows that a company has become a national or category-defining leader with durable pricing power, channel control, and resilience through a full downcycle.
+
 ## 11. Calibration Notes
 
 Model version `full_coverage_dimensional_v0.2` adds industry outlook as an explicit 10% dimension and reduces the other six weights proportionally. This was introduced after reviewing whether the earlier model could over-rank large cyclical companies and under-rank compound-growth companies with strong long-term demand but less stable current profitability.
