@@ -136,7 +136,7 @@ _Avoid_: report date when the specific event type matters.
 - **Screening Evidence** supports a **Moat Score**; a high enough **Moat Score** can produce a **Watchlist Candidate**.
 - **Authoritative Research Sources** are required for a **Deep Company Review**; aggregator profile text can only be used as a discovery hint, not as analysis evidence.
 - A **Full-Coverage Screening Run** must produce at least a **Triage Review** for every eligible **Listed Company**, except the narrow **Insufficient Disclosure** case.
-- A **Two-Layer Company Review** sends retained, borderline, or challenged companies from **Triage Review** into **Deep Company Review**.
+- A **Two-Layer Company Review** sends companies from **Triage Review** into **Deep Company Review** when the triage score is at least 65, the triage decision is borderline, or the company is explicitly challenged by a reviewer.
 - A **Deep Company Review** can include **Special Dimensions** in addition to common public dimensions.
 - A **Dimensional Score** should apply the **Capital Replicability Test** where relevant so the score reflects durable competitive strength rather than current size alone.
 - **Capability-First Scoring** keeps **Moat Screening** focused on real competitive capability before valuation or short-term earnings normalization.

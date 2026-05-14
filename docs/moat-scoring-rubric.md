@@ -4,7 +4,7 @@
 
 This rubric defines the baseline full-coverage business-quality triage standard for listed companies in the A-share, Hong Kong, and U.S. universes. It is not a valuation model and does not produce buy recommendations.
 
-The goal is to produce a first-layer triage signal with comparable dimensions, reliable public evidence, and explicit reasoning. ADR-0003 moves the canonical final watchlist decision to a two-layer company review, where retained, borderline, or challenged companies receive a deep company review with common and special dimensions.
+The goal is to produce a first-layer triage signal with comparable dimensions, reliable public evidence, and explicit reasoning. ADR-0003 moves the canonical final watchlist decision to a two-layer company review, where companies with `triage_score >= 65`, companies marked `borderline`, and companies explicitly challenged by a reviewer receive a deep company review with common and special dimensions.
 
 ## 2. Scope
 

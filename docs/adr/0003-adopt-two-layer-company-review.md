@@ -2,7 +2,7 @@
 
 Status: accepted
 
-AShareQuant will move the canonical watchlist workflow from fixed-weight full-coverage dimensional scoring to a **Two-Layer Company Review**. The first layer performs broad universe triage so every eligible listed company is considered; the second layer performs a full **Deep Company Review** for retained, borderline, or challenged companies, using authoritative research sources and allowing company-specific **Special Dimensions** when a listed company's real advantage does not fit a fixed rubric.
+AShareQuant will move the canonical watchlist workflow from fixed-weight full-coverage dimensional scoring to a **Two-Layer Company Review**. The first layer performs broad universe triage so every eligible listed company is considered; the second layer performs a full **Deep Company Review** for companies with `triage_score >= 65`, companies marked `borderline`, or companies explicitly challenged by a reviewer, using authoritative research sources and allowing company-specific **Special Dimensions** when a listed company's real advantage does not fit a fixed rubric.
 
 The previous fixed-dimension model remains useful as a baseline triage and audit aid, but it is no longer the final decision model. Repeated calibration showed that a single fixed-weight framework mis-ranked companies whose advantages are structurally different, such as baijiu brands, high-end medical devices, CRDMO platforms, vertically integrated EV manufacturers, strategic resource operators, banks, and software platforms.
 
