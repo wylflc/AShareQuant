@@ -211,6 +211,14 @@ The accepted A-share baijiu watch group is limited to `贵州茅台`, `五粮液
 
 This rule can be overridden only when future evidence shows that a company has become a national or category-defining leader with durable pricing power, channel control, and resilience through a full downcycle.
 
+### 10.1.2 Partial EV Battery Calibration
+
+The second A-share peer-group calibration is power batteries and new-energy vehicle platforms. The accepted watch companies so far are `宁德时代` and `比亚迪`.
+
+`亿纬锂能` is rejected under the current standard because the reviewer judged that it lacks enough differentiated advantage versus `宁德时代` and does not currently show a distinct competitive position strong enough for watchlist attention.
+
+`国轩高科`, `欣旺达`, `孚能科技`, `鹏辉能源`, and `珠海冠宇` remain undecided, marked as `needs_more_evidence`. Do not convert preliminary analyst rejects into accepted rules when the reviewer has explicitly said they are not familiar enough to judge. These companies require targeted evidence on customer quality, product differentiation, profitability, market share, and whether they belong in a different peer group.
+
 ## 11. Calibration Notes
 
 Model version `full_coverage_dimensional_v0.2` adds industry outlook as an explicit 10% dimension and reduces the other six weights proportionally. This was introduced after reviewing whether the earlier model could over-rank large cyclical companies and under-rank compound-growth companies with strong long-term demand but less stable current profitability.
