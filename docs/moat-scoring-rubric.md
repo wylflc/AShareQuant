@@ -2,13 +2,13 @@
 
 ## 1. Purpose
 
-This rubric defines the full-coverage business-quality screening standard for listed companies in the A-share universe. It is not a valuation model and does not produce buy recommendations.
+This rubric defines the full-coverage business-quality screening standard for listed companies in the A-share and Hong Kong universes. It is not a valuation model and does not produce buy recommendations.
 
 The goal is to score the real competitive strength of each listed company using comparable dimensions, reliable public evidence, and explicit reasoning.
 
 ## 2. Scope
 
-The first full-coverage run applies to every eligible listed company represented in `data/raw/a_share_securities.csv`.
+The full-coverage runs apply to every eligible listed company or listed security represented in `data/raw/a_share_securities.csv` and `data/raw/hong_kong_securities.csv`.
 
 The raw universe remains immutable. Research queues, evidence summaries, dimensional scores, and derived watchlists belong in `data/interim/` and `data/processed/`.
 
@@ -129,10 +129,10 @@ The full-coverage processed CSV should preserve source security identifiers and 
 ## 10. Execution Plan
 
 1. Remove tracked local skill files from Git and keep `.agents/` ignored.
-2. Generate a full A-share research queue from the raw universe.
+2. Generate full A-share and Hong Kong research queues from the raw universes.
 3. Collect source evidence for each listed company by filings, official materials, and authoritative external descriptions.
 4. Normalize each company into a peer group.
 5. Assign every dimensional score with a reason and sources.
 6. Compute the weighted total from stored dimension scores.
-7. Validate that every eligible raw A-share row has either full dimensional scores or the narrow `insufficient_disclosure` status.
+7. Validate that every eligible raw A-share and Hong Kong row has either full dimensional scores or the narrow `insufficient_disclosure` status.
 8. Generate processed full-coverage outputs and a watchlist candidate view.
