@@ -126,6 +126,13 @@ The sixth A-share peer-group calibration output is strategic resources and minin
 - `data/processed/a_share_strategic_resources_peer_group_decisions.csv`
 - `docs/peer-group-calibration/a-share-strategic-resources.md`
 
+The seventh A-share peer-group calibration output is lithium resources and lithium salts:
+
+- `data/processed/a_share_lithium_resource_peer_group_calibration.csv`
+- `docs/peer-group-calibration/a-share-lithium-resource.md`
+
+This group is preliminary and does not yet have a reviewer decision table. It separates lithium resource ownership and lithium-salt capacity from broader EV batteries, cathode materials, battery recycling, and strategic-resource mining rules.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
