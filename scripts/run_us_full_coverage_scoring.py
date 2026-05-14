@@ -17,7 +17,7 @@ DEFAULT_PROFILES = Path("data/interim/us_company_profiles.csv")
 DEFAULT_FINANCIALS = Path("data/interim/us_financial_indicators.csv")
 DEFAULT_OUTPUT = Path("data/processed/us_full_coverage_scores.csv")
 DEFAULT_WATCHLIST = Path("data/processed/us_full_coverage_watchlist.csv")
-SCORING_MODEL_VERSION = "full_coverage_dimensional_v0.2"
+SCORING_MODEL_VERSION = "full_coverage_dimensional_v0.3"
 MARKET_TYPE = "USA"
 MARKET_LABEL = "美股"
 

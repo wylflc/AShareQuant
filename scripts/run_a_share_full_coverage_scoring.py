@@ -18,7 +18,7 @@ DEFAULT_PROFILES = Path("data/interim/a_share_company_profiles.csv")
 DEFAULT_FINANCIALS = Path("data/interim/a_share_financial_indicators.csv")
 DEFAULT_OUTPUT = Path("data/processed/a_share_full_coverage_scores.csv")
 DEFAULT_WATCHLIST = Path("data/processed/a_share_full_coverage_watchlist.csv")
-SCORING_MODEL_VERSION = "full_coverage_dimensional_v0.2"
+SCORING_MODEL_VERSION = "full_coverage_dimensional_v0.3"
 
 DIMENSIONS = [
     ("business_moat", 0.22),
@@ -233,6 +233,13 @@ def percentile_maps(rows: list[dict[str, str]], peer_key: str, metric: str, reve
     return result
 
 
+def peer_size_map(rows: list[dict[str, str]], peer_key: str) -> dict[str, float]:
+    by_peer: dict[str, list[str]] = {}
+    for row in rows:
+        by_peer.setdefault(row[peer_key], []).append(row["security_code"])
+    return {code: float(len(codes)) for codes in by_peer.values() for code in codes}
+
+
 def keyword_any(text: str, keywords: list[str]) -> bool:
     return any(keyword in text for keyword in keywords)
 
@@ -247,6 +254,16 @@ def resource_leader_signal(industry_text: str, profile_text: str) -> bool:
         keyword_any(profile_text, ["全球前", "位居前", "全球排名", "龙头", "前3位", "前4位"]),
     ]
     return sum(signals) >= 3
+
+
+def cross_market_leader_signal(industry_text: str, profile_text: str) -> bool:
+    if keyword_any(industry_text, ["电力", "水务", "燃气", "高速", "港口", "机场", "铁路", "公用"]):
+        return True
+    if keyword_any(profile_text, ["国家地理标志", "品牌价值", "驰名商标", "酱香", "稀缺产区", "特许", "牌照", "专营", "垄断"]):
+        return True
+    if keyword_any(profile_text, ["全球领先", "全球前", "世界领先", "全球最大", "国际领先", "跨国矿业"]):
+        return True
+    return resource_leader_signal(industry_text, profile_text)
 
 
 def industry_prior(peer_group: str, raw_industry: str, profile_text: str) -> IndustryPrior:
@@ -421,30 +438,57 @@ def score_row(
     growth_pct = pct(percentiles["revenue_yoy_pct"], code)
 
     keyword_bonus_moat = 0
-    if keyword_any(profile_text, ["国家地理标志", "品牌价值", "独家", "特许", "垄断", "牌照", "专营", "专利", "全球领先", "行业领先", "龙头", "最大"]):
-        keyword_bonus_moat += 7
-    if keyword_any(profile_text, ["主营", "生产与销售"]):
-        keyword_bonus_moat += 2
+    if keyword_any(profile_text, ["国家地理标志", "品牌价值", "驰名商标", "知名品牌"]):
+        keyword_bonus_moat += 3
+    if keyword_any(profile_text, ["独家", "特许", "垄断", "牌照", "专营"]):
+        keyword_bonus_moat += 3
+    if keyword_any(profile_text, ["全球领先", "全球前", "世界领先", "行业龙头", "龙头", "最大", "唯一", "首家"]):
+        keyword_bonus_moat += 3
+    keyword_bonus_moat = min(keyword_bonus_moat, 6)
 
     product_process_bonus_tech = 0
     if keyword_any(profile_text, ["国家地理标志", "有机食品", "典型代表", "传统工艺", "酱香", "发酵", "窖藏", "陈酿", "质量控制", "稀缺产区"]):
         product_process_bonus_tech += 10
 
     keyword_bonus_tech = 0
-    if keyword_any(profile_text, ["研发", "专利", "核心技术", "算法", "平台", "实验室", "创新", "全球领先", "行业领先"]):
-        keyword_bonus_tech += 8
-    if raw["board"] in {"star_market", "chinext"}:
+    if keyword_any(profile_text, ["自主研发", "研发", "发明专利", "核心专利", "核心技术"]):
         keyword_bonus_tech += 4
+    if keyword_any(profile_text, ["算法", "实验室", "国家级", "企业技术中心", "高新技术企业", "专精特新"]):
+        keyword_bonus_tech += 2
+    if keyword_any(profile_text, ["全球领先", "行业领先", "首创", "进口替代"]):
+        keyword_bonus_tech += 2
+    if raw["board"] in {"star_market", "chinext"}:
+        keyword_bonus_tech += 1
+    keyword_bonus_tech = min(keyword_bonus_tech, 7)
 
     business_moat = clamp(prior.business_moat + (revenue_pct - 50) * 0.18 + (profit_pct - 50) * 0.12 + keyword_bonus_moat)
-    technology_barrier = clamp(prior.technology_barrier + (rd_pct - 50) * 0.22 + keyword_bonus_tech + product_process_bonus_tech)
+    technology_barrier = clamp(prior.technology_barrier + (rd_pct - 50) * 0.16 + keyword_bonus_tech + product_process_bonus_tech)
     if business_moat >= 90 and product_process_bonus_tech:
         technology_barrier = max(technology_barrier, 72)
     market_position = clamp(45 + revenue_pct * 0.35 + profit_pct * 0.30 + (prior.business_moat - 50) * 0.20)
+    peer_group_size = int(pct(percentiles["peer_group_size"], code))
+    if peer_group_size < 10:
+        market_position = min(market_position, 88)
+    elif peer_group_size < 20:
+        market_position = min(market_position, 94)
     business_quality = clamp(prior.business_quality + (gross_pct - 50) * 0.20 + (net_pct - 50) * 0.22 + (growth_pct - 50) * 0.10)
     operating_quality = clamp(50 + (roe_pct - 50) * 0.25 + (roic_pct - 50) * 0.20 + (cash_pct - 50) * 0.25 + (debt_safety_pct - 50) * 0.15)
     industry_outlook_score = clamp(outlook.score)
     governance_risk = clamp(70 + (debt_safety_pct - 50) * 0.12)
+    industry_text = f"{peer_group} {raw.get('industry', '')}"
+    comparable_leader = cross_market_leader_signal(industry_text, profile_text)
+    if comparable_leader:
+        technology_barrier = clamp(technology_barrier - 3)
+        market_position = clamp(market_position - 3)
+        governance_risk = clamp(governance_risk - 5)
+        cross_market_note = "Cross-market calibration: global, scarce-resource, regulated, or strong-brand evidence is present, so only the baseline A-share disclosure comparability discount is applied."
+    else:
+        business_moat = clamp(business_moat - 7)
+        technology_barrier = clamp(technology_barrier - 11)
+        market_position = clamp(market_position - 9)
+        industry_outlook_score = clamp(industry_outlook_score - 3)
+        governance_risk = clamp(governance_risk - 6)
+        cross_market_note = "Cross-market calibration: no clear global, scarce-resource, regulated, or strong-brand evidence was found, so local peer leadership and promotional profile language are discounted for global comparability."
 
     weighted = weighted_score(
         {
@@ -468,13 +512,13 @@ def score_row(
     confidence = "high" if annual_date and profile.get("org_profile") else "medium"
 
     reasons = {
-        "business_moat_reason": f"Peer group {peer_group}; capital replicability view: {prior.capital_replicability}; revenue and profit peer percentiles are {revenue_pct:.0f}/{profit_pct:.0f}; leadership, brand, license, or exclusivity profile keywords add {keyword_bonus_moat} points.",
-        "technology_barrier_reason": f"Technology prior from peer group plus disclosed R&D ratio percentile {rd_pct:.0f}; board and profile technology keywords add {keyword_bonus_tech} points; product/process/origin keywords add {product_process_bonus_tech} points.",
-        "market_position_reason": f"Market position uses revenue RMB {revenue} and parent net profit RMB {net_profit} relative to peer group percentiles {revenue_pct:.0f}/{profit_pct:.0f}.",
+        "business_moat_reason": f"Peer group {peer_group}; capital replicability view: {prior.capital_replicability}; revenue and profit peer percentiles are {revenue_pct:.0f}/{profit_pct:.0f}; leadership, brand, license, or exclusivity profile keywords add {keyword_bonus_moat} points. {cross_market_note}",
+        "technology_barrier_reason": f"Technology prior from peer group plus disclosed R&D ratio percentile {rd_pct:.0f}; board and profile technology keywords add {keyword_bonus_tech} points; product/process/origin keywords add {product_process_bonus_tech} points. {cross_market_note}",
+        "market_position_reason": f"Market position uses revenue RMB {revenue} and parent net profit RMB {net_profit} relative to peer group percentiles {revenue_pct:.0f}/{profit_pct:.0f}; peer group size is {peer_group_size}, so narrow local peer groups are capped below global-leader scores. {cross_market_note}",
         "business_quality_reason": f"Business quality uses gross margin {gross_margin}% net margin {financial.get('net_margin_pct', '')}% and revenue growth {financial.get('revenue_yoy_pct', '')}% against peers.",
         "operating_quality_reason": f"Operating quality uses ROE {roe}% ROIC {financial.get('roic_pct', '')}% cash-flow-to-revenue {financial.get('cashflow_to_revenue_pct', '')}% and debt ratio {debt_ratio}%.",
-        "industry_outlook_reason": outlook.reason,
-        "governance_risk_reason": f"Governance and risk score starts from public disclosure availability and adjusts for balance-sheet pressure; latest annual evidence date is {annual_date or 'not identified'}.",
+        "industry_outlook_reason": f"{outlook.reason} {cross_market_note}",
+        "governance_risk_reason": f"Governance and risk score starts from public disclosure availability and adjusts for balance-sheet pressure; latest annual evidence date is {annual_date or 'not identified'}. {cross_market_note}",
     }
 
     base.update(
@@ -539,6 +583,7 @@ def run(args: argparse.Namespace) -> tuple[int, int, int]:
         "debt_asset_ratio_pct_inverse": percentile_maps(scored_financial_rows, "peer_group", "debt_asset_ratio_pct", reverse=True),
         "research_expense_to_revenue_pct": percentile_maps(scored_financial_rows, "peer_group", "research_expense_to_revenue_pct"),
         "revenue_yoy_pct": percentile_maps(scored_financial_rows, "peer_group", "revenue_yoy_pct"),
+        "peer_group_size": peer_size_map(scored_financial_rows, "peer_group"),
     }
 
     output_rows = [

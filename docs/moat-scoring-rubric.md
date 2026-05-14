@@ -178,3 +178,14 @@ The industry outlook dimension uses current public industry anchors only as broa
 - IMF `World Economic Outlook, April 2026`: global growth was projected at 3.1% in 2026 and 3.2% in 2027 with downside risks from conflict, fragmentation, AI-productivity disappointment, trade tensions, debt, and institutional vulnerabilities. This supports explicit discounts for macro, commodity, credit, property, travel, and discretionary demand cycles.
 
 Reference URLs: `https://www.iea.org/reports/global-ev-outlook-2025/executive-summary`, `https://www.iea.org/reports/renewables-2025/renewable-electricity`, `https://www.semiconductors.org/global-annual-semiconductor-sales-increase-25-6-to-791-7-billion-in-2025/`, `https://www.imf.org/en/publications/weo/issues/2026/04/14/world-economic-outlook-april-2026`.
+
+Model version `full_coverage_dimensional_v0.3` adds cross-market calibration for A-share scoring. The earlier A-share output had materially more high-score companies than the U.S. output, even though both universes had a similar number of scored companies. The audit found three mechanical causes: Eastmoney A-share profiles contain richer and more promotional business descriptions than the current SEC-derived U.S. profiles, generic words such as R&D, patents, innovation, and leading were over-rewarded, and local A-share peer-group percentiles allowed many domestic niche leaders to receive global-leader market-position scores.
+
+The v0.3 A-share scorer therefore:
+
+- Reduces generic profile keyword and listing-board bonuses.
+- Removes non-moat keywords such as generic main-business or production-and-sales descriptions.
+- Caps market-position scores for very small local peer groups.
+- Applies an A-share cross-market calibration discount unless the evidence shows global leadership, scarce-resource control, regulated concessions, or strong brand/origin advantages.
+
+This calibration is not a valuation view and does not say individual A-share leaders are weak. It prevents local evidence richness and local peer ranks from making the A-share high-score population structurally larger than the U.S. high-score population.

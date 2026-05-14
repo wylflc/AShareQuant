@@ -64,6 +64,10 @@ _Avoid_: assuming high current revenue or a large addressable market automatical
 A cyclicality profile for resource companies that remain exposed to commodity prices but have non-generic advantages from scarce reserve ownership, reserve replacement, low-cost development, mine engineering, difficult-ore processing, or global asset integration.
 _Avoid_: treating all miners or upstream producers as interchangeable commodity-cycle businesses.
 
+**Cross-Market Calibration**:
+A scoring adjustment used when evidence source richness, local peer-group definitions, or market structure would otherwise make scores from different exchanges non-comparable.
+_Avoid_: forcing every market to have the same number of watchlist candidates or applying a valuation opinion inside moat screening.
+
 **Capital Replicability Test**:
 A way to evaluate competitive strength by asking whether a well-funded new entrant could quickly build the same capability, enter the industry, and overtake the listed company mainly through capital spending.
 _Avoid_: assuming a business is strong only because it is large or profitable today.
@@ -110,6 +114,7 @@ _Avoid_: report date when the specific event type matters.
 - A **Dimensional Score** should apply the **Capital Replicability Test** where relevant so the score reflects durable competitive strength rather than current size alone.
 - **Cyclicality Profile** and **Compounding Profile** explain how the industry outlook contributes to **Moat Screening** without turning it into a valuation or market-momentum signal.
 - A **Strategic Resource Cycle** company can enter a **Watchlist** if its resource and process advantages are strong enough, even though commodity prices still make its earnings cyclical.
+- **Cross-Market Calibration** should correct mechanical scoring bias while preserving company-level evidence and dimensional score traceability.
 - **Moat Screening** determines whether a **Listed Company** deserves attention; **Valuation Assessment** determines whether a **Security** may be attractively priced.
 - **Market Data** belongs to a **Security** and trading date.
 - **Corporate Actions** belong to a **Security** or **Listed Company** and affect how **Market Data** should be interpreted.

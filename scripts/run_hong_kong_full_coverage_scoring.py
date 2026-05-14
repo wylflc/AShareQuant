@@ -17,7 +17,7 @@ DEFAULT_PROFILES = Path("data/interim/hong_kong_company_profiles.csv")
 DEFAULT_FINANCIALS = Path("data/interim/hong_kong_financial_indicators.csv")
 DEFAULT_OUTPUT = Path("data/processed/hong_kong_full_coverage_scores.csv")
 DEFAULT_WATCHLIST = Path("data/processed/hong_kong_full_coverage_watchlist.csv")
-SCORING_MODEL_VERSION = "full_coverage_dimensional_v0.2"
+SCORING_MODEL_VERSION = "full_coverage_dimensional_v0.3"
 
 DIMENSIONS = [
     ("business_moat", 0.22),
