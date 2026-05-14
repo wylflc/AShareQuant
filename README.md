@@ -27,6 +27,7 @@ The project is intended to support a reproducible equity-research workflow: buil
 - `AGENTS.md` contains repository-specific instructions for coding agents.
 - `CONTEXT.md` defines the stable domain language used by the project.
 - `.agents/skills/equity-research-workflow/SKILL.md` contains reusable workflow guidance for future agent work in this repository.
+- `.agents/skills/equity-research/SKILL.md` is installed as a project-local skill and pinned by `skills-lock.json`.
 
 ## Development Workflow
 
@@ -67,3 +68,5 @@ python3 scripts/run_moat_screening.py
 The screening workflow keeps `data/raw/` immutable. Source-backed research evidence belongs in `data/interim/moat_screening_evidence.csv`; generated screening outputs are written to `data/processed/a_share_securities_screened.csv`, `data/processed/hong_kong_securities_screened.csv`, and `data/processed/moat_watchlist_candidates.csv`.
 
 Moat scoring is a rough 0-100 quality score, not a valuation score or buy recommendation. Suggested weighting: durable business barriers 30%, technical barriers 20%, market position 20%, cash-flow quality 15%, and margin quality 15%. A default threshold of 70 creates a **Watchlist Candidate** for later valuation work. Securities with no reliable source-backed evidence row are marked `insufficient_evidence` and are not scored.
+
+Evidence rows should cite reliable sources such as official annual reports, exchange announcements, company investor-relations pages, or regulator/filing portals. Scores should not be filled when the available evidence is only unsourced commentary, market rumor, or model inference.
