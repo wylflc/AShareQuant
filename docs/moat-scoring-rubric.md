@@ -201,6 +201,8 @@ The actual standard-setting step is **Peer-Group Calibration**:
 
 Peer-group calibration can use reviewer-challenged companies as ordinary examples when they belong to the selected industry, but it must not treat them as important merely because they were named earlier.
 
+Reviewer feedback is a calibration input, not an automatic override. When source-backed evidence indicates that a rejected company has durable capability or market position that the feedback may underweight, record an explicit analyst dissent and the evidence basis before revising the rule.
+
 ### 10.1.1 Accepted Baijiu Calibration
 
 The first accepted A-share peer-group calibration is baijiu. The reviewer accepted baijiu as worth monitoring but assigned the industry a discounted long-term growth outlook because younger consumers drink less and may shift future gifting and beverage preferences away from traditional baijiu.

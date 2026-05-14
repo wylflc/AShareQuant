@@ -96,6 +96,11 @@ The first A-share peer-group calibration output is baijiu:
 - `data/processed/a_share_baijiu_peer_group_decisions.csv`
 - `docs/peer-group-calibration/a-share-baijiu.md`
 
+The second A-share peer-group calibration output is EV batteries and new-energy platforms:
+
+- `data/processed/a_share_ev_battery_peer_group_calibration.csv`
+- `docs/peer-group-calibration/a-share-ev-battery.md`
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
