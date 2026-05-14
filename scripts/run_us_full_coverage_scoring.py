@@ -236,6 +236,19 @@ def keyword_any(text: str, keywords: list[str]) -> bool:
     return any(keyword.lower() in lower for keyword in keywords)
 
 
+def resource_leader_signal(peer_group: str, profile_text: str) -> bool:
+    text = f"{peer_group} {profile_text}".lower()
+    if not keyword_any(text, ["mining", "gold", "copper", "metal", "ore", "oil", "gas", "resource"]):
+        return False
+    signals = [
+        keyword_any(text, ["global", "world", "international", "multi-national"]),
+        keyword_any(text, ["reserves", "resources", "exploration", "acquisition", "portfolio"]),
+        keyword_any(text, ["low-cost", "low grade", "low-grade", "mining engineering", "processing", "smelting", "integrated"]),
+        keyword_any(text, ["leading", "largest", "top", "major producer"]),
+    ]
+    return sum(signals) >= 3
+
+
 def source_join(*parts: str) -> str:
     urls: list[str] = []
     for part in parts:
@@ -280,6 +293,8 @@ def industry_prior(peer_group: str, profile_text: str, security_name: str) -> In
         return IndustryPrior(72, 45, 64, "banking licenses deposits customer relationships and risk systems reduce pure capital replicability")
     if keyword_any(text, ["finance services", "financial services", "insurance", "broker", "investment advice", "security brokers", "asset management"]):
         return IndustryPrior(68, 48, 62, "licenses distribution trust and risk underwriting matter but capital can still compete in parts of finance")
+    if resource_leader_signal(peer_group, profile_text):
+        return IndustryPrior(66, 68, 56, "scarce resource base global portfolio exploration M&A integration and mining or upstream engineering know-how reduce pure capital replicability despite commodity exposure")
     if keyword_any(text, ["crude petroleum", "oil & gas", "oil", "mining", "coal", "steel", "chemical", "metals", "paper", "gold", "silver", "ores", "uranium", "copper"]):
         return IndustryPrior(54, 58, 50, "resource cost scale process assets and cycles matter but commodity exposure lowers durability")
     if keyword_any(text, ["electric services", "electric & other services", "natural gas transmission", "natural gas distribution", "gas transmission", "water supply", "utility", "pipeline", "railroad", "telephone communications", "telecommunications"]):
@@ -325,6 +340,8 @@ def industry_outlook(peer_group: str, profile_text: str, security_name: str) -> 
         return IndustryOutlook(72, "low_cyclicality", "brand_compounding", "Consumer staples and trusted brands can compound through pricing, distribution, and habit with less macro sensitivity.")
     if keyword_any(text, ["restaurants", "apparel", "retail", "grocery", "department stores", "catalog", "mail-order"]):
         return IndustryOutlook(48, "consumer_cycle_competitive", "weak_or_selective_compounding", "Retail, restaurants, and apparel are easier to replicate with capital and execution unless a company has unusually strong brand, scale, or data advantages.")
+    if resource_leader_signal(peer_group, profile_text):
+        return IndustryOutlook(60, "strategic_resource_cycle", "resource_and_process_compounding", "Commodity prices still create cycles, but scarce reserves, reserve replacement, low-cost development, and global asset integration can support leader-level compounding.")
     if keyword_any(text, ["crude petroleum", "oil & gas", "oil", "mining", "coal", "steel", "chemical", "metals", "paper", "gold", "silver", "ores", "uranium", "copper"]):
         return IndustryOutlook(42, "commodity_cycle", "low_compounding", "Commodity and upstream material returns are often driven by prices and capex cycles more than internally controlled compounding.")
     if keyword_any(text, ["electric services", "electric & other services", "natural gas transmission", "natural gas distribution", "gas transmission", "water supply", "utility", "pipeline", "railroad", "telephone communications", "telecommunications"]):

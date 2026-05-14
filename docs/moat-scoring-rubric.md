@@ -110,9 +110,12 @@ Record `cyclicality_profile` and `compounding_profile` separately so reviewers c
 - Stable regulated assets such as utilities, pipelines, railways, ports, and water or gas concessions.
 - Macro or credit cyclicals such as banks, insurers, brokers, and asset managers.
 - Commodity cyclicals such as oil, gas, coal, metals, chemicals, paper, and upstream materials.
+- Strategic resource-cycle leaders with scarce reserve ownership, reserve replacement capability, low-cost development, mine engineering/process know-how, and global portfolio integration.
 - Property, construction, travel, leisure, retail, and other demand-cycle businesses.
 
 The core question is: even if the industry grows, does this company have a realistic path to compound value through durable advantages, or will returns be competed away by capital, capacity, commodity prices, regulation, or macro cycles?
+
+Commodity exposure should usually reduce compounding scores because price cycles can dominate earnings. However, do not treat every miner or upstream producer as interchangeable. A globally competitive resource owner/operator can deserve a higher moat, technology/process, and industry-outlook score when reliable evidence shows scarce reserves, reserve replacement, low-cost acquisitions, full-cycle mine development, low-grade or difficult-ore processing know-how, and the ability to improve acquired assets. The correct label for such cases is `strategic_resource_cycle`, not generic `commodity_cycle`.
 
 ### 7.7 Governance, Disclosure, And Risk Quality
 

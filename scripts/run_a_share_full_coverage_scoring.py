@@ -237,6 +237,18 @@ def keyword_any(text: str, keywords: list[str]) -> bool:
     return any(keyword in text for keyword in keywords)
 
 
+def resource_leader_signal(industry_text: str, profile_text: str) -> bool:
+    if not keyword_any(industry_text, ["矿", "黄金", "铜", "有色", "金属", "煤炭", "石油"]):
+        return False
+    signals = [
+        keyword_any(profile_text, ["全球", "跨国矿业", "全球领先", "世界", "重要矿业基地"]),
+        keyword_any(profile_text, ["自主勘查", "逆周期并购", "资源获取成本", "资源优先", "资源量", "储量", "重要成矿带"]),
+        keyword_any(profile_text, ["矿石流五环归一", "低品位", "难处理", "矿业工程", "采矿", "选矿", "冶炼"]),
+        keyword_any(profile_text, ["全球前", "位居前", "全球排名", "龙头", "前3位", "前4位"]),
+    ]
+    return sum(signals) >= 3
+
+
 def industry_prior(peer_group: str, raw_industry: str, profile_text: str) -> IndustryPrior:
     industry_text = f"{peer_group} {raw_industry}"
     fallback_text = f"{industry_text} {profile_text}"
@@ -258,6 +270,8 @@ def industry_prior(peer_group: str, raw_industry: str, profile_text: str) -> Ind
         return IndustryPrior(58, 70, 54, "manufacturing scale helps but process yield supply chain and customers are not instantly bought")
     if keyword_any(industry_text, ["机械", "设备", "自动化", "仪器仪表", "专用设备"]):
         return IndustryPrior(55, 66, 55, "engineering experience and customer qualification matter but some capacity is replicable")
+    if resource_leader_signal(industry_text, profile_text):
+        return IndustryPrior(66, 68, 56, "scarce resource base global mine portfolio exploration M&A integration and mining-engineering know-how reduce pure capital replicability despite commodity exposure")
     if keyword_any(industry_text, ["化工", "材料", "有色", "钢铁", "煤炭", "石油"]):
         return IndustryPrior(52, 58, 50, "resource cost process scale and cycles matter but commodity exposure lowers durability")
     if keyword_any(industry_text, ["房地产", "建筑", "装饰", "园林"]):
@@ -290,6 +304,8 @@ def industry_outlook(peer_group: str, raw_industry: str, profile_text: str) -> I
         return IndustryOutlook(60, "high_competition_growth_cycle", "scale_compounding_if_leader", "Electrification is a structural growth area, but oversupply, price competition, and technology shifts make many manufacturers cyclical.")
     if keyword_any(industry_text, ["机械", "设备", "仪器仪表", "专用设备"]):
         return IndustryOutlook(58, "capex_cycle", "selective_compounding", "Equipment demand follows customer capex cycles; leaders with installed bases and process know-how can compound better than generic capacity suppliers.")
+    if resource_leader_signal(industry_text, profile_text):
+        return IndustryOutlook(60, "strategic_resource_cycle", "resource_and_process_compounding", "Commodity prices still create cycles, but scarce reserves, reserve replacement, low-cost development, and global mine integration can support leader-level compounding.")
     if keyword_any(industry_text, ["房地产", "建筑", "装饰", "园林", "建材"]):
         return IndustryOutlook(36, "deep_cyclical_or_structural_headwind", "limited_compounding", "Property-linked demand faces leverage, demographic, and investment-cycle pressure, so capital-heavy growth deserves a lower structural outlook.")
     if keyword_any(industry_text, ["零售", "商贸", "批发", "超市", "百货"]):

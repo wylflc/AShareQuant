@@ -60,6 +60,10 @@ _Avoid_: treating all growth industries or all current profit leaders as equally
 A screening label that identifies whether a listed company has a plausible path to compound value through brand, data, innovation, regulated assets, installed base, balance-sheet discipline, or scale/process advantages.
 _Avoid_: assuming high current revenue or a large addressable market automatically means compound growth.
 
+**Strategic Resource Cycle**:
+A cyclicality profile for resource companies that remain exposed to commodity prices but have non-generic advantages from scarce reserve ownership, reserve replacement, low-cost development, mine engineering, difficult-ore processing, or global asset integration.
+_Avoid_: treating all miners or upstream producers as interchangeable commodity-cycle businesses.
+
 **Capital Replicability Test**:
 A way to evaluate competitive strength by asking whether a well-funded new entrant could quickly build the same capability, enter the industry, and overtake the listed company mainly through capital spending.
 _Avoid_: assuming a business is strong only because it is large or profitable today.
@@ -105,6 +109,7 @@ _Avoid_: report date when the specific event type matters.
 - A **Full-Coverage Screening Run** must produce **Dimensional Scores** for every eligible **Listed Company**, except the narrow **Insufficient Disclosure** case.
 - A **Dimensional Score** should apply the **Capital Replicability Test** where relevant so the score reflects durable competitive strength rather than current size alone.
 - **Cyclicality Profile** and **Compounding Profile** explain how the industry outlook contributes to **Moat Screening** without turning it into a valuation or market-momentum signal.
+- A **Strategic Resource Cycle** company can enter a **Watchlist** if its resource and process advantages are strong enough, even though commodity prices still make its earnings cyclical.
 - **Moat Screening** determines whether a **Listed Company** deserves attention; **Valuation Assessment** determines whether a **Security** may be attractively priced.
 - **Market Data** belongs to a **Security** and trading date.
 - **Corporate Actions** belong to a **Security** or **Listed Company** and affect how **Market Data** should be interpreted.

@@ -238,6 +238,22 @@ def keyword_any(text: str, keywords: list[str]) -> bool:
     return any(keyword in text for keyword in keywords)
 
 
+def resource_leader_signal(industry_text: str, profile_text: str) -> bool:
+    lower_profile = profile_text.lower()
+    if not (
+        keyword_any(industry_text, ["矿", "黄金", "铜", "有色", "金属", "煤", "石油", "天然气"])
+        or keyword_any(industry_text.lower(), ["mining", "gold", "copper", "metal", "resource", "oil", "gas"])
+    ):
+        return False
+    signals = [
+        keyword_any(profile_text, ["全球", "跨国矿业", "全球领先", "世界", "重要矿业基地"]) or keyword_any(lower_profile, ["global", "world", "international mining"]),
+        keyword_any(profile_text, ["自主勘查", "逆周期并购", "资源获取成本", "资源优先", "资源量", "储量", "重要成矿带"]) or keyword_any(lower_profile, ["exploration", "reserves", "resources", "acquisition"]),
+        keyword_any(profile_text, ["矿石流五环归一", "低品位", "难处理", "矿业工程", "采矿", "选矿", "冶炼"]) or keyword_any(lower_profile, ["low-grade", "mining engineering", "mining", "processing", "smelting"]),
+        keyword_any(profile_text, ["全球前", "位居前", "全球排名", "龙头", "前3位", "前4位"]) or keyword_any(lower_profile, ["leading", "largest", "top"]),
+    ]
+    return sum(signals) >= 3
+
+
 def industry_prior(peer_group: str, profile_text: str) -> IndustryPrior:
     text = f"{peer_group} {profile_text}"
     lower_text = text.lower()
@@ -263,6 +279,8 @@ def industry_prior(peer_group: str, profile_text: str) -> IndustryPrior:
         return IndustryPrior(42, 35, 45, "store formats logistics and distribution can often be replicated with capital")
     if keyword_any(industry_text, ["博彩", "旅游", "酒店", "餐饮", "教育"]) or keyword_any(lower_industry, ["gaming", "tourism", "hotel", "restaurant", "leisure", "education"]):
         return IndustryPrior(58, 42, 52, "brand location licenses and operations matter but demand can be cyclical")
+    if resource_leader_signal(industry_text, profile_text):
+        return IndustryPrior(66, 68, 56, "scarce resource base global mine portfolio exploration M&A integration and mining-engineering know-how reduce pure capital replicability despite commodity exposure")
     if keyword_any(industry_text, ["矿", "石油", "煤", "钢", "金属", "材料", "化工"]) or keyword_any(lower_industry, ["mining", "oil", "coal", "steel", "metal", "materials", "chemical"]):
         return IndustryPrior(52, 58, 50, "resource cost process scale and cycles matter but commodity exposure lowers durability")
     if keyword_any(text, ["研发", "专利", "平台", "算法", "科技", "创新"]) or keyword_any(lower_text, ["research", "r&d", "patent", "platform", "algorithm", "technology", "innovation"]):
@@ -293,6 +311,8 @@ def industry_outlook(peer_group: str, profile_text: str) -> IndustryOutlook:
         return IndustryOutlook(44, "consumer_cycle_competitive", "weak_or_selective_compounding", "Generic retail and trading are usually replicable with capital and execution unless a company has clear platform or brand control.")
     if keyword_any(industry_text, ["博彩", "旅游", "酒店", "餐饮", "教育"]) or keyword_any(lower_industry, ["gaming", "tourism", "hotel", "restaurant", "leisure", "education"]):
         return IndustryOutlook(48, "demand_or_policy_cycle", "brand_location_compounding_if_leader", "Licenses, brands, or locations can matter, but tourism, gaming, education, and leisure depend on discretionary demand and policy settings.")
+    if resource_leader_signal(industry_text, profile_text):
+        return IndustryOutlook(60, "strategic_resource_cycle", "resource_and_process_compounding", "Commodity prices still create cycles, but scarce reserves, reserve replacement, low-cost development, and global mine integration can support leader-level compounding.")
     if keyword_any(industry_text, ["矿", "石油", "煤", "钢", "金属", "材料", "化工"]) or keyword_any(lower_industry, ["mining", "oil", "coal", "steel", "metal", "materials", "chemical"]):
         return IndustryOutlook(42, "commodity_cycle", "low_compounding", "Commodity and upstream materials earnings usually reflect price and capex cycles more than internally controlled compounding.")
     if keyword_any(profile_text, ["研发", "专利", "平台技术", "算法", "科技", "创新"]) or keyword_any(profile_text.lower(), ["research", "r&d", "patent", "algorithm", "technology", "innovation"]):
