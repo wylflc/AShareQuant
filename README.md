@@ -137,9 +137,10 @@ This group separates lithium resource ownership and lithium-salt capacity from b
 The eighth A-share peer-group calibration output is battery materials and nickel-cobalt integration:
 
 - `data/processed/a_share_battery_materials_peer_group_calibration.csv`
+- `data/processed/a_share_battery_materials_peer_group_decisions.csv`
 - `docs/peer-group-calibration/a-share-battery-materials.md`
 
-This group compares precursor, nickel-cobalt resource integration, electrolyte, separator, anode, coating, and cathode companies. It is preliminary and awaits reviewer decisions before a decision table is created.
+This group compares precursor, nickel-cobalt resource integration, electrolyte, separator, anode, coating, and cathode companies. Boundary companies are judged by margin quality, product technical content, whether a larger competitor could easily copy the business, and whether the company has a durable local industrial advantage.
 
 Fetch A-share screening evidence into resumable interim CSV files:
 

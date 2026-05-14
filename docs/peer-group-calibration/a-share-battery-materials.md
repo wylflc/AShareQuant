@@ -42,41 +42,68 @@ The watchlist standard should emphasize step-level quality: cost curve, process 
 
 The structured calibration table is `data/processed/a_share_battery_materials_peer_group_calibration.csv`.
 
-No reviewer decision table has been created yet. The next step is for the reviewer to accept, reject, or modify the preliminary calls.
+The structured reviewer decision table is `data/processed/a_share_battery_materials_peer_group_decisions.csv`.
 
-## 1.5 Company Comparisons
+## 1.5 Reviewer Decision
+
+Reviewer feedback accepts the direct-watch companies:
+
+- 华友钴业
+- 中伟新材
+- 天赐材料
+- 恩捷股份
+- 贝特瑞
+- 璞泰来
+- 湖南裕能
+
+For boundary companies, the reviewer clarified a more precise decision rule: examine gross margin, related business economics, product technical content, and whether a larger competitor could easily copy the business if it wanted to. If the business is easy to copy and only ignored because the margin is too low, reject it. If the company has a local industrial advantage that can survive competition, retain it.
+
+Boundary decisions:
+
+| Company | Decision | Margin And Technology Reason |
+| --- | --- | --- |
+| 格林美 | Watch | 2025 gross margin was 14.71% and net margin was 4.64%, so this is not a high-margin specialty-material business. It is retained because battery recycling depends on channel network, compliant processing qualifications, hydrometallurgy, and customer closed-loop relationships. The thesis must be monitored against CATL, Huayou, and other giants capturing feedstock channels. |
+| 新宙邦 | Watch | 2025 gross margin was 24.28% and net margin was 11.40%. Specialty additives, emerging electrolytes, capacitor chemicals, and organic fluorochemicals are more formula and process intensive than generic electrolyte capacity. It is retained as a specialty-chemistry peer, not as a smaller 天赐材料. |
+| 星源材质 | Watch, lower conviction | 2025 gross margin was 23.03% but net margin was only 1.79%. Retention depends on dry-separator leadership and storage-battery use cases. It is not allowed to duplicate 恩捷股份's wet-separator thesis; future review must verify durable dry-separator customer economics. |
+| 尚太科技 | Watch, lower conviction | 2025 gross margin was 21.21%, net margin was 11.91%, and ROE was 14.34%. This does not look like a poor low-margin business that larger peers simply ignore. It is retained as an artificial-graphite cost-curve specialist. |
+| 德方纳米 | Reject for now | 2025 gross margin was 1.30% and net margin was -12.47%. LMFP, high-density LFP, and lithium supplement products are technically relevant, but current evidence does not show that the technology protects margin or customer lock-in versus 湖南裕能 and 当升科技. |
+| 当升科技 | Watch | 2025 gross margin was 12.73%, net margin was 6.12%, and debt ratio was 31.14%. The company is retained for high-nickel and all-solid-state cathode material validation, not commodity cathode capacity. |
+| 容百科技 | Reject for now | 2025 gross margin was 7.41% and net margin was -1.32%. High-nickel cathode and Korean capacity are relevant, but current margins and losses suggest weak bargaining power. The thesis overlaps with 当升科技 and 华友钴业. |
+| 杉杉股份 | Reject from battery materials; reclassify | 2025 gross margin was 17.27%, net margin was 2.40%, and ROE was 2.10%. Battery-material evidence is weaker than 贝特瑞, 璞泰来, and 尚太科技. Polarizer may deserve a separate display-materials group. |
+
+## 1.6 Company Comparisons
 
 `华友钴业` should be judged as a resource-backed battery-material integration company, not as a pure miner. Its moat evidence includes Indonesian nickel projects, MHP output, cobalt and nickel metallurgy, ternary precursor and cathode capability, and customer long orders. I would retain it unless the reviewer wants a very narrow materials-only list.
 
 `中伟新材` is the clearest precursor specialist in this group. It is not just a demand-beta material name; the thesis is pCAM global position, high-nickel and ultra-high-nickel capability, nickel resource locking, Indonesian nickel capacity, and customer qualification. I would retain it beside 华友 because the two are not identical.
 
-`格林美` is not as clean as 中伟 in precursor scale, but its recycling network and closed-loop recovery create a different thesis. If the reviewer accepts recycling as a hard-to-replicate resource channel, it should be retained. If the watchlist is restricted to current high-margin material leaders, it can be rejected.
+`格林美` is not as clean as 中伟 in precursor scale, but its recycling network and closed-loop recovery create a different thesis. It is retained with monitoring because recycling channels, compliant processing qualifications, and customer closed-loop relationships are not as easy to replicate as generic precursor capacity.
 
 `天赐材料` should be the electrolyte anchor. It has electrolyte scale, LiPF6 and additive integration, overseas localization, and cost/process advantages. LiPF6 cyclicality is a monitoring issue, not a direct rejection reason.
 
-`新宙邦` is a boundary case. It may be weaker than 天赐 in electrolyte scale, but it has a different specialty-chemistry angle through additives, emerging electrolytes, capacitor chemicals, and organic fluorochemicals. I would keep it unresolved until the reviewer decides whether that specialty-chemistry moat deserves a separate watch slot.
+`新宙邦` is retained. It may be weaker than 天赐 in electrolyte scale, but it has a different specialty-chemistry angle through additives, emerging electrolytes, capacitor chemicals, and organic fluorochemicals. Its 2025 margin profile supports the view that this is not merely low-value electrolyte capacity.
 
 `恩捷股份` should be retained as the separator anchor. Wet-process separator capacity, yield, coating, customer qualification, and overseas long-term supply agreements are hard to replicate quickly with capital alone.
 
-`星源材质` is a boundary separator case. If the reviewer values dry-separator leadership as a separate niche from 恩捷's wet-process leadership, it can be retained. If only one separator company should consume attention, 恩捷 is the cleaner choice.
+`星源材质` is retained with lower conviction as a dry-separator specialist. Its low net margin requires monitoring, but the gross margin and R&D intensity do not look like a pure low-value capacity business. The thesis should be removed later if dry-separator leadership is not economically durable.
 
 `贝特瑞` should be retained as the anode anchor because it has the clearest global anode volume and silicon-based anode evidence. Anode capacity can be built, but long-cycle customer validation and high-quality product iteration are slower.
 
 `璞泰来` should be retained separately from 贝特瑞 if the reviewer accepts coated separator and platform integration as the core thesis. Its watchlist role is not pure anode volume; it is coated separator, anode, PVDF, equipment, and customer co-development.
 
-`尚太科技` is a boundary anode case. The possible moat is cost-curve and graphitization/process efficiency. It should be rejected if the reviewer wants only technology leaders; retained if a low-cost artificial-graphite specialist deserves attention beside 贝特瑞 and 璞泰来.
+`尚太科技` is retained with lower conviction. The moat is cost curve and integrated graphitization rather than broad technology leadership. The 2025 margin and ROE profile support keeping it as a cost specialist unless deeper review shows the advantage is temporary.
 
 `杉杉股份` should be rejected from this group for now or reclassified. It has anode and polarizer assets, but in battery materials its thesis is less clean than 贝特瑞, 璞泰来, and possibly 尚太科技. The polarizer business belongs in a display-materials group.
 
 `湖南裕能` should be retained as the LFP cathode scale anchor. LFP is more commoditized than separator or specialty electrolyte, but its scale, customer validation, phosphorous resource linkage, and iron phosphate self-supply create a real cost and supply-chain thesis.
 
-`德方纳米` is a boundary cathode-technology case. Its nano-LFP, LMFP, high-density LFP generations, and lithium supplement enhancer create technology optionality, but 2025 operating quality was weak. I would not reject it solely for weak current profit; the decision should hinge on whether product differentiation can restore durable margins.
+`德方纳米` is rejected for now. This is not because the company lost money; it is because the 2025 gross margin and cash-flow evidence do not yet show that LMFP, high-density LFP, or lithium supplement technology protects economics against stronger scale and high-end cathode peers.
 
-`当升科技` is a boundary-to-watch high-end cathode case. Its strongest thesis is high-nickel and solid-state cathode material validation, not commodity cathode scale. If solid-state battery materials are accepted as a separate future-facing moat, it should be retained.
+`当升科技` is retained as the high-end and solid-state cathode watch case. Its strongest thesis is high-nickel and solid-state cathode material validation, not commodity cathode scale.
 
-`容百科技` is a boundary case. It has high-nickel cathode, Korean capacity, and solid-state material progress, but 2025 showed business pressure and its thesis may be covered by 当升 in high-end cathodes and 华友 in integrated ternary cathode-resource ecosystems. I would retain only if the reviewer wants a high-nickel overseas-capacity option.
+`容百科技` is rejected for now. It has high-nickel cathode, Korean capacity, and solid-state material progress, but 2025 showed weak economics and its thesis may be covered by 当升 in high-end cathodes and 华友 in integrated ternary cathode-resource ecosystems.
 
-## 1.6 Draft Rules To Test With Reviewer
+## 1.7 Accepted Rules
 
 1. **Material Capacity Alone Is Not A Moat**: generic cathode, anode, electrolyte, separator, or precursor capacity should not qualify without cost, process, customer, or resource evidence.
 2. **Retain Step-Level Leaders When The Step Is Hard To Replicate**: separator, electrolyte formulation and lithium salts, precursor, anode, coating, and high-end cathodes can each retain a leader if the step-level barrier is real.
@@ -86,14 +113,25 @@ No reviewer decision table has been created yet. The next step is for the review
 6. **Use Differentiated Peer Retention By Material Step**: retain multiple battery-material companies only when their steps or advantages differ, such as separator versus electrolyte, wet separator versus dry separator, anode leadership versus coated-separator platform, or LFP scale versus solid-state cathode optionality.
 7. **Customer Qualification Matters**: long supply agreements, entry into global battery customers, or repeated shipments to leading customers should carry more weight than announced capacity.
 8. **Emerging Technology Needs Customer Evidence**: solid-state, LMFP, silicon anode, lithium supplement, and new electrolyte claims should be retained only when supported by batch supply, pilot orders, customer validation, or production ramp evidence.
+9. **Low-Margin Ignored Businesses Should Be Rejected**: if a larger competitor could replicate the business easily and only avoids it because returns are poor, the company should not enter the watchlist.
+10. **Cost Curve Can Be A Moat**: a low-cost specialist can be retained when gross margin, net margin, ROE, and process evidence show that the cost advantage is economically real rather than a temporary utilization or input-price effect.
 
-## 1.7 Reviewer Questions
+## 1.8 Analyst Dissent Policy
 
-1. Do you agree to retain `华友钴业`, `中伟新材`, `天赐材料`, `恩捷股份`, `贝特瑞`, `璞泰来`, and `湖南裕能` as the first set of battery-material watch companies?
-2. For boundary companies, would you retain `格林美`, `新宙邦`, `星源材质`, `尚太科技`, `德方纳米`, `当升科技`, or `容百科技`?
-3. Should `杉杉股份` be rejected from battery materials and moved to a later display-materials or polarizer group?
+1. No dissent on retaining `华友钴业`, `中伟新材`, `天赐材料`, `恩捷股份`, `贝特瑞`, `璞泰来`, and `湖南裕能`.
+2. I would dissent if `新宙邦` is rejected only because 天赐 is larger in electrolyte scale; its specialty-chemistry margin and product mix need separate treatment.
+3. I would softly dissent if `格林美`, `星源材质`, or `尚太科技` are rejected without checking recycling channels, dry-separator economics, or artificial-graphite cost curve respectively.
+4. I would not dissent if `德方纳米` and `容百科技` remain rejected under current evidence, as long as the rejection reason is weak economic proof versus retained peers rather than current losses alone.
+5. I would not dissent if `杉杉股份` is rejected from battery materials and reclassified to display materials.
 
-## 1.8 Sources
+## 1.9 Remaining Work
+
+1. Keep the accepted decisions synchronized with `data/processed/a_share_peer_group_calibrated_watchlist.csv`.
+2. During final deep review, replace any research-summary evidence with direct annual reports, product-segment gross margins, customer-contract announcements, and shipment data.
+3. For retained lower-conviction companies, specifically track `格林美` recycling feedstock control, `星源材质` dry-separator economics, and `尚太科技` cost-curve durability.
+4. Recheck `德方纳米` and `容百科技` if future reports show margin recovery tied to differentiated products rather than commodity price or volume recovery.
+
+## 1.10 Sources
 
 - IEA Global EV Outlook 2025 battery chapter and Global Critical Minerals Outlook 2025: `https://www.iea.org/reports/global-ev-outlook-2025/electric-vehicle-batteries`, `https://www.iea.org/reports/global-critical-minerals-outlook-2025/overview-of-outlook-for-key-minerals`
 - 华友钴业 company materials and 2025 result coverage: `https://www.huayou.com/news/press-release/697`, `https://www.huayou.com/news/press-release/698`, `https://www.huayou.com/products/indonesia-nickel-industry`
