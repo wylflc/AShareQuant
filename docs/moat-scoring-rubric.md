@@ -36,16 +36,17 @@ Low scores indicate that a funded competitor could plausibly build similar capac
 
 ## 5. Weighted Dimensions
 
-Each dimension is scored from 0 to 100. The final score is the weighted sum rounded to the nearest integer.
+Each dimension is scored from 0 to 100 and stored with two decimal places. The final score is the weighted sum stored with two decimal places.
 
 | Dimension | Weight | Required CSV columns |
 | --- | ---: | --- |
-| Business moat and capital-replication resistance | 25% | `business_moat_score`, `business_moat_level`, `business_moat_reason` |
-| Technology, product, process, or supply-chain barrier | 20% | `technology_barrier_score`, `technology_barrier_level`, `technology_barrier_reason` |
-| Market position and competitive structure | 15% | `market_position_score`, `market_position_level`, `market_position_reason` |
-| Business model quality | 15% | `business_quality_score`, `business_quality_level`, `business_quality_reason` |
-| Operating and financial quality | 15% | `operating_quality_score`, `operating_quality_level`, `operating_quality_reason` |
-| Governance, disclosure, and risk quality | 10% | `governance_risk_score`, `governance_risk_level`, `governance_risk_reason` |
+| Business moat and capital-replication resistance | 22% | `business_moat_score`, `business_moat_level`, `business_moat_reason` |
+| Technology, product, process, or supply-chain barrier | 18% | `technology_barrier_score`, `technology_barrier_level`, `technology_barrier_reason` |
+| Market position and competitive structure | 14% | `market_position_score`, `market_position_level`, `market_position_reason` |
+| Business model quality | 14% | `business_quality_score`, `business_quality_level`, `business_quality_reason` |
+| Operating and financial quality | 14% | `operating_quality_score`, `operating_quality_level`, `operating_quality_reason` |
+| Industry outlook, cyclicality, and compounding profile | 10% | `industry_outlook_score`, `industry_outlook_level`, `industry_outlook_reason` |
+| Governance, disclosure, and risk quality | 8% | `governance_risk_score`, `governance_risk_level`, `governance_risk_reason` |
 
 ## 6. Dimension Bands
 
@@ -96,7 +97,24 @@ Score cash conversion, margin profile, ROE or ROIC quality, balance-sheet pressu
 
 The core question is: does the operating record support the claimed competitive strength, or does the business require heavy capital and favorable cycles to look good?
 
-### 7.6 Governance, Disclosure, And Risk Quality
+### 7.6 Industry Outlook, Cyclicality, And Compounding Profile
+
+Score the structural demand outlook of the company's industry, whether the business is mainly cyclical or capable of internally controlled compounding, and whether future industry growth is likely to be captured by incumbents with real advantages.
+
+This dimension must not become a momentum or valuation proxy. A hot industry with easy entry, fast capacity expansion, or frequent price wars should not receive an elite score merely because end-market demand is growing. A mature industry can still receive a good score when demand is durable, capital needs are moderate, pricing power exists, and leaders can compound cash flow.
+
+Record `cyclicality_profile` and `compounding_profile` separately so reviewers can distinguish:
+
+- Structural compounders such as software, dominant consumer brands, data ecosystems, and medical platforms.
+- Structural-growth manufacturers with cycle risk such as batteries, semiconductors, automation, and renewable-energy equipment.
+- Stable regulated assets such as utilities, pipelines, railways, ports, and water or gas concessions.
+- Macro or credit cyclicals such as banks, insurers, brokers, and asset managers.
+- Commodity cyclicals such as oil, gas, coal, metals, chemicals, paper, and upstream materials.
+- Property, construction, travel, leisure, retail, and other demand-cycle businesses.
+
+The core question is: even if the industry grows, does this company have a realistic path to compound value through durable advantages, or will returns be competed away by capital, capacity, commodity prices, regulation, or macro cycles?
+
+### 7.7 Governance, Disclosure, And Risk Quality
 
 Score governance quality, related-party risk, accounting transparency, regulatory exposure, safety or environmental risk, geopolitical risk, customer concentration, and disclosure reliability.
 
@@ -123,6 +141,8 @@ The full-coverage processed CSV should preserve source security identifiers and 
 - `disclosure_status`
 - `peer_group`
 - `peer_relative_position`
+- `cyclicality_profile`
+- `compounding_profile`
 - one score, level, and reason column for each weighted dimension
 - `weighted_total_score`
 - `overall_level`
@@ -139,6 +159,19 @@ The full-coverage processed CSV should preserve source security identifiers and 
 3. Collect source evidence for each listed company by filings, official materials, and authoritative external descriptions.
 4. Normalize each company into a peer group.
 5. Assign every dimensional score with a reason and sources.
-6. Compute the weighted total from stored dimension scores.
+6. Compute the weighted total from stored dimension scores, preserving two decimal places in each stored score.
 7. Validate that every eligible raw A-share, Hong Kong, and U.S. row has either full dimensional scores or the narrow `insufficient_disclosure` status; U.S. non-company/non-common-equity instruments must have an explicit not-applicable status.
 8. Generate processed full-coverage outputs and a watchlist candidate view.
+
+## 11. Calibration Notes
+
+Model version `full_coverage_dimensional_v0.2` adds industry outlook as an explicit 10% dimension and reduces the other six weights proportionally. This was introduced after reviewing whether the earlier model could over-rank large cyclical companies and under-rank compound-growth companies with strong long-term demand but less stable current profitability.
+
+The industry outlook dimension uses current public industry anchors only as broad calibration evidence, not as company-specific proof:
+
+- IEA `Global EV Outlook 2025`: electric car sales exceeded 17 million in 2024, were expected to exceed 20 million in 2025, and the EV share was set to exceed 40% in 2030 under stated policies. This supports a structural-growth score for EV batteries and charging/storage ecosystems while still recognizing manufacturing-cycle and policy risk.
+- IEA `Renewables 2025`: renewable power capacity additions for 2025-2030 were projected at about 4,600 GW, but the forecast was cut from the prior year because of policy, regulatory, and market changes. This supports structural demand for renewables while penalizing oversupply and policy-sensitive manufacturers.
+- SIA/WSTS semiconductor data: 2025 global semiconductor sales rose 25.6% to $791.7 billion and 2026 sales were projected near $1 trillion, driven by logic, memory, AI, IoT, 6G, and autonomous-driving demand. This supports a structural-growth score for semiconductors while preserving semiconductor-cycle treatment.
+- IMF `World Economic Outlook, April 2026`: global growth was projected at 3.1% in 2026 and 3.2% in 2027 with downside risks from conflict, fragmentation, AI-productivity disappointment, trade tensions, debt, and institutional vulnerabilities. This supports explicit discounts for macro, commodity, credit, property, travel, and discretionary demand cycles.
+
+Reference URLs: `https://www.iea.org/reports/global-ev-outlook-2025/executive-summary`, `https://www.iea.org/reports/renewables-2025/renewable-electricity`, `https://www.semiconductors.org/global-annual-semiconductor-sales-increase-25-6-to-791-7-billion-in-2025/`, `https://www.imf.org/en/publications/weo/issues/2026/04/14/world-economic-outlook-april-2026`.

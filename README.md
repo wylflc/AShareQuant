@@ -67,7 +67,7 @@ python3 scripts/run_moat_screening.py
 
 The screening workflow keeps `data/raw/` immutable. Source-backed research evidence belongs in `data/interim/`; generated screening outputs belong in `data/processed/`.
 
-For the A-share, Hong Kong, and U.S. universes, the target workflow is a **Full-Coverage Screening Run**: every listed security receives an explicit screening status, and every eligible listed-company common-equity security receives the same dimensional scoring treatment unless it meets the narrow **Insufficient Disclosure** definition. See `docs/moat-scoring-rubric.md` and `docs/adr/0002-use-full-coverage-dimensional-moat-scoring.md`.
+For the A-share, Hong Kong, and U.S. universes, the target workflow is a **Full-Coverage Screening Run**: every listed security receives an explicit screening status, and every eligible listed-company common-equity security receives the same dimensional scoring treatment unless it meets the narrow **Insufficient Disclosure** definition. The current scoring model is `full_coverage_dimensional_v0.2`, with seven dimensions: business moat, technology/product/process barrier, market position, business quality, operating quality, industry outlook/cyclicality/compounding profile, and governance risk. Each dimension score and final weighted score is stored with two decimal places. See `docs/moat-scoring-rubric.md` and `docs/adr/0002-use-full-coverage-dimensional-moat-scoring.md`.
 
 Fetch A-share screening evidence into resumable interim CSV files:
 
@@ -83,7 +83,7 @@ Generate dimensional A-share scores from fetched evidence:
 python3 scripts/run_a_share_full_coverage_scoring.py
 ```
 
-The scorer writes `data/processed/a_share_full_coverage_scores.csv` and `data/processed/a_share_full_coverage_watchlist.csv`. Use `--require-complete` when the fetch queue is complete and the run should fail if any eligible A-share company remains unscored.
+The scorer writes `data/processed/a_share_full_coverage_scores.csv` and `data/processed/a_share_full_coverage_watchlist.csv`. The outputs include `cyclicality_profile`, `compounding_profile`, and `industry_outlook_*` fields so cyclicals and compound-growth companies can be reviewed separately. Use `--require-complete` when the fetch queue is complete and the run should fail if any eligible A-share company remains unscored.
 
 Fetch Hong Kong screening evidence into resumable interim CSV files:
 
@@ -99,7 +99,7 @@ Generate dimensional Hong Kong scores from fetched evidence:
 python3 scripts/run_hong_kong_full_coverage_scoring.py
 ```
 
-The scorer writes `data/processed/hong_kong_full_coverage_scores.csv` and `data/processed/hong_kong_full_coverage_watchlist.csv`. The Hong Kong outputs explicitly include `market_type` and `market_label` so they can be merged with A-share outputs later without losing market identity.
+The scorer writes `data/processed/hong_kong_full_coverage_scores.csv` and `data/processed/hong_kong_full_coverage_watchlist.csv`. The Hong Kong outputs explicitly include `market_type`, `market_label`, `cyclicality_profile`, `compounding_profile`, and `industry_outlook_*` fields so they can be merged with other markets later without losing market identity or cycle/compound-growth context.
 
 Fetch U.S. screening evidence into resumable interim CSV files:
 
@@ -115,4 +115,4 @@ Generate dimensional U.S. scores from fetched evidence:
 python3 scripts/run_us_full_coverage_scoring.py
 ```
 
-The scorer writes `data/processed/us_full_coverage_scores.csv` and `data/processed/us_full_coverage_watchlist.csv`. The U.S. outputs explicitly include `market_type` and `market_label` for later cross-market merging.
+The scorer writes `data/processed/us_full_coverage_scores.csv` and `data/processed/us_full_coverage_watchlist.csv`. The U.S. outputs explicitly include `market_type`, `market_label`, `cyclicality_profile`, `compounding_profile`, and `industry_outlook_*` fields for later cross-market merging.

@@ -23,11 +23,14 @@ Every eligible A-share, Hong Kong, or U.S. listed company must receive dimension
 3. Market position and competitive structure.
 4. Business model quality.
 5. Operating and financial quality.
-6. Governance, disclosure, and risk quality.
+6. Industry outlook, cyclicality, and compounding profile.
+7. Governance, disclosure, and risk quality.
 
-The final score is a weighted total computed from the recorded dimension scores. The processed CSV must keep each dimension score, level, and reason so the final score is traceable.
+The final score is a weighted total computed from the recorded dimension scores. Each dimension score and final score is stored with two decimal places. The processed CSV must keep each dimension score, level, and reason so the final score is traceable.
 
 Apply the capital replicability test across dimensions: ask whether a well-funded new entrant could quickly compete with and overtake the company mainly through capital spending. The answer should influence the relevant dimension scores.
+
+Record `cyclicality_profile` and `compounding_profile` so reviewers can tell whether a company's score depends on stable compounding, structural growth with manufacturing cycles, regulated stability, commodity cycles, credit cycles, property cycles, or discretionary demand cycles.
 
 Use `insufficient_disclosure` only when the company is newly listed, has not disclosed enough periodic reports, and lacks authoritative public business descriptions from filings, official materials, credible media, or reputable research institutions.
 
