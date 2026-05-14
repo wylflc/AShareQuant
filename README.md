@@ -68,3 +68,19 @@ python3 scripts/run_moat_screening.py
 The screening workflow keeps `data/raw/` immutable. Source-backed research evidence belongs in `data/interim/`; generated screening outputs belong in `data/processed/`.
 
 For the A-share universe, the target workflow is a **Full-Coverage Screening Run**: every eligible listed company receives the same dimensional scoring treatment unless it meets the narrow **Insufficient Disclosure** definition. See `docs/moat-scoring-rubric.md` and `docs/adr/0002-use-full-coverage-dimensional-moat-scoring.md`.
+
+Fetch A-share screening evidence into resumable interim CSV files:
+
+```bash
+python3 scripts/fetch_a_share_research_evidence.py
+```
+
+The fetcher writes `data/interim/a_share_research_queue.csv`, `data/interim/a_share_company_profiles.csv`, and `data/interim/a_share_financial_indicators.csv`.
+
+Generate dimensional A-share scores from fetched evidence:
+
+```bash
+python3 scripts/run_a_share_full_coverage_scoring.py
+```
+
+The scorer writes `data/processed/a_share_full_coverage_scores.csv` and `data/processed/a_share_full_coverage_watchlist.csv`. Use `--require-complete` when the fetch queue is complete and the run should fail if any eligible A-share company remains unscored.
