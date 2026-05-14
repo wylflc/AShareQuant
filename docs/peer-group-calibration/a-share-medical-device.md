@@ -27,7 +27,40 @@ The industry is also exposed to procurement cycles, anti-corruption campaigns, v
 | Boundary cases | 开立医疗, 新产业 | Watch only if their specialty is not covered by stronger retained peers |
 | Reject or reclassify | 鱼跃医疗, 乐普医疗, 新华医疗 | Reject from this group |
 
-## 1.5 Analyst Dissent Policy
+## 1.5 Reviewer Decision
+
+Reviewer feedback explicitly retained:
+
+- 迈瑞医疗
+- 联影医疗
+- 惠泰医疗
+
+For the companies the reviewer did not know well, the analyst applies the accepted **Differentiated Peer Retention** and **Dominance Rejection Test**.
+
+Additional analyst-retained companies:
+
+- 心脉医疗: retained because aortic and peripheral vascular intervention is a distinct high-value device niche with its own clinical validation and doctor adoption pathway.
+- 南微医学: retained because endoscopic diagnosis-and-treatment consumables are recurring clinical consumables with doctor usage habits and a workflow not covered by the retained broad platforms.
+
+Rejected or reclassified:
+
+- 开立医疗: rejected because ultrasound is partly covered by 迈瑞医疗 and endoscopy still faces strong global incumbents; current evidence does not prove a sufficiently irreplaceable niche.
+- 新产业: rejected for this round because chemiluminescence IVD overlaps with 迈瑞医疗's IVD platform and faces policy and competition pressure; current evidence does not prove enough separate moat.
+- 鱼跃医疗: rejected from this group, not necessarily from all future work. It should be considered in a home-healthcare or consumer-medical-device peer group.
+- 乐普医疗: rejected because its old cardiovascular stent moat was weakened by procurement and the current transition has not yet proven a new irreplaceable moat.
+- 新华医疗: rejected because current evidence does not show a platform moat or specialized clinical niche comparable with retained companies.
+
+The structured reviewer decision table is `data/processed/a_share_medical_device_peer_group_decisions.csv`.
+
+## 1.6 Accepted Rules
+
+1. Broad medical-device platform leaders can be retained when they have product breadth, hospital validation, installed base, service network, global channel, and continuous product iteration. `迈瑞医疗` is the current accepted example.
+2. High-end equipment leaders can be retained alongside broad platforms when the equipment category and clinical validation path are meaningfully different. `联影医疗` is the current accepted example.
+3. Specialized high-value device leaders can be retained when their clinical niche has hard-to-replace doctor adoption, regulatory approval, recurring consumables, or treatment-pathway lock-in. `惠泰医疗`, `心脉医疗`, and `南微医学` are current accepted examples.
+4. Reject companies whose main product lines are already covered by a retained platform, unless they prove a separate irreplaceable niche.
+5. Reclassify companies whose real advantage belongs to another peer group rather than forcing them into the current group.
+
+## 1.7 Analyst Dissent Policy
 
 1. If `迈瑞医疗` is rejected mainly because 2025 earnings declined, I would strongly dissent. Short-term procurement and policy pressure should not erase a platform-level medical-device moat.
 2. If `联影医疗` is rejected because it is smaller than Mindray, I would strongly dissent. High-end imaging is a distinct and hard-to-replace niche.
@@ -35,7 +68,7 @@ The industry is also exposed to procurement cycles, anti-corruption campaigns, v
 4. I would only softly dissent on `心脉医疗`, `南微医学`, `开立医疗`, and `新产业`; each needs a sharper judgment on whether its specialty is truly irreplaceable or already covered by a stronger retained peer.
 5. I would not dissent if `鱼跃医疗` is rejected from this group, because it belongs in a home-healthcare peer group. I would not dissent if `乐普医疗` or `新华医疗` are rejected under the current evidence.
 
-## 1.6 Proposed Rule Hypotheses
+## 1.8 Original Rule Hypotheses
 
 These are hypotheses for reviewer challenge, not final rules.
 
@@ -44,15 +77,12 @@ These are hypotheses for reviewer challenge, not final rules.
 3. **Dominance Rejection**: reject a company when its main product line is already covered by a stronger retained leader and the company lacks a distinct niche.
 4. **Reclassification**: move companies into a more suitable group when their real advantage is outside high-end hospital devices, such as home healthcare, consumer medical devices, or medical aesthetics.
 
-## 1.7 Reviewer Questions
+## 1.9 Remaining Reviewer Questions
 
-1. Do you agree that `迈瑞医疗` and `联影医疗` should be core watch companies?
-2. Should `惠泰医疗` be retained as a specialized high-value device leader?
-3. Should `心脉医疗` and `南微医学` be retained as specialized watch candidates, or rejected because they are too narrow?
-4. Should `开立医疗` and `新产业` be rejected under dominance by stronger platforms, or retained because endoscopy and chemiluminescence are sufficiently distinct?
-5. Do you agree that `鱼跃医疗` should be moved to a home-healthcare peer group and that `乐普医疗`, `新华医疗` should be rejected for now?
+1. Should `鱼跃医疗` be calibrated in a separate home-healthcare or consumer-medical-device group?
+2. Should medical aesthetics and dental/ophthalmology consumables be calibrated as separate groups rather than mixed with high-end hospital devices?
 
-## 1.8 Sources
+## 1.10 Sources
 
 - 迈瑞医疗 2025 annual-report mirror and annual-report PDF mirror: `https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12044611&stockid=300760`, `https://cs.cnpharm.com/upload/resources/file/2026/04/01/186982.pdf`
 - 联影医疗 2025 annual-report summaries and research summary: `https://finance.sina.com.cn/stock/zqgd/2026-04-29/doc-inhwcqxe8005301.shtml`, `https://finance.sina.com.cn/roll/2026-04-29/doc-inhwefuw7940836.shtml`, `https://news.futunn.com/post/72809988/united-imaging-healthcare-688271-2025-annual-report-and-2026-q1`

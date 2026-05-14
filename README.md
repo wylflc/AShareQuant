@@ -105,6 +105,7 @@ The second A-share peer-group calibration output is EV batteries and new-energy 
 The third A-share peer-group calibration output is high-end medical devices and medical-device platforms:
 
 - `data/processed/a_share_medical_device_peer_group_calibration.csv`
+- `data/processed/a_share_medical_device_peer_group_decisions.csv`
 - `docs/peer-group-calibration/a-share-medical-device.md`
 
 Fetch A-share screening evidence into resumable interim CSV files:

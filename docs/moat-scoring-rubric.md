@@ -221,6 +221,14 @@ The second A-share peer-group calibration is power batteries and new-energy vehi
 
 `国轩高科`, `欣旺达`, `孚能科技`, `鹏辉能源`, and `珠海冠宇` are also rejected from the current power-battery and new-energy-platform watchlist under the **Dominance Rejection Test**. The reviewer did not know these companies well, but the accepted decision habit requires the analyst to reject weaker peers when the available evidence does not show a differentiated and hard-to-replace advantage versus `宁德时代` or `比亚迪`.
 
+### 10.1.3 Accepted Medical-Device Calibration
+
+The third A-share peer-group calibration is high-end medical devices and medical-device platforms. The accepted watch companies are `迈瑞医疗`, `联影医疗`, `惠泰医疗`, `心脉医疗`, and `南微医学`.
+
+`迈瑞医疗` is retained as the broad medical-device platform example. `联影医疗` is retained as the high-end imaging example. `惠泰医疗`, `心脉医疗`, and `南微医学` are retained as specialized high-value device or consumable examples because their clinical niches are meaningfully different from the retained platforms and may have hard-to-replace doctor adoption, regulatory approval, recurring consumables, or treatment-pathway lock-in.
+
+`开立医疗`, `新产业`, `乐普医疗`, and `新华医疗` are rejected from this group under the **Dominance Rejection Test** or because their current evidence does not prove a sufficiently irreplaceable niche. `鱼跃医疗` is rejected from this group and should be reclassified into a home-healthcare or consumer-medical-device peer group if reviewed later.
+
 ## 11. Calibration Notes
 
 Model version `full_coverage_dimensional_v0.2` adds industry outlook as an explicit 10% dimension and reduces the other six weights proportionally. This was introduced after reviewing whether the earlier model could over-rank large cyclical companies and under-rank compound-growth companies with strong long-term demand but less stable current profitability.
