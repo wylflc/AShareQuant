@@ -17,27 +17,27 @@ DEFAULT_PROFILES = Path("data/interim/us_company_profiles.csv")
 DEFAULT_FINANCIALS = Path("data/interim/us_financial_indicators.csv")
 DEFAULT_OUTPUT = Path("data/processed/us_full_coverage_scores.csv")
 DEFAULT_WATCHLIST = Path("data/processed/us_full_coverage_watchlist.csv")
-SCORING_MODEL_VERSION = "full_coverage_dimensional_v0.3"
+SCORING_MODEL_VERSION = "full_coverage_dimensional_v0.4"
 MARKET_TYPE = "USA"
 MARKET_LABEL = "美股"
 
 DIMENSIONS = [
-    ("business_moat", 0.22),
-    ("technology_barrier", 0.18),
+    ("business_moat", 0.28),
+    ("technology_barrier", 0.24),
     ("market_position", 0.14),
-    ("business_quality", 0.14),
-    ("operating_quality", 0.14),
-    ("industry_outlook", 0.10),
-    ("governance_risk", 0.08),
+    ("business_quality", 0.08),
+    ("operating_quality", 0.06),
+    ("industry_outlook", 0.14),
+    ("governance_risk", 0.06),
 ]
 DIMENSION_WEIGHT_POINTS = {
-    "business_moat": 22,
-    "technology_barrier": 18,
+    "business_moat": 28,
+    "technology_barrier": 24,
     "market_position": 14,
-    "business_quality": 14,
-    "operating_quality": 14,
-    "industry_outlook": 10,
-    "governance_risk": 8,
+    "business_quality": 8,
+    "operating_quality": 6,
+    "industry_outlook": 14,
+    "governance_risk": 6,
 }
 
 OUTPUT_COLUMNS = [
@@ -250,6 +250,32 @@ def resource_leader_signal(peer_group: str, profile_text: str) -> bool:
     return sum(signals) >= 3
 
 
+def strategic_critical_material_signal(peer_group: str, profile_text: str) -> bool:
+    text = f"{peer_group} {profile_text}".lower()
+    if not keyword_any(text, ["germanium", "gallium", "indium", "tungsten", "molybdenum", "antimony", "tantalum", "rare metal", "critical mineral", "compound semiconductor", "gallium arsenide", "indium phosphide"]):
+        return False
+    signals = [
+        keyword_any(text, ["mine", "mining", "reserve", "resource", "exploration", "owned mine"]),
+        keyword_any(text, ["purification", "wafer", "crystal", "infrared", "optical", "aerospace", "semiconductor material"]),
+        keyword_any(text, ["national", "standard", "champion", "specialized", "proprietary", "patent"]),
+        keyword_any(text, ["export control", "strategic resource", "supply security", "domestic substitution"]),
+    ]
+    return sum(signals) >= 2
+
+
+def grid_core_equipment_signal(peer_group: str, profile_text: str) -> bool:
+    text = f"{peer_group} {profile_text}".lower()
+    if not keyword_any(text, ["power transmission", "transformer", "reactor", "mutual inductor", "high voltage", "ultra-high voltage", "uhv", "hvdc", "converter valve", "grid equipment"]):
+        return False
+    signals = [
+        keyword_any(text, ["ultra-high voltage", "uhv", "hvdc", "converter valve", "first-of-a-kind"]),
+        keyword_any(text, ["state grid", "national grid", "grid project", "demonstration project", "integrated solution"]),
+        keyword_any(text, ["global leader", "world leading", "international leader", "leading market share"]),
+        keyword_any(text, ["national", "technology center", "proprietary", "patent", "import substitution"]),
+    ]
+    return sum(signals) >= 2
+
+
 def source_join(*parts: str) -> str:
     urls: list[str] = []
     for part in parts:
@@ -282,6 +308,19 @@ def watchlist_row(row: dict[str, str]) -> dict[str, str]:
     return result
 
 
+def dedupe_watchlist_source_rows(rows: list[dict[str, str]]) -> list[dict[str, str]]:
+    selected: list[dict[str, str]] = []
+    seen: set[str] = set()
+    for row in sorted(rows, key=lambda item: (-float(item["weighted_total_score"]), item["security_code"])):
+        identity = row.get("sec_cik") or row.get("listed_company_name") or row["security_code"]
+        if identity in seen:
+            continue
+        seen.add(identity)
+        selected.append(row)
+    selected.sort(key=lambda row: (-float(row["weighted_total_score"]), row["security_code"]))
+    return selected
+
+
 def infer_industry_from_name(raw: dict[str, str]) -> str:
     text = f"{raw.get('listed_company_name', '')} {raw.get('security_name', '')}".lower()
     if keyword_any(text, ["bank", "bancorp", "financial", "insurance", "capital"]):
@@ -303,6 +342,10 @@ def industry_prior(peer_group: str, profile_text: str, security_name: str) -> In
     text = f"{peer_group} {profile_text} {security_name}".lower()
     if keyword_any(text, ["acquisition corp", "blank check", "special purpose acquisition"]):
         return IndustryPrior(20, 20, 20, "blank-check companies have no operating moat until an operating business is acquired")
+    if strategic_critical_material_signal(peer_group, profile_text):
+        return IndustryPrior(74, 82, 58, "strategic scarce materials combine resource access, purification, crystal or compound processing, standards, and customer qualification that capital alone cannot compress quickly")
+    if grid_core_equipment_signal(peer_group, profile_text):
+        return IndustryPrior(72, 78, 62, "ultra-high-voltage grid equipment requires long engineering accumulation, safety validation, grid qualification, and project references that capital alone cannot buy quickly")
     if keyword_any(text, ["bank", "national commercial banks", "state commercial banks", "savings institution", "credit institution"]):
         return IndustryPrior(72, 45, 64, "banking licenses deposits customer relationships and risk systems reduce pure capital replicability")
     if keyword_any(text, ["finance services", "financial services", "insurance", "broker", "investment advice", "security brokers", "asset management"]):
@@ -342,6 +385,10 @@ def industry_outlook(peer_group: str, profile_text: str, security_name: str) -> 
     text = f"{peer_group} {profile_text} {security_name}".lower()
     if keyword_any(text, ["acquisition corp", "blank check", "special purpose acquisition"]):
         return IndustryOutlook(20, "no_operating_business", "not_applicable", "Blank-check companies do not yet have an operating industry outlook or compounding engine to score as listed operating businesses.")
+    if strategic_critical_material_signal(peer_group, profile_text):
+        return IndustryOutlook(72, "strategic_critical_material_cycle", "resource_technology_optionality", "Strategic scarce materials can benefit from semiconductors, aerospace, AI infrastructure, optical communication, and supply-security demand; price cycles and capacity ramp risks still keep the score below elite compounders.")
+    if grid_core_equipment_signal(peer_group, profile_text):
+        return IndustryOutlook(68, "grid_capex_structural_growth", "installed_base_and_engineering_compounding", "Grid modernization, UHV transmission, renewable power integration, and overseas power-infrastructure demand support long-cycle growth, though customer capex cycles and project timing remain material.")
     if keyword_any(text, ["prepackaged software", "software", "data processing", "information retrieval", "internet", "cloud", "platform", "artificial intelligence"]):
         return IndustryOutlook(80, "low_to_moderate_cyclicality", "compound_growth", "Cloud, AI, data, and software adoption support multi-year demand, while retention, ecosystem depth, and switching costs separate durable compounders.")
     if keyword_any(text, ["semiconductor", "electronic computers", "computer storage", "electronic components", "communications equipment", "networking"]):
@@ -355,7 +402,7 @@ def industry_outlook(peer_group: str, profile_text: str, security_name: str) -> 
     if keyword_any(text, ["restaurants", "apparel", "retail", "grocery", "department stores", "catalog", "mail-order"]):
         return IndustryOutlook(48, "consumer_cycle_competitive", "weak_or_selective_compounding", "Retail, restaurants, and apparel are easier to replicate with capital and execution unless a company has unusually strong brand, scale, or data advantages.")
     if resource_leader_signal(peer_group, profile_text):
-        return IndustryOutlook(60, "strategic_resource_cycle", "resource_and_process_compounding", "Commodity prices still create cycles, but scarce reserves, reserve replacement, low-cost development, and global asset integration can support leader-level compounding.")
+        return IndustryOutlook(64, "strategic_resource_cycle", "resource_and_process_compounding", "Commodity prices still create cycles, but scarce reserves, reserve replacement, low-cost development, and global asset integration can support leader-level compounding.")
     if keyword_any(text, ["crude petroleum", "oil & gas", "oil", "mining", "coal", "steel", "chemical", "metals", "paper", "gold", "silver", "ores", "uranium", "copper"]):
         return IndustryOutlook(42, "commodity_cycle", "low_compounding", "Commodity and upstream material returns are often driven by prices and capex cycles more than internally controlled compounding.")
     if keyword_any(text, ["electric services", "electric & other services", "natural gas transmission", "natural gas distribution", "gas transmission", "water supply", "utility", "pipeline", "railroad", "telephone communications", "telecommunications"]):
@@ -512,13 +559,19 @@ def score_row(
     if raw.get("financial_status") in {"D", "E", "H"}:
         reporting_penalty = 18
 
-    business_moat = clamp(prior.business_moat + (revenue_pct - 50) * 0.16 + (net_income_pct - 50) * 0.10 + keyword_bonus_moat)
-    technology_barrier = clamp(prior.technology_barrier + (rd_pct - 50) * 0.18 + (eps_pct - 50) * 0.05 + keyword_bonus_tech)
-    market_position = clamp(45 + revenue_pct * 0.34 + net_income_pct * 0.28 + (prior.business_moat - 50) * 0.20)
-    business_quality = clamp(prior.business_quality + (gross_margin_pct - 50) * 0.18 + (net_margin_pct - 50) * 0.20 + (operating_margin_pct - 50) * 0.10 + (growth_pct - 50) * 0.08 - financial_penalty * 0.5)
-    operating_quality = clamp(50 + (roe_pct - 50) * 0.26 + (cashflow_pct - 50) * 0.22 + (debt_safety_pct - 50) * 0.14 - financial_penalty)
+    strategic_material = strategic_critical_material_signal(peer_group, profile_text)
+    grid_core_equipment = grid_core_equipment_signal(peer_group, profile_text)
+    capability_moat_bonus = 8 if strategic_material else 6 if grid_core_equipment else 0
+    capability_market_bonus = 12 if strategic_material else 10 if grid_core_equipment else 0
+    capability_tech_bonus = 10 if strategic_material else 8 if grid_core_equipment else 0
+
+    business_moat = clamp(prior.business_moat + (revenue_pct - 50) * 0.10 + keyword_bonus_moat + capability_moat_bonus)
+    technology_barrier = clamp(prior.technology_barrier + (rd_pct - 50) * 0.10 + (eps_pct - 50) * 0.03 + keyword_bonus_tech + capability_tech_bonus)
+    market_position = clamp(45 + revenue_pct * 0.28 + net_income_pct * 0.12 + (prior.business_moat - 50) * 0.25 + capability_market_bonus)
+    business_quality = clamp(prior.business_quality + (gross_margin_pct - 50) * 0.12 + (net_margin_pct - 50) * 0.10 + (operating_margin_pct - 50) * 0.06 + (growth_pct - 50) * 0.06 - financial_penalty * 0.35)
+    operating_quality = clamp(50 + (roe_pct - 50) * 0.16 + (cashflow_pct - 50) * 0.14 + (debt_safety_pct - 50) * 0.10 - financial_penalty * 0.5)
     industry_outlook_score = clamp(outlook.score)
-    governance_risk = clamp(70 + (debt_safety_pct - 50) * 0.12 - reporting_penalty)
+    governance_risk = clamp(72 + (debt_safety_pct - 50) * 0.06 - reporting_penalty)
     if keyword_any(profile_text, ["blank check", "acquisition corp"]):
         business_moat = min(business_moat, 35)
         technology_barrier = min(technology_barrier, 35)
@@ -551,19 +604,19 @@ def score_row(
             "compounding_profile": outlook.compounding_profile,
             "business_moat_score": fmt_score(business_moat),
             "business_moat_level": level(business_moat),
-            "business_moat_reason": f"Peer group {peer_group}; capital replicability view: {prior.capital_replicability}; SEC revenue and net income peer percentiles are {revenue_pct:.0f}/{net_income_pct:.0f}; profile keywords add {keyword_bonus_moat} points.",
+            "business_moat_reason": f"Peer group {peer_group}; capability-first capital replicability view: {prior.capital_replicability}; SEC revenue peer percentile is {revenue_pct:.0f}; current net income percentile {net_income_pct:.0f} is recorded but not used directly in moat scoring; profile keywords add {keyword_bonus_moat} points and strategic capability adds {capability_moat_bonus} points.",
             "technology_barrier_score": fmt_score(technology_barrier),
             "technology_barrier_level": level(technology_barrier),
-            "technology_barrier_reason": f"Technology prior comes from SEC SIC/profile text; R&D-to-revenue and EPS peer percentiles are {rd_pct:.0f}/{eps_pct:.0f}; profile technology keywords add {keyword_bonus_tech} points.",
+            "technology_barrier_reason": f"Technology prior comes from SEC SIC/profile text; R&D-to-revenue and EPS peer percentiles are {rd_pct:.0f}/{eps_pct:.0f}; profile technology keywords add {keyword_bonus_tech} points and strategic-material/grid-equipment capability adds {capability_tech_bonus} points.",
             "market_position_score": fmt_score(market_position),
             "market_position_level": level(market_position),
-            "market_position_reason": f"Market position uses SEC companyfacts revenue {financial.get('revenue', '')} and net income {financial.get('net_income', '')} relative to peer percentiles {revenue_pct:.0f}/{net_income_pct:.0f}.",
+            "market_position_reason": f"Market position uses SEC companyfacts revenue {financial.get('revenue', '')} and net income {financial.get('net_income', '')} relative to peer percentiles {revenue_pct:.0f}/{net_income_pct:.0f}, but current net income has lower weight in v0.4; strategic capability adds {capability_market_bonus} points.",
             "business_quality_score": fmt_score(business_quality),
             "business_quality_level": level(business_quality),
-            "business_quality_reason": f"Business quality uses gross margin {financial.get('gross_margin_pct', '')}% net margin {financial.get('net_margin_pct', '')}% operating margin {financial.get('operating_margin_pct', '')}% and revenue growth {financial.get('revenue_yoy_pct', '')}% against peers.",
+            "business_quality_reason": f"Business quality uses gross margin {financial.get('gross_margin_pct', '')}% net margin {financial.get('net_margin_pct', '')}% operating margin {financial.get('operating_margin_pct', '')}% and revenue growth {financial.get('revenue_yoy_pct', '')}% against peers, with lower weight than capability dimensions in v0.4.",
             "operating_quality_score": fmt_score(operating_quality),
             "operating_quality_level": level(operating_quality),
-            "operating_quality_reason": f"Operating quality uses ROE {financial.get('roe_pct', '')}% operating-cash-flow-to-revenue {financial.get('operating_cashflow_to_revenue_pct', '')}% and debt/assets {financial.get('debt_asset_ratio_pct', '')}%; missing metric penalty is {financial_penalty}.",
+            "operating_quality_reason": f"Operating quality uses ROE {financial.get('roe_pct', '')}% operating-cash-flow-to-revenue {financial.get('operating_cashflow_to_revenue_pct', '')}% and debt/assets {financial.get('debt_asset_ratio_pct', '')}%; missing metric penalty is {financial_penalty}. It constrains risk but no longer dominates the watchlist score in v0.4.",
             "industry_outlook_score": fmt_score(industry_outlook_score),
             "industry_outlook_level": level(industry_outlook_score),
             "industry_outlook_reason": outlook.reason,
@@ -572,7 +625,7 @@ def score_row(
             "governance_risk_reason": f"Governance and disclosure score starts from SEC reporting availability and adjusts for balance-sheet pressure and Nasdaq financial status {raw.get('financial_status', '') or 'not provided'}.",
             "weighted_total_score": fmt_score(weighted),
             "overall_level": level(weighted),
-            "overall_reason": f"Weighted score from seven stored dimensions, including industry outlook and cyclicality profile {outlook.cyclicality_profile}. This first-pass algorithmic score is backed by Nasdaq Trader universe data plus SEC EDGAR profile and companyfacts evidence where available.",
+            "overall_reason": f"Weighted score from seven stored dimensions using the v0.4 capability-first weights, including industry outlook and cyclicality profile {outlook.cyclicality_profile}. This first-pass algorithmic score is backed by Nasdaq Trader universe data plus SEC EDGAR profile and companyfacts evidence where available.",
             "evidence_confidence": confidence,
         }
     )
@@ -633,6 +686,7 @@ def run(args: argparse.Namespace) -> tuple[int, int, int, int]:
         for row in output_rows
         if row["screening_status"] == "scored" and row["weighted_total_score"] and float(row["weighted_total_score"]) >= args.candidate_threshold
     ]
+    watchlist_source_rows = dedupe_watchlist_source_rows(watchlist_source_rows)
     watchlist_source_rows.sort(key=lambda row: (-float(row["weighted_total_score"]), row["security_code"]))
     watchlist_rows = [watchlist_row(row) for row in watchlist_source_rows]
     write_csv(args.watchlist, WATCHLIST_COLUMNS, watchlist_rows)

@@ -18,25 +18,25 @@ DEFAULT_PROFILES = Path("data/interim/a_share_company_profiles.csv")
 DEFAULT_FINANCIALS = Path("data/interim/a_share_financial_indicators.csv")
 DEFAULT_OUTPUT = Path("data/processed/a_share_full_coverage_scores.csv")
 DEFAULT_WATCHLIST = Path("data/processed/a_share_full_coverage_watchlist.csv")
-SCORING_MODEL_VERSION = "full_coverage_dimensional_v0.3"
+SCORING_MODEL_VERSION = "full_coverage_dimensional_v0.4"
 
 DIMENSIONS = [
-    ("business_moat", 0.22),
-    ("technology_barrier", 0.18),
+    ("business_moat", 0.28),
+    ("technology_barrier", 0.24),
     ("market_position", 0.14),
-    ("business_quality", 0.14),
-    ("operating_quality", 0.14),
-    ("industry_outlook", 0.10),
-    ("governance_risk", 0.08),
+    ("business_quality", 0.08),
+    ("operating_quality", 0.06),
+    ("industry_outlook", 0.14),
+    ("governance_risk", 0.06),
 ]
 DIMENSION_WEIGHT_POINTS = {
-    "business_moat": 22,
-    "technology_barrier": 18,
+    "business_moat": 28,
+    "technology_barrier": 24,
     "market_position": 14,
-    "business_quality": 14,
-    "operating_quality": 14,
-    "industry_outlook": 10,
-    "governance_risk": 8,
+    "business_quality": 8,
+    "operating_quality": 6,
+    "industry_outlook": 14,
+    "governance_risk": 6,
 }
 
 OUTPUT_COLUMNS = [
@@ -260,8 +260,41 @@ def resource_leader_signal(industry_text: str, profile_text: str) -> bool:
     return sum(signals) >= 3
 
 
+def strategic_critical_material_signal(industry_text: str, profile_text: str) -> bool:
+    text = f"{industry_text} {profile_text}"
+    if not keyword_any(text, ["锗", "镓", "铟", "钨", "钼", "锑", "钽", "铍", "稀散", "稀有小金属", "化合物半导体", "砷化镓", "磷化铟"]):
+        return False
+    signals = [
+        keyword_any(text, ["矿", "资源", "储量", "采矿权", "探矿权", "自有矿山", "完整产业链"]),
+        keyword_any(text, ["精深加工", "高纯", "晶片", "单晶", "红外", "光纤", "空间", "半导体材料"]),
+        keyword_any(text, ["国家级企业技术中心", "工程技术研究中心", "行业标准", "国家标准", "单项冠军", "专精特新"]),
+        keyword_any(text, ["出口管制", "战略资源", "关键材料", "卡脖子", "国产替代"]),
+    ]
+    return sum(signals) >= 2
+
+
+def grid_core_equipment_signal(industry_text: str, profile_text: str) -> bool:
+    text = f"{industry_text} {profile_text}"
+    if not keyword_any(text, ["输变电", "变压器", "电抗器", "互感器", "特高压", "超高压", "换流阀", "直流输电", "电网"]):
+        return False
+    signals = [
+        keyword_any(text, ["特高压", "超高压", "交直流", "高压直流", "换流阀", "首台套"]),
+        keyword_any(text, ["国家电网", "南方电网", "国家重大项目", "示范工程", "一体化集成", "境外机电行业输变电", "电力工程施工总承包特级资质"]),
+        keyword_any(text, ["全球领先", "全球市场份额领先", "全球高端输变电", "世界领先", "国际领先", "行业领先", "行业前列", "产能稳居", "中国电气工业100强第1位", "大型能源装备"]),
+        keyword_any(text, ["国家级", "企业技术中心", "高新技术企业", "专精特新", "进口替代", "创新100强"]),
+    ]
+    return sum(signals) >= 2
+
+
+def baijiu_long_cycle_signal(industry_text: str, profile_text: str) -> bool:
+    text = f"{industry_text} {profile_text}"
+    return keyword_any(industry_text, ["白酒"]) and keyword_any(text, ["酱香", "浓香", "窖池", "窖藏", "陈酿", "基酒", "发酵", "传统工艺", "稀缺产区"])
+
+
 def cross_market_leader_signal(industry_text: str, profile_text: str) -> bool:
     if keyword_any(industry_text, ["电力", "水务", "燃气", "高速", "港口", "机场", "铁路", "公用"]):
+        return True
+    if strategic_critical_material_signal(industry_text, profile_text) or grid_core_equipment_signal(industry_text, profile_text):
         return True
     if keyword_any(profile_text, ["国家地理标志", "品牌价值", "驰名商标", "酱香", "稀缺产区", "特许", "牌照", "专营", "垄断"]):
         return True
@@ -273,8 +306,14 @@ def cross_market_leader_signal(industry_text: str, profile_text: str) -> bool:
 def industry_prior(peer_group: str, raw_industry: str, profile_text: str) -> IndustryPrior:
     industry_text = f"{peer_group} {raw_industry}"
     fallback_text = f"{industry_text} {profile_text}"
-    if keyword_any(industry_text, ["白酒", "饮料", "食品", "乳", "调味"]):
-        return IndustryPrior(78, 60, 74, "consumer brand origin process know-how product trust and distribution are costly to replicate quickly")
+    if strategic_critical_material_signal(industry_text, profile_text):
+        return IndustryPrior(74, 82, 58, "strategic scarce materials combine resource access, purification, crystal or compound processing, standards, and customer qualification that capital alone cannot compress quickly")
+    if grid_core_equipment_signal(industry_text, profile_text):
+        return IndustryPrior(72, 78, 62, "ultra-high-voltage grid equipment requires long engineering accumulation, safety validation, grid qualification, and project references that capital alone cannot buy quickly")
+    if keyword_any(industry_text, ["白酒"]) or baijiu_long_cycle_signal(industry_text, profile_text):
+        return IndustryPrior(84, 68, 82, "top baijiu brands combine origin scarcity, long-cycle brewing, base-liquor inventory, quality consistency, channel trust, and pricing power")
+    if keyword_any(industry_text, ["饮料", "食品", "乳", "调味"]):
+        return IndustryPrior(72, 48, 68, "consumer brand channel and product trust can matter, but ordinary food process know-how is more replicable than scarce-origin long-cycle categories")
     if keyword_any(industry_text, ["银行", "保险", "证券", "金融"]):
         return IndustryPrior(72, 45, 64, "licenses regulation customer deposits and risk systems reduce pure capital replicability")
     if keyword_any(industry_text, ["电力", "水务", "燃气", "高速", "港口", "机场", "铁路", "公用"]):
@@ -307,6 +346,10 @@ def industry_prior(peer_group: str, raw_industry: str, profile_text: str) -> Ind
 def industry_outlook(peer_group: str, raw_industry: str, profile_text: str) -> IndustryOutlook:
     industry_text = f"{peer_group} {raw_industry}"
     fallback_text = f"{industry_text} {profile_text}"
+    if strategic_critical_material_signal(industry_text, profile_text):
+        return IndustryOutlook(72, "strategic_critical_material_cycle", "resource_technology_optionality", "Strategic scarce materials can benefit from semiconductors, aerospace, AI infrastructure, optical communication, and supply-security demand; price cycles and capacity ramp risks still keep the score below elite compounders.")
+    if grid_core_equipment_signal(industry_text, profile_text):
+        return IndustryOutlook(68, "grid_capex_structural_growth", "installed_base_and_engineering_compounding", "Grid modernization, UHV transmission, renewable power integration, and overseas power-infrastructure demand support long-cycle growth, though customer capex cycles and project timing remain material.")
     if keyword_any(industry_text, ["软件", "计算机", "云", "互联网", "人工智能", "网络安全", "算力"]):
         return IndustryOutlook(78, "low_to_moderate_cyclicality", "compound_growth", "Digitalization, data, AI, and software adoption support multi-year demand; execution and customer retention still separate leaders from followers.")
     if keyword_any(industry_text, ["电池", "储能", "锂电", "电源设备"]) or keyword_any(profile_text, ["动力电池", "锂电池", "储能系统"]):
@@ -315,8 +358,10 @@ def industry_outlook(peer_group: str, raw_industry: str, profile_text: str) -> I
         return IndustryOutlook(72, "cyclical_structural_growth", "innovation_compounding", "AI, localization, electrification, and automation support demand, while semiconductor and capex cycles make earnings less linear.")
     if keyword_any(industry_text, ["医药", "医疗器械", "生物医药", "创新药", "疫苗", "诊断"]):
         return IndustryOutlook(70, "defensive_growth_with_policy_risk", "innovation_or_brand_compounding", "Aging, clinical demand, and medical innovation support long-term growth, but pricing, procurement, and trial risks require discounting.")
-    if keyword_any(industry_text, ["白酒", "饮料", "食品", "乳", "调味", "消费品"]):
-        return IndustryOutlook(74, "low_cyclicality", "brand_compounding", "Staple consumption and trusted brands can compound through pricing, channel depth, and habit, with less macro sensitivity than most cyclicals.")
+    if keyword_any(industry_text, ["白酒"]):
+        return IndustryOutlook(76, "low_cyclicality", "brand_and_origin_compounding", "Top baijiu demand is mature but durable; scarce origin, long production cycles, brand trust, channel depth, and pricing power can support compounding without relying on high industry volume growth.")
+    if keyword_any(industry_text, ["饮料", "食品", "乳", "调味", "消费品"]):
+        return IndustryOutlook(70, "low_to_moderate_cyclicality", "brand_compounding", "Staple consumption and trusted brands can compound through pricing, channel depth, and habit, but ordinary packaged foods usually have lower scarcity than top baijiu.")
     if keyword_any(industry_text, ["电力", "水务", "燃气", "高速", "港口", "机场", "铁路", "公用"]):
         return IndustryOutlook(62, "low_cyclicality", "regulated_stable_compounding", "Regulated infrastructure can produce stable demand and cash flow, but returns are usually capped by regulation and asset intensity.")
     if keyword_any(industry_text, ["银行", "保险", "证券", "金融"]):
@@ -326,7 +371,7 @@ def industry_outlook(peer_group: str, raw_industry: str, profile_text: str) -> I
     if keyword_any(industry_text, ["机械", "设备", "仪器仪表", "专用设备"]):
         return IndustryOutlook(58, "capex_cycle", "selective_compounding", "Equipment demand follows customer capex cycles; leaders with installed bases and process know-how can compound better than generic capacity suppliers.")
     if resource_leader_signal(industry_text, profile_text):
-        return IndustryOutlook(60, "strategic_resource_cycle", "resource_and_process_compounding", "Commodity prices still create cycles, but scarce reserves, reserve replacement, low-cost development, and global mine integration can support leader-level compounding.")
+        return IndustryOutlook(64, "strategic_resource_cycle", "resource_and_process_compounding", "Commodity prices still create cycles, but scarce reserves, reserve replacement, low-cost development, and global mine integration can support leader-level compounding.")
     if keyword_any(industry_text, ["房地产", "建筑", "装饰", "园林", "建材"]):
         return IndustryOutlook(36, "deep_cyclical_or_structural_headwind", "limited_compounding", "Property-linked demand faces leverage, demographic, and investment-cycle pressure, so capital-heavy growth deserves a lower structural outlook.")
     if keyword_any(industry_text, ["零售", "商贸", "批发", "超市", "百货"]):
@@ -441,6 +486,7 @@ def score_row(
         return base
 
     profile_text = f"{profile.get('org_profile', '')} {profile.get('business_scope', '')}"
+    industry_text = f"{peer_group} {raw.get('industry', '')}"
     prior = industry_prior(peer_group, raw.get("industry", ""), profile_text)
     outlook = industry_outlook(peer_group, raw.get("industry", ""), profile_text)
     revenue_pct = pct(percentiles["total_operating_revenue"], code)
@@ -464,8 +510,25 @@ def score_row(
     keyword_bonus_moat = min(keyword_bonus_moat, 6)
 
     product_process_bonus_tech = 0
-    if keyword_any(profile_text, ["国家地理标志", "有机食品", "典型代表", "传统工艺", "酱香", "发酵", "窖藏", "陈酿", "质量控制", "稀缺产区"]):
+    capability_moat_bonus = 0
+    capability_market_bonus = 0
+    strategic_material = strategic_critical_material_signal(industry_text, profile_text)
+    grid_core_equipment = grid_core_equipment_signal(industry_text, profile_text)
+    baijiu_long_cycle = baijiu_long_cycle_signal(industry_text, profile_text)
+    if baijiu_long_cycle:
+        product_process_bonus_tech += 18
+        capability_moat_bonus += 6
+        capability_market_bonus += 4
+    elif strategic_material:
         product_process_bonus_tech += 10
+        capability_moat_bonus += 8
+        capability_market_bonus += 12
+    elif grid_core_equipment:
+        product_process_bonus_tech += 8
+        capability_moat_bonus += 6
+        capability_market_bonus += 10
+    elif keyword_any(profile_text, ["国家地理标志", "有机食品", "典型代表", "传统工艺", "发酵", "窖藏", "陈酿", "质量控制", "稀缺产区"]):
+        product_process_bonus_tech += 4
 
     keyword_bonus_tech = 0
     if keyword_any(profile_text, ["自主研发", "研发", "发明专利", "核心专利", "核心技术"]):
@@ -478,33 +541,32 @@ def score_row(
         keyword_bonus_tech += 1
     keyword_bonus_tech = min(keyword_bonus_tech, 7)
 
-    business_moat = clamp(prior.business_moat + (revenue_pct - 50) * 0.18 + (profit_pct - 50) * 0.12 + keyword_bonus_moat)
-    technology_barrier = clamp(prior.technology_barrier + (rd_pct - 50) * 0.16 + keyword_bonus_tech + product_process_bonus_tech)
+    business_moat = clamp(prior.business_moat + (revenue_pct - 50) * 0.10 + keyword_bonus_moat + capability_moat_bonus)
+    technology_barrier = clamp(prior.technology_barrier + (rd_pct - 50) * 0.10 + keyword_bonus_tech + product_process_bonus_tech)
     if business_moat >= 90 and product_process_bonus_tech:
-        technology_barrier = max(technology_barrier, 72)
-    market_position = clamp(45 + revenue_pct * 0.35 + profit_pct * 0.30 + (prior.business_moat - 50) * 0.20)
+        technology_barrier = max(technology_barrier, 78 if baijiu_long_cycle else 72)
+    market_position = clamp(45 + revenue_pct * 0.28 + profit_pct * 0.12 + (prior.business_moat - 50) * 0.25 + capability_market_bonus)
     peer_group_size = int(pct(percentiles["peer_group_size"], code))
     if peer_group_size < 10:
         market_position = min(market_position, 88)
     elif peer_group_size < 20:
         market_position = min(market_position, 94)
-    business_quality = clamp(prior.business_quality + (gross_pct - 50) * 0.20 + (net_pct - 50) * 0.22 + (growth_pct - 50) * 0.10)
-    operating_quality = clamp(50 + (roe_pct - 50) * 0.25 + (roic_pct - 50) * 0.20 + (cash_pct - 50) * 0.25 + (debt_safety_pct - 50) * 0.15)
+    business_quality = clamp(prior.business_quality + (gross_pct - 50) * 0.14 + (net_pct - 50) * 0.10 + (growth_pct - 50) * 0.08)
+    operating_quality = clamp(50 + (roe_pct - 50) * 0.16 + (roic_pct - 50) * 0.14 + (cash_pct - 50) * 0.16 + (debt_safety_pct - 50) * 0.10)
     industry_outlook_score = clamp(outlook.score)
-    governance_risk = clamp(70 + (debt_safety_pct - 50) * 0.12)
-    industry_text = f"{peer_group} {raw.get('industry', '')}"
+    governance_risk = clamp(72 + (debt_safety_pct - 50) * 0.06)
     comparable_leader = cross_market_leader_signal(industry_text, profile_text)
     if comparable_leader:
-        technology_barrier = clamp(technology_barrier - 3)
-        market_position = clamp(market_position - 3)
-        governance_risk = clamp(governance_risk - 5)
-        cross_market_note = "Cross-market calibration: global, scarce-resource, regulated, or strong-brand evidence is present, so only the baseline A-share disclosure comparability discount is applied."
+        technology_barrier = clamp(technology_barrier - 2)
+        market_position = clamp(market_position - 2)
+        governance_risk = clamp(governance_risk - 3)
+        cross_market_note = "Cross-market calibration: global, scarce-resource, regulated, strategic-material, grid-equipment, or strong-brand evidence is present, so only the baseline A-share disclosure comparability discount is applied."
     else:
-        business_moat = clamp(business_moat - 7)
-        technology_barrier = clamp(technology_barrier - 11)
-        market_position = clamp(market_position - 9)
-        industry_outlook_score = clamp(industry_outlook_score - 3)
-        governance_risk = clamp(governance_risk - 6)
+        business_moat = clamp(business_moat - 8)
+        technology_barrier = clamp(technology_barrier - 12)
+        market_position = clamp(market_position - 10)
+        industry_outlook_score = clamp(industry_outlook_score - 4)
+        governance_risk = clamp(governance_risk - 4)
         cross_market_note = "Cross-market calibration: no clear global, scarce-resource, regulated, or strong-brand evidence was found, so local peer leadership and promotional profile language are discounted for global comparability."
 
     weighted = weighted_score(
@@ -529,11 +591,11 @@ def score_row(
     confidence = "high" if annual_date and profile.get("org_profile") else "medium"
 
     reasons = {
-        "business_moat_reason": f"Peer group {peer_group}; capital replicability view: {prior.capital_replicability}; revenue and profit peer percentiles are {revenue_pct:.0f}/{profit_pct:.0f}; leadership, brand, license, or exclusivity profile keywords add {keyword_bonus_moat} points. {cross_market_note}",
-        "technology_barrier_reason": f"Technology prior from peer group plus disclosed R&D ratio percentile {rd_pct:.0f}; board and profile technology keywords add {keyword_bonus_tech} points; product/process/origin keywords add {product_process_bonus_tech} points. {cross_market_note}",
-        "market_position_reason": f"Market position uses revenue RMB {revenue} and parent net profit RMB {net_profit} relative to peer group percentiles {revenue_pct:.0f}/{profit_pct:.0f}; peer group size is {peer_group_size}, so narrow local peer groups are capped below global-leader scores. {cross_market_note}",
-        "business_quality_reason": f"Business quality uses gross margin {gross_margin}% net margin {financial.get('net_margin_pct', '')}% and revenue growth {financial.get('revenue_yoy_pct', '')}% against peers.",
-        "operating_quality_reason": f"Operating quality uses ROE {roe}% ROIC {financial.get('roic_pct', '')}% cash-flow-to-revenue {financial.get('cashflow_to_revenue_pct', '')}% and debt ratio {debt_ratio}%.",
+        "business_moat_reason": f"Peer group {peer_group}; capability-first capital replicability view: {prior.capital_replicability}; revenue peer percentile is {revenue_pct:.0f}; current profit percentile {profit_pct:.0f} is recorded but not used directly in moat scoring; leadership, brand, license, or exclusivity profile keywords add {keyword_bonus_moat} points and strategic capability adds {capability_moat_bonus} points. {cross_market_note}",
+        "technology_barrier_reason": f"Technology prior from peer group plus disclosed R&D ratio percentile {rd_pct:.0f}; board and profile technology keywords add {keyword_bonus_tech} points; product/process/origin/strategic-material/grid-equipment capability adds {product_process_bonus_tech} points. {cross_market_note}",
+        "market_position_reason": f"Market position uses revenue RMB {revenue} and parent net profit RMB {net_profit} relative to peer group percentiles {revenue_pct:.0f}/{profit_pct:.0f}, but current profit has lower weight in v0.4; strategic capability adds {capability_market_bonus} points; peer group size is {peer_group_size}, so narrow local peer groups are capped below global-leader scores. {cross_market_note}",
+        "business_quality_reason": f"Business quality uses gross margin {gross_margin}% net margin {financial.get('net_margin_pct', '')}% and revenue growth {financial.get('revenue_yoy_pct', '')}% against peers, with lower weight than capability dimensions in v0.4.",
+        "operating_quality_reason": f"Operating quality uses ROE {roe}% ROIC {financial.get('roic_pct', '')}% cash-flow-to-revenue {financial.get('cashflow_to_revenue_pct', '')}% and debt ratio {debt_ratio}%; it constrains risk but no longer dominates the watchlist score in v0.4.",
         "industry_outlook_reason": f"{outlook.reason} {cross_market_note}",
         "governance_risk_reason": f"Governance and risk score starts from public disclosure availability and adjusts for balance-sheet pressure; latest annual evidence date is {annual_date or 'not identified'}. {cross_market_note}",
     }
@@ -568,7 +630,7 @@ def score_row(
             "governance_risk_reason": reasons["governance_risk_reason"],
             "weighted_total_score": fmt_score(weighted),
             "overall_level": level(weighted),
-            "overall_reason": f"Weighted score from seven stored dimensions, including industry outlook and cyclicality profile {outlook.cyclicality_profile}. This first-pass algorithmic score is evidence-backed by Eastmoney F10 profile and financial indicators; R&D ratio is {rd_ratio or 'not disclosed'}%.",
+            "overall_reason": f"Weighted score from seven stored dimensions using the v0.4 capability-first weights, including industry outlook and cyclicality profile {outlook.cyclicality_profile}. This first-pass algorithmic score is evidence-backed by Eastmoney F10 profile and financial indicators; R&D ratio is {rd_ratio or 'not disclosed'}%.",
             "evidence_confidence": confidence,
         }
     )

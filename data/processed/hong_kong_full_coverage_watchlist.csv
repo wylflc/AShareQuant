@@ -1,519 +1,525 @@
 ﻿security_code,security_name,score_total,score_business_moat,score_technology_barrier,score_market_position,score_business_quality,score_operating_quality,score_industry_outlook,score_governance_risk,peer_group,peer_relative_position,scoring_model_version
-01530,3SBIO,总分-81.81,护城河-89.93,技术壁垒-87.95,市场地位-100.00,商业质量-83.53,经营质量-60.90,行业前景-70.00,治理风险-62.16,药品及生物科技,stronger_than_peers,full_coverage_dimensional_v0.3
-09911,NEWBORNTOWN,总分-81.03,护城河-89.36,技术壁垒-83.31,市场地位-100.00,商业质量-77.84,经营质量-62.18,行业前景-78.00,治理风险-62.21,媒体及娱乐,stronger_than_peers,full_coverage_dimensional_v0.3
-09999,NTES-S,总分-81.01,护城河-91.60,技术壁垒-84.00,市场地位-100.00,商业质量-74.13,经营质量-61.16,行业前景-78.00,治理风险-62.41,软件服务,stronger_than_peers,full_coverage_dimensional_v0.3
-01318,MAO GEPING,总分-80.90,护城河-89.56,技术壁垒-87.87,市场地位-100.00,商业质量-77.95,经营质量-60.64,行业前景-70.00,治理风险-62.19,其他医疗保健,stronger_than_peers,full_coverage_dimensional_v0.3
-01860,MOBVISTA,总分-80.52,护城河-89.88,技术壁垒-83.10,市场地位-100.00,商业质量-73.01,经营质量-62.17,行业前景-78.00,治理风险-63.27,媒体及娱乐,stronger_than_peers,full_coverage_dimensional_v0.3
-00696,TRAVELSKY TECH,总分-80.45,护城河-90.69,技术壁垒-83.31,市场地位-100.00,商业质量-75.28,经营质量-57.72,行业前景-78.00,治理风险-63.54,软件服务,stronger_than_peers,full_coverage_dimensional_v0.3
-09626,BILIBILI-W,总分-80.44,护城河-90.55,技术壁垒-83.72,市场地位-100.00,商业质量-71.90,经营质量-60.05,行业前景-78.00,治理风险-64.65,媒体及娱乐,stronger_than_peers,full_coverage_dimensional_v0.3
-03355,FS.COM,总分-80.41,护城河-88.23,技术壁垒-83.47,市场地位-100.00,商业质量-75.70,经营质量-61.25,行业前景-78.00,治理风险-62.49,软件服务,stronger_than_peers,full_coverage_dimensional_v0.3
-02269,WUXI BIO,总分-80.36,护城河-89.85,技术壁垒-87.36,市场地位-100.00,商业质量-74.91,经营质量-59.24,行业前景-70.00,治理风险-63.53,药品及生物科技,stronger_than_peers,full_coverage_dimensional_v0.3
-02373,BEAUTYFARM MED,总分-80.34,护城河-87.88,技术壁垒-87.62,市场地位-100.00,商业质量-72.17,经营质量-64.35,行业前景-70.00,治理风险-64.02,其他医疗保健,stronger_than_peers,full_coverage_dimensional_v0.3
-09898,WB-SW,总分-80.31,护城河-90.66,技术壁垒-84.00,市场地位-100.00,商业质量-70.92,经营质量-60.17,行业前景-78.00,治理风险-63.59,媒体及娱乐,stronger_than_peers,full_coverage_dimensional_v0.3
-01024,KUAISHOU-W,总分-80.15,护城河-91.74,技术壁垒-83.79,市场地位-100.00,商业质量-74.24,经营质量-54.94,行业前景-78.00,治理风险-62.53,媒体及娱乐,stronger_than_peers,full_coverage_dimensional_v0.3
-81024,KUAISHOU-WR,总分-80.15,护城河-91.74,技术壁垒-83.79,市场地位-100.00,商业质量-74.24,经营质量-54.94,行业前景-78.00,治理风险-62.53,媒体及娱乐,stronger_than_peers,full_coverage_dimensional_v0.3
-00700,TENCENT,总分-80.04,护城河-91.80,技术壁垒-83.89,市场地位-100.00,商业质量-76.13,经营质量-50.65,行业前景-78.00,治理风险-64.92,软件服务,stronger_than_peers,full_coverage_dimensional_v0.3
-80700,TENCENT-R,总分-80.04,护城河-91.80,技术壁垒-83.89,市场地位-100.00,商业质量-76.13,经营质量-50.65,行业前景-78.00,治理风险-64.92,软件服务,stronger_than_peers,full_coverage_dimensional_v0.3
-02666,UNI MEDICAL,总分-79.96,护城河-87.00,技术壁垒-87.36,市场地位-100.00,商业质量-72.37,经营质量-61.70,行业前景-70.00,治理风险-66.61,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-02276,CONANT OPTICAL,总分-79.92,护城河-87.64,技术壁垒-87.49,市场地位-100.00,商业质量-75.46,经营质量-59.48,行业前景-70.00,治理风险-62.48,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-01698,TME-SW,总分-79.87,护城河-90.14,技术壁垒-83.24,市场地位-100.00,商业质量-73.79,经营质量-54.88,行业前景-78.00,治理风险-65.50,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-00917,QUNABOX GROUP,总分-79.85,护城河-86.83,技术壁垒-83.45,市场地位-100.00,商业质量-75.11,经营质量-59.95,行业前景-78.00,治理风险-62.74,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-09698,GDS-SW,总分-79.80,护城河-90.65,技术壁垒-83.15,市场地位-100.00,商业质量-67.77,经营质量-59.05,行业前景-78.00,治理风险-66.70,软件服务,above_average,full_coverage_dimensional_v0.3
-02359,WUXI APPTEC,总分-79.78,护城河-89.05,技术壁垒-87.68,市场地位-100.00,商业质量-75.86,经营质量-54.41,行业前景-70.00,治理风险-64.66,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-09636,JF SMARTINVEST,总分-79.69,护城河-88.66,技术壁垒-83.52,市场地位-100.00,商业质量-69.99,经营质量-61.25,行业前景-78.00,治理风险-62.16,软件服务,above_average,full_coverage_dimensional_v0.3
-03692,HANSOH PHARMA,总分-79.55,护城河-85.61,技术壁垒-87.10,市场地位-100.00,商业质量-77.90,经营质量-58.02,行业前景-70.00,治理风险-62.56,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-00992,LENOVO GROUP,总分-79.53,护城河-90.23,技术壁垒-83.21,市场地位-100.00,商业质量-67.94,经营质量-58.46,行业前景-78.00,治理风险-65.05,资讯科技器材,above_average,full_coverage_dimensional_v0.3
-80992,LENOVO GROUP-R,总分-79.53,护城河-90.23,技术壁垒-83.21,市场地位-100.00,商业质量-67.94,经营质量-58.46,行业前景-78.00,治理风险-65.05,资讯科技器材,above_average,full_coverage_dimensional_v0.3
-09899,NETEASE MUSIC,总分-79.52,护城河-83.09,技术壁垒-83.93,市场地位-100.00,商业质量-76.90,经营质量-61.31,行业前景-78.00,治理风险-62.32,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-06618,JD HEALTH,总分-79.51,护城河-90.28,技术壁垒-87.79,市场地位-100.00,商业质量-68.56,经营质量-58.11,行业前景-70.00,治理风险-63.93,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-86618,JD HEALTH-R,总分-79.51,护城河-90.28,技术壁垒-87.79,市场地位-100.00,商业质量-68.56,经营质量-58.11,行业前景-70.00,治理风险-63.93,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-02696,HENLIUS,总分-79.48,护城河-86.55,技术壁垒-87.63,市场地位-100.00,商业质量-70.93,经营质量-61.69,行业前景-70.00,治理风险-63.77,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-00136,CHINA RUYI,总分-79.46,护城河-88.48,技术壁垒-82.55,市场地位-100.00,商业质量-74.36,经营质量-56.02,行业前景-78.00,治理风险-63.49,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-03320,CHINARES PHARMA,总分-79.43,护城河-90.52,技术壁垒-86.89,市场地位-100.00,商业质量-66.75,经营质量-58.66,行业前景-70.00,治理风险-66.43,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-01896,MAOYAN ENT,总分-79.42,护城河-84.84,技术壁垒-83.17,市场地位-100.00,商业质量-77.47,经营质量-57.22,行业前景-78.00,治理风险-64.12,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-01681,CONSUN PHARMA,总分-79.38,护城河-85.60,技术壁垒-87.52,市场地位-100.00,商业质量-75.23,经营质量-59.10,行业前景-70.00,治理风险-62.40,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-03888,KINGSOFT,总分-79.31,护城河-86.85,技术壁垒-83.42,市场地位-100.00,商业质量-73.17,经营质量-57.42,行业前景-78.00,治理风险-63.86,软件服务,above_average,full_coverage_dimensional_v0.3
-01450,BE FRIENDS HLDG,总分-79.29,护城河-85.59,技术壁垒-81.79,市场地位-99.58,商业质量-75.80,经营质量-59.54,行业前景-78.00,治理风险-63.17,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-06887,SUNSHINE PHARMA,总分-79.29,护城河-85.04,技术壁垒-86.68,市场地位-99.82,商业质量-72.28,经营质量-61.66,行业前景-70.00,治理风险-65.70,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-03296,HUAQIN,总分-79.24,护城河-88.07,技术壁垒-83.48,市场地位-100.00,商业质量-70.68,经营质量-55.54,行业前景-78.00,治理风险-67.08,资讯科技器材,above_average,full_coverage_dimensional_v0.3
-06699,ANGELALIGN,总分-79.15,护城河-86.58,技术壁垒-87.42,市场地位-100.00,商业质量-71.96,经营质量-57.60,行业前景-70.00,治理风险-65.36,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-00853,MICROPORT,总分-79.13,护城河-89.32,技术壁垒-85.82,市场地位-100.00,商业质量-68.28,经营质量-57.49,行业前景-70.00,治理风险-67.76,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-02416,EDIANYUN,总分-79.13,护城河-85.68,技术壁垒-82.68,市场地位-99.86,商业质量-73.55,经营质量-58.32,行业前景-78.00,治理风险-64.43,软件服务,above_average,full_coverage_dimensional_v0.3
-02400,XD INC,总分-79.02,护城河-82.81,技术壁垒-83.74,市场地位-100.00,商业质量-73.66,经营质量-61.84,行业前景-78.00,治理风险-62.00,软件服务,above_average,full_coverage_dimensional_v0.3
-01177,SBP GROUP,总分-79.01,护城河-89.77,技术壁垒-85.46,市场地位-100.00,商业质量-67.34,经营质量-58.91,行业前景-70.00,治理风险-64.98,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-09890,TANWAN,总分-78.98,护城河-89.14,技术壁垒-83.63,市场地位-100.00,商业质量-75.69,经营质量-49.66,行业前景-78.00,治理风险-62.08,软件服务,above_average,full_coverage_dimensional_v0.3
-00981,SMIC,总分-78.96,护城河-88.00,技术壁垒-89.43,市场地位-100.00,商业质量-65.93,经营质量-55.15,行业前景-72.00,治理风险-66.89,半导体,above_average,full_coverage_dimensional_v0.3
-06998,EDDING GENOR,总分-78.96,护城河-84.32,技术壁垒-85.93,市场地位-98.83,商业质量-78.40,经营质量-57.14,行业前景-70.00,治理风险-64.17,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-01970,IMAX CHINA,总分-78.95,护城河-84.55,技术壁垒-83.38,市场地位-97.86,商业质量-75.26,经营质量-59.06,行业前景-78.00,治理风险-62.96,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-01729,TIME INTERCON,总分-78.88,护城河-86.69,技术壁垒-82.30,市场地位-100.00,商业质量-71.41,经营质量-58.45,行业前景-78.00,治理风险-62.61,资讯科技器材,above_average,full_coverage_dimensional_v0.3
-02525,HESAI-W,总分-78.86,护城河-88.11,技术壁垒-83.68,市场地位-100.00,商业质量-75.33,经营质量-49.57,行业前景-78.00,治理风险-64.03,软件服务,above_average,full_coverage_dimensional_v0.3
-01810,XIAOMI-W,总分-78.83,护城河-84.21,技术壁垒-83.74,市场地位-100.00,商业质量-71.71,经营质量-59.66,行业前景-78.00,治理风险-63.02,资讯科技器材,above_average,full_coverage_dimensional_v0.3
-81810,XIAOMI-WR,总分-78.83,护城河-84.21,技术壁垒-83.74,市场地位-100.00,商业质量-71.71,经营质量-59.66,行业前景-78.00,治理风险-63.02,资讯科技器材,above_average,full_coverage_dimensional_v0.3
-03933,UNITED LAB,总分-78.80,护城河-86.00,技术壁垒-88.00,市场地位-100.00,商业质量-62.33,经营质量-64.50,行业前景-70.00,治理风险-66.00,医疗保健,above_average,full_coverage_dimensional_v0.3
-01789,AK MEDICAL,总分-78.79,护城河-85.34,技术壁垒-86.21,市场地位-100.00,商业质量-76.33,经营质量-55.39,行业前景-70.00,治理风险-63.15,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-02268,WUXI XDC,总分-78.79,护城河-83.11,技术壁垒-87.36,市场地位-100.00,商业质量-75.35,经营质量-58.60,行业前景-70.00,治理风险-62.81,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-02877,SHINEWAY PHARM,总分-78.76,护城河-85.40,技术壁垒-87.47,市场地位-100.00,商业质量-71.97,经营质量-57.72,行业前景-70.00,治理风险-63.37,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-01075,CAPINFO,总分-78.74,护城河-82.08,技术壁垒-82.99,市场地位-100.00,商业质量-75.42,经营质量-58.99,行业前景-78.00,治理风险-64.11,软件服务,above_average,full_coverage_dimensional_v0.3
-00268,KINGDEE INT'L,总分-78.71,护城河-87.87,技术壁垒-81.40,市场地位-100.00,商业质量-69.39,经营质量-55.83,行业前景-78.00,治理风险-67.43,软件服务,above_average,full_coverage_dimensional_v0.3
-01515,CR MEDICAL,总分-78.66,护城河-89.75,技术壁垒-86.66,市场地位-100.00,商业质量-63.56,经营质量-58.43,行业前景-70.00,治理风险-65.46,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-01066,WEIGAO GROUP,总分-78.63,护城河-86.52,技术壁垒-86.53,市场地位-100.00,商业质量-68.62,经营质量-58.62,行业前景-70.00,治理风险-65.07,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-02273,GUSHENGTANG,总分-78.60,护城河-88.41,技术壁垒-87.68,市场地位-100.00,商业质量-70.08,经营质量-53.46,行业前景-70.00,治理风险-63.34,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-02145,CHICMAX,总分-78.55,护城河-86.18,技术壁垒-79.94,市场地位-100.00,商业质量-75.91,经营质量-61.46,行业前景-70.00,治理风险-62.10,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-06869,YOFC,总分-78.55,护城河-83.74,技术壁垒-82.82,市场地位-95.82,商业质量-79.91,经营质量-53.42,行业前景-78.00,治理风险-66.68,资讯科技器材,above_average,full_coverage_dimensional_v0.3
-00013,HUTCHMED,总分-78.43,护城河-87.11,技术壁垒-88.00,市场地位-100.00,商业质量-71.64,经营质量-53.07,行业前景-70.00,治理风险-62.08,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-02096,SIMCERE PHARMA,总分-78.39,护城河-83.46,技术壁垒-86.62,市场地位-100.00,商业质量-74.22,经营质量-57.12,行业前景-70.00,治理风险-63.13,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-01276,HENGRUI PHARMA,总分-78.38,护城河-88.14,技术壁垒-86.30,市场地位-100.00,商业质量-73.06,经营质量-50.19,行业前景-70.00,治理风险-65.06,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-02142,HBM HOLDINGS-B,总分-78.34,护城河-82.06,技术壁垒-87.05,市场地位-94.56,商业质量-80.57,经营质量-58.01,行业前景-70.00,治理风险-62.24,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-01112,H&H INTL HLDG,总分-78.32,护城河-84.94,技术壁垒-86.27,市场地位-100.00,商业质量-67.25,经营质量-58.70,行业前景-70.00,治理风险-68.34,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-03600,MODERN DENTAL,总分-78.32,护城河-88.84,技术壁垒-78.91,市场地位-100.00,商业质量-75.07,经营质量-57.47,行业前景-70.00,治理风险-62.67,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-00856,VSTECS,总分-78.30,护城河-84.09,技术壁垒-83.36,市场地位-100.00,商业质量-66.13,经营质量-61.23,行业前景-78.00,治理风险-64.59,软件服务,above_average,full_coverage_dimensional_v0.3
-00327,PAX GLOBAL,总分-78.29,护城河-85.31,技术壁垒-83.08,市场地位-99.10,商业质量-73.57,经营质量-53.85,行业前景-78.00,治理风险-63.22,资讯科技器材,above_average,full_coverage_dimensional_v0.3
-00285,BYD ELECTRONIC,总分-78.28,护城河-89.54,技术壁垒-83.61,市场地位-100.00,商业质量-64.35,经营质量-54.26,行业前景-78.00,治理风险-64.03,资讯科技器材,above_average,full_coverage_dimensional_v0.3
-00354,CHINASOFT INT'L,总分-78.25,护城河-90.21,技术壁垒-82.20,市场地位-100.00,商业质量-61.16,经营质量-56.88,行业前景-78.00,治理风险-66.05,软件服务,above_average,full_coverage_dimensional_v0.3
-03738,VOBILE GROUP,总分-78.22,护城河-87.31,技术壁垒-81.88,市场地位-100.00,商业质量-69.23,经营质量-54.54,行业前景-78.00,治理风险-64.35,软件服务,above_average,full_coverage_dimensional_v0.3
-00861,DC HOLDINGS,总分-78.19,护城河-87.71,技术壁垒-81.19,市场地位-100.00,商业质量-68.86,经营质量-52.96,行业前景-78.00,治理风险-67.84,软件服务,above_average,full_coverage_dimensional_v0.3
-00777,NETDRAGON,总分-78.10,护城河-88.15,技术壁垒-82.78,市场地位-100.00,商业质量-63.63,经营质量-55.65,行业前景-78.00,治理风险-66.30,软件服务,above_average,full_coverage_dimensional_v0.3
-02038,FIH,总分-78.08,护城河-87.38,技术壁垒-82.56,市场地位-100.00,商业质量-69.59,经营质量-50.99,行业前景-78.00,治理风险-66.47,资讯科技器材,above_average,full_coverage_dimensional_v0.3
-01501,INT MEDICAL,总分-78.05,护城河-79.51,技术壁垒-87.55,市场地位-97.48,商业质量-77.37,经营质量-58.74,行业前景-70.00,治理风险-63.73,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-09885,YSB,总分-78.00,护城河-86.39,技术壁垒-85.83,市场地位-100.00,商业质量-66.81,经营质量-56.60,行业前景-70.00,治理风险-65.79,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-00512,GRAND PHARMA,总分-77.98,护城河-87.90,技术壁垒-86.15,市场地位-100.00,商业质量-64.01,经营质量-57.25,行业前景-70.00,治理风险-64.50,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-02196,FOSUN PHARMA,总分-77.98,护城河-87.34,技术壁垒-86.20,市场地位-100.00,商业质量-67.39,经营质量-53.19,行业前景-70.00,治理风险-67.15,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-06160,BEONE MEDICINES,总分-77.95,护城河-84.34,技术壁垒-87.26,市场地位-100.00,商业质量-73.22,经营质量-50.00,行业前景-70.00,治理风险-68.00,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-00799,IGG,总分-77.93,护城河-88.98,技术壁垒-75.10,市场地位-100.00,商业质量-67.80,经营质量-60.78,行业前景-78.00,治理风险-62.89,软件服务,above_average,full_coverage_dimensional_v0.3
-02313,SHENZHOU INTL,总分-77.92,护城河-98.61,技术壁垒-56.68,市场地位-100.00,商业质量-82.17,经营质量-60.54,行业前景-70.00,治理风险-63.10,纺织及服饰,above_average,full_coverage_dimensional_v0.3
-02367,GIANT BIOGENE,总分-77.92,护城河-83.04,技术壁垒-87.74,市场地位-100.00,商业质量-68.56,经营质量-59.09,行业前景-70.00,治理风险-62.29,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-02586,DMALL,总分-77.91,护城河-86.68,技术壁垒-74.30,市场地位-100.00,商业质量-74.15,经营质量-58.62,行业前景-78.00,治理风险-63.46,软件服务,above_average,full_coverage_dimensional_v0.3
-02660,ZENGAME,总分-77.91,护城河-79.72,技术壁垒-82.83,市场地位-100.00,商业质量-76.42,经营质量-56.58,行业前景-78.00,治理风险-62.97,软件服务,above_average,full_coverage_dimensional_v0.3
-00241,ALI HEALTH,总分-77.89,护城河-88.46,技术壁垒-85.09,市场地位-100.00,商业质量-64.25,经营质量-56.99,行业前景-70.00,治理风险-64.26,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-01357,MEITU,总分-77.85,护城河-81.33,技术壁垒-82.69,市场地位-100.00,商业质量-72.92,经营质量-57.08,行业前景-78.00,治理风险-63.38,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-09888,BIDU-SW,总分-77.84,护城河-91.22,技术壁垒-83.59,市场地位-100.00,商业质量-63.90,经营质量-47.93,行业前景-78.00,治理风险-65.82,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-89888,BIDU-SWR,总分-77.84,护城河-91.22,技术壁垒-83.59,市场地位-100.00,商业质量-63.90,经营质量-47.93,行业前景-78.00,治理风险-65.82,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-00552,CHINACOMSERVICE,总分-77.83,护城河-89.44,技术壁垒-82.69,市场地位-100.00,商业质量-63.10,经营质量-52.98,行业前景-78.00,治理风险-65.25,资讯科技器材,above_average,full_coverage_dimensional_v0.3
-02556,MARKETINGFORCE,总分-77.82,护城河-86.00,技术壁垒-82.94,市场地位-99.99,商业质量-74.90,经营质量-45.98,行业前景-78.00,治理风险-65.57,软件服务,above_average,full_coverage_dimensional_v0.3
-01513,LIVZON PHARMA,总分-77.72,护城河-84.84,技术壁垒-86.94,市场地位-99.92,商业质量-69.00,经营质量-53.63,行业前景-70.00,治理风险-65.62,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-02020,ANTA SPORTS,总分-77.72,护城河-95.52,技术壁垒-56.76,市场地位-100.00,商业质量-83.82,经营质量-62.33,行业前景-70.00,治理风险-62.86,纺织及服饰,above_average,full_coverage_dimensional_v0.3
-82020,ANTA SPORTS-R,总分-77.72,护城河-95.52,技术壁垒-56.76,市场地位-100.00,商业质量-83.82,经营质量-62.33,行业前景-70.00,治理风险-62.86,纺织及服饰,above_average,full_coverage_dimensional_v0.3
-01302,LIFETECH SCI,总分-77.71,护城河-83.51,技术壁垒-84.61,市场地位-97.16,商业质量-72.42,经营质量-57.69,行业前景-70.00,治理风险-66.13,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-01763,CIRC,总分-77.68,护城河-86.07,技术壁垒-87.15,市场地位-100.00,商业质量-62.37,经营质量-57.56,行业前景-70.00,治理风险-65.87,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-01686,SUNEVISION,总分-77.67,护城河-75.04,技术壁垒-82.15,市场地位-100.00,商业质量-76.39,经营质量-61.65,行业前景-78.00,治理风险-65.65,软件服务,above_average,full_coverage_dimensional_v0.3
-03700,INKEVERSE,总分-77.63,护城河-88.38,技术壁垒-82.76,市场地位-100.00,商业质量-63.86,经营质量-52.91,行业前景-78.00,治理风险-64.23,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-00867,CMS,总分-77.62,护城河-84.02,技术壁垒-86.83,市场地位-100.00,商业质量-69.50,经营质量-54.92,行业前景-70.00,治理风险-63.61,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-01588,CHANJET,总分-77.60,护城河-83.30,技术壁垒-82.73,市场地位-94.69,商业质量-72.60,经营质量-57.33,行业前景-78.00,治理风险-64.19,软件服务,above_average,full_coverage_dimensional_v0.3
-01833,PA GOODDOCTOR,总分-77.59,护城河-82.22,技术壁垒-85.76,市场地位-100.00,商业质量-72.34,经营质量-54.32,行业前景-70.00,治理风险-66.61,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-02509,QYUNS-B,总分-77.56,护城河-76.63,技术壁垒-87.58,市场地位-91.38,商业质量-83.01,经营质量-61.00,行业前景-70.00,治理风险-62.32,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-01347,HUA HONG SEMI,总分-77.53,护城河-86.93,技术壁垒-88.29,市场地位-100.00,商业质量-59.50,经营质量-54.26,行业前景-72.00,治理风险-67.33,半导体,above_average,full_coverage_dimensional_v0.3
-06051,YOUZAN,总分-77.45,护城河-78.92,技术壁垒-80.45,市场地位-100.00,商业质量-71.49,经营质量-61.34,行业前景-78.00,治理风险-65.08,软件服务,above_average,full_coverage_dimensional_v0.3
-03396,LEGENDHOLDING,总分-77.44,护城河-79.43,技术壁垒-82.43,市场地位-100.00,商业质量-71.00,经营质量-56.48,行业前景-78.00,治理风险-68.51,资讯科技器材,above_average,full_coverage_dimensional_v0.3
-03689,KANGHUA HEALTH,总分-77.41,护城河-85.00,技术壁垒-86.14,市场地位-99.68,商业质量-64.23,经营质量-57.16,行业前景-70.00,治理风险-65.74,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-02306,YH ENT,总分-77.40,护城河-84.09,技术壁垒-82.07,市场地位-96.43,商业质量-71.56,经营质量-54.47,行业前景-78.00,治理风险-64.76,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-01696,SISRAM MED,总分-77.34,护城河-85.67,技术壁垒-86.08,市场地位-100.00,商业质量-65.87,经营质量-53.42,行业前景-70.00,治理风险-66.22,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-02190,ZYLOXTB,总分-77.30,护城河-76.56,技术壁垒-87.23,市场地位-97.68,商业质量-79.71,经营质量-55.76,行业前景-70.00,治理风险-63.92,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-00522,ASMPT,总分-77.28,护城河-84.57,技术壁垒-89.14,市场地位-100.00,商业质量-64.24,经营质量-50.00,行业前景-72.00,治理风险-68.00,半导体,above_average,full_coverage_dimensional_v0.3
-00334,CH DISPLAY OPT,总分-77.25,护城河-84.52,技术壁垒-81.38,市场地位-96.81,商业质量-72.56,经营质量-52.45,行业前景-78.00,治理风险-64.44,资讯科技器材,above_average,full_coverage_dimensional_v0.3
-03798,HOMELAND ITL,总分-77.19,护城河-83.54,技术壁垒-81.62,市场地位-94.89,商业质量-73.31,经营质量-53.92,行业前景-78.00,治理风险-65.24,软件服务,above_average,full_coverage_dimensional_v0.3
-02219,CHAOJU EYE CARE,总分-77.16,护城河-83.56,技术壁垒-85.95,市场地位-97.36,商业质量-69.68,经营质量-55.41,行业前景-70.00,治理风险-64.59,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-01523,PLOVER BAY TECH,总分-77.10,护城河-80.79,技术壁垒-82.16,市场地位-89.76,商业质量-77.88,经营质量-59.33,行业前景-78.00,治理风险-62.00,资讯科技器材,above_average,full_coverage_dimensional_v0.3
-02458,GALA TECH HOLD,总分-77.09,护城河-82.62,技术壁垒-83.26,市场地位-93.60,商业质量-67.93,经营质量-60.67,行业前景-78.00,治理风险-62.73,软件服务,above_average,full_coverage_dimensional_v0.3
-01361,361 DEGREES,总分-77.04,护城河-96.00,技术壁垒-55.87,市场地位-100.00,商业质量-84.54,经营质量-56.66,行业前景-70.00,治理风险-63.71,纺织及服饰,above_average,full_coverage_dimensional_v0.3
-02192,MEDLIVE,总分-77.03,护城河-81.64,技术壁垒-86.78,市场地位-94.16,商业质量-76.92,经营质量-52.54,行业前景-70.00,治理风险-64.30,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-03869,HOSPITAL CORP,总分-77.01,护城河-76.75,技术壁垒-87.30,市场地位-97.52,商业质量-68.45,经营质量-64.17,行业前景-70.00,治理风险-64.88,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-01675,ASIAINFO TECH,总分-76.99,护城河-88.23,技术壁垒-82.25,市场地位-100.00,商业质量-62.75,经营质量-48.82,行业前景-78.00,治理风险-66.95,软件服务,above_average,full_coverage_dimensional_v0.3
-02331,LI NING,总分-76.99,护城河-97.88,技术壁垒-56.03,市场地位-100.00,商业质量-81.73,经营质量-55.62,行业前景-70.00,治理风险-64.33,纺织及服饰,above_average,full_coverage_dimensional_v0.3
-82331,LI NING-R,总分-76.99,护城河-97.88,技术壁垒-56.03,市场地位-100.00,商业质量-81.73,经营质量-55.62,行业前景-70.00,治理风险-64.33,纺织及服饰,above_average,full_coverage_dimensional_v0.3
-00780,TONGCHENGTRAVEL,总分-76.96,护城河-98.42,技术壁垒-56.58,市场地位-100.00,商业质量-80.81,经营质量-54.85,行业前景-70.00,治理风险-64.12,酒店、赌场及消闲设施,above_average,full_coverage_dimensional_v0.3
-06929,ORBUSNEICH,总分-76.94,护城河-80.09,技术壁垒-86.46,市场地位-98.76,商业质量-75.41,经营质量-52.26,行业前景-70.00,治理风险-63.25,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-02282,MGM CHINA,总分-76.91,护城河-96.00,技术壁垒-49.00,市场地位-100.00,商业质量-87.11,经营质量-62.56,行业前景-70.00,治理风险-62.71,酒店、赌场及消闲设施,above_average,full_coverage_dimensional_v0.3
-02005,SSY GROUP,总分-76.85,护城河-85.48,技术壁垒-85.67,市场地位-100.00,商业质量-62.28,经营质量-55.14,行业前景-70.00,治理风险-64.82,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-00400,INGDAN,总分-76.84,护城河-85.43,技术壁垒-87.43,市场地位-100.00,商业质量-62.58,经营质量-50.71,行业前景-72.00,治理风险-65.56,半导体,above_average,full_coverage_dimensional_v0.3
-00836,CHINA RES POWER,总分-76.83,护城河-99.28,技术壁垒-53.47,市场地位-100.00,商业质量-80.94,经营质量-62.44,行业前景-62.00,治理风险-63.64,公用事业,above_average,full_coverage_dimensional_v0.3
-06810,SUNMI TECH-W,总分-76.80,护城河-79.25,技术壁垒-82.95,市场地位-94.43,商业质量-75.79,经营质量-54.99,行业前景-78.00,治理风险-63.83,资讯科技器材,above_average,full_coverage_dimensional_v0.3
-02157,LEPU BIO,总分-76.73,护城河-80.55,技术壁垒-85.72,市场地位-91.05,商业质量-79.76,经营质量-54.28,行业前景-70.00,治理风险-63.29,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-02166,SMART-CORE,总分-76.72,护城河-83.50,技术壁垒-88.57,市场地位-100.00,商业质量-67.26,经营质量-48.32,行业前景-72.00,治理风险-62.89,半导体,above_average,full_coverage_dimensional_v0.3
-01993,ASIARAY,总分-76.65,护城河-82.69,技术壁垒-72.97,市场地位-92.86,商业质量-71.01,经营质量-65.97,行业前景-78.00,治理风险-66.78,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-00811,XINHUA WINSHARE,总分-76.62,护城河-87.09,技术壁垒-82.97,市场地位-100.00,商业质量-68.26,经营质量-41.95,行业前景-78.00,治理风险-66.14,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-01526,RICI HEALTH,总分-76.62,护城河-83.50,技术壁垒-77.89,市场地位-100.00,商业质量-69.86,经营质量-59.22,行业前景-70.00,治理风险-64.50,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-01913,PRADA,总分-76.60,护城河-94.91,技术壁垒-48.60,市场地位-100.00,商业质量-86.01,经营质量-63.03,行业前景-70.00,治理风险-63.84,纺织及服饰,above_average,full_coverage_dimensional_v0.3
-01060,DAMAI ENT,总分-76.59,护城河-81.28,技术壁垒-81.24,市场地位-100.00,商业质量-69.24,经营质量-52.59,行业前景-78.00,治理风险-65.40,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-01187,COFOE MEDICAL,总分-76.59,护城河-81.93,技术壁垒-86.85,市场地位-93.76,商业质量-71.84,经营质量-52.43,行业前景-70.00,治理风险-67.57,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-02279,YONGHE MEDICAL,总分-76.58,护城河-79.75,技术壁垒-85.50,市场地位-96.72,商业质量-68.98,经营质量-58.73,行业前景-70.00,治理风险-65.26,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-06820,FRIENDTIMES,总分-76.57,护城河-83.70,技术壁垒-81.56,市场地位-95.55,商业质量-69.89,经营质量-53.01,行业前景-78.00,治理风险-63.70,软件服务,above_average,full_coverage_dimensional_v0.3
-03309,C-MER MEDICAL,总分-76.56,护城河-84.09,技术壁垒-85.12,市场地位-97.64,商业质量-67.09,经营质量-53.00,行业前景-70.00,治理风险-65.65,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-00763,ZTE,总分-76.51,护城河-87.87,技术壁垒-81.90,市场地位-100.00,商业质量-67.14,经营质量-41.61,行业前景-78.00,治理风险-67.69,资讯科技器材,above_average,full_coverage_dimensional_v0.3
-06608,BAIRONG-W,总分-76.48,护城河-85.80,技术壁垒-82.36,市场地位-99.43,商业质量-60.13,经营质量-52.15,行业前景-78.00,治理风险-66.78,软件服务,above_average,full_coverage_dimensional_v0.3
-06669,ACOTEC-B,总分-76.43,护城河-80.15,技术壁垒-86.72,市场地位-90.36,商业质量-76.21,经营质量-55.29,行业前景-70.00,治理风险-64.11,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-00085,CE HUADA TECH,总分-76.42,护城河-83.07,技术壁垒-87.14,市场地位-100.00,商业质量-62.48,经营质量-52.71,行业前景-72.00,治理风险-64.22,半导体,above_average,full_coverage_dimensional_v0.3
-01948,UJU HOLDING,总分-76.38,护城河-81.95,技术壁垒-83.03,市场地位-100.00,商业质量-69.99,经营质量-47.06,行业前景-78.00,治理风险-65.19,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-01368,XTEP INT'L,总分-76.33,护城河-96.30,技术壁垒-55.63,市场地位-100.00,商业质量-78.10,经营质量-57.66,行业前景-70.00,治理风险-64.08,纺织及服饰,above_average,full_coverage_dimensional_v0.3
-02495,VOICECOMM,总分-76.33,护城河-77.13,技术壁垒-83.84,市场地位-96.97,商业质量-68.24,经营质量-58.72,行业前景-78.00,治理风险-64.03,软件服务,above_average,full_coverage_dimensional_v0.3
-00303,VTECH HOLDINGS,总分-76.29,护城河-85.41,技术壁垒-84.00,市场地位-99.18,商业质量-69.60,经营质量-41.99,行业前景-78.00,治理风险-63.42,资讯科技器材,above_average,full_coverage_dimensional_v0.3
-06110,TOPSPORTS,总分-76.28,护城河-99.00,技术壁垒-56.47,市场地位-100.00,商业质量-76.01,经营质量-54.29,行业前景-70.00,治理风险-63.71,纺织、服饰及个人护理,above_average,full_coverage_dimensional_v0.3
-06823,HKT-SS,总分-76.28,护城河-95.60,技术壁垒-52.40,市场地位-97.60,商业质量-87.64,经营质量-60.89,行业前景-62.00,治理风险-64.53,电讯,above_average,full_coverage_dimensional_v0.3
-03613,TONGRENTANGCM,总分-76.20,护城河-82.50,技术壁垒-86.41,市场地位-95.19,商业质量-66.57,经营质量-55.50,行业前景-70.00,治理风险-63.45,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-01022,FEIYU,总分-76.16,护城河-74.99,技术壁垒-81.72,市场地位-92.41,商业质量-79.87,经营质量-57.20,行业前景-78.00,治理风险-62.81,软件服务,above_average,full_coverage_dimensional_v0.3
-00460,SIHUAN PHARM,总分-76.15,护城河-83.09,技术壁垒-84.66,市场地位-95.68,商业质量-72.21,经营质量-48.85,行业前景-70.00,治理风险-66.11,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-02607,SH PHARMA,总分-76.11,护城河-85.65,技术壁垒-86.36,市场地位-100.00,商业质量-63.05,经营质量-46.53,行业前景-70.00,治理风险-67.23,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-00771,AUTOMATED SYS,总分-76.09,护城河-85.52,技术壁垒-81.99,市场地位-98.93,商业质量-65.49,经营质量-46.20,行业前景-78.00,治理风险-65.41,软件服务,above_average,full_coverage_dimensional_v0.3
-01762,WANKA ONLINE,总分-76.06,护城河-80.09,技术壁垒-81.72,市场地位-100.00,商业质量-73.59,经营质量-45.76,行业前景-78.00,治理风险-65.29,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-02232,CRYSTAL INTL,总分-76.04,护城河-96.79,技术壁垒-55.71,市场地位-100.00,商业质量-75.85,经营质量-57.35,行业前景-70.00,治理风险-63.35,纺织及服饰,above_average,full_coverage_dimensional_v0.3
-06821,ASYMCHEM,总分-75.97,护城河-78.93,技术壁垒-86.99,市场地位-95.81,商业质量-69.57,经营质量-53.46,行业前景-70.00,治理风险-66.43,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-02407,GAUSH MEDITECH,总分-75.95,护城河-82.89,技术壁垒-87.04,市场地位-95.52,商业质量-61.23,经营质量-56.16,行业前景-70.00,治理风险-65.55,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-01234,CHINA LILANG,总分-75.91,护城河-90.18,技术壁垒-55.46,市场地位-100.00,商业质量-85.69,经营质量-56.70,行业前景-70.00,治理风险-64.45,纺织及服饰,above_average,full_coverage_dimensional_v0.3
-03759,PHARMARON,总分-75.89,护城河-81.04,技术壁垒-85.77,市场地位-100.00,商业质量-66.63,经营质量-49.64,行业前景-70.00,治理风险-66.75,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-01609,STAR SPORTS MED,总分-75.87,护城河-74.52,技术壁垒-88.00,市场地位-87.40,商业质量-77.69,经营质量-60.94,行业前景-70.00,治理风险-62.38,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-01612,VINCENT MED,总分-75.84,护城河-80.68,技术壁垒-85.44,市场地位-91.12,商业质量-72.60,经营质量-55.35,行业前景-70.00,治理风险-63.06,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-01797,EAST BUY,总分-75.83,护城河-85.38,技术壁垒-81.10,市场地位-97.86,商业质量-59.85,经营质量-51.45,行业前景-78.00,治理风险-67.10,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-02348,DAWNRAYS PHARMA,总分-75.83,护城河-80.87,技术壁垒-85.51,市场地位-91.44,商业质量-73.32,经营质量-53.08,行业前景-70.00,治理风险-64.34,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-01808,ENTERPRISE DEV,总分-75.75,护城河-76.99,技术壁垒-75.21,市场地位-100.00,商业质量-75.01,经营质量-56.85,行业前景-78.00,治理风险-62.65,软件服务,above_average,full_coverage_dimensional_v0.3
-01815,EVEREST GOLD,总分-75.74,护城河-90.80,技术壁垒-55.93,市场地位-95.80,商业质量-89.36,经营质量-55.07,行业前景-70.00,治理风险-63.29,纺织、服饰及个人护理,above_average,full_coverage_dimensional_v0.3
-02101,FULU HOLDINGS,总分-75.71,护城河-80.00,技术壁垒-81.93,市场地位-87.86,商业质量-74.73,经营质量-53.96,行业前景-78.00,治理风险-65.61,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-01061,ESSEX BIO-TECH,总分-75.68,护城河-75.26,技术壁垒-86.57,市场地位-94.46,商业质量-70.16,经营质量-60.26,行业前景-70.00,治理风险-63.21,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-02131,NETJOY,总分-75.66,护城河-84.29,技术壁垒-81.66,市场地位-96.09,商业质量-60.99,经营质量-52.22,行业前景-78.00,治理风险-66.46,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-01666,TONG REN TANG,总分-75.65,护城河-79.03,技术壁垒-86.04,市场地位-100.00,商业质量-62.96,经营质量-55.29,行业前景-70.00,治理风险-65.30,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-02540,LESI GROUP,总分-75.65,护城河-84.86,技术壁垒-82.07,市场地位-97.60,商业质量-66.91,经营质量-44.48,行业前景-78.00,治理风险-64.34,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-00596,INSPUR DIGI ENT,总分-75.63,护城河-85.54,技术壁垒-82.52,市场地位-100.00,商业质量-61.15,经营质量-45.70,行业前景-78.00,治理风险-65.00,软件服务,above_average,full_coverage_dimensional_v0.3
-01873,VIVA BIOTECH,总分-75.61,护城河-82.10,技术壁垒-85.19,市场地位-93.93,商业质量-68.43,经营质量-51.92,行业前景-70.00,治理风险-65.14,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-06078,HYGEIA HEALTH,总分-75.61,护城河-80.35,技术壁垒-86.02,市场地位-100.00,商业质量-58.57,经营质量-55.99,行业前景-70.00,治理风险-67.66,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-00002,CLP HOLDINGS,总分-75.58,护城河-100.00,技术壁垒-53.79,市场地位-100.00,商业质量-76.26,经营质量-57.08,行业前景-62.00,治理风险-62.82,公用事业,above_average,full_coverage_dimensional_v0.3
-06086,FANGZHOU JIANKE,总分-75.58,护城河-81.82,技术壁垒-84.29,市场地位-92.11,商业质量-67.73,经营质量-55.18,行业前景-70.00,治理风险-66.27,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-02111,BEST PACIFIC,总分-75.54,护城河-94.24,技术壁垒-55.55,市场地位-100.00,商业质量-74.17,经营质量-59.34,行业前景-70.00,治理风险-63.96,纺织及服饰,above_average,full_coverage_dimensional_v0.3
-02552,HUA MEDICINE-B,总分-75.49,护城河-75.36,技术壁垒-87.31,市场地位-89.52,商业质量-79.42,经营质量-54.15,行业前景-70.00,治理风险-62.00,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-00909,MING YUAN CLOUD,总分-75.41,护城河-82.70,技术壁垒-81.09,市场地位-93.00,商业质量-67.18,经营质量-49.99,行业前景-78.00,治理风险-67.51,软件服务,above_average,full_coverage_dimensional_v0.3
-02590,GEEKPLUS-W,总分-75.40,护城河-82.26,技术壁垒-81.51,市场地位-90.39,商业质量-68.07,经营质量-51.46,行业前景-78.00,治理风险-68.00,软件服务,above_average,full_coverage_dimensional_v0.3
-02637,HAIXI PHARMA,总分-75.40,护城河-74.01,技术壁垒-87.89,市场地位-85.75,商业质量-78.79,经营质量-58.90,行业前景-70.00,治理风险-62.72,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-02581,BENQ HOLDING,总分-75.39,护城河-81.43,技术壁垒-78.59,市场地位-100.00,商业质量-64.31,经营质量-57.23,行业前景-70.00,治理风险-66.42,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-01385,SHANGHAI FUDAN,总分-75.35,护城河-73.71,技术壁垒-87.71,市场地位-97.04,商业质量-67.44,经营质量-55.72,行业前景-72.00,治理风险-66.44,半导体,above_average,full_coverage_dimensional_v0.3
-00257,EB ENVIRONMENT,总分-75.33,护城河-95.36,技术壁垒-52.93,市场地位-100.00,商业质量-81.49,经营质量-56.65,行业前景-62.00,治理风险-66.11,公用事业,above_average,full_coverage_dimensional_v0.3
-02598,LIANLIAN,总分-75.30,护城河-92.99,技术壁垒-56.75,市场地位-100.00,商业质量-83.92,经营质量-60.27,行业前景-54.00,治理风险-62.98,其他金融,above_average,full_coverage_dimensional_v0.3
-00788,CHINA TOWER,总分-75.29,护城河-99.20,技术壁垒-44.80,市场地位-100.00,商业质量-85.84,经营质量-56.55,行业前景-62.00,治理风险-65.79,电讯,above_average,full_coverage_dimensional_v0.3
-03306,JNBY,总分-75.28,护城河-89.70,技术壁垒-48.27,市场地位-100.00,商业质量-87.41,经营质量-61.60,行业前景-70.00,治理风险-62.49,纺织及服饰,above_average,full_coverage_dimensional_v0.3
-03773,YS DIGIFAVOR,总分-75.26,护城河-77.47,技术壁垒-81.86,市场地位-82.98,商业质量-78.71,经营质量-56.78,行业前景-78.00,治理风险-63.70,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-01132,ORANGE SKY G H,总分-75.22,护城河-78.38,技术壁垒-81.31,市场地位-92.94,商业质量-70.35,经营质量-53.40,行业前景-78.00,治理风险-65.08,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-06609,HEARTCARE-B,总分-75.20,护城河-73.42,技术壁垒-87.81,市场地位-84.56,商业质量-79.81,经营质量-57.80,行业前景-70.00,治理风险-64.21,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-09989,HEPALINK,总分-75.19,护城河-81.26,技术壁垒-85.35,市场地位-92.17,商业质量-67.75,经营质量-51.50,行业前景-70.00,治理风险-66.91,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-02361,SINOHEALTH TECH,总分-75.15,护城河-78.33,技术壁垒-82.57,市场地位-85.12,商业质量-74.52,经营质量-56.10,行业前景-78.00,治理风险-63.14,软件服务,above_average,full_coverage_dimensional_v0.3
-02391,TUYA-W,总分-75.13,护城河-80.52,技术壁垒-82.62,市场地位-89.59,商业质量-73.67,经营质量-46.94,行业前景-78.00,治理风险-66.46,软件服务,above_average,full_coverage_dimensional_v0.3
-03991,CHANGHONG JH,总分-75.12,护城河-82.59,技术壁垒-81.51,市场地位-100.00,商业质量-62.52,经营质量-46.32,行业前景-78.00,治理风险-65.46,资讯科技器材,above_average,full_coverage_dimensional_v0.3
-02342,COMBA,总分-75.11,护城河-82.36,技术壁垒-80.07,市场地位-92.05,商业质量-67.98,经营质量-49.59,行业前景-78.00,治理风险-67.90,资讯科技器材,above_average,full_coverage_dimensional_v0.3
-08368,CREATIVE CHINA,总分-75.11,护城河-77.78,技术壁垒-82.00,市场地位-83.93,商业质量-80.41,经营质量-52.74,行业前景-78.00,治理风险-63.06,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-03347,TIGERMED,总分-75.09,护城河-80.83,技术壁垒-84.87,市场地位-90.62,商业质量-69.22,经营质量-51.77,行业前景-70.00,治理风险-67.56,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-02228,XTALPI,总分-75.06,护城河-92.80,技术壁垒-54.07,市场地位-100.00,商业质量-90.01,经营质量-43.17,行业前景-70.00,治理风险-65.86,纺织、服饰及个人护理,above_average,full_coverage_dimensional_v0.3
-02486,PLUS GP HOLDING,总分-75.05,护城河-84.66,技术壁垒-74.90,市场地位-96.73,商业质量-60.48,经营质量-56.71,行业前景-78.00,治理风险-64.97,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-02289,CHARMACY PHAR,总分-75.03,护城河-82.93,技术壁垒-78.46,市场地位-94.62,商业质量-61.48,经营质量-60.58,行业前景-70.00,治理风险-66.59,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-02688,ENN ENERGY,总分-75.00,护城河-95.88,技术壁垒-54.00,市场地位-100.00,商业质量-74.95,经营质量-60.86,行业前景-62.00,治理风险-62.16,公用事业,above_average,full_coverage_dimensional_v0.3
-06288,FAST RETAIL-DRS,总分-74.99,护城河-95.76,技术壁垒-49.00,市场地位-100.00,商业质量-77.72,经营质量-57.53,行业前景-70.00,治理风险-64.57,纺织及服饰,above_average,full_coverage_dimensional_v0.3
-02512,CLOUD FACTORY,总分-74.90,护城河-80.87,技术壁垒-81.09,市场地位-89.09,商业质量-66.78,经营质量-53.77,行业前景-78.00,治理风险-67.03,软件服务,above_average,full_coverage_dimensional_v0.3
-01745,LVJI TECH,总分-74.89,护城河-79.96,技术壁垒-81.46,市场地位-87.94,商业质量-70.67,经营质量-53.50,行业前景-78.00,治理风险-64.27,软件服务,above_average,full_coverage_dimensional_v0.3
-03601,LUDASHI,总分-74.89,护城河-82.07,技术壁垒-82.09,市场地位-91.68,商业质量-63.20,经营质量-52.97,行业前景-78.00,治理风险-64.51,软件服务,above_average,full_coverage_dimensional_v0.3
-02587,HEALTHYWAY INC,总分-74.88,护城河-75.55,技术壁垒-84.93,市场地位-94.28,商业质量-70.78,经营质量-55.56,行业前景-70.00,治理风险-63.54,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-06066,CSC,总分-74.85,护城河-95.83,技术壁垒-56.21,市场地位-100.00,商业质量-77.17,经营质量-57.60,行业前景-54.00,治理风险-67.25,其他金融,above_average,full_coverage_dimensional_v0.3
-01300,TRIGIANT,总分-74.83,护城河-75.26,技术壁垒-81.25,市场地位-92.30,商业质量-75.07,经营质量-50.94,行业前景-78.00,治理风险-66.07,资讯科技器材,above_average,full_coverage_dimensional_v0.3
-02899,ZIJIN MINING,总分-74.83,护城河-88.00,技术壁垒-78.50,市场地位-100.00,商业质量-57.63,经营质量-55.06,行业前景-60.00,治理风险-69.50,黄金及贵金属,above_average,full_coverage_dimensional_v0.3
-01776,GF SEC,总分-74.78,护城河-96.56,技术壁垒-56.41,市场地位-100.00,商业质量-75.52,经营质量-57.24,行业前景-54.00,治理风险-67.40,其他金融,above_average,full_coverage_dimensional_v0.3
-00116,CHOW SANG SANG,总分-74.76,护城河-89.00,技术壁垒-49.00,市场地位-100.00,商业质量-83.68,经营质量-61.57,行业前景-70.00,治理风险-62.86,纺织、服饰及个人护理,above_average,full_coverage_dimensional_v0.3
-01093,CSPC PHARMA,总分-74.76,护城河-87.00,技术壁垒-84.00,市场地位-100.00,商业质量-65.33,经营质量-38.50,行业前景-70.00,治理风险-62.00,医疗保健,above_average,full_coverage_dimensional_v0.3
-00135,KUNLUN ENERGY,总分-74.75,护城河-100.00,技术壁垒-53.04,市场地位-100.00,商业质量-68.22,经营质量-59.64,行业前景-62.00,治理风险-63.81,公用事业,above_average,full_coverage_dimensional_v0.3
-01119,IDREAMSKY,总分-74.75,护城河-82.46,技术壁垒-80.61,市场地位-92.27,商业质量-66.44,经营质量-47.63,行业前景-78.00,治理风险-67.59,软件服务,above_average,full_coverage_dimensional_v0.3
-06181,LAOPU GOLD,总分-74.73,护城河-93.94,技术壁垒-48.92,市场地位-100.00,商业质量-89.73,经营质量-48.07,行业前景-70.00,治理风险-62.12,纺织及服饰,above_average,full_coverage_dimensional_v0.3
-01050,KARRIE INT'L,总分-74.72,护城河-81.18,技术壁垒-81.11,市场地位-90.09,商业质量-68.68,经营质量-50.65,行业前景-78.00,治理风险-64.24,资讯科技器材,above_average,full_coverage_dimensional_v0.3
-09857,LINMON MEDIA,总分-74.72,护城河-83.00,技术壁垒-82.28,市场地位-93.80,商业质量-70.14,经营质量-39.93,行业前景-78.00,治理风险-66.35,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-02550,EASOU TECH,总分-74.70,护城河-75.95,技术壁垒-82.21,市场地位-93.76,商业质量-75.63,经营质量-46.55,行业前景-78.00,治理风险-64.55,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-01099,SINOPHARM,总分-74.67,护城河-89.69,技术壁垒-78.52,市场地位-100.00,商业质量-61.14,经营质量-41.88,行业前景-70.00,治理风险-67.32,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-03709,EEKA FASHION,总分-74.67,护城河-94.30,技术壁垒-55.79,市场地位-100.00,商业质量-69.75,经营质量-56.34,行业前景-70.00,治理风险-65.31,纺织及服饰,above_average,full_coverage_dimensional_v0.3
-06886,HTSC,总分-74.67,护城河-96.42,技术壁垒-56.31,市场地位-100.00,商业质量-75.66,经营质量-56.57,行业前景-54.00,治理风险-67.62,其他金融,above_average,full_coverage_dimensional_v0.3
-01071,HUADIAN POWER,总分-74.66,护城河-99.28,技术壁垒-44.72,市场地位-100.00,商业质量-76.42,经营质量-61.67,行业前景-62.00,治理风险-65.45,公用事业,above_average,full_coverage_dimensional_v0.3
-02230,MEDIALINK GROUP,总分-74.66,护城河-80.16,技术壁垒-81.45,市场地位-88.50,商业质量-70.47,经营质量-51.33,行业前景-78.00,治理风险-64.02,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-09919,ACTIVATION GP,总分-74.64,护城河-83.67,技术壁垒-74.41,市场地位-95.74,商业质量-65.86,经营质量-52.74,行业前景-78.00,治理风险-62.85,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-02678,TEXHONG INTL GP,总分-74.63,护城河-96.36,技术壁垒-47.95,市场地位-100.00,商业质量-74.38,经营质量-58.00,行业前景-70.00,治理风险-65.80,纺织及服饰,above_average,full_coverage_dimensional_v0.3
-01910,SAMSONITE,总分-74.55,护城河-93.27,技术壁垒-48.35,市场地位-100.00,商业质量-72.35,经营质量-64.03,行业前景-70.00,治理风险-65.43,纺织及服饰,above_average,full_coverage_dimensional_v0.3
-00941,CHINA MOBILE,总分-74.53,护城河-100.00,技术壁垒-53.60,市场地位-100.00,商业质量-79.16,经营质量-43.48,行业前景-62.00,治理风险-68.95,电讯,above_average,full_coverage_dimensional_v0.3
-80941,CHINA MOBILE-R,总分-74.53,护城河-100.00,技术壁垒-53.60,市场地位-100.00,商业质量-79.16,经营质量-43.48,行业前景-62.00,治理风险-68.95,电讯,above_average,full_coverage_dimensional_v0.3
-02635,NUOBIKAN,总分-74.51,护城河-68.60,技术壁垒-83.79,市场地位-87.90,商业质量-77.31,经营质量-59.60,行业前景-78.00,治理风险-63.22,软件服务,above_average,full_coverage_dimensional_v0.3
-02687,ABLE DIGITAL,总分-74.51,护城河-72.54,技术壁垒-83.58,市场地位-95.68,商业质量-76.11,经营质量-47.22,行业前景-78.00,治理风险-63.05,软件服务,above_average,full_coverage_dimensional_v0.3
-00902,HUANENG POWER,总分-74.46,护城河-96.88,技术壁垒-51.76,市场地位-100.00,商业质量-75.99,经营质量-53.17,行业前景-62.00,治理风险-69.40,公用事业,above_average,full_coverage_dimensional_v0.3
-06127,JOINN,总分-74.45,护城河-77.05,技术壁垒-86.09,市场地位-84.16,商业质量-77.98,经营质量-50.42,行业前景-70.00,治理风险-65.54,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-00719,SHANDONG XINHUA,总分-74.44,护城河-82.06,技术壁垒-85.30,市场地位-93.23,商业质量-61.02,经营质量-50.00,行业前景-70.00,治理风险-68.00,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-01345,SH PIONEER HLDG,总分-74.44,护城河-80.43,技术壁垒-85.19,市场地位-90.28,商业质量-64.51,经营质量-54.60,行业前景-70.00,治理风险-63.69,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-01982,NAMESON HLDGS,总分-74.44,护城河-91.82,技术壁垒-54.74,市场地位-97.48,商业质量-76.58,经营质量-55.98,行业前景-70.00,治理风险-64.82,纺织及服饰,above_average,full_coverage_dimensional_v0.3
-01358,PW MEDTECH,总分-74.42,护城河-80.44,技术壁垒-84.99,市场地位-90.60,商业质量-66.42,经营质量-50.56,行业前景-70.00,治理风险-66.99,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-00874,BAIYUNSHAN PH,总分-74.38,护城河-78.49,技术壁垒-87.21,市场地位-100.00,商业质量-64.76,经营质量-43.37,行业前景-70.00,治理风险-65.95,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-06099,CMSC,总分-74.34,护城河-95.09,技术壁垒-56.02,市场地位-100.00,商业质量-75.96,经营质量-56.35,行业前景-54.00,治理风险-67.62,其他金融,above_average,full_coverage_dimensional_v0.3
-02172,MICROPORT NEURO,总分-74.33,护城河-77.64,技术壁垒-78.34,市场地位-93.68,商业质量-73.99,经营质量-54.26,行业前景-70.00,治理风险-63.44,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-03880,MEDTIDE,总分-74.30,护城河-74.09,技术壁垒-79.74,市场地位-86.08,商业质量-80.54,经营质量-59.38,行业前景-70.00,治理风险-62.64,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-00267,CITIC,总分-74.27,护城河-78.00,技术壁垒-73.60,市场地位-100.00,商业质量-65.20,经营质量-69.03,行业前景-56.00,治理风险-68.32,综合企业,above_average,full_coverage_dimensional_v0.3
-02315,BIOCYTOGEN-B,总分-74.19,护城河-76.50,技术壁垒-85.88,市场地位-82.50,商业质量-76.44,经营质量-53.03,行业前景-70.00,治理风险-65.38,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-09863,LEAPMOTOR,总分-74.18,护城河-77.90,技术壁垒-80.06,市场地位-97.81,商业质量-60.34,经营质量-61.18,行业前景-66.00,治理风险-66.52,汽车,above_average,full_coverage_dimensional_v0.3
-02167,TI CLOUD,总分-74.17,护城河-72.40,技术壁垒-82.89,市场地位-86.94,商业质量-73.65,经营质量-56.90,行业前景-78.00,治理风险-63.38,软件服务,above_average,full_coverage_dimensional_v0.3
-03315,GOLDPAC GROUP,总分-74.09,护城河-81.63,技术壁垒-81.67,市场地位-91.05,商业质量-63.52,经营质量-47.89,行业前景-78.00,治理风险-66.14,软件服务,above_average,full_coverage_dimensional_v0.3
-01083,TG SMART ENERGY,总分-74.07,护城河-97.44,技术壁垒-52.40,市场地位-100.00,商业质量-72.11,经营质量-55.43,行业前景-62.00,治理风险-64.30,公用事业,above_average,full_coverage_dimensional_v0.3
-02611,GTHT,总分-74.07,护城河-97.08,技术壁垒-56.02,市场地位-100.00,商业质量-70.29,经营质量-56.63,行业前景-54.00,治理风险-68.30,其他金融,above_average,full_coverage_dimensional_v0.3
-07489,VOYAH AUTO,总分-74.06,护城河-73.81,技术壁垒-79.94,市场地位-98.37,商业质量-68.11,经营质量-60.15,行业前景-66.00,治理风险-63.77,汽车,above_average,full_coverage_dimensional_v0.3
-06896,GOLDEN THROAT,总分-74.04,护城河-73.59,技术壁垒-86.25,市场地位-91.08,商业质量-68.78,经营质量-56.52,行业前景-70.00,治理风险-62.89,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-09973,CHERY AUTO,总分-74.03,护城河-81.68,技术壁垒-76.84,市场地位-100.00,商业质量-62.43,经营质量-54.82,行业前景-66.00,治理风险-65.15,汽车,above_average,full_coverage_dimensional_v0.3
-03998,BOSIDENG,总分-74.02,护城河-95.33,技术壁垒-54.33,市场地位-100.00,商业质量-77.43,经营质量-43.87,行业前景-70.00,治理风险-66.04,纺织及服饰,above_average,full_coverage_dimensional_v0.3
-06069,SY HOLDINGS,总分-74.02,护城河-91.12,技术壁垒-56.26,市场地位-99.83,商业质量-75.79,经营质量-62.34,行业前景-54.00,治理风险-64.10,其他金融,above_average,full_coverage_dimensional_v0.3
-00623,SINOMEDIA,总分-73.98,护城河-82.53,技术壁垒-74.83,市场地位-93.59,商业质量-67.85,经营质量-48.58,行业前景-78.00,治理风险-64.44,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-01161,WATER OASIS GP,总分-73.98,护城河-80.30,技术壁垒-77.31,市场地位-90.00,商业质量-64.83,经营质量-61.08,行业前景-70.00,治理风险-64.69,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-01606,CDB LEASING,总分-73.93,护城河-97.37,技术壁垒-56.17,市场地位-100.00,商业质量-63.08,经营质量-63.50,行业前景-54.00,治理风险-65.90,其他金融,above_average,full_coverage_dimensional_v0.3
-01204,BOARDWARE INTEL,总分-73.92,护城河-78.57,技术壁垒-80.98,市场地位-84.39,商业质量-70.54,经营质量-51.67,行业前景-78.00,治理风险-66.62,软件服务,above_average,full_coverage_dimensional_v0.3
-02571,SAIMO,总分-73.92,护城河-76.19,技术壁垒-82.99,市场地位-80.55,商业质量-73.15,经营质量-55.79,行业前景-78.00,治理风险-63.62,软件服务,above_average,full_coverage_dimensional_v0.3
-00916,CHINA LONGYUAN,总分-73.91,护城河-95.84,技术壁垒-48.03,市场地位-98.13,商业质量-84.31,经营质量-50.00,行业前景-62.00,治理风险-68.00,公用事业,above_average,full_coverage_dimensional_v0.3
-00425,MINTH GROUP,总分-73.88,护城河-77.61,技术壁垒-74.00,市场地位-98.54,商业质量-69.31,经营质量-59.55,行业前景-66.00,治理风险-63.18,汽车,above_average,full_coverage_dimensional_v0.3
-06118,AUSTAR,总分-73.88,护城河-79.83,技术壁垒-85.03,市场地位-88.46,商业质量-63.16,经营质量-53.53,行业前景-70.00,治理风险-66.19,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-00511,TVB,总分-73.87,护城河-75.36,技术壁垒-74.62,市场地位-100.00,商业质量-65.29,经营质量-54.57,行业前景-78.00,治理风险-66.04,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-01193,CHINA RES GAS,总分-73.87,护城河-100.00,技术壁垒-45.36,市场地位-100.00,商业质量-70.44,经营质量-60.32,行业前景-62.00,治理风险-64.96,公用事业,above_average,full_coverage_dimensional_v0.3
-01304,FORTIOR,总分-73.85,护城河-73.00,技术壁垒-89.71,市场地位-81.33,商业质量-74.18,经营质量-52.79,行业前景-72.00,治理风险-66.00,半导体,above_average,full_coverage_dimensional_v0.3
-09992,POP MART,总分-73.82,护城河-76.84,技术壁垒-74.00,市场地位-100.00,商业质量-74.11,经营质量-61.85,行业前景-56.00,治理风险-62.00,家庭电器及用品,above_average,full_coverage_dimensional_v0.3
-00392,BEIJING ENT,总分-73.81,护城河-100.00,技术壁垒-53.89,市场地位-100.00,商业质量-75.14,经营质量-44.18,行业前景-62.00,治理风险-65.12,公用事业,above_average,full_coverage_dimensional_v0.3
-02120,KN HOSPITAL,总分-73.76,护城河-75.65,技术壁垒-79.17,市场地位-94.36,商业质量-63.67,经营质量-59.75,行业前景-70.00,治理风险-67.18,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-01585,YADEA,总分-73.75,护城河-68.26,技术壁垒-81.61,市场地位-100.00,商业质量-69.82,经营质量-61.85,行业前景-66.00,治理风险-62.59,汽车,above_average,full_coverage_dimensional_v0.3
-01100,MAINLAND HOLD,总分-73.68,护城河-89.58,技术壁垒-55.06,市场地位-92.17,商业质量-80.86,经营质量-54.55,行业前景-70.00,治理风险-65.06,纺织及服饰,above_average,full_coverage_dimensional_v0.3
-00371,BJ ENT WATER,总分-73.67,护城河-93.84,技术壁垒-50.80,市场地位-100.00,商业质量-76.21,经营质量-54.06,行业前景-62.00,治理风险-68.08,公用事业,above_average,full_coverage_dimensional_v0.3
-02436,LX TECHNOLOGY,总分-73.66,护城河-80.20,技术壁垒-80.98,市场地位-87.30,商业质量-61.46,经营质量-53.09,行业前景-78.00,治理风险-67.29,资讯科技器材,above_average,full_coverage_dimensional_v0.3
-06030,CITIC SEC,总分-73.65,护城河-97.37,技术壁垒-48.46,市场地位-100.00,商业质量-75.39,经营质量-58.29,行业前景-54.00,治理风险-67.33,其他金融,above_average,full_coverage_dimensional_v0.3
-00003,HK & CHINA GAS,总分-73.64,护城河-96.96,技术壁垒-44.08,市场地位-100.00,商业质量-76.09,经营质量-60.06,行业前景-62.00,治理风险-63.97,公用事业,above_average,full_coverage_dimensional_v0.3
-00175,GEELY AUTO,总分-73.63,护城河-81.87,技术壁垒-76.84,市场地位-100.00,商业质量-62.41,经营质量-51.48,行业前景-66.00,治理风险-65.54,汽车,above_average,full_coverage_dimensional_v0.3
-80175,GEELY AUTO-R,总分-73.63,护城河-81.87,技术壁垒-76.84,市场地位-100.00,商业质量-62.41,经营质量-51.48,行业前景-66.00,治理风险-65.54,汽车,above_average,full_coverage_dimensional_v0.3
-01288,ABC,总分-73.58,护城河-96.38,技术壁垒-51.38,市场地位-100.00,商业质量-72.33,经营质量-55.64,行业前景-54.00,治理风险-72.67,银行,above_average,full_coverage_dimensional_v0.3
-01720,PUTIAN COMM,总分-73.58,护城河-78.52,技术壁垒-80.85,市场地位-84.27,商业质量-71.65,经营质量-48.95,行业前景-78.00,治理风险-65.86,资讯科技器材,above_average,full_coverage_dimensional_v0.3
-06833,SINCO PHARMA,总分-73.57,护城河-81.23,技术壁垒-84.56,市场地位-91.21,商业质量-57.21,经营质量-52.95,行业前景-70.00,治理风险-66.03,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-01163,ADTIGER CORP,总分-73.53,护城河-72.48,技术壁垒-81.10,市场地位-86.39,商业质量-72.36,经营质量-54.51,行业前景-78.00,治理风险-66.67,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-09860,ADICON HOLDINGS,总分-73.53,护城河-83.08,技术壁垒-76.48,市场地位-94.56,商业质量-61.30,经营质量-51.16,行业前景-70.00,治理风险-68.82,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-02691,NANHUA FUTURES,总分-73.48,护城河-89.35,技术壁垒-55.77,市场地位-96.15,商业质量-77.40,经营质量-61.57,行业前景-54.00,治理风险-68.30,其他金融,above_average,full_coverage_dimensional_v0.3
-02291,SCIENTECH,总分-73.47,护城河-69.58,技术壁垒-87.10,市场地位-91.84,商业质量-69.74,经营质量-55.96,行业前景-70.00,治理风险-62.86,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-01410,EDVANCE INTL,总分-73.45,护城河-76.38,技术壁垒-81.30,市场地位-80.58,商业质量-66.87,经营质量-59.91,行业前景-78.00,治理风险-64.76,软件服务,above_average,full_coverage_dimensional_v0.3
-00270,GUANGDONG INV,总分-73.44,护城河-87.80,技术壁垒-45.15,市场地位-100.00,商业质量-89.25,经营质量-58.85,行业前景-62.00,治理风险-63.32,公用事业,above_average,full_coverage_dimensional_v0.3
-02161,JBM HEALTHCARE,总分-73.43,护城河-76.46,技术壁垒-85.40,市场地位-82.47,商业质量-71.45,经营质量-54.04,行业前景-70.00,治理风险-64.01,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-03813,POU SHENG INT'L,总分-73.42,护城河-98.00,技术壁垒-44.73,市场地位-100.00,商业质量-74.05,经营质量-50.00,行业前景-70.00,治理风险-68.00,纺织、服饰及个人护理,above_average,full_coverage_dimensional_v0.3
-06826,HAOHAI BIOTEC,总分-73.40,护城河-78.57,技术壁垒-86.34,市场地位-86.64,商业质量-65.65,经营质量-48.56,行业前景-70.00,治理风险-68.24,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-01846,EUROEYES,总分-73.38,护城河-74.95,技术壁垒-85.57,市场地位-87.12,商业质量-66.86,经营质量-54.68,行业前景-70.00,治理风险-65.94,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-01398,ICBC,总分-73.34,护城河-98.00,技术壁垒-52.03,市场地位-100.00,商业质量-72.47,经营质量-51.19,行业前景-54.00,治理风险-71.33,银行,above_average,full_coverage_dimensional_v0.3
-01284,NEW MEDIA LAB,总分-73.32,护城河-77.62,技术壁垒-81.38,市场地位-82.94,商业质量-68.03,经营质量-53.92,行业前景-78.00,治理风险-63.91,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-00939,CCB,总分-73.28,护城河-97.19,技术壁垒-53.54,市场地位-100.00,商业质量-75.27,经营质量-48.76,行业前景-54.00,治理风险-68.67,银行,above_average,full_coverage_dimensional_v0.3
-01731,PROSPEROUS IND,总分-73.28,护城河-90.85,技术壁垒-54.82,市场地位-95.25,商业质量-73.63,经营质量-55.14,行业前景-70.00,治理风险-63.22,纺织及服饰,above_average,full_coverage_dimensional_v0.3
-06883,ETERNAL BEAUTY,总分-73.28,护城河-78.26,技术壁垒-77.38,市场地位-94.52,商业质量-67.29,经营质量-52.80,行业前景-70.00,治理风险-63.63,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-00529,SIS INT'L,总分-73.26,护城河-73.23,技术壁垒-81.77,市场地位-95.90,商业质量-59.74,经营质量-53.17,行业前景-78.00,治理风险-67.49,资讯科技器材,above_average,full_coverage_dimensional_v0.3
-02298,COSMO LADY,总分-73.26,护城河-91.15,技术壁垒-53.85,市场地位-95.51,商业质量-74.27,经营质量-53.04,行业前景-70.00,治理风险-66.53,纺织及服饰,above_average,full_coverage_dimensional_v0.3
-01111,HUASHI GROUP,总分-73.23,护城河-76.62,技术壁垒-74.34,市场地位-89.75,商业质量-68.77,经营质量-57.08,行业前景-78.00,治理风险-62.64,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-02181,MABPHARM-B,总分-73.23,护城河-70.41,技术壁垒-84.29,市场地位-84.06,商业质量-74.67,经营质量-58.54,行业前景-70.00,治理风险-64.42,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-01147,EDENSOFT,总分-73.22,护城河-80.24,技术壁垒-80.40,市场地位-87.77,商业质量-59.11,经营质量-53.59,行业前景-78.00,治理风险-65.32,软件服务,above_average,full_coverage_dimensional_v0.3
-02566,JIUYUAN GENE,总分-73.21,护城河-69.83,技术壁垒-86.68,市场地位-91.15,商业质量-67.82,经营质量-56.18,行业前景-70.00,治理风险-64.09,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-00311,LUEN THAI,总分-73.18,护城河-95.00,技术壁垒-45.80,市场地位-100.00,商业质量-69.20,经营质量-56.70,行业前景-70.00,治理风险-67.57,纺织、服饰及个人护理,above_average,full_coverage_dimensional_v0.3
-02076,BOSS ZHIPIN-W,总分-73.16,护城河-77.64,技术壁垒-74.00,市场地位-100.00,商业质量-68.91,经营质量-60.75,行业前景-56.00,治理风险-62.58,支援服务,above_average,full_coverage_dimensional_v0.3
-08446,BRIGHTSTAR TECH,总分-73.14,护城河-73.00,技术壁垒-81.52,市场地位-81.91,商业质量-71.41,经营质量-57.42,行业前景-78.00,治理风险-63.81,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-02661,QINGSONG HEALTH,总分-73.10,护城河-76.02,技术壁垒-76.00,市场地位-75.74,商业质量-53.14,经营质量-78.46,行业前景-78.00,治理风险-73.36,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-00458,TRISTATE HOLD,总分-73.08,护城河-87.45,技术壁垒-55.38,市场地位-95.96,商业质量-70.45,经营质量-59.28,行业前景-70.00,治理风险-65.92,纺织及服饰,above_average,full_coverage_dimensional_v0.3
-00595,AV CONCEPT HOLD,总分-73.07,护城河-77.93,技术壁垒-86.86,市场地位-90.44,商业质量-60.05,经营质量-48.89,行业前景-72.00,治理风险-64.67,半导体,above_average,full_coverage_dimensional_v0.3
-00991,DATANG POWER,总分-73.05,护城河-95.12,技术壁垒-42.69,市场地位-100.00,商业质量-80.20,经营质量-53.76,行业前景-62.00,治理风险-68.58,公用事业,above_average,full_coverage_dimensional_v0.3
-03908,CICC,总分-73.05,护城河-88.87,技术壁垒-56.51,市场地位-100.00,商业质量-74.51,经营质量-57.87,行业前景-54.00,治理风险-67.47,其他金融,above_average,full_coverage_dimensional_v0.3
-03886,TOWN HEALTH,总分-73.02,护城河-80.97,技术壁垒-75.39,市场地位-90.24,商业质量-63.65,经营质量-54.15,行业前景-70.00,治理风险-68.91,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-08017,TRADEGO,总分-73.02,护城河-75.51,技术壁垒-81.93,市场地位-79.19,商业质量-73.83,经营质量-53.24,行业前景-78.00,治理风险-62.32,软件服务,above_average,full_coverage_dimensional_v0.3
-00325,BLOKS,总分-72.99,护城河-73.61,技术壁垒-73.74,市场地位-100.00,商业质量-73.07,经营质量-62.23,行业前景-56.00,治理风险-62.26,家庭电器及用品,above_average,full_coverage_dimensional_v0.3
-01836,STELLA HOLDINGS,总分-72.97,护城河-91.58,技术壁垒-48.19,市场地位-100.00,商业质量-72.13,经营质量-56.93,行业前景-70.00,治理风险-63.47,纺织及服饰,above_average,full_coverage_dimensional_v0.3
-02199,REGINA MIRACLE,总分-72.94,护城河-88.36,技术壁垒-54.41,市场地位-97.93,商业质量-70.08,经营质量-55.63,行业前景-70.00,治理风险-67.51,纺织及服饰,above_average,full_coverage_dimensional_v0.3
-01521,FRONTAGE,总分-72.92,护城河-73.99,技术壁垒-84.77,市场地位-90.88,商业质量-65.22,经营质量-51.41,行业前景-70.00,治理风险-66.67,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-03268,MEIG,总分-72.88,护城河-79.90,技术壁垒-81.64,市场地位-87.38,商业质量-67.90,经营质量-40.87,行业前景-78.00,治理风险-66.88,资讯科技器材,above_average,full_coverage_dimensional_v0.3
-00179,JOHNSON ELEC H,总分-72.85,护城河-74.71,技术壁垒-81.74,市场地位-92.25,商业质量-63.36,经营质量-58.58,行业前景-66.00,治理风险-63.97,汽车,above_average,full_coverage_dimensional_v0.3
-00300,MIDEA GROUP,总分-72.85,护城河-77.87,技术壁垒-73.57,市场地位-100.00,商业质量-67.65,经营质量-57.93,行业前景-56.00,治理风险-66.22,家庭电器及用品,above_average,full_coverage_dimensional_v0.3
-02382,SUNNY OPTICAL,总分-72.85,护城河-77.11,技术壁垒-73.92,市场地位-100.00,商业质量-66.98,经营质量-61.24,行业前景-56.00,治理风险-62.81,工业工程,above_average,full_coverage_dimensional_v0.3
-03968,CM BANK,总分-72.82,护城河-92.97,技术壁垒-55.70,市场地位-100.00,商业质量-70.88,经营质量-54.71,行业前景-54.00,治理风险-67.00,银行,above_average,full_coverage_dimensional_v0.3
-01038,CKI HOLDINGS,总分-72.80,护城河-95.52,技术壁垒-45.68,市场地位-98.93,商业质量-82.56,经营质量-49.76,行业前景-62.00,治理风险-62.33,公用事业,above_average,full_coverage_dimensional_v0.3
-01962,EVERGREEN PG,总分-72.72,护城河-91.00,技术壁垒-46.60,市场地位-95.30,商业质量-74.84,经营质量-58.96,行业前景-70.00,治理风险-65.43,纺织、服饰及个人护理,above_average,full_coverage_dimensional_v0.3
-06881,CGS,总分-72.72,护城河-95.50,技术壁垒-47.72,市场地位-100.00,商业质量-73.62,经营质量-57.03,行业前景-54.00,治理风险-67.92,其他金融,above_average,full_coverage_dimensional_v0.3
-06882,EGL HOLDINGS,总分-72.72,护城河-90.63,技术壁垒-47.32,市场地位-100.00,商业质量-71.22,经营质量-57.50,行业前景-70.00,治理风险-65.53,酒店、赌场及消闲设施,above_average,full_coverage_dimensional_v0.3
-09633,NONGFU SPRING,总分-72.70,护城河-73.18,技术壁垒-73.91,市场地位-100.00,商业质量-72.16,经营质量-61.69,行业前景-56.00,治理风险-62.00,食物饮品,above_average,full_coverage_dimensional_v0.3
-01120,ARTS OPTICAL,总分-72.69,护城河-87.40,技术壁垒-55.13,市场地位-95.63,商业质量-78.72,经营质量-48.24,行业前景-70.00,治理风险-67.14,纺织、服饰及个人护理,above_average,full_coverage_dimensional_v0.3
-02299,BILLION IND,总分-72.69,护城河-95.76,技术壁垒-55.14,市场地位-100.00,商业质量-65.27,经营质量-44.25,行业前景-70.00,治理风险-67.02,纺织及服饰,above_average,full_coverage_dimensional_v0.3
-00418,FOUNDER HOLD,总分-72.68,护城河-73.72,技术壁垒-81.30,市场地位-89.09,商业质量-65.42,经营质量-50.97,行业前景-78.00,治理风险-65.81,软件服务,above_average,full_coverage_dimensional_v0.3
-00420,FOUNTAIN SET,总分-72.68,护城河-91.58,技术壁垒-53.69,市场地位-95.86,商业质量-69.57,经营质量-52.12,行业前景-70.00,治理风险-67.63,纺织及服饰,above_average,full_coverage_dimensional_v0.3
-00528,KINGDOM HOLDING,总分-72.67,护城河-89.70,技术壁垒-54.25,市场地位-92.07,商业质量-72.27,经营质量-55.58,行业前景-70.00,治理风险-67.27,纺织及服饰,above_average,full_coverage_dimensional_v0.3
-00950,LEE'S PHARM,总分-72.67,护城河-72.99,技术壁垒-85.62,市场地位-89.13,商业质量-60.93,经营质量-56.95,行业前景-70.00,治理风险-65.22,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-02235,MICROTECH MED-B,总分-72.67,护城河-71.47,技术壁垒-85.25,市场地位-86.08,商业质量-74.60,经营质量-48.05,行业前景-70.00,治理风险-67.18,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-02280,HC GROUP,总分-72.66,护城河-82.70,技术壁垒-79.28,市场地位-90.88,商业质量-63.32,经营质量-38.06,行业前景-78.00,治理风险-68.49,软件服务,above_average,full_coverage_dimensional_v0.3
-01801,INNOVENT BIO,总分-72.63,护城河-70.00,技术壁垒-86.67,市场地位-91.33,商业质量-59.67,经营质量-57.50,行业前景-70.00,治理风险-68.00,医疗保健,above_average,full_coverage_dimensional_v0.3
-03660,QFIN-S,总分-72.59,护城河-97.12,技术壁垒-57.00,市场地位-100.00,商业质量-63.77,经营质量-54.35,行业前景-54.00,治理风险-62.83,其他金融,above_average,full_coverage_dimensional_v0.3
-06639,ARRAIL GROUP,总分-72.58,护城河-75.17,技术壁垒-84.80,市场地位-93.00,商业质量-57.21,经营质量-51.85,行业前景-70.00,治理风险-68.62,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-01816,CGN POWER,总分-72.54,护城河-90.60,技术壁垒-49.73,市场地位-100.00,商业质量-82.70,经营质量-45.12,行业前景-62.00,治理风险-69.56,公用事业,above_average,full_coverage_dimensional_v0.3
-00709,GIORDANO INT'L,总分-72.53,护城河-92.91,技术壁垒-46.66,市场地位-99.40,商业质量-69.80,经营质量-55.66,行业前景-70.00,治理风险-65.18,纺织及服饰,above_average,full_coverage_dimensional_v0.3
-01456,GLMS SEC,总分-72.47,护城河-92.40,技术壁垒-54.55,市场地位-100.00,商业质量-69.81,经营质量-54.69,行业前景-54.00,治理风险-68.60,其他金融,above_average,full_coverage_dimensional_v0.3
-00536,TRADELINK,总分-72.45,护城河-69.30,技术壁垒-82.04,市场地位-81.05,商业质量-74.52,经营质量-56.06,行业前景-78.00,治理风险-62.57,软件服务,above_average,full_coverage_dimensional_v0.3
-00571,ESUN HOLDINGS,总分-72.44,护城河-75.22,技术壁垒-73.03,市场地位-86.00,商业质量-64.57,经营质量-60.76,行业前景-78.00,治理风险-66.99,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-00933,VIVA GOODS,总分-72.44,护城河-89.82,技术壁垒-45.28,市场地位-100.00,商业质量-73.36,经营质量-55.69,行业前景-70.00,治理风险-68.24,纺织及服饰,above_average,full_coverage_dimensional_v0.3
-09969,INNOCARE,总分-72.43,护城河-73.01,技术壁垒-84.87,市场地位-83.60,商业质量-73.64,经营质量-47.98,行业前景-70.00,治理风险-66.99,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-09995,REMEGEN,总分-72.42,护城河-68.72,技术壁垒-78.78,市场地位-89.69,商业质量-78.76,经营质量-52.64,行业前景-70.00,治理风险-64.58,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-00142,FIRST PACIFIC,总分-72.40,护城河-73.11,技术壁垒-73.55,市场地位-100.00,商业质量-60.83,经营质量-67.97,行业前景-56.00,治理风险-68.00,食物饮品,above_average,full_coverage_dimensional_v0.3
-00551,YUE YUEN IND,总分-72.40,护城河-87.48,技术壁垒-48.43,市场地位-100.00,商业质量-73.08,经营质量-56.88,行业前景-70.00,治理风险-65.55,纺织及服饰,above_average,full_coverage_dimensional_v0.3
-01811,CGN NEW ENERGY,总分-72.38,护城河-85.96,技术壁垒-44.51,市场地位-100.00,商业质量-79.96,经营质量-63.79,行业前景-62.00,治理风险-64.14,公用事业,above_average,full_coverage_dimensional_v0.3
-03360,FE HORIZON,总分-72.38,护城河-97.12,技术壁垒-56.61,市场地位-100.00,商业质量-59.98,经营质量-55.14,行业前景-54.00,治理风险-66.28,其他金融,above_average,full_coverage_dimensional_v0.3
-02633,JACOBSON PHARMA,总分-72.37,护城河-71.72,技术壁垒-84.98,市场地位-87.01,商业质量-69.45,经营质量-51.51,行业前景-70.00,治理风险-64.74,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-00797,7ROAD,总分-72.36,护城河-78.69,技术壁垒-72.93,市场地位-85.29,商业质量-77.03,经营质量-43.77,行业前景-78.00,治理风险-65.89,软件服务,above_average,full_coverage_dimensional_v0.3
-08637,METASURFACE,总分-72.35,护城河-65.36,技术壁垒-88.86,市场地位-79.36,商业质量-74.27,经营质量-59.10,行业前景-72.00,治理风险-62.44,半导体,above_average,full_coverage_dimensional_v0.3
-02149,BATELAB,总分-72.33,护城河-65.64,技术壁垒-90.00,市场地位-88.65,商业质量-64.96,经营质量-56.53,行业前景-72.00,治理风险-63.33,半导体,above_average,full_coverage_dimensional_v0.3
-02159,MEDIWELCOME,总分-72.33,护城河-75.59,技术壁垒-84.74,市场地位-79.68,商业质量-69.58,经营质量-52.50,行业前景-70.00,治理风险-64.98,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-02531,CARLINK TECH,总分-72.33,护城河-72.52,技术壁垒-81.72,市场地位-86.64,商业质量-65.10,经营质量-52.62,行业前景-78.00,治理风险-65.73,软件服务,above_average,full_coverage_dimensional_v0.3
-09616,NEUTECH GROUP,总分-72.30,护城河-74.17,技术壁垒-73.42,市场地位-100.00,商业质量-64.33,经营质量-64.37,行业前景-56.00,治理风险-64.31,支援服务,above_average,full_coverage_dimensional_v0.3
-01359,CHINA CINDA,总分-72.28,护城河-97.12,技术壁垒-54.10,市场地位-100.00,商业质量-60.55,经营质量-55.73,行业前景-54.00,治理风险-68.75,其他金融,above_average,full_coverage_dimensional_v0.3
-09611,LONGCHEER,总分-72.26,护城河-73.00,技术壁垒-90.00,市场地位-79.90,商业质量-58.00,经营质量-57.50,行业前景-72.00,治理风险-68.00,IT Hardware,above_average,full_coverage_dimensional_v0.3
-01931,ETHK LABS INC.,总分-72.24,护城河-80.28,技术壁垒-84.29,市场地位-97.32,商业质量-53.66,经营质量-41.19,行业前景-70.00,治理风险-68.72,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-01830,PERFECT MEDICAL,总分-72.22,护城河-70.66,技术壁垒-85.06,市场地位-85.08,商业质量-69.08,经营质量-55.30,行业前景-70.00,治理风险-62.96,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-03750,CATL,总分-72.22,护城河-74.00,技术壁垒-73.96,市场地位-100.00,商业质量-67.66,经营质量-59.04,行业前景-56.00,治理风险-66.10,工业工程,above_average,full_coverage_dimensional_v0.3
-00321,TEXWINCA HOLD,总分-72.19,护城河-88.00,技术壁垒-47.67,市场地位-100.00,商业质量-73.88,经营质量-54.29,行业前景-70.00,治理风险-66.29,纺织、服饰及个人护理,above_average,full_coverage_dimensional_v0.3
-01346,LEVER STYLE,总分-72.18,护城河-89.33,技术壁垒-54.90,市场地位-91.77,商业质量-68.82,经营质量-58.42,行业前景-70.00,治理风险-62.24,纺织及服饰,above_average,full_coverage_dimensional_v0.3
-00086,SUN HUNG KAI CO,总分-72.17,护城河-87.28,技术壁垒-56.56,市场地位-100.00,商业质量-74.66,经营质量-55.74,行业前景-54.00,治理风险-64.17,其他金融,above_average,full_coverage_dimensional_v0.3
-01640,QIAN XUN TECH,总分-72.16,护城河-79.84,技术壁垒-78.69,市场地位-85.14,商业质量-70.27,经营质量-38.63,行业前景-78.00,治理风险-68.37,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-00178,SA SA INT'L,总分-72.15,护城河-79.32,技术壁垒-76.03,市场地位-95.56,商业质量-58.55,经营质量-50.60,行业前景-70.00,治理风险-66.90,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-02583,HIPINE,总分-72.12,护城河-87.09,技术壁垒-56.52,市场地位-87.27,商业质量-88.28,经营质量-43.70,行业前景-70.00,治理风险-63.59,纺织及服饰,above_average,full_coverage_dimensional_v0.3
-01817,MULSANNE GROUP,总分-72.11,护城河-89.20,技术壁垒-46.33,市场地位-99.80,商业质量-65.50,经营质量-61.92,行业前景-70.00,治理风险-66.71,纺织、服饰及个人护理,above_average,full_coverage_dimensional_v0.3
-01883,CITIC TELECOM,总分-72.10,护城河-94.10,技术壁垒-51.60,市场地位-94.35,商业质量-74.09,经营质量-52.30,行业前景-62.00,治理风险-62.63,电讯,above_average,full_coverage_dimensional_v0.3
-00806,VALUE PARTNERS,总分-72.08,护城河-90.56,技术壁垒-47.97,市场地位-98.88,商业质量-83.84,经营质量-53.87,行业前景-54.00,治理风险-62.52,其他金融,above_average,full_coverage_dimensional_v0.3
-00762,CHINA UNICOM,总分-72.07,护城河-98.90,技术壁垒-48.00,市场地位-100.00,商业质量-64.51,经营质量-50.00,行业前景-62.00,治理风险-68.00,电讯,above_average,full_coverage_dimensional_v0.3
-03737,ZHONGZHIPHARM,总分-72.04,护城河-76.15,技术壁垒-84.72,市场地位-88.99,商业质量-56.85,经营质量-51.84,行业前景-70.00,治理风险-67.07,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-06806,SWHY,总分-72.03,护城河-94.80,技术壁垒-46.55,市场地位-100.00,商业质量-73.23,经营质量-54.95,行业前景-54.00,治理风险-68.08,其他金融,above_average,full_coverage_dimensional_v0.3
-00926,BESUNYEN,总分-72.02,护城河-76.74,技术壁垒-85.70,市场地位-82.40,商业质量-65.36,经营质量-48.27,行业前景-70.00,治理风险-65.84,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-03393,WASION HOLDINGS,总分-72.01,护城河-73.44,技术壁垒-73.35,市场地位-100.00,商业质量-68.16,经营质量-60.37,行业前景-56.00,治理风险-63.21,工业工程,above_average,full_coverage_dimensional_v0.3
-06682,PHANCY,总分-72.00,护城河-75.74,技术壁垒-78.23,市场地位-90.78,商业质量-67.64,经营质量-41.58,行业前景-78.00,治理风险-68.16,软件服务,above_average,full_coverage_dimensional_v0.3
-02256,ABBISKO-B,总分-71.99,护城河-77.21,技术壁垒-85.14,市场地位-83.63,商业质量-62.10,经营质量-50.29,行业前景-70.00,治理风险-65.46,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-02018,AAC TECH,总分-71.98,护城河-76.31,技术壁垒-73.73,市场地位-100.00,商业质量-63.29,经营质量-59.73,行业前景-56.00,治理风险-63.67,工业工程,above_average,full_coverage_dimensional_v0.3
-01316,NEXTEER,总分-71.96,护城河-76.35,技术壁垒-79.81,市场地位-94.91,商业质量-56.00,经营质量-56.56,行业前景-66.00,治理风险-64.36,汽车,above_average,full_coverage_dimensional_v0.3
-03606,FUYAO GLASS,总分-71.96,护城河-74.03,技术壁垒-81.35,市场地位-91.36,商业质量-66.22,经营质量-51.48,行业前景-66.00,治理风险-64.56,汽车,above_average,full_coverage_dimensional_v0.3
-02726,EPIWORLD,总分-71.94,护城河-75.57,技术壁垒-86.57,市场地位-84.90,商业质量-57.24,经营质量-51.50,行业前景-72.00,治理风险-67.78,半导体,above_average,full_coverage_dimensional_v0.3
-00690,UNI-BIO GROUP,总分-71.93,护城河-72.89,技术壁垒-84.50,市场地位-83.23,商业质量-67.12,经营质量-54.52,行业前景-70.00,治理风险-62.48,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-09678,UNISOUND,总分-71.84,护城河-75.55,技术壁垒-76.16,市场地位-75.25,商业质量-60.87,经营质量-63.16,行业前景-78.00,治理风险-72.70,软件服务,above_average,full_coverage_dimensional_v0.3
-00239,PAK FAH YEOW,总分-71.82,护城河-70.63,技术壁垒-77.99,市场地位-78.70,商业质量-77.57,经营质量-59.51,行业前景-70.00,治理风险-62.97,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-00384,CHINA GAS HOLD,总分-71.82,护城河-98.24,技术壁垒-43.44,市场地位-100.00,商业质量-71.41,经营质量-47.97,行业前景-62.00,治理风险-68.41,公用事业,above_average,full_coverage_dimensional_v0.3
-01070,TCL ELECTRONICS,总分-71.81,护城河-76.97,技术壁垒-73.23,市场地位-100.00,商业质量-58.85,经营质量-61.41,行业前景-56.00,治理风险-65.69,家庭电器及用品,above_average,full_coverage_dimensional_v0.3
-00388,HKEX,总分-71.76,护城河-88.64,技术壁垒-48.85,市场地位-100.00,商业质量-76.86,经营质量-56.98,行业前景-54.00,治理风险-66.65,其他金融,above_average,full_coverage_dimensional_v0.3
-00921,HISENSE HA,总分-71.76,护城河-76.90,技术壁垒-73.66,市场地位-100.00,商业质量-56.62,经营质量-63.26,行业前景-56.00,治理风险-65.03,家庭电器及用品,above_average,full_coverage_dimensional_v0.3
-80388,HKEX-R,总分-71.76,护城河-88.64,技术壁垒-48.85,市场地位-100.00,商业质量-76.86,经营质量-56.98,行业前景-54.00,治理风险-66.65,其他金融,above_average,full_coverage_dimensional_v0.3
-00082,CRAZY SPORTS,总分-71.75,护城河-76.64,技术壁垒-80.41,市场地位-79.88,商业质量-61.55,经营质量-52.88,行业前景-78.00,治理风险-67.63,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-06188,BJ DIGITAL,总分-71.74,护城河-72.75,技术壁垒-76.00,市场地位-76.89,商业质量-51.71,经营质量-74.46,行业前景-78.00,治理风险-72.78,资讯科技器材,above_average,full_coverage_dimensional_v0.3
-06178,EB SECURITIES,总分-71.70,护城河-93.03,技术壁垒-55.48,市场地位-100.00,商业质量-72.94,经营质量-44.27,行业前景-54.00,治理风险-67.92,其他金融,above_average,full_coverage_dimensional_v0.3
-01985,MICROWARE,总分-71.67,护城河-77.66,技术壁垒-80.56,市场地位-82.31,商业质量-60.48,经营质量-49.11,行业前景-78.00,治理风险-67.68,软件服务,above_average,full_coverage_dimensional_v0.3
-03978,BESTSTUDY EDU,总分-71.66,护城河-73.16,技术壁垒-73.04,市场地位-99.86,商业质量-65.15,经营质量-62.27,行业前景-56.00,治理风险-62.43,支援服务,above_average,full_coverage_dimensional_v0.3
-01601,ZGC TEC LEASING,总分-71.65,护城河-83.64,技术壁垒-55.33,市场地位-98.69,商业质量-74.34,经营质量-60.23,行业前景-54.00,治理风险-65.45,其他金融,above_average,full_coverage_dimensional_v0.3
-06058,CISI FIN,总分-71.64,护城河-90.67,技术壁垒-53.76,市场地位-98.48,商业质量-65.13,经营质量-59.79,行业前景-54.00,治理风险-66.72,其他金融,above_average,full_coverage_dimensional_v0.3
-00807,SIICENVIRONMENT,总分-71.63,护城河-90.08,技术壁垒-51.55,市场地位-94.00,商业质量-76.87,经营质量-50.44,行业前景-62.00,治理风险-66.93,公用事业,above_average,full_coverage_dimensional_v0.3
-01299,AIA,总分-71.58,护城河-95.60,技术壁垒-47.00,市场地位-100.00,商业质量-68.00,经营质量-56.58,行业前景-54.00,治理风险-65.60,保险,above_average,full_coverage_dimensional_v0.3
-81299,AIA-R,总分-71.58,护城河-95.60,技术壁垒-47.00,市场地位-100.00,商业质量-68.00,经营质量-56.58,行业前景-54.00,治理风险-65.60,保险,above_average,full_coverage_dimensional_v0.3
-01858,CHUNLI MEDICAL,总分-71.55,护城河-74.87,技术壁垒-85.63,市场地位-79.40,商业质量-72.61,经营质量-42.80,行业前景-70.00,治理风险-67.38,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-00005,HSBC HOLDINGS,总分-71.52,护城河-93.78,技术壁垒-48.14,市场地位-100.00,商业质量-71.64,经营质量-52.50,行业前景-54.00,治理风险-68.00,银行,above_average,full_coverage_dimensional_v0.3
-02476,VGT,总分-71.47,护城河-72.40,技术壁垒-73.62,市场地位-98.84,商业质量-67.86,经营质量-58.34,行业前景-56.00,治理风险-64.83,工业工程,above_average,full_coverage_dimensional_v0.3
-02125,STRAWBEAR ENT,总分-71.44,护城河-70.66,技术壁垒-72.07,市场地位-89.92,商业质量-70.96,经营质量-51.51,行业前景-78.00,治理风险-67.31,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-08066,PHOENITRON HOLD,总分-71.44,护城河-73.80,技术壁垒-80.59,市场地位-74.76,商业质量-73.45,经营质量-51.13,行业前景-78.00,治理风险-62.41,资讯科技器材,above_average,full_coverage_dimensional_v0.3
-08480,FURNIWEB,总分-71.42,护城河-82.20,技术壁垒-47.40,市场地位-92.47,商业质量-85.98,经营质量-55.89,行业前景-70.00,治理风险-62.43,纺织、服饰及个人护理,above_average,full_coverage_dimensional_v0.3
-01478,Q TECH,总分-71.40,护城河-71.44,技术壁垒-73.46,市场地位-100.00,商业质量-66.08,经营质量-61.39,行业前景-56.00,治理风险-62.63,工业工程,above_average,full_coverage_dimensional_v0.3
-00501,OMNIVISION,总分-71.38,护城河-69.00,技术壁垒-90.00,市场地位-79.90,商业质量-58.00,经营质量-57.50,行业前景-72.00,治理风险-68.00,Semiconductors,above_average,full_coverage_dimensional_v0.3
-01473,PANGAEA CONNECT,总分-71.36,护城河-72.02,技术壁垒-80.20,市场地位-85.00,商业质量-61.34,经营质量-53.48,行业前景-78.00,治理风险-66.27,资讯科技器材,above_average,full_coverage_dimensional_v0.3
-02186,LUYE PHARMA,总分-71.36,护城河-76.00,技术壁垒-82.67,市场地位-80.50,商业质量-68.00,经营质量-45.50,行业前景-70.00,治理风险-70.00,医疗保健,above_average,full_coverage_dimensional_v0.3
-00667,CHINA EAST EDU,总分-71.28,护城河-72.70,技术壁垒-72.84,市场地位-100.00,商业质量-65.67,经营质量-59.30,行业前景-56.00,治理风险-63.45,支援服务,above_average,full_coverage_dimensional_v0.3
-01375,CC SECURITIES,总分-71.28,护城河-89.35,技术壁垒-53.86,市场地位-96.03,商业质量-72.88,经营质量-53.00,行业前景-54.00,治理风险-68.30,其他金融,above_average,full_coverage_dimensional_v0.3
-02368,EAGLE NICE,总分-71.26,护城河-92.06,技术壁垒-47.22,市场地位-97.68,商业质量-72.34,经营质量-46.06,行业前景-70.00,治理风险-65.67,纺织及服饰,above_average,full_coverage_dimensional_v0.3
-02380,CHINA POWER,总分-71.24,护城河-88.76,技术壁垒-43.65,市场地位-100.00,商业质量-72.95,经营质量-56.57,行业前景-62.00,治理风险-69.07,公用事业,above_average,full_coverage_dimensional_v0.3
-03390,TYCOON GROUP,总分-71.24,护城河-74.44,技术壁垒-76.61,市场地位-85.58,商业质量-68.58,经营质量-51.23,行业前景-70.00,治理风险-66.51,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-03696,INSILICO,总分-71.23,护城河-76.00,技术壁垒-84.00,市场地位-80.50,商业质量-62.00,经营质量-50.00,行业前景-70.00,治理风险-68.00,Health Care,above_average,full_coverage_dimensional_v0.3
-09886,DINGDANG HEALTH,总分-71.22,护城河-69.71,技术壁垒-83.50,市场地位-88.93,商业质量-64.57,经营质量-49.35,行业前景-70.00,治理风险-68.20,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-08106,XINHUA LANDE,总分-71.21,护城河-73.72,技术壁垒-80.29,市场地位-74.52,商业质量-69.87,经营质量-51.14,行业前景-78.00,治理风险-67.11,软件服务,above_average,full_coverage_dimensional_v0.3
-00579,JNCEC,总分-71.20,护城河-90.48,技术壁垒-48.03,市场地位-95.13,商业质量-80.35,经营质量-46.13,行业前景-62.00,治理风险-67.75,公用事业,above_average,full_coverage_dimensional_v0.3
-01133,HARBIN ELECTRIC,总分-71.18,护城河-72.79,技术壁垒-73.39,市场地位-100.00,商业质量-60.03,经营质量-62.71,行业前景-56.00,治理风险-64.71,工业工程,above_average,full_coverage_dimensional_v0.3
-02388,BOC HONG KONG,总分-71.17,护城河-91.35,技术壁垒-48.35,市场地位-100.00,商业质量-79.97,经营质量-48.26,行业前景-54.00,治理风险-62.67,银行,above_average,full_coverage_dimensional_v0.3
-03896,KINGSOFT CLOUD,总分-71.17,护城河-79.60,技术壁垒-77.17,市场地位-82.74,商业质量-61.09,经营质量-44.65,行业前景-78.00,治理风险-69.70,软件服务,above_average,full_coverage_dimensional_v0.3
-82388,BOC HONG KONG-R,总分-71.17,护城河-91.35,技术壁垒-48.35,市场地位-100.00,商业质量-79.97,经营质量-48.26,行业前景-54.00,治理风险-62.67,银行,above_average,full_coverage_dimensional_v0.3
-00150,HYPEBEAST,总分-71.14,护城河-77.98,技术壁垒-80.83,市场地位-83.42,商业质量-64.08,经营质量-40.58,行业前景-78.00,治理风险-66.25,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-02651,DAZHONG DENTAL,总分-71.14,护城河-71.83,技术壁垒-78.98,市场地位-80.84,商业质量-65.21,经营质量-60.85,行业前景-70.00,治理风险-64.50,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-01617,NANFANG COMM,总分-71.13,护城河-71.03,技术壁垒-80.46,市场地位-83.53,商业质量-66.73,经营质量-49.49,行业前景-78.00,治理风险-65.66,资讯科技器材,above_average,full_coverage_dimensional_v0.3
-02333,GWMOTOR,总分-71.13,护城河-73.81,技术壁垒-79.42,市场地位-98.05,商业质量-54.63,经营质量-50.56,行业前景-66.00,治理风险-69.28,汽车,above_average,full_coverage_dimensional_v0.3
-02718,MININGLAMP-W,总分-71.13,护城河-75.31,技术壁垒-76.00,市场地位-74.13,商业质量-42.23,经营质量-77.64,行业前景-78.00,治理风险-74.00,软件服务,above_average,full_coverage_dimensional_v0.3
-06687,JST GROUP,总分-71.13,护城河-77.00,技术壁垒-77.60,市场地位-80.70,商业质量-62.00,经营质量-50.00,行业前景-78.00,治理风险-68.00,Software & Services,above_average,full_coverage_dimensional_v0.3
-82333,GWMOTOR-R,总分-71.13,护城河-73.81,技术壁垒-79.42,市场地位-98.05,商业质量-54.63,经营质量-50.56,行业前景-66.00,治理风险-69.28,汽车,above_average,full_coverage_dimensional_v0.3
-00868,XINYI GLASS,总分-71.10,护城河-75.73,技术壁垒-73.12,市场地位-100.00,商业质量-63.46,经营质量-55.15,行业前景-56.00,治理风险-63.44,工业工程,above_average,full_coverage_dimensional_v0.3
-01425,JUSTIN ALLEN H,总分-71.10,护城河-82.15,技术壁垒-46.58,市场地位-91.82,商业质量-85.29,经营质量-56.15,行业前景-70.00,治理风险-62.37,纺织及服饰,above_average,full_coverage_dimensional_v0.3
-01999,MAN WAH HLDGS,总分-71.10,护城河-74.65,技术壁垒-72.71,市场地位-100.00,商业质量-64.48,经营质量-55.86,行业前景-56.00,治理风险-64.24,家庭电器及用品,above_average,full_coverage_dimensional_v0.3
-02378,PRU,总分-71.09,护城河-86.50,技术壁垒-56.60,市场地位-100.00,商业质量-67.10,经营质量-56.60,行业前景-54.00,治理风险-64.40,保险,above_average,full_coverage_dimensional_v0.3
-02325,YUNKANG GROUP,总分-71.07,护城河-75.98,技术壁垒-84.19,市场地位-80.62,商业质量-62.35,经营质量-48.36,行业前景-70.00,治理风险-67.72,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-00148,KINGBOARD HLDG,总分-71.06,护城河-72.97,技术壁垒-73.89,市场地位-100.00,商业质量-64.54,经营质量-56.78,行业前景-56.00,治理风险-64.02,工业工程,above_average,full_coverage_dimensional_v0.3
-00945,MANULIFE-S,总分-71.06,护城河-92.80,技术壁垒-49.00,市场地位-100.00,商业质量-53.40,经营质量-66.91,行业前景-54.00,治理风险-69.80,保险,above_average,full_coverage_dimensional_v0.3
-01809,PRINX CHENGSHAN,总分-71.06,护城河-63.23,技术壁垒-81.87,市场地位-91.52,商业质量-68.46,经营质量-59.92,行业前景-66.00,治理风险-62.79,汽车,above_average,full_coverage_dimensional_v0.3
-02638,HKELECTRIC-SS,总分-71.05,护城河-85.80,技术壁垒-44.29,市场地位-100.00,商业质量-84.93,经营质量-49.52,行业前景-62.00,治理风险-64.79,公用事业,above_average,full_coverage_dimensional_v0.3
-01211,BYD COMPANY,总分-71.04,护城河-71.65,技术壁垒-80.58,市场地位-100.00,商业质量-54.16,经营质量-50.80,行业前景-66.00,治理风险-68.49,汽车,above_average,full_coverage_dimensional_v0.3
-81211,BYD COMPANY-R,总分-71.04,护城河-71.65,技术壁垒-80.58,市场地位-100.00,商业质量-54.16,经营质量-50.80,行业前景-66.00,治理风险-68.49,汽车,above_average,full_coverage_dimensional_v0.3
-03332,SINOLIFE UTD,总分-71.02,护城河-74.52,技术壁垒-76.42,市场地位-85.96,商业质量-67.79,经营质量-50.91,行业前景-70.00,治理风险-65.17,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-03988,BANK OF CHINA,总分-71.02,护城河-95.57,技术壁垒-51.16,市场地位-100.00,商业质量-67.38,经营质量-43.86,行业前景-54.00,治理风险-72.67,银行,above_average,full_coverage_dimensional_v0.3
-08645,BYTE META,总分-71.02,护城河-70.00,技术壁垒-80.00,市场地位-80.70,商业质量-69.14,经营质量-50.00,行业前景-78.00,治理风险-68.00,软件服务,above_average,full_coverage_dimensional_v0.3
-06633,QINGCI GAMES,总分-71.00,护城河-68.32,技术壁垒-74.41,市场地位-87.41,商业质量-72.78,经营质量-51.79,行业前景-78.00,治理风险-63.78,软件服务,above_average,full_coverage_dimensional_v0.3
-06667,MEGA GENOMICS,总分-70.98,护城河-74.15,技术壁垒-85.51,市场地位-77.37,商业质量-69.19,经营质量-46.91,行业前景-70.00,治理风险-64.90,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-00666,REPT BATTERO,总分-70.97,护城河-74.47,技术壁垒-72.39,市场地位-100.00,商业质量-60.44,经营质量-58.18,行业前景-56.00,治理风险-66.85,工业工程,above_average,full_coverage_dimensional_v0.3
-00722,UMP,总分-70.97,护城河-74.39,技术壁垒-84.16,市场地位-77.56,商业质量-65.02,经营质量-50.66,行业前景-70.00,治理风险-67.47,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-08033,VODATEL NETWORK,总分-70.97,护城河-70.85,技术壁垒-81.03,市场地位-83.13,商业质量-61.25,经营质量-53.87,行业前景-78.00,治理风险-65.49,软件服务,above_average,full_coverage_dimensional_v0.3
-08158,CRMI,总分-70.97,护城河-66.60,技术壁垒-85.18,市场地位-70.56,商业质量-83.39,经营质量-53.06,行业前景-70.00,治理风险-62.58,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-06686,NOAH HOLDINGS,总分-70.93,护城河-92.70,技术壁垒-48.80,市场地位-100.00,商业质量-65.60,经营质量-57.44,行业前景-54.00,治理风险-64.03,其他金融,above_average,full_coverage_dimensional_v0.3
-06690,HAIER SMARTHOME,总分-70.93,护城河-76.84,技术壁垒-72.97,市场地位-100.00,商业质量-59.82,经营质量-54.13,行业前景-56.00,治理风险-66.75,家庭电器及用品,above_average,full_coverage_dimensional_v0.3
-00373,ALLIED GROUP,总分-70.92,护城河-88.94,技术壁垒-48.36,市场地位-100.00,商业质量-71.50,经营质量-57.10,行业前景-54.00,治理风险-65.53,其他金融,above_average,full_coverage_dimensional_v0.3
-00030,YNBY INTL,总分-70.89,护城河-77.85,技术壁垒-83.26,市场地位-83.64,商业质量-61.26,经营质量-42.94,行业前景-70.00,治理风险-68.43,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-01141,CMBC CAPITAL,总分-70.89,护城河-88.72,技术壁垒-54.84,市场地位-94.65,商业质量-73.81,经营质量-52.50,行业前景-54.00,治理风险-64.62,其他金融,above_average,full_coverage_dimensional_v0.3
-01831,SHIFANG HLDG,总分-70.84,护城河-78.86,技术壁垒-72.34,市场地位-84.67,商业质量-55.53,经营质量-54.56,行业前景-78.00,治理风险-67.52,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-09638,FERRETTI,总分-70.83,护城河-73.23,技术壁垒-73.77,市场地位-100.00,商业质量-60.97,经营质量-58.68,行业前景-56.00,治理风险-63.56,工业工程,above_average,full_coverage_dimensional_v0.3
-01818,ZHAOJIN MINING,总分-70.82,护城河-77.50,技术壁垒-77.50,市场地位-90.70,商业质量-62.37,经营质量-47.94,行业前景-60.00,治理风险-71.00,黄金及贵金属,above_average,full_coverage_dimensional_v0.3
-01519,J&T EXPRESS-W,总分-70.80,护城河-76.36,技术壁垒-71.33,市场地位-100.00,商业质量-57.17,经营质量-59.84,行业前景-56.00,治理风险-64.73,工用运输,above_average,full_coverage_dimensional_v0.3
-00169,WANDA HOTEL DEV,总分-70.79,护城河-83.37,技术壁垒-48.16,市场地位-89.54,商业质量-83.00,经营质量-54.74,行业前景-70.00,治理风险-62.00,酒店、赌场及消闲设施,above_average,full_coverage_dimensional_v0.3
-00315,SMARTONE TELE,总分-70.79,护城河-90.80,技术壁垒-52.00,市场地位-87.60,商业质量-71.18,经营质量-55.09,行业前景-62.00,治理风险-66.42,电讯,above_average,full_coverage_dimensional_v0.3
-01184,S.A.S. DRAGON,总分-70.78,护城河-74.44,技术壁垒-73.27,市场地位-100.00,商业质量-57.04,经营质量-60.97,行业前景-56.00,治理风险-63.62,工业工程,above_average,full_coverage_dimensional_v0.3
-02729,GALAXIS TECH,总分-70.76,护城河-74.72,技术壁垒-76.90,市场地位-73.90,商业质量-59.47,经营质量-59.64,行业前景-78.00,治理风险-70.76,软件服务,above_average,full_coverage_dimensional_v0.3
-00314,SIPAI HEALTH,总分-70.75,护城河-77.93,技术壁垒-82.54,市场地位-83.03,商业质量-57.94,经营质量-46.16,行业前景-70.00,治理风险-69.33,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-03698,HUISHANG BANK,总分-70.75,护城河-83.78,技术壁垒-55.49,市场地位-92.37,商业质量-74.13,经营质量-60.93,行业前景-54.00,治理风险-63.67,银行,above_average,full_coverage_dimensional_v0.3
-00669,TECHTRONIC IND,总分-70.72,护城河-73.55,技术壁垒-73.91,市场地位-100.00,商业质量-61.04,经营质量-57.30,行业前景-56.00,治理风险-63.32,家庭电器及用品,above_average,full_coverage_dimensional_v0.3
-03328,BANKCOMM,总分-70.70,护城河-90.22,技术壁垒-53.32,市场地位-97.64,商业质量-70.02,经营质量-47.71,行业前景-54.00,治理风险-71.33,银行,above_average,full_coverage_dimensional_v0.3
-08148,WUXI LIFE,总分-70.70,护城河-66.28,技术壁垒-81.25,市场地位-74.16,商业质量-79.14,经营质量-51.19,行业前景-78.00,治理风险-63.30,软件服务,above_average,full_coverage_dimensional_v0.3
-00288,WH GROUP,总分-70.67,护城河-77.86,技术壁垒-73.09,市场地位-100.00,商业质量-56.40,经营质量-59.76,行业前景-50.00,治理风险-64.09,食物饮品,above_average,full_coverage_dimensional_v0.3
-00611,CNE TECH CORP,总分-70.66,护城河-85.84,技术壁垒-50.16,市场地位-77.00,商业质量-85.68,经营质量-60.41,行业前景-62.00,治理风险-66.44,公用事业,above_average,full_coverage_dimensional_v0.3
-01658,PSBC,总分-70.66,护城河-92.32,技术壁垒-51.38,市场地位-100.00,商业质量-58.72,经营质量-54.19,行业前景-54.00,治理风险-73.67,银行,above_average,full_coverage_dimensional_v0.3
-00855,CHINA WATER,总分-70.64,护城河-88.00,技术壁垒-44.19,市场地位-89.87,商业质量-84.28,经营质量-51.73,行业前景-62.00,治理风险-68.74,公用事业,above_average,full_coverage_dimensional_v0.3
-01428,BRIGHT SMART,总分-70.64,护城河-89.90,技术壁垒-55.23,市场地位-97.34,商业质量-69.83,经营质量-49.79,行业前景-54.00,治理风险-64.33,其他金融,above_average,full_coverage_dimensional_v0.3
-02507,CIRRUS,总分-70.63,护城河-73.03,技术壁垒-73.85,市场地位-99.95,商业质量-59.56,经营质量-59.50,行业前景-56.00,治理风险-62.58,工业工程,above_average,full_coverage_dimensional_v0.3
-00631,SANY INT'L,总分-70.62,护城河-71.79,技术壁垒-73.00,市场地位-100.00,商业质量-61.99,经营质量-59.09,行业前景-56.00,治理风险-64.25,工业工程,above_average,full_coverage_dimensional_v0.3
-00111,CINDA INTL HLDG,总分-70.61,护城河-86.52,技术壁垒-54.64,市场地位-89.86,商业质量-76.64,经营质量-56.22,行业前景-54.00,治理风险-64.47,其他金融,above_average,full_coverage_dimensional_v0.3
-02498,ROBOSENSE,总分-70.61,护城河-78.09,技术壁垒-77.01,市场地位-80.55,商业质量-65.67,经营质量-41.29,行业前景-78.00,治理风险-68.97,软件服务,above_average,full_coverage_dimensional_v0.3
-00318,VONGROUP,总分-70.60,护城河-73.00,技术壁垒-80.00,市场地位-80.70,商业质量-61.43,经营质量-50.00,行业前景-78.00,治理风险-68.00,软件服务,above_average,full_coverage_dimensional_v0.3
-02522,RIMAG GROUP,总分-70.60,护城河-70.27,技术壁垒-83.84,市场地位-82.52,商业质量-63.27,经营质量-50.86,行业前景-70.00,治理风险-69.01,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-06936,SF HOLDING,总分-70.59,护城河-76.82,技术壁垒-73.27,市场地位-100.00,商业质量-56.77,经营质量-54.09,行业前景-56.00,治理风险-67.27,工用运输,above_average,full_coverage_dimensional_v0.3
-00133,CHINA MERCHANTS,总分-70.58,护城河-81.81,技术壁垒-56.95,市场地位-100.00,商业质量-70.63,经营质量-57.48,行业前景-54.00,治理风险-62.38,其他金融,above_average,full_coverage_dimensional_v0.3
-03808,SINOTRUK,总分-70.58,护城河-73.86,技术壁垒-73.81,市场地位-100.00,商业质量-62.51,经营质量-54.23,行业前景-56.00,治理风险-63.79,工业工程,above_average,full_coverage_dimensional_v0.3
-02799,CITIC FAMC,总分-70.57,护城河-90.89,技术壁垒-46.89,市场地位-100.00,商业质量-61.60,经营质量-62.99,行业前景-54.00,治理风险-66.20,其他金融,above_average,full_coverage_dimensional_v0.3
-02878,SOLOMON SYSTECH,总分-70.55,护城河-75.14,技术壁垒-86.00,市场地位-84.54,商业质量-54.80,经营质量-47.33,行业前景-72.00,治理风险-65.11,半导体,above_average,full_coverage_dimensional_v0.3
-08082,QINGHUA HOLD,总分-70.55,护城河-70.38,技术壁垒-78.97,市场地位-65.70,商业质量-55.20,经营质量-73.05,行业前景-78.00,治理风险-73.79,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-01788,GUOTAI JUNAN I,总分-70.51,护城河-90.17,技术壁垒-46.94,市场地位-100.00,商业质量-73.25,经营质量-51.78,行业前景-54.00,治理风险-66.50,其他金融,above_average,full_coverage_dimensional_v0.3
-02609,BAYZED HEALTH,总分-70.51,护城河-76.84,技术壁垒-82.30,市场地位-80.72,商业质量-57.62,经营质量-48.86,行业前景-70.00,治理风险-69.78,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-02415,MEDSCI,总分-70.45,护城河-74.15,技术壁垒-84.48,市场地位-77.20,商业质量-66.37,经营质量-45.76,行业前景-70.00,治理风险-67.86,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-03317,XUNCE,总分-70.45,护城河-70.00,技术壁垒-82.40,市场地位-80.70,商业质量-62.00,经营质量-50.00,行业前景-78.00,治理风险-68.00,Software & Services,above_average,full_coverage_dimensional_v0.3
-00020,SENSETIME-W,总分-70.44,护城河-78.21,技术壁垒-78.23,市场地位-79.86,商业质量-58.95,经营质量-45.15,行业前景-78.00,治理风险-70.03,软件服务,above_average,full_coverage_dimensional_v0.3
-80020,SENSETIME-WR,总分-70.44,护城河-78.21,技术壁垒-78.23,市场地位-79.86,商业质量-58.95,经营质量-45.15,行业前景-78.00,治理风险-70.03,软件服务,above_average,full_coverage_dimensional_v0.3
-00819,TIANNENG POWER,总分-70.42,护城河-76.36,技术壁垒-73.50,市场地位-100.00,商业质量-50.61,经营质量-60.58,行业前景-56.00,治理风险-65.35,工业工程,above_average,full_coverage_dimensional_v0.3
-01362,SIS MOBILE,总分-70.42,护城河-78.72,技术壁垒-72.72,市场地位-84.10,商业质量-60.32,经营质量-48.74,行业前景-78.00,治理风险-64.64,资讯科技器材,above_average,full_coverage_dimensional_v0.3
-02580,AUX ELECTRIC,总分-70.42,护城河-71.87,技术壁垒-73.48,市场地位-100.00,商业质量-57.51,经营质量-61.85,行业前景-56.00,治理风险-63.45,家庭电器及用品,above_average,full_coverage_dimensional_v0.3
-02501,MAIYUE TECH,总分-70.41,护城河-64.91,技术壁垒-80.77,市场地位-79.13,商业质量-70.29,经营质量-53.49,行业前景-78.00,治理风险-67.35,软件服务,above_average,full_coverage_dimensional_v0.3
-06136,KANGDA ENV,总分-70.41,护城河-89.28,技术壁垒-50.37,市场地位-84.13,商业质量-82.12,经营质量-48.89,行业前景-62.00,治理风险-67.26,公用事业,above_average,full_coverage_dimensional_v0.3
-01571,XIN POINT HOLD,总分-70.39,护城河-69.29,技术壁垒-81.10,市场地位-80.95,商业质量-68.85,经营质量-57.03,行业前景-66.00,治理风险-62.39,汽车,above_average,full_coverage_dimensional_v0.3
-08279,AGTECH HOLDINGS,总分-70.38,护城河-88.95,技术壁垒-53.21,市场地位-89.80,商业质量-66.44,经营质量-50.03,行业前景-70.00,治理风险-66.94,酒店、赌场及消闲设施,above_average,full_coverage_dimensional_v0.3
-00728,CHINA TELECOM,总分-70.37,护城河-96.40,技术壁垒-42.80,市场地位-100.00,商业质量-65.80,经营质量-46.27,行业前景-62.00,治理风险-69.58,电讯,above_average,full_coverage_dimensional_v0.3
-06113,BITSTRAT HLDGS,总分-70.37,护城河-75.24,技术壁垒-79.24,市场地位-77.17,商业质量-60.51,经营质量-49.74,行业前景-78.00,治理风险-68.90,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-09901,NEW ORIENTAL-S,总分-70.31,护城河-78.00,技术壁垒-73.90,市场地位-100.00,商业质量-53.90,经营质量-53.90,行业前景-56.00,治理风险-64.46,支援服务,above_average,full_coverage_dimensional_v0.3
-00168,TSINGTAO BREW,总分-70.30,护城河-69.02,技术壁垒-73.73,市场地位-99.89,商业质量-63.93,经营质量-57.06,行业前景-56.00,治理风险-66.47,食物饮品,above_average,full_coverage_dimensional_v0.3
-03958,DFZQ,总分-70.28,护城河-86.91,技术壁垒-47.38,市场地位-100.00,商业质量-71.77,经营质量-55.30,行业前景-54.00,治理风险-68.00,其他金融,above_average,full_coverage_dimensional_v0.3
-00699,JOYSON ELEC,总分-70.27,护城河-69.45,技术壁垒-79.68,市场地位-88.94,商业质量-60.76,经营质量-54.68,行业前景-66.00,治理风险-67.90,汽车,above_average,full_coverage_dimensional_v0.3
-02858,YIXIN,总分-70.21,护城河-88.20,技术壁垒-55.28,市场地位-100.00,商业质量-68.01,经营质量-47.97,行业前景-54.00,治理风险-65.22,其他金融,above_average,full_coverage_dimensional_v0.3
-09923,YEAHKA,总分-70.21,护城河-91.23,技术壁垒-55.48,市场地位-99.19,商业质量-61.69,经营质量-49.68,行业前景-54.00,治理风险-65.97,其他金融,above_average,full_coverage_dimensional_v0.3
-01905,HAITONG UT,总分-70.18,护城河-87.54,技术壁垒-47.13,市场地位-100.00,商业质量-68.18,经营质量-58.76,行业前景-54.00,治理风险-65.83,其他金融,above_average,full_coverage_dimensional_v0.3
-01063,SUNCORP TECH,总分-70.17,护城河-71.05,技术壁垒-80.33,市场地位-69.84,商业质量-81.43,经营质量-43.77,行业前景-78.00,治理风险-62.20,资讯科技器材,above_average,full_coverage_dimensional_v0.3
-06651,51WORLD,总分-70.16,护城河-70.00,技术壁垒-80.80,市场地位-80.70,商业质量-62.00,经营质量-50.00,行业前景-78.00,治理风险-68.00,Software & Services,above_average,full_coverage_dimensional_v0.3
-00046,COMPUTER & TECH,总分-70.14,护城河-67.91,技术壁垒-81.83,市场地位-77.64,商业质量-64.74,经营质量-53.75,行业前景-78.00,治理风险-65.16,软件服务,above_average,full_coverage_dimensional_v0.3
-01657,SG GROUP HLDGS,总分-70.13,护城河-85.00,技术壁垒-53.00,市场地位-82.30,商业质量-78.05,经营质量-50.00,行业前景-70.00,治理风险-68.00,纺织及服饰,above_average,full_coverage_dimensional_v0.3
-03633,ZHONGYU ENERGY,总分-70.11,护城河-87.00,技术壁垒-49.95,市场地位-93.13,商业质量-68.32,经营质量-55.32,行业前景-62.00,治理风险-67.92,公用事业,above_average,full_coverage_dimensional_v0.3
-08051,CIRCUTECH,总分-70.11,护城河-69.26,技术壁垒-82.03,市场地位-79.43,商业质量-72.04,经营质量-42.95,行业前景-78.00,治理风险-63.63,资讯科技器材,above_average,full_coverage_dimensional_v0.3
-00113,DICKSON CONCEPT,总分-70.09,护城河-84.48,技术壁垒-47.30,市场地位-90.46,商业质量-78.56,经营质量-49.98,行业前景-70.00,治理风险-66.65,纺织及服饰,above_average,full_coverage_dimensional_v0.3
-02138,EC HEALTHCARE,总分-70.09,护城河-79.14,技术壁垒-74.50,市场地位-85.36,商业质量-56.54,经营质量-48.91,行业前景-70.00,治理风险-69.49,其他医疗保健,above_average,full_coverage_dimensional_v0.3
-00018,ORIENTAL M G,总分-70.07,护城河-70.10,技术壁垒-80.62,市场地位-81.48,商业质量-62.12,经营质量-48.96,行业前景-78.00,治理风险-67.20,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-02488,LAUNCH TECH,总分-70.07,护城河-68.03,技术壁垒-81.48,市场地位-78.29,商业质量-68.37,经营质量-59.47,行业前景-66.00,治理风险-62.20,汽车,above_average,full_coverage_dimensional_v0.3
-00210,DAPHNE INT'L,总分-70.04,护城河-81.94,技术壁垒-45.93,市场地位-85.31,商业质量-88.28,经营质量-53.11,行业前景-70.00,治理风险-62.61,纺织及服饰,above_average,full_coverage_dimensional_v0.3
-01579,YIHAI INTL,总分-70.03,护城河-70.84,技术壁垒-73.18,市场地位-95.12,商业质量-65.15,经营质量-58.68,行业前景-56.00,治理风险-62.70,食物饮品,above_average,full_coverage_dimensional_v0.3
-01739,QEEKA HOME,总分-70.03,护城河-76.74,技术壁垒-77.93,市场地位-77.90,商业质量-65.26,经营质量-40.91,行业前景-78.00,治理风险-69.43,媒体及娱乐,above_average,full_coverage_dimensional_v0.3
-06955,BOAN BIOTECH,总分-70.03,护城河-70.37,技术壁垒-84.29,市场地位-83.36,商业质量-59.28,经营质量-50.07,行业前景-70.00,治理风险-67.48,药品及生物科技,above_average,full_coverage_dimensional_v0.3
-02001,NEW HIGHER EDU,总分-70.02,护城河-73.66,技术壁垒-72.55,市场地位-100.00,商业质量-60.31,经营质量-53.54,行业前景-56.00,治理风险-65.18,支援服务,above_average,full_coverage_dimensional_v0.3
-00751,SKYWORTH GROUP,总分-70.01,护城河-75.48,技术壁垒-72.54,市场地位-100.00,商业质量-54.33,经营质量-55.25,行业前景-56.00,治理风险-67.54,家庭电器及用品,above_average,full_coverage_dimensional_v0.3
+02600,CHALCO,总分-86.73,护城河-93.25,技术壁垒-100.00,市场地位-100.00,商业质量-63.88,经营质量-54.98,行业前景-72.00,治理风险-68.79,一般金属及矿石,stronger_than_peers,full_coverage_dimensional_v0.4
+00580,SUN.KING TECH,总分-80.64,护城河-86.22,技术壁垒-94.53,市场地位-86.24,商业质量-66.64,经营质量-46.67,行业前景-68.00,治理风险-68.07,工业工程,stronger_than_peers,full_coverage_dimensional_v0.4
+09999,NTES-S,总分-78.90,护城河-81.87,技术壁垒-82.00,市场地位-88.47,商业质量-68.08,经营质量-58.55,行业前景-78.00,治理风险-67.20,软件服务,above_average,full_coverage_dimensional_v0.4
+01024,KUAISHOU-W,总分-78.65,护城河-81.91,技术壁垒-81.90,市场地位-88.66,商业质量-68.60,经营质量-53.33,行业前景-78.00,治理风险-67.27,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+00700,TENCENT,总分-78.64,护城河-81.93,技术壁垒-81.95,市场地位-88.74,商业质量-69.33,经营质量-50.59,行业前景-78.00,治理风险-68.46,软件服务,above_average,full_coverage_dimensional_v0.4
+01530,3SBIO,总分-78.59,护城河-80.40,技术壁垒-85.97,市场地位-87.08,商业质量-74.13,经营质量-58.31,行业前景-70.00,治理风险-67.08,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+09626,BILIBILI-W,总分-78.59,护城河-81.66,技术壁垒-81.86,市场地位-87.21,商业质量-67.37,经营质量-57.75,行业前景-78.00,治理风险-68.33,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+01860,MOBVISTA,总分-78.48,护城河-81.57,技术壁垒-81.55,市场地位-86.45,商业质量-68.13,经营质量-58.89,行业前景-78.00,治理风险-67.64,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+00696,TRAVELSKY TECH,总分-78.43,护城河-81.40,技术壁垒-81.66,市场地位-87.09,商业质量-68.72,经营质量-56.11,行业前景-78.00,治理风险-67.77,软件服务,above_average,full_coverage_dimensional_v0.4
+09898,WB-SW,总分-78.43,护城河-81.48,技术壁垒-82.00,市场地位-87.14,商业质量-65.98,经营质量-57.87,行业前景-78.00,治理风险-67.80,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+09911,NEWBORNTOWN,总分-78.43,护城河-81.05,技术壁垒-81.66,市场地位-85.41,商业质量-71.11,经营质量-59.03,行业前景-78.00,治理风险-67.11,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+01679,RISECOMM GP,总分-78.40,护城河-86.38,技术壁垒-92.79,市场地位-71.47,商业质量-56.47,经营质量-59.94,行业前景-68.00,治理风险-71.70,软件服务,above_average,full_coverage_dimensional_v0.4
+09698,GDS-SW,总分-78.34,护城河-81.60,技术壁垒-81.58,市场地位-87.25,商业质量-65.13,经营质量-56.82,行业前景-78.00,治理风险-69.35,软件服务,above_average,full_coverage_dimensional_v0.4
+01318,MAO GEPING,总分-78.24,护城河-80.36,技术壁垒-85.94,市场地位-86.67,商业质量-70.94,经营质量-58.02,行业前景-70.00,治理风险-67.10,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+01698,TME-SW,总分-78.23,护城河-81.31,技术壁垒-81.62,市场地位-86.45,商业质量-68.29,经营质量-54.31,行业前景-78.00,治理风险-68.75,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+02269,WUXI BIO,总分-78.13,护城河-80.54,技术壁垒-85.68,市场地位-87.13,商业质量-68.88,经营质量-57.28,行业前景-70.00,治理风险-67.77,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+00992,LENOVO GROUP,总分-78.09,护城河-81.34,技术壁垒-81.61,市场地位-86.57,商业质量-65.54,经营质量-55.56,行业前景-78.00,治理风险-68.53,资讯科技器材,above_average,full_coverage_dimensional_v0.4
+06618,JD HEALTH,总分-78.04,护城河-80.74,技术壁垒-85.89,市场地位-87.77,商业质量-65.86,经营质量-56.43,行业前景-70.00,治理风险-67.97,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+03320,CHINARES PHARMA,总分-78.01,护城河-81.00,技术壁垒-85.44,市场地位-88.27,商业质量-64.35,经营质量-56.15,行业前景-70.00,治理风险-69.21,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+03355,FS.COM,总分-77.82,护城河-80.34,技术壁垒-81.74,市场地位-83.57,商业质量-69.25,经营质量-58.47,行业前景-78.00,治理风险-67.24,软件服务,above_average,full_coverage_dimensional_v0.4
+09888,BIDU-SW,总分-77.81,护城河-81.74,技术壁垒-81.79,市场地位-87.97,商业质量-62.41,经营质量-48.90,行业前景-78.00,治理风险-68.91,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+00354,CHINASOFT INT'L,总分-77.77,护城河-81.67,技术壁垒-81.10,市场地位-86.88,商业质量-60.91,经营质量-55.65,行业前景-78.00,治理风险-69.03,软件服务,above_average,full_coverage_dimensional_v0.4
+02359,WUXI APPTEC,总分-77.75,护城河-80.14,技术壁垒-85.84,市场地位-85.94,商业质量-69.29,经营质量-53.85,行业前景-70.00,治理风险-68.33,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+02373,BEAUTYFARM MED,总分-77.73,护城河-79.96,技术壁垒-85.81,市场地位-84.59,商业质量-67.58,经营质量-60.28,行业前景-70.00,治理风险-68.01,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+00285,BYD ELECTRONIC,总分-77.65,护城河-81.18,技术壁垒-81.80,市场地位-85.72,商业质量-63.23,经营质量-53.79,行业前景-78.00,治理风险-68.02,资讯科技器材,above_average,full_coverage_dimensional_v0.4
+00861,DC HOLDINGS,总分-77.65,护城河-81.74,技术壁垒-80.60,市场地位-84.44,商业质量-66.47,经营质量-52.75,行业前景-78.00,治理风险-69.92,软件服务,above_average,full_coverage_dimensional_v0.4
+01177,SBP GROUP,总分-77.65,护城河-80.67,技术壁垒-84.73,市场地位-87.19,商业质量-64.85,经营质量-57.05,行业前景-70.00,治理风险-68.49,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+09636,JF SMARTINVEST,总分-77.65,护城河-80.54,技术壁垒-81.76,市场地位-84.21,商业质量-65.43,经营质量-58.43,行业前景-78.00,治理风险-67.08,软件服务,above_average,full_coverage_dimensional_v0.4
+03296,HUAQIN,总分-77.64,护城河-80.69,技术壁垒-81.74,市场地位-83.75,商业质量-66.81,经营质量-54.41,行业前景-78.00,治理风险-69.54,资讯科技器材,above_average,full_coverage_dimensional_v0.4
+00853,MICROPORT,总分-77.63,护城河-80.60,技术壁垒-84.91,市场地位-86.67,商业质量-65.77,经营质量-54.95,行业前景-70.00,治理风险-69.88,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+00981,SMIC,总分-77.63,护城河-78.00,技术壁垒-87.71,市场地位-88.00,商业质量-61.69,经营质量-53.97,行业前景-72.00,治理风险-69.44,半导体,above_average,full_coverage_dimensional_v0.4
+00268,KINGDEE INT'L,总分-77.58,护城河-81.21,技术壁垒-80.70,市场地位-84.07,商业质量-66.24,经营质量-54.99,行业前景-78.00,治理风险-69.72,软件服务,above_average,full_coverage_dimensional_v0.4
+01515,CR MEDICAL,总分-77.54,护城河-80.68,技术壁垒-85.33,市场地位-87.18,商业质量-62.05,经营质量-56.26,行业前景-70.00,治理风险-68.73,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+09890,TANWAN,总分-77.44,护城河-80.68,技术壁垒-81.81,市场地位-84.81,商业质量-68.14,经营质量-49.14,行业前景-78.00,治理风险-67.04,软件服务,above_average,full_coverage_dimensional_v0.4
+00136,CHINA RUYI,总分-77.43,护城河-80.45,技术壁垒-81.28,市场地位-83.93,商业质量-67.13,经营质量-54.85,行业前景-78.00,治理风险-67.74,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+00917,QUNABOX GROUP,总分-77.43,护城河-79.93,技术壁垒-81.72,市场地位-81.76,商业质量-69.60,经营质量-57.73,行业前景-78.00,治理风险-67.37,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+02525,HESAI-W,总分-77.39,护城河-80.41,技术壁垒-81.84,市场地位-83.52,商业质量-69.42,经营质量-49.86,行业前景-78.00,治理风险-68.01,软件服务,above_average,full_coverage_dimensional_v0.4
+02666,UNI MEDICAL,总分-77.38,护城河-77.00,技术壁垒-85.68,市场地位-88.75,商业质量-67.43,经营质量-58.02,行业前景-70.00,治理风险-69.30,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+02276,CONANT OPTICAL,总分-77.31,护城河-79.40,技术壁垒-85.74,市场地位-83.79,商业质量-68.90,经营质量-57.04,行业前景-70.00,治理风险-67.24,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+00552,CHINACOMSERVICE,总分-77.30,护城河-81.02,技术壁垒-81.34,市场地位-85.46,商业质量-61.72,经营质量-52.63,行业前景-78.00,治理风险-68.63,资讯科技器材,above_average,full_coverage_dimensional_v0.4
+02038,FIH,总分-77.30,护城河-80.85,技术壁垒-81.28,市场地位-83.23,商业质量-66.83,经营质量-51.30,行业前景-78.00,治理风险-69.24,资讯科技器材,above_average,full_coverage_dimensional_v0.4
+02273,GUSHENGTANG,总分-77.26,护城河-80.04,技术壁垒-85.84,市场地位-85.20,商业质量-66.44,经营质量-52.38,行业前景-70.00,治理风险-67.67,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+03888,KINGSOFT,总分-77.25,护城河-77.54,技术壁垒-81.71,市场地位-87.38,商业质量-66.77,经营质量-55.99,行业前景-78.00,治理风险-67.93,软件服务,above_average,full_coverage_dimensional_v0.4
+02696,HENLIUS,总分-77.23,护城河-79.54,技术壁垒-85.81,市场地位-82.84,商业质量-67.25,经营质量-58.54,行业前景-70.00,治理风险-67.89,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+06699,ANGELALIGN,总分-77.18,护城河-79.56,技术壁垒-85.71,市场地位-82.89,商业质量-68.07,经营质量-56.06,行业前景-70.00,治理风险-68.68,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+00777,NETDRAGON,总分-77.17,护城河-80.74,技术壁垒-81.39,市场地位-83.89,商业质量-61.76,经营质量-54.62,行业前景-78.00,治理风险-69.15,软件服务,above_average,full_coverage_dimensional_v0.4
+03700,INKEVERSE,总分-77.12,护城河-80.97,技术壁垒-81.38,市场地位-84.34,商业质量-61.94,经营质量-52.52,行业前景-78.00,治理风险-68.12,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+09885,YSB,总分-77.05,护城河-80.47,技术壁垒-84.91,市场地位-83.61,商业质量-64.94,经营质量-55.02,行业前景-70.00,治理风险-68.89,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+01675,ASIAINFO TECH,总分-77.04,护城河-81.14,技术壁垒-81.13,市场地位-84.36,商业质量-62.41,经营质量-49.36,行业前景-78.00,治理风险-69.47,软件服务,above_average,full_coverage_dimensional_v0.4
+00241,ALI HEALTH,总分-77.02,护城河-80.34,技术壁垒-84.54,市场地位-85.54,商业质量-62.77,经营质量-55.78,行业前景-70.00,治理风险-68.13,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+01276,HENGRUI PHARMA,总分-76.99,护城河-79.81,技术壁垒-85.15,市场地位-84.70,商业质量-67.48,经营质量-50.73,行业前景-70.00,治理风险-68.53,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+01347,HUA HONG SEMI,总分-76.99,护城河-77.64,技术壁垒-87.14,市场地位-86.57,商业质量-59.03,经营质量-53.98,行业前景-72.00,治理风险-69.67,半导体,above_average,full_coverage_dimensional_v0.4
+01729,TIME INTERCON,总分-76.99,护城河-80.03,技术壁垒-81.15,市场地位-81.72,商业质量-66.70,经营质量-56.25,行业前景-78.00,治理风险-67.31,资讯科技器材,above_average,full_coverage_dimensional_v0.4
+00512,GRAND PHARMA,总分-76.98,护城河-80.07,技术壁垒-85.07,市场地位-84.72,商业质量-62.94,经营质量-55.94,行业前景-70.00,治理风险-68.25,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+01896,MAOYAN ENT,总分-76.97,护城河-76.88,技术壁垒-81.59,市场地位-84.72,商业质量-70.47,经营质量-55.95,行业前景-78.00,治理风险-68.06,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+01450,BE FRIENDS HLDG,总分-76.93,护城河-79.59,技术壁垒-80.90,市场地位-80.17,商业质量-70.06,经营质量-57.04,行业前景-78.00,治理风险-67.58,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+06887,SUNSHINE PHARMA,总分-76.92,护城河-79.28,技术壁垒-85.34,市场地位-81.07,商业质量-68.28,经营质量-58.33,行业前景-70.00,治理风险-68.85,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+03738,VOBILE GROUP,总分-76.89,护城河-80.15,技术壁垒-80.94,市场地位-82.46,商业质量-65.62,经营质量-53.63,行业前景-78.00,治理风险-68.18,软件服务,above_average,full_coverage_dimensional_v0.4
+01066,WEIGAO GROUP,总分-76.88,护城河-76.84,技术壁垒-85.26,市场地位-88.11,商业质量-65.58,经营质量-56.79,行业前景-70.00,治理风险-68.54,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+02416,EDIANYUN,总分-76.88,护城河-79.55,技术壁垒-81.34,市场地位-80.23,商业质量-68.30,经营质量-56.30,行业前景-78.00,治理风险-68.22,软件服务,above_average,full_coverage_dimensional_v0.4
+03692,HANSOH PHARMA,总分-76.88,护城河-76.27,技术壁垒-85.55,市场地位-86.63,商业质量-70.69,经营质量-56.17,行业前景-70.00,治理风险-67.28,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+02196,FOSUN PHARMA,总分-76.87,护城河-79.94,技术壁垒-85.10,市场地位-84.03,商业质量-64.52,经营质量-52.72,行业前景-70.00,治理风险-69.58,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+01681,CONSUN PHARMA,总分-76.80,护城河-78.88,技术壁垒-85.76,市场地位-81.23,商业质量-68.84,经营质量-56.94,行业前景-70.00,治理风险-67.20,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+02556,MARKETINGFORCE,总分-76.80,护城河-80.21,技术壁垒-81.47,市场地位-81.21,商业质量-69.83,经营质量-46.38,行业前景-78.00,治理风险-68.78,软件服务,above_average,full_coverage_dimensional_v0.4
+01112,H&H INTL HLDG,总分-76.73,护城河-76.92,技术壁垒-85.14,市场地位-86.61,商业质量-65.38,经营质量-56.47,行业前景-70.00,治理风险-70.17,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+03933,UNITED LAB,总分-76.70,护城河-79.33,技术壁垒-86.00,市场地位-82.08,商业质量-60.67,经营质量-59.33,行业前景-70.00,治理风险-69.00,医疗保健,above_average,full_coverage_dimensional_v0.4
+00013,HUTCHMED,总分-76.64,护城河-79.15,技术壁垒-86.00,市场地位-83.00,商业质量-65.86,经营质量-52.03,行业前景-70.00,治理风险-67.04,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+01810,XIAOMI-W,总分-76.64,护城河-74.67,技术壁垒-81.87,市场地位-87.89,商业质量-67.01,经营质量-57.47,行业前景-78.00,治理风险-67.51,资讯科技器材,above_average,full_coverage_dimensional_v0.4
+01763,CIRC,总分-76.60,护城河-79.68,技术壁垒-85.58,市场地位-82.50,商业质量-61.49,经营质量-55.80,行业前景-70.00,治理风险-68.93,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+09899,NETEASE MUSIC,总分-76.59,护城河-74.22,技术壁垒-81.97,市场地位-86.31,商业质量-69.79,经营质量-58.61,行业前景-78.00,治理风险-67.16,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+00327,PAX GLOBAL,总分-76.53,护城河-79.38,技术壁垒-81.54,市场地位-79.69,商业质量-67.16,经营质量-53.86,行业前景-78.00,治理风险-67.61,资讯科技器材,above_average,full_coverage_dimensional_v0.4
+00763,ZTE,总分-76.50,护城河-80.36,技术壁垒-80.95,市场地位-83.23,商业质量-64.67,经营质量-43.96,行业前景-78.00,治理风险-69.85,资讯科技器材,above_average,full_coverage_dimensional_v0.4
+01970,IMAX CHINA,总分-76.50,护城河-78.72,技术壁垒-81.69,市场地位-78.28,商业质量-68.63,经营质量-57.16,行业前景-78.00,治理风险-67.48,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+00856,VSTECS,总分-76.49,护城河-74.80,技术壁垒-81.68,市场地位-87.89,商业质量-64.19,经营质量-58.16,行业前景-78.00,治理风险-68.30,软件服务,above_average,full_coverage_dimensional_v0.4
+02877,SHINEWAY PHARM,总分-76.49,护城河-78.81,技术壁垒-85.74,市场地位-80.96,商业质量-66.16,经营质量-55.96,行业前景-70.00,治理风险-67.68,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+06869,YOFC,总分-76.44,护城河-78.72,技术壁垒-81.41,市场地位-77.46,商业质量-71.73,经营质量-53.27,行业前景-78.00,治理风险-69.34,资讯科技器材,above_average,full_coverage_dimensional_v0.4
+00400,INGDAN,总分-76.43,护城河-77.29,技术壁垒-86.71,市场地位-84.71,商业质量-61.23,经营质量-50.25,行业前景-72.00,治理风险-68.78,半导体,above_average,full_coverage_dimensional_v0.4
+00811,XINHUA WINSHARE,总分-76.43,护城河-80.19,技术壁垒-81.48,市场地位-82.28,商业质量-64.79,经营质量-44.21,行业前景-78.00,治理风险-69.07,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+06998,EDDING GENOR,总分-76.43,护城河-78.48,技术壁垒-84.97,市场地位-79.56,商业质量-71.70,经营质量-55.13,行业前景-70.00,治理风险-68.09,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+00334,CH DISPLAY OPT,总分-76.40,护城河-79.70,技术壁垒-80.69,市场地位-79.23,商业质量-68.73,经营质量-51.89,行业前景-78.00,治理风险-68.22,资讯科技器材,above_average,full_coverage_dimensional_v0.4
+01696,SISRAM MED,总分-76.40,护城河-79.48,技术壁垒-85.04,市场地位-81.90,商业质量-64.39,经营质量-52.83,行业前景-70.00,治理风险-69.11,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+01789,AK MEDICAL,总分-76.35,护城河-78.44,技术壁垒-85.10,市场地位-80.53,商业质量-69.87,经营质量-54.10,行业前景-70.00,治理风险-67.58,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+01797,EAST BUY,总分-76.34,护城河-80.79,技术壁垒-80.55,市场地位-81.17,商业质量-60.33,经营质量-51.73,行业前景-78.00,治理风险-69.55,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+06608,BAIRONG-W,总分-76.34,护城河-80.28,技术壁垒-81.18,市场地位-81.08,商业质量-60.11,经营质量-52.21,行业前景-78.00,治理风险-69.39,软件服务,above_average,full_coverage_dimensional_v0.4
+02590,GEEKPLUS-W,总分-76.29,护城河-80.48,技术壁垒-80.75,市场地位-77.74,商业质量-66.05,经营质量-51.41,行业前景-78.00,治理风险-70.00,软件服务,above_average,full_coverage_dimensional_v0.4
+00522,ASMPT,总分-76.26,护城河-76.57,技术壁垒-87.57,市场地位-83.14,商业质量-61.07,经营质量-50.00,行业前景-72.00,治理风险-70.00,半导体,above_average,full_coverage_dimensional_v0.4
+02400,XD INC,总分-76.24,护城河-74.01,技术壁垒-81.87,市场地位-85.82,商业质量-67.30,经营质量-58.88,行业前景-78.00,治理风险-67.00,软件服务,above_average,full_coverage_dimensional_v0.4
+03689,KANGHUA HEALTH,总分-76.23,护城河-79.32,技术壁垒-85.07,市场地位-81.07,商业质量-62.49,经营质量-55.33,行业前景-70.00,治理风险-68.87,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+02166,SMART-CORE,总分-76.19,护城河-76.93,技术壁垒-87.29,市场地位-82.43,商业质量-63.91,经营质量-48.64,行业前景-72.00,治理风险-67.44,半导体,above_average,full_coverage_dimensional_v0.4
+06160,BEONE MEDICINES,总分-76.19,护城河-76.01,技术壁垒-85.63,市场地位-85.09,商业质量-68.01,经营质量-50.00,行业前景-70.00,治理风险-70.00,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+01588,CHANJET,总分-76.16,护城河-78.75,技术壁垒-81.36,市场地位-77.05,商业质量-68.09,经营质量-55.68,行业前景-78.00,治理风险-68.09,软件服务,above_average,full_coverage_dimensional_v0.4
+02306,YH ENT,总分-76.16,护城河-78.98,技术壁垒-81.03,市场地位-78.07,商业质量-67.71,经营质量-53.78,行业前景-78.00,治理风险-68.38,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+00771,AUTOMATED SYS,总分-76.14,护城河-80.08,技术壁垒-80.99,市场地位-80.60,商业质量-64.07,经营质量-47.10,行业前景-78.00,治理风险-68.70,软件服务,above_average,full_coverage_dimensional_v0.4
+02268,WUXI XDC,总分-76.13,护城河-75.41,技术壁垒-85.68,市场地位-83.27,商业质量-69.48,经营质量-56.59,行业前景-70.00,治理风险-67.40,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+03798,HOMELAND ITL,总分-76.12,护城河-79.15,技术壁垒-80.81,市场地位-77.69,商业质量-68.08,经营质量-53.46,行业前景-78.00,治理风险-68.62,软件服务,above_average,full_coverage_dimensional_v0.4
+02096,SIMCERE PHARMA,总分-76.10,护城河-75.74,技术壁垒-85.31,市场地位-83.96,商业质量-68.56,经营质量-55.37,行业前景-70.00,治理风险-67.56,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+01513,LIVZON PHARMA,总分-76.09,护城河-78.68,技术壁垒-85.47,市场地位-80.27,商业质量-64.89,经营质量-53.23,行业前景-70.00,治理风险-68.81,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+01075,CAPINFO,总分-76.05,护城河-75.81,技术壁垒-81.50,市场地位-80.89,商业质量-69.07,经营质量-56.87,行业前景-78.00,治理风险-68.05,软件服务,above_average,full_coverage_dimensional_v0.4
+00303,VTECH HOLDINGS,总分-75.99,护城河-79.54,技术壁垒-82.00,市场地位-79.95,商业质量-65.23,经营质量-44.00,行业前景-78.00,治理风险-67.71,资讯科技器材,above_average,full_coverage_dimensional_v0.4
+02607,SH PHARMA,总分-75.99,护城河-76.87,技术壁垒-85.18,市场地位-87.27,商业质量-62.37,经营质量-47.32,行业前景-70.00,治理风险-69.62,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+00867,CMS,总分-75.98,护城河-75.87,技术壁垒-85.42,市场地位-84.64,商业质量-65.95,经营质量-54.04,行业前景-70.00,治理风险-67.81,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+02005,SSY GROUP,总分-75.93,护城河-79.08,技术壁垒-84.83,市场地位-81.31,商业质量-61.15,经营质量-54.17,行业前景-70.00,治理风险-68.41,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+02131,NETJOY,总分-75.92,护城河-79.84,技术壁垒-80.83,市场地位-79.14,商业质量-61.01,经营质量-52.26,行业前景-78.00,治理风险-69.23,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+02540,LESI GROUP,总分-75.83,护城河-79.76,技术壁垒-81.03,市场地位-79.62,商业质量-64.46,经营质量-45.57,行业前景-78.00,治理风险-68.17,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+00596,INSPUR DIGI ENT,总分-75.82,护城河-77.34,技术壁垒-81.26,市场地位-85.87,商业质量-60.50,经营质量-46.12,行业前景-78.00,治理风险-68.50,软件服务,above_average,full_coverage_dimensional_v0.4
+01302,LIFETECH SCI,总分-75.81,护城河-78.12,技术壁垒-84.30,市场地位-78.38,商业质量-67.63,经营质量-56.24,行业前景-70.00,治理风险-69.06,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+03309,C-MER MEDICAL,总分-75.81,护城河-79.08,技术壁垒-84.56,市场地位-79.92,商业质量-63.89,经营质量-52.32,行业前景-70.00,治理风险-68.82,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+02367,GIANT BIOGENE,总分-75.79,护城河-73.52,技术壁垒-85.87,市场地位-87.31,商业质量-64.06,经营质量-56.99,行业前景-70.00,治理风险-67.14,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+00799,IGG,总分-75.74,护城河-80.81,技术壁垒-73.55,市场地位-84.79,商业质量-64.11,经营质量-58.31,行业前景-78.00,治理风险-67.45,软件服务,above_average,full_coverage_dimensional_v0.4
+03600,MODERN DENTAL,总分-75.73,护城河-80.12,技术壁垒-77.46,市场地位-85.71,商业质量-69.09,经营质量-55.70,行业前景-70.00,治理风险-67.34,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+06820,FRIENDTIMES,总分-75.72,护城河-78.89,技术壁垒-80.78,市场地位-77.58,商业质量-65.48,经营质量-52.56,行业前景-78.00,治理风险-67.85,软件服务,above_average,full_coverage_dimensional_v0.4
+02142,HBM HOLDINGS-B,总分-75.71,护城河-77.09,技术壁垒-85.52,市场地位-75.90,商业质量-72.34,经营质量-56.00,行业前景-70.00,治理风险-67.12,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+02458,GALA TECH HOLD,总分-75.69,护城河-78.16,技术壁垒-81.63,市场地位-75.78,商业质量-64.52,经营质量-58.00,行业前景-78.00,治理风险-67.36,软件服务,above_average,full_coverage_dimensional_v0.4
+01357,MEITU,总分-75.64,护城河-73.53,技术壁垒-81.34,市场地位-83.86,商业质量-68.37,经营质量-55.58,行业前景-78.00,治理风险-67.69,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+01833,PA GOODDOCTOR,总分-75.59,护城河-73.44,技术壁垒-84.88,市场地位-86.41,商业质量-67.75,经营质量-53.08,行业前景-70.00,治理风险-69.30,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+02219,CHAOJU EYE CARE,总分-75.59,护城河-78.04,技术壁垒-84.98,市场地位-78.35,商业质量-65.34,经营质量-54.16,行业前景-70.00,治理风险-68.30,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+01093,CSPC PHARMA,总分-75.58,护城河-77.00,技术壁垒-84.00,市场地位-88.75,商业质量-63.67,经营质量-42.00,行业前景-70.00,治理风险-67.00,医疗保健,above_average,full_coverage_dimensional_v0.4
+00085,CE HUADA TECH,总分-75.57,护城河-76.21,技术壁垒-86.57,市场地位-81.29,商业质量-59.74,经营质量-52.11,行业前景-72.00,治理风险-68.11,半导体,above_average,full_coverage_dimensional_v0.4
+01948,UJU HOLDING,总分-75.56,护城河-74.40,技术壁垒-81.52,市场地位-85.34,商业质量-66.95,经营质量-47.01,行业前景-78.00,治理风险-68.59,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+06086,FANGZHOU JIANKE,总分-75.56,护城河-78.95,技术壁垒-84.15,市场地位-77.52,商业质量-65.69,经营质量-53.39,行业前景-70.00,治理风险-69.13,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+00460,SIHUAN PHARM,总分-75.55,护城河-78.55,技术壁垒-84.33,市场地位-78.39,商业质量-68.02,经营质量-49.31,行业前景-70.00,治理风险-69.05,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+02280,HC GROUP,总分-75.49,护城河-81.07,技术壁垒-79.64,市场地位-78.77,商业质量-62.72,经营质量-41.69,行业前景-78.00,治理风险-70.24,软件服务,above_average,full_coverage_dimensional_v0.4
+03396,LEGENDHOLDING,总分-75.46,护城河-71.00,技术壁垒-81.21,市场地位-87.43,商业质量-67.43,经营质量-55.36,行业前景-78.00,治理风险-70.25,资讯科技器材,above_average,full_coverage_dimensional_v0.4
+02145,CHICMAX,总分-75.44,护城河-76.76,技术壁垒-77.97,市场地位-87.69,商业质量-70.25,经营质量-58.57,行业前景-70.00,治理风险-67.05,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+01187,COFOE MEDICAL,总分-75.43,护城河-77.56,技术壁垒-85.42,市场地位-76.24,商业质量-67.75,经营质量-52.13,行业前景-70.00,治理风险-69.78,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+00909,MING YUAN CLOUD,总分-75.42,护城河-78.95,技术壁垒-80.54,市场地位-76.66,商业质量-63.94,经营质量-50.46,行业前景-78.00,治理风险-69.76,软件服务,above_average,full_coverage_dimensional_v0.4
+02342,COMBA,总分-75.40,护城河-79.05,技术壁垒-80.03,市场地位-76.41,商业质量-65.25,经营质量-50.47,行业前景-78.00,治理风险-69.95,资讯科技器材,above_average,full_coverage_dimensional_v0.4
+02407,GAUSH MEDITECH,总分-75.39,护城河-78.20,技术壁垒-85.52,市场地位-77.84,商业质量-60.70,经营质量-54.79,行业前景-70.00,治理风险-68.78,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+01523,PLOVER BAY TECH,总分-75.37,护城河-77.41,技术壁垒-81.08,市场地位-73.20,商业质量-70.45,经营质量-56.86,行业前景-78.00,治理风险-67.00,资讯科技器材,above_average,full_coverage_dimensional_v0.4
+02586,DMALL,总分-75.27,护城河-80.01,技术壁垒-73.15,市场地位-81.69,商业质量-68.90,经营质量-56.33,行业前景-78.00,治理风险-67.73,软件服务,above_average,full_coverage_dimensional_v0.4
+01119,IDREAMSKY,总分-75.25,护城河-79.09,技术壁垒-80.30,市场地位-76.55,商业质量-63.71,经营质量-48.45,行业前景-78.00,治理风险-69.80,软件服务,above_average,full_coverage_dimensional_v0.4
+03601,LUDASHI,总分-75.25,护城河-78.69,技术壁垒-81.05,市场地位-75.75,商业质量-62.20,经营质量-52.72,行业前景-78.00,治理风险-68.26,软件服务,above_average,full_coverage_dimensional_v0.4
+03896,KINGSOFT CLOUD,总分-75.25,护城河-81.47,技术壁垒-78.58,市场地位-76.07,商业质量-61.99,经营质量-46.68,行业前景-78.00,治理风险-70.85,软件服务,above_average,full_coverage_dimensional_v0.4
+09857,LINMON MEDIA,总分-75.22,护城河-78.90,技术壁垒-81.14,市场地位-76.90,商业质量-65.70,经营质量-42.68,行业前景-78.00,治理风险-69.18,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+06810,SUNMI TECH-W,总分-75.17,护城河-74.89,技术壁垒-81.48,市场地位-77.13,商业质量-69.88,经营质量-54.35,行业前景-78.00,治理风险-67.92,资讯科技器材,above_average,full_coverage_dimensional_v0.4
+02660,ZENGAME,总分-75.16,护城河-72.68,技术壁垒-81.42,市场地位-81.40,商业质量-69.86,经营质量-55.16,行业前景-78.00,治理风险-67.49,软件服务,above_average,full_coverage_dimensional_v0.4
+02512,CLOUD FACTORY,总分-75.15,护城河-78.29,技术壁垒-80.54,市场地位-74.17,商业质量-65.57,经营质量-52.93,行业前景-78.00,治理风险-69.51,软件服务,above_average,full_coverage_dimensional_v0.4
+03991,CHANGHONG JH,总分-75.15,护城河-76.52,技术壁垒-80.75,市场地位-82.11,商业质量-62.62,经营质量-46.52,行业前景-78.00,治理风险-68.73,资讯科技器材,above_average,full_coverage_dimensional_v0.4
+01060,DAMAI ENT,总分-75.12,护城河-73.62,技术壁垒-80.62,市场地位-83.90,商业质量-65.31,经营质量-52.41,行业前景-78.00,治理风险-68.70,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+01501,INT MEDICAL,总分-75.12,护城河-73.80,技术壁垒-85.78,市场地位-78.06,商业质量-70.75,经营质量-56.76,行业前景-70.00,治理风险-67.86,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+03613,TONGRENTANGCM,总分-75.11,护城河-77.56,技术壁垒-85.21,市场地位-76.80,商业质量-63.28,经营质量-54.43,行业前景-70.00,治理风险-67.72,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+02279,YONGHE MEDICAL,总分-75.10,护城河-75.16,技术壁垒-84.75,市场地位-79.66,商业质量-65.78,经营质量-56.38,行业前景-70.00,治理风险-68.63,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+02157,LEPU BIO,总分-75.03,护城河-76.83,技术壁垒-84.86,市场地位-74.13,商业质量-71.91,经营质量-52.72,行业前景-70.00,治理风险-67.64,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+03347,TIGERMED,总分-75.02,护城河-77.95,技术壁垒-84.44,市场地位-75.53,商业质量-65.70,经营质量-51.80,行业前景-70.00,治理风险-69.78,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+01762,WANKA ONLINE,总分-75.00,护城河-73.71,技术壁垒-80.86,市场地位-82.79,商业质量-69.04,经营质量-46.73,行业前景-78.00,治理风险-68.65,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+01873,VIVA BIOTECH,总分-75.00,护城河-77.82,技术壁垒-84.60,市场地位-76.67,商业质量-64.43,经营质量-51.71,行业前景-70.00,治理风险-68.57,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+02101,FULU HOLDINGS,总分-75.00,护城河-77.34,技术壁垒-80.97,市场地位-72.34,商业质量-68.90,经营质量-53.70,行业前景-78.00,治理风险-68.81,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+00719,SHANDONG XINHUA,总分-74.98,护城河-78.42,技术壁垒-84.65,市场地位-77.23,商业质量-61.13,经营质量-50.00,行业前景-70.00,治理风险-70.00,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+02192,MEDLIVE,总分-74.97,护城河-76.44,技术壁垒-85.39,市场地位-74.83,商业质量-69.76,经营质量-52.11,行业前景-70.00,治理风险-68.15,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+02348,DAWNRAYS PHARMA,总分-74.96,护城河-77.23,技术壁垒-84.75,市场地位-74.84,商业质量-68.18,经营质量-52.82,行业前景-70.00,治理风险-68.17,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+01099,SINOPHARM,总分-74.93,护城河-80.93,技术壁垒-77.26,市场地位-87.37,商业质量-61.17,经营质量-43.69,行业前景-70.00,治理风险-69.66,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+06669,ACOTEC-B,总分-74.92,护城河-76.52,技术壁垒-85.36,市场地位-73.42,商业质量-69.97,经营质量-54.15,行业前景-70.00,治理风险-68.06,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+00020,SENSETIME-W,总分-74.89,护城河-80.87,技术壁垒-79.11,市场地位-74.09,商业质量-61.39,经营质量-46.63,行业前景-78.00,治理风险-71.01,软件服务,above_average,full_coverage_dimensional_v0.4
+01612,VINCENT MED,总分-74.87,护城河-77.08,技术壁垒-84.72,市场地位-74.51,商业质量-67.90,经营质量-53.96,行业前景-70.00,治理风险-67.53,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+01050,KARRIE INT'L,总分-74.84,护城河-78.07,技术壁垒-80.56,市场地位-74.25,商业质量-64.77,经营质量-51.04,行业前景-78.00,治理风险-68.12,资讯科技器材,above_average,full_coverage_dimensional_v0.4
+02661,QINGSONG HEALTH,总分-74.84,护城河-79.50,技术壁垒-78.00,市场地位-70.52,商业质量-57.94,经营质量-67.85,行业前景-78.00,治理风险-72.68,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+01640,QIAN XUN TECH,总分-74.83,护城河-79.67,技术壁垒-79.34,市场地位-74.52,商业质量-67.43,经营质量-41.96,行业前景-78.00,治理风险-70.19,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+09989,HEPALINK,总分-74.81,护城河-77.49,技术壁垒-84.68,市场地位-75.50,商业质量-64.38,经营质量-51.62,行业前景-70.00,治理风险-69.46,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+03759,PHARMARON,总分-74.79,护城河-75.01,技术壁垒-84.89,市场地位-80.80,商业质量-64.36,经营质量-49.87,行业前景-70.00,治理风险-69.38,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+06078,HYGEIA HEALTH,总分-74.75,护城河-73.20,技术壁垒-85.01,市场地位-84.30,商业质量-59.73,经营质量-54.75,行业前景-70.00,治理风险-69.83,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+03315,GOLDPAC GROUP,总分-74.72,护城河-78.23,技术壁垒-80.83,市场地位-74.85,商业质量-61.87,经营质量-48.80,行业前景-78.00,治理风险-69.07,软件服务,above_average,full_coverage_dimensional_v0.4
+02436,LX TECHNOLOGY,总分-74.71,护城河-78.39,技术壁垒-80.49,市场地位-73.59,商业质量-60.69,经营质量-53.19,行业前景-78.00,治理风险-69.64,资讯科技器材,above_average,full_coverage_dimensional_v0.4
+06929,ORBUSNEICH,总分-74.70,护城河-73.96,技术壁垒-85.23,市场地位-78.80,商业质量-69.23,经营质量-51.89,行业前景-70.00,治理风险-67.62,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+06051,YOUZAN,总分-74.64,护城河-72.42,技术壁垒-80.23,市场地位-80.34,商业质量-66.74,经营质量-58.16,行业前景-78.00,治理风险-68.54,软件服务,above_average,full_coverage_dimensional_v0.4
+01745,LVJI TECH,总分-74.63,护城河-77.17,技术壁垒-80.73,市场地位-72.13,商业质量-67.00,经营质量-52.99,行业前景-78.00,治理风险-68.14,软件服务,above_average,full_coverage_dimensional_v0.4
+06833,SINCO PHARMA,总分-74.61,护城河-78.35,技术壁垒-84.28,市场地位-76.33,商业质量-58.49,经营质量-52.29,行业前景-70.00,治理风险-69.01,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+02391,TUYA-W,总分-74.58,护城河-76.90,技术壁垒-81.31,市场地位-72.42,商业质量-67.92,经营质量-48.12,行业前景-78.00,治理风险-69.23,软件服务,above_average,full_coverage_dimensional_v0.4
+02509,QYUNS-B,总分-74.55,护城河-72.70,技术壁垒-85.79,市场地位-74.07,商业质量-73.94,经营质量-58.13,行业前景-70.00,治理风险-67.16,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+06118,AUSTAR,总分-74.55,护城河-77.62,技术壁垒-84.52,市场地位-74.21,商业质量-62.83,经营质量-52.91,行业前景-70.00,治理风险-69.09,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+06821,ASYMCHEM,总分-74.54,护城河-74.02,技术壁垒-85.50,市场地位-77.70,商业质量-65.92,经营质量-53.24,行业前景-70.00,治理风险-69.21,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+01345,SH PIONEER HLDG,总分-74.46,护城河-77.29,技术壁垒-84.60,市场地位-74.47,商业质量-62.49,经营质量-53.59,行业前景-70.00,治理风险-67.85,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+02230,MEDIALINK GROUP,总分-74.41,护城河-77.09,技术壁垒-80.72,市场地位-72.24,商业质量-65.92,经营质量-51.06,行业前景-78.00,治理风险-68.01,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+02486,PLUS GP HOLDING,总分-74.40,护城河-80.10,技术壁垒-73.45,市场地位-79.76,商业质量-60.30,经营质量-55.33,行业前景-78.00,治理风险-68.49,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+01204,BOARDWARE INTEL,总分-74.38,护城河-77.23,技术壁垒-80.49,市场地位-70.80,商业质量-67.04,经营质量-51.44,行业前景-78.00,治理风险-69.31,软件服务,above_average,full_coverage_dimensional_v0.4
+01993,ASIARAY,总分-74.37,护城河-79.07,技术壁垒-72.48,市场地位-76.76,商业质量-66.81,经营质量-60.97,行业前景-78.00,治理风险-69.39,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+02498,ROBOSENSE,总分-74.36,护城河-79.88,技术壁垒-78.50,市场地位-72.97,商业质量-64.73,经营质量-43.44,行业前景-78.00,治理风险-70.49,软件服务,above_average,full_coverage_dimensional_v0.4
+01666,TONG REN TANG,总分-74.33,护城河-72.48,技术壁垒-85.02,市场地位-82.26,商业质量-61.63,经营质量-54.39,行业前景-70.00,治理风险-68.65,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+01358,PW MEDTECH,总分-74.31,护城河-77.00,技术壁垒-84.50,市场地位-74.19,商业质量-63.43,经营质量-50.70,行业前景-70.00,治理风险-69.50,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+01147,EDENSOFT,总分-74.30,护城河-78.03,技术壁垒-80.20,市场地位-73.26,商业质量-59.34,经营质量-52.72,行业前景-78.00,治理风险-68.66,软件服务,above_average,full_coverage_dimensional_v0.4
+03869,HOSPITAL CORP,总分-74.30,护城河-71.36,技术壁垒-85.65,市场地位-78.86,商业质量-65.32,经营质量-59.77,行业前景-70.00,治理风险-68.44,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+03773,YS DIGIFAVOR,总分-74.27,护城河-75.88,技术壁垒-80.93,市场地位-68.34,商业质量-71.46,经营质量-55.43,行业前景-78.00,治理风险-67.85,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+01720,PUTIAN COMM,总分-74.25,护城河-77.25,技术壁垒-80.43,市场地位-70.77,商业质量-67.24,经营质量-49.49,行业前景-78.00,治理风险-68.93,资讯科技器材,above_average,full_coverage_dimensional_v0.4
+02361,SINOHEALTH TECH,总分-74.23,护城河-75.91,技术壁垒-81.28,市场地位-69.24,商业质量-68.85,经营质量-54.80,行业前景-78.00,治理风险-67.57,软件服务,above_average,full_coverage_dimensional_v0.4
+01132,ORANGE SKY G H,总分-74.22,护城河-74.21,技术壁垒-80.66,市场地位-75.59,商业质量-66.18,经营质量-52.81,行业前景-78.00,治理风险-68.54,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+02190,ZYLOXTB,总分-74.19,护城河-70.72,技术壁垒-85.62,市场地位-78.03,商业质量-71.97,经营质量-54.74,行业前景-70.00,治理风险-67.96,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+02313,SHENZHOU INTL,总分-74.17,护城河-89.49,技术壁垒-54.84,市场地位-89.10,商业质量-76.85,经营质量-57.96,行业前景-70.00,治理风险-67.55,纺织及服饰,above_average,full_coverage_dimensional_v0.4
+09678,UNISOUND,总分-74.15,护城河-78.82,技术壁垒-78.08,市场地位-69.37,商业质量-62.49,经营质量-56.17,行业前景-78.00,治理风险-72.35,软件服务,above_average,full_coverage_dimensional_v0.4
+02495,VOICECOMM,总分-74.14,护城河-71.56,技术壁垒-81.92,市场地位-77.69,商业质量-64.43,经营质量-56.93,行业前景-78.00,治理风险-68.01,软件服务,above_average,full_coverage_dimensional_v0.4
+02718,MININGLAMP-W,总分-74.13,护城河-79.35,技术壁垒-78.00,市场地位-69.66,商业质量-51.53,经营质量-66.91,行业前景-78.00,治理风险-73.00,软件服务,above_average,full_coverage_dimensional_v0.4
+02289,CHARMACY PHAR,总分-74.12,护城河-79.21,技术壁垒-77.23,市场地位-78.90,商业质量-61.74,经营质量-57.71,行业前景-70.00,治理风险-69.30,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+01548,GENSCRIPT BIO,总分-74.10,护城河-79.61,技术壁垒-82.19,市场地位-72.86,商业质量-58.63,经营质量-52.02,行业前景-70.00,治理风险-71.27,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+03268,MEIG,总分-74.08,护城河-77.57,技术壁垒-80.82,市场地位-72.48,商业质量-64.07,经营质量-43.36,行业前景-78.00,治理风险-69.44,资讯科技器材,above_average,full_coverage_dimensional_v0.4
+08368,CREATIVE CHINA,总分-74.07,护城河-75.71,技术壁垒-81.00,市场地位-68.48,商业质量-71.89,经营质量-51.96,行业前景-78.00,治理风险-67.53,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+02121,AINNOVATION,总分-74.04,护城河-79.62,技术壁垒-78.42,市场地位-71.75,商业质量-62.77,经营质量-43.95,行业前景-78.00,治理风险-71.66,软件服务,above_average,full_coverage_dimensional_v0.4
+02008,PHOENIX TV,总分-74.03,护城河-80.02,技术壁垒-78.17,市场地位-72.17,商业质量-59.53,经营质量-47.36,行业前景-78.00,治理风险-70.66,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+01526,RICI HEALTH,总分-73.95,护城河-75.80,技术壁垒-76.94,市场地位-84.05,商业质量-65.25,经营质量-56.38,行业前景-70.00,治理风险-68.25,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+01739,QEEKA HOME,总分-73.95,护城河-79.16,技术壁垒-78.97,市场地位-70.90,商业质量-64.34,经营质量-43.34,行业前景-78.00,治理风险-70.72,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+00595,AV CONCEPT HOLD,总分-73.93,护城河-74.79,技术壁垒-86.43,市场地位-74.71,商业质量-57.97,经营质量-49.56,行业前景-72.00,治理风险-68.33,半导体,above_average,full_coverage_dimensional_v0.4
+01931,ETHK LABS INC.,总分-73.92,护城河-75.88,技术壁垒-84.14,市场地位-80.91,商业质量-56.74,经营质量-43.24,行业前景-70.00,治理风险-70.36,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+01686,SUNEVISION,总分-73.91,护城河-68.22,技术壁垒-81.07,市场地位-80.26,商业质量-69.38,经营质量-58.56,行业前景-78.00,治理风险-68.82,软件服务,above_average,full_coverage_dimensional_v0.4
+00780,TONGCHENGTRAVEL,总分-73.90,护城河-89.47,技术壁垒-54.79,市场地位-88.89,商业质量-76.55,经营质量-54.07,行业前景-70.00,治理风险-68.06,酒店、赌场及消闲设施,above_average,full_coverage_dimensional_v0.4
+00874,BAIYUNSHAN PH,总分-73.87,护城河-69.60,技术壁垒-85.60,市场地位-86.84,商业质量-63.18,经营质量-44.78,行业前景-70.00,治理风险-68.97,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+06696,MANY IDEA CLOUD,总分-73.87,护城河-79.33,技术壁垒-78.07,市场地位-71.48,商业质量-63.27,经营质量-44.43,行业前景-78.00,治理风险-71.09,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+06682,PHANCY,总分-73.85,护城河-74.27,技术壁垒-79.11,市场地位-79.01,商业质量-65.79,经营质量-43.65,行业前景-78.00,治理风险-70.08,软件服务,above_average,full_coverage_dimensional_v0.4
+06826,HAOHAI BIOTEC,总分-73.83,护城河-76.28,技术壁垒-85.17,市场地位-71.60,商业质量-63.12,经营质量-49.12,行业前景-70.00,治理风险-70.12,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+06188,BJ DIGITAL,总分-73.79,护城河-76.20,技术壁垒-78.00,市场地位-71.95,商业质量-56.08,经营质量-65.12,行业前景-78.00,治理风险-72.39,资讯科技器材,above_average,full_coverage_dimensional_v0.4
+02550,EASOU TECH,总分-73.77,护城河-71.81,技术壁垒-81.10,市场地位-76.76,商业质量-69.83,经营质量-47.42,行业前景-78.00,治理风险-68.27,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+02899,ZIJIN MINING,总分-73.76,护城河-78.00,技术壁垒-77.25,市场地位-89.00,商业质量-56.32,经营质量-53.50,行业前景-64.00,治理风险-70.75,黄金及贵金属,above_average,full_coverage_dimensional_v0.4
+01022,FEIYU,总分-73.74,护城河-70.76,技术壁垒-80.86,市场地位-74.75,商业质量-72.15,经营质量-55.35,行业前景-78.00,治理风险-67.41,软件服务,above_average,full_coverage_dimensional_v0.4
+02331,LI NING,总分-73.74,护城河-89.29,技术壁垒-54.52,市场地位-88.17,商业质量-76.70,经营质量-54.68,行业前景-70.00,治理风险-68.16,纺织及服饰,above_average,full_coverage_dimensional_v0.4
+02587,HEALTHYWAY INC,总分-73.74,护城河-71.60,技术壁垒-84.46,市场地位-77.90,商业质量-67.79,经营质量-53.76,行业前景-70.00,治理风险-67.77,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+01284,NEW MEDIA LAB,总分-73.72,护城河-76.31,技术壁垒-80.69,市场地位-68.93,商业质量-64.31,经营质量-53.23,行业前景-78.00,治理风险-67.96,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+00314,SIPAI HEALTH,总分-73.71,护城河-78.28,技术壁垒-83.27,市场地位-72.96,商业质量-58.61,经营质量-47.67,行业前景-70.00,治理风险-70.66,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+02315,BIOCYTOGEN-B,总分-73.71,护城河-75.24,技术壁垒-84.94,市场地位-68.49,商业质量-69.89,经营质量-52.68,行业前景-70.00,治理风险-68.69,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+09860,ADICON HOLDINGS,总分-73.68,护城河-79.64,技术壁垒-76.24,市场地位-79.47,商业质量-60.84,经营质量-51.14,行业前景-70.00,治理风险-70.41,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+01300,TRIGIANT,总分-73.67,护城河-71.56,技术壁垒-80.62,市场地位-75.82,商业质量-68.84,经营质量-51.62,行业前景-78.00,治理风险-69.03,资讯科技器材,above_average,full_coverage_dimensional_v0.4
+02726,EPIWORLD,总分-73.66,护城河-74.43,技术壁垒-86.29,市场地位-72.00,商业质量-58.12,经营质量-51.84,行业前景-72.00,治理风险-69.89,半导体,above_average,full_coverage_dimensional_v0.4
+06110,TOPSPORTS,总分-73.66,护城河-89.67,技术壁垒-54.73,市场地位-89.67,商业质量-72.77,经营质量-52.86,行业前景-70.00,治理风险-67.86,纺织、服饰及个人护理,above_average,full_coverage_dimensional_v0.4
+01061,ESSEX BIO-TECH,总分-73.62,护城河-70.69,技术壁垒-85.28,市场地位-76.70,商业质量-66.15,经营质量-57.89,行业前景-70.00,治理风险-67.60,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+02729,GALAXIS TECH,总分-73.62,护城河-78.09,技术壁垒-78.45,市场地位-67.81,商业质量-61.89,经营质量-54.59,行业前景-78.00,治理风险-71.38,软件服务,above_average,full_coverage_dimensional_v0.4
+06127,JOINN,总分-73.60,护城河-74.97,技术壁垒-85.05,市场地位-68.78,商业质量-69.88,经营质量-50.90,行业前景-70.00,治理风险-68.77,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+02581,BENQ HOLDING,总分-73.59,护城河-75.72,技术壁垒-77.30,市场地位-81.90,商业质量-63.52,经营质量-55.53,行业前景-70.00,治理风险-69.21,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+00030,YNBY INTL,总分-73.58,护城河-77.48,技术壁垒-83.63,市场地位-72.08,商业质量-63.00,经营质量-44.51,行业前景-70.00,治理风险-70.22,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+02571,SAIMO,总分-73.58,护城河-75.11,技术壁垒-81.50,市场地位-66.30,商业质量-67.78,经营质量-54.86,行业前景-78.00,治理风险-67.81,软件服务,above_average,full_coverage_dimensional_v0.4
+02637,HAIXI PHARMA,总分-73.56,护城河-71.77,技术壁垒-85.95,市场地位-70.52,商业质量-71.29,经营质量-56.90,行业前景-70.00,治理风险-67.36,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+01985,MICROWARE,总分-73.54,护城河-77.03,技术壁垒-80.28,市场地位-69.69,商业质量-60.86,经营质量-49.49,行业前景-78.00,治理风险-69.84,软件服务,above_average,full_coverage_dimensional_v0.4
+00082,CRAZY SPORTS,总分-73.53,护城河-76.91,技术壁垒-80.21,市场地位-68.55,商业质量-60.81,经营质量-52.94,行业前景-78.00,治理风险-69.81,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+09919,ACTIVATION GP,总分-73.51,护城河-78.64,技术壁垒-73.21,市场地位-77.31,商业质量-62.91,经营质量-51.67,行业前景-78.00,治理风险-67.42,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+02609,BAYZED HEALTH,总分-73.50,护城河-77.88,技术壁垒-83.15,市场地位-71.47,商业质量-58.83,经营质量-49.47,行业前景-70.00,治理风险-70.89,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+01609,STAR SPORTS MED,总分-73.49,护城河-71.40,技术壁垒-86.00,市场地位-70.67,商业质量-70.50,经营质量-58.29,行业前景-70.00,治理风险-67.19,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+02020,ANTA SPORTS,总分-73.48,护城河-85.80,技术壁垒-54.88,市场地位-90.31,商业质量-78.06,经营质量-59.18,行业前景-70.00,治理风险-67.43,纺织及服饰,above_average,full_coverage_dimensional_v0.4
+01410,EDVANCE INTL,总分-73.47,护城河-75.58,技术壁垒-80.65,市场地位-66.96,商业质量-64.05,经营质量-57.21,行业前景-78.00,治理风险-68.38,软件服务,above_average,full_coverage_dimensional_v0.4
+01951,JXR,总分-73.47,护城河-78.62,技术壁垒-83.06,市场地位-70.47,商业质量-57.54,经营质量-50.22,行业前景-70.00,治理风险-70.74,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+06609,HEARTCARE-B,总分-73.42,护城河-71.48,技术壁垒-85.90,市场地位-69.65,商业质量-72.18,经营质量-56.31,行业前景-70.00,治理风险-68.10,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+01351,BRIGHT FUTURE,总分-73.41,护城河-79.24,技术壁垒-78.62,市场地位-71.34,商业质量-57.13,经营质量-42.79,行业前景-78.00,治理风险-71.83,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+00383,TIANAN MEDICARE,总分-73.38,护城河-78.28,技术壁垒-82.96,市场地位-72.01,商业质量-56.26,经营质量-48.45,行业前景-70.00,治理风险-70.98,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+02159,MEDIWELCOME,总分-73.38,护城河-75.80,技术壁垒-84.37,市场地位-68.14,商业质量-67.24,经营质量-51.36,行业前景-70.00,治理风险-68.49,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+01385,SHANGHAI FUDAN,总分-73.37,护城河-68.14,技术壁垒-86.86,市场地位-77.86,商业质量-62.56,经营质量-55.04,行业前景-72.00,治理风险-69.22,半导体,above_average,full_coverage_dimensional_v0.4
+09611,LONGCHEER,总分-73.36,护城河-73.00,技术壁垒-88.00,市场地位-68.00,商业质量-58.00,经营质量-56.00,行业前景-72.00,治理风险-70.00,IT Hardware,above_average,full_coverage_dimensional_v0.4
+01105,SING TAO,总分-73.33,护城河-78.38,技术壁垒-78.76,市场地位-68.62,商业质量-59.41,经营质量-49.22,行业前景-78.00,治理风险-70.77,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+01206,TECHNOVATOR,总分-73.33,护城河-79.48,技术壁垒-78.34,市场地位-70.67,商业质量-52.79,经营质量-49.08,行业前景-78.00,治理风险-71.62,软件服务,above_average,full_coverage_dimensional_v0.4
+00926,BESUNYEN,总分-73.32,护城河-75.96,技术壁垒-84.85,市场地位-69.45,商业质量-63.87,经营质量-48.71,行业前景-70.00,治理风险-68.92,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+02161,JBM HEALTHCARE,总分-73.32,护城河-75.17,技术壁垒-84.70,市场地位-68.38,商业质量-66.37,经营质量-52.98,行业前景-70.00,治理风险-68.01,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+01952,EVEREST MED,总分-73.30,护城河-77.75,技术壁垒-82.48,市场地位-69.49,商业质量-65.15,经营质量-46.01,行业前景-70.00,治理风险-70.54,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+01361,361 DEGREES,总分-73.29,护城河-88.59,技术壁垒-54.43,市场地位-85.59,商业质量-78.35,经营质量-55.06,行业前景-70.00,治理风险-67.86,纺织及服饰,above_average,full_coverage_dimensional_v0.4
+02552,HUA MEDICINE-B,总分-73.26,护城河-71.37,技术壁垒-85.66,市场地位-71.48,商业质量-71.69,经营质量-52.64,行业前景-70.00,治理风险-67.00,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+00135,KUNLUN ENERGY,总分-73.25,护城河-94.00,技术壁垒-51.52,市场地位-91.04,商业质量-70.11,经营质量-57.56,行业前景-62.00,治理风险-67.90,公用事业,above_average,full_coverage_dimensional_v0.4
+01846,EUROEYES,总分-73.24,护城河-72.76,技术壁垒-84.78,市场地位-72.46,商业质量-65.24,经营质量-53.71,行业前景-70.00,治理风险-68.97,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+02256,ABBISKO-B,总分-73.23,护城河-75.90,技术壁垒-84.57,市场地位-69.86,商业质量-61.58,经营质量-50.78,行业前景-70.00,治理风险-68.73,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+00150,HYPEBEAST,总分-73.22,护城河-76.74,技术壁垒-80.41,市场地位-69.72,商业质量-62.73,经营质量-43.13,行业前景-78.00,治理风险-69.12,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+06990,SKB BIO,总分-73.22,护城河-78.22,技术壁垒-82.21,市场地位-70.15,商业质量-63.96,经营质量-43.24,行业前景-70.00,治理风险-70.87,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+06687,JST GROUP,总分-73.21,护城河-77.00,技术壁垒-78.80,市场地位-69.00,商业质量-62.00,经营质量-50.00,行业前景-78.00,治理风险-70.00,Software & Services,above_average,full_coverage_dimensional_v0.4
+01304,FORTIOR,总分-73.19,护城河-71.57,技术壁垒-87.86,市场地位-66.57,商业质量-66.70,经营质量-53.08,行业前景-72.00,治理风险-69.00,半导体,above_average,full_coverage_dimensional_v0.4
+03737,ZHONGZHIPHARM,总分-73.16,护城河-73.89,技术壁垒-84.36,市场地位-74.79,商业质量-58.37,经营质量-51.79,行业前景-70.00,治理风险-69.54,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+09959,LINKLOGIS-W,总分-73.15,护城河-78.42,技术壁垒-78.61,市场地位-67.78,商业质量-57.44,经营质量-50.96,行业前景-78.00,治理风险-71.05,软件服务,above_average,full_coverage_dimensional_v0.4
+06639,ARRAIL GROUP,总分-73.14,护城河-71.92,技术壁垒-84.40,市场地位-77.84,商业质量-59.13,经营质量-51.66,行业前景-70.00,治理风险-70.31,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+09926,AKESO,总分-73.13,护城河-78.75,技术壁垒-82.32,市场地位-70.76,商业质量-60.22,经营质量-42.26,行业前景-70.00,治理风险-70.99,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+00623,SINOMEDIA,总分-73.10,护城河-77.95,技术壁垒-73.41,市场地位-75.48,商业质量-63.85,经营质量-49.40,行业前景-78.00,治理风险-68.22,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+01368,XTEP INT'L,总分-73.10,护城河-88.69,技术壁垒-54.31,市场地位-85.99,商业质量-74.78,经营质量-55.55,行业前景-70.00,治理风险-68.04,纺织及服饰,above_average,full_coverage_dimensional_v0.4
+03886,TOWN HEALTH,总分-73.10,护城河-78.68,技术壁垒-75.70,市场地位-76.40,商业质量-61.94,经营质量-53.64,行业前景-70.00,治理风险-70.46,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+02232,CRYSTAL INTL,总分-73.07,护城河-88.89,技术壁垒-54.35,市场地位-86.68,商业质量-72.57,经营质量-55.62,行业前景-70.00,治理风险-67.67,纺织及服饰,above_average,full_coverage_dimensional_v0.4
+00002,CLP HOLDINGS,总分-73.05,护城河-93.20,技术壁垒-51.89,市场地位-89.60,商业质量-73.91,经营质量-55.39,行业前景-62.00,治理风险-67.41,公用事业,above_average,full_coverage_dimensional_v0.4
+02186,LUYE PHARMA,总分-73.04,护城河-76.00,技术壁垒-83.33,市场地位-68.75,商业质量-66.00,经营质量-46.67,行业前景-70.00,治理风险-71.00,医疗保健,above_average,full_coverage_dimensional_v0.4
+03696,INSILICO,总分-73.03,护城河-76.00,技术壁垒-84.00,市场地位-68.75,商业质量-62.00,经营质量-50.00,行业前景-70.00,治理风险-70.00,Health Care,above_average,full_coverage_dimensional_v0.4
+08017,TRADEGO,总分-73.00,护城河-74.78,技术壁垒-80.97,市场地位-65.29,商业质量-67.53,经营质量-52.32,行业前景-78.00,治理风险-67.16,软件服务,above_average,full_coverage_dimensional_v0.4
+01037,MAXNERVA TECH,总分-72.99,护城河-77.30,技术壁垒-79.54,市场地位-68.36,商业质量-61.48,经营质量-43.74,行业前景-78.00,治理风险-70.36,软件服务,above_average,full_coverage_dimensional_v0.4
+00941,CHINA MOBILE,总分-72.94,护城河-93.50,技术壁垒-51.80,市场地位-90.00,商业质量-75.91,经营质量-45.86,行业前景-62.00,治理风险-70.47,电讯,above_average,full_coverage_dimensional_v0.4
+09960,KINDSTAR GLOBAL,总分-72.94,护城河-77.40,技术壁垒-82.61,市场地位-68.59,商业质量-61.00,经营质量-48.23,行业前景-70.00,治理风险-71.08,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+00529,SIS INT'L,总分-72.89,护城河-68.87,技术壁垒-80.89,市场地位-79.10,商业质量-60.20,经营质量-53.38,行业前景-78.00,治理风险-69.75,资讯科技器材,above_average,full_coverage_dimensional_v0.4
+01163,ADTIGER CORP,总分-72.89,护城河-70.52,技术壁垒-80.55,市场地位-72.00,商业质量-68.00,经营质量-53.54,行业前景-78.00,治理风险-69.34,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+02392,XUANWU CLOUD,总分-72.89,护城河-77.63,技术壁垒-78.85,市场地位-68.02,商业质量-56.01,经营质量-50.32,行业前景-78.00,治理风险-71.50,软件服务,above_average,full_coverage_dimensional_v0.4
+01521,FRONTAGE,总分-72.87,护城河-71.09,技术壁垒-84.38,市场地位-75.82,商业质量-63.16,经营质量-51.39,行业前景-70.00,治理风险-69.34,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+01753,DUIBA,总分-72.87,护城河-78.21,技术壁垒-78.59,市场地位-67.72,商业质量-54.53,经营质量-51.52,行业前景-78.00,治理风险-70.93,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+09990,ARCHOSAUR GAMES,总分-72.86,护城河-75.02,技术壁垒-79.11,市场地位-72.15,商业质量-61.09,经营质量-45.73,行业前景-78.00,治理风险-70.28,软件服务,above_average,full_coverage_dimensional_v0.4
+02325,YUNKANG GROUP,总分-72.85,护城河-75.83,技术壁垒-84.09,市场地位-68.56,商业质量-61.30,经营质量-48.97,行业前景-70.00,治理风险-69.86,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+06113,BITSTRAT HLDGS,总分-72.83,护城河-76.14,技术壁垒-79.62,市场地位-66.38,商业质量-61.71,经营质量-50.44,行业前景-78.00,治理风险-70.45,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+09606,DUALITYBIO-B,总分-72.83,护城河-78.15,技术壁垒-82.00,市场地位-68.86,商业质量-55.10,经营质量-50.72,行业前景-70.00,治理风险-72.88,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+01161,WATER OASIS GP,总分-72.82,护城河-77.24,技术壁垒-76.66,市场地位-74.29,商业质量-62.94,经营质量-57.61,行业前景-70.00,治理风险-68.34,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+09955,CLOUDR,总分-72.81,护城河-78.84,技术壁垒-82.00,市场地位-70.70,商业质量-52.49,经营质量-46.31,行业前景-70.00,治理风险-72.95,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+02167,TI CLOUD,总分-72.79,护城河-69.77,技术壁垒-81.44,市场地位-71.17,商业质量-68.03,经营质量-55.39,行业前景-78.00,治理风险-67.69,软件服务,above_average,full_coverage_dimensional_v0.4
+09880,UBTECH ROBOTICS,总分-72.79,护城河-75.95,技术壁垒-78.21,市场地位-71.89,商业质量-61.87,经营质量-42.17,行业前景-78.00,治理风险-71.46,软件服务,above_average,full_coverage_dimensional_v0.4
+00072,META MEDIA,总分-72.74,护城河-77.60,技术壁垒-78.69,市场地位-67.28,商业质量-61.02,经营质量-44.18,行业前景-78.00,治理风险-70.98,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+01085,HXTL,总分-72.74,护城河-78.23,技术壁垒-78.66,市场地位-68.21,商业质量-58.71,经营质量-42.46,行业前景-78.00,治理风险-70.66,资讯科技器材,above_average,full_coverage_dimensional_v0.4
+02100,BAIOO,总分-72.73,护城河-77.10,技术壁垒-79.40,市场地位-65.74,商业质量-59.76,经营质量-48.86,行业前景-78.00,治理风险-70.81,软件服务,above_average,full_coverage_dimensional_v0.4
+00418,FOUNDER HOLD,总分-72.72,护城河-70.89,技术壁垒-80.65,市场地位-73.61,商业质量-63.65,经营质量-51.09,行业前景-78.00,治理风险-68.91,软件服务,above_average,full_coverage_dimensional_v0.4
+02878,SOLOMON SYSTECH,总分-72.71,护城河-73.71,技术壁垒-86.00,市场地位-70.86,商业质量-55.01,经营质量-48.59,行业前景-72.00,治理风险-68.56,半导体,above_average,full_coverage_dimensional_v0.4
+06896,GOLDEN THROAT,总分-72.71,护城河-69.89,技术壁垒-85.13,市场地位-74.23,商业质量-64.76,经营质量-54.81,行业前景-70.00,治理风险-67.44,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+01808,ENTERPRISE DEV,总分-72.70,护城河-69.61,技术壁垒-73.60,市场地位-83.60,商业质量-69.99,经营质量-54.77,行业前景-78.00,治理风险-67.32,软件服务,above_average,full_coverage_dimensional_v0.4
+08066,PHOENITRON HOLD,总分-72.70,护城河-74.95,技术壁垒-80.30,市场地位-63.75,商业质量-68.86,经营质量-50.97,行业前景-78.00,治理风险-67.20,资讯科技器材,above_average,full_coverage_dimensional_v0.4
+01274,IMOTIONTECH,总分-72.68,护城河-78.49,技术壁垒-78.19,市场地位-68.13,商业质量-57.81,经营质量-41.82,行业前景-78.00,治理风险-72.39,软件服务,above_average,full_coverage_dimensional_v0.4
+08446,BRIGHTSTAR TECH,总分-72.67,护城河-71.79,技术壁垒-80.76,市场地位-67.79,商业质量-66.99,经营质量-55.64,行业前景-78.00,治理风险-67.90,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+02577,INNOSCIENCE,总分-72.66,护城河-75.86,技术壁垒-84.14,市场地位-70.43,商业质量-55.80,经营质量-42.09,行业前景-72.00,治理风险-71.67,半导体,above_average,full_coverage_dimensional_v0.4
+08106,XINHUA LANDE,总分-72.66,护城河-74.98,技术壁垒-80.15,市场地位-63.70,商业质量-67.07,经营质量-50.92,行业前景-78.00,治理风险-69.55,软件服务,above_average,full_coverage_dimensional_v0.4
+02687,ABLE DIGITAL,总分-72.65,护城河-67.36,技术壁垒-81.79,市场地位-76.89,商业质量-69.74,经营质量-47.44,行业前景-78.00,治理风险-67.53,软件服务,above_average,full_coverage_dimensional_v0.4
+00100,MINIMAX-W,总分-72.60,护城河-76.83,技术壁垒-78.03,市场地位-62.54,商业质量-56.08,经营质量-63.69,行业前景-78.00,治理风险-72.96,软件服务,above_average,full_coverage_dimensional_v0.4
+00772,CHINA LIT,总分-72.60,护城河-81.14,技术壁垒-70.14,市场地位-74.59,商业质量-60.52,经营质量-43.54,行业前景-78.00,治理风险-70.50,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+00836,CHINA RES POWER,总分-72.58,护城河-89.60,技术壁垒-51.73,市场地位-90.88,商业质量-75.99,经营质量-58.80,行业前景-62.00,治理风险-67.82,公用事业,above_average,full_coverage_dimensional_v0.4
+00950,LEE'S PHARM,总分-72.57,护城河-70.36,技术壁垒-84.81,市场地位-74.10,商业质量-60.95,经营质量-55.84,行业前景-70.00,治理风险-68.61,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+08082,QINGHUA HOLD,总分-72.57,护城河-75.45,技术壁垒-79.48,市场地位-60.83,商业质量-59.45,经营质量-63.32,行业前景-78.00,治理风险-72.89,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+02013,WEIMOB INC,总分-72.55,护城河-72.75,技术壁垒-79.06,市场地位-72.21,商业质量-64.36,经营质量-46.62,行业前景-78.00,治理风险-70.57,软件服务,above_average,full_coverage_dimensional_v0.4
+00392,BEIJING ENT,总分-72.54,护城河-93.33,技术壁垒-51.95,市场地位-88.85,商业质量-74.50,经营质量-45.79,行业前景-62.00,治理风险-68.56,公用事业,above_average,full_coverage_dimensional_v0.4
+00722,UMP,总分-72.50,护城河-74.92,技术壁垒-84.08,市场地位-66.06,商业质量-63.51,经营质量-50.50,行业前景-70.00,治理风险-69.74,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+06667,MEGA GENOMICS,总分-72.50,护城河-74.51,技术壁垒-84.75,市场地位-65.41,商业质量-66.83,经营质量-48.04,行业前景-70.00,治理风险-68.45,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+02531,CARLINK TECH,总分-72.47,护城河-70.36,技术壁垒-80.86,市场地位-71.89,商业质量-63.90,经营质量-52.28,行业前景-78.00,治理风险-68.86,软件服务,above_average,full_coverage_dimensional_v0.4
+06133,VITAL INNO,总分-72.46,护城河-77.08,技术壁垒-79.18,市场地位-65.98,商业质量-57.36,经营质量-47.67,行业前景-78.00,治理风险-71.07,资讯科技器材,above_average,full_coverage_dimensional_v0.4
+00318,VONGROUP,总分-72.41,护城河-73.00,技术壁垒-80.00,市场地位-69.00,商业质量-62.32,经营质量-50.00,行业前景-78.00,治理风险-70.00,软件服务,above_average,full_coverage_dimensional_v0.4
+02138,EC HEALTHCARE,总分-72.39,护城河-79.00,技术壁垒-75.25,市场地位-74.89,商业质量-58.80,经营质量-49.57,行业前景-70.00,治理风险-70.74,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+01858,CHUNLI MEDICAL,总分-72.37,护城河-74.28,技术壁垒-84.82,市场地位-65.90,商业质量-66.70,经营质量-44.54,行业前景-70.00,治理风险-69.69,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+02111,BEST PACIFIC,总分-72.36,护城河-88.08,技术壁垒-54.27,市场地位-83.32,商业质量-71.48,经营质量-56.81,行业前景-70.00,治理风险-67.98,纺织及服饰,above_average,full_coverage_dimensional_v0.4
+02235,MICROTECH MED-B,总分-72.34,护城河-69.60,技术壁垒-84.62,市场地位-71.82,商业质量-69.72,经营质量-48.86,行业前景-70.00,治理风险-69.59,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+09669,BEISEN HOLDING,总分-72.33,护城河-76.50,技术壁垒-79.35,市场地位-66.06,商业质量-59.92,经营质量-44.83,行业前景-78.00,治理风险-70.20,软件服务,above_average,full_coverage_dimensional_v0.4
+09969,INNOCARE,总分-72.31,护城河-71.44,技术壁垒-84.44,市场地位-69.20,商业质量-68.20,经营质量-48.81,行业前景-70.00,治理风险-69.50,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+02533,BLACK SESAME,总分-72.30,护城河-77.89,技术壁垒-78.16,市场地位-65.98,商业质量-59.74,经营质量-40.47,行业前景-78.00,治理风险-72.80,软件服务,above_average,full_coverage_dimensional_v0.4
+01875,BIODLINK-B,总分-72.29,护城河-76.50,技术壁垒-83.48,市场地位-68.35,商业质量-54.84,经营质量-47.17,行业前景-70.00,治理风险-70.83,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+00068,MANYCORE TECH,总分-72.28,护城河-73.83,技术壁垒-78.29,市场地位-66.19,商业质量-58.62,经营质量-59.55,行业前景-78.00,治理风险-72.88,软件服务,above_average,full_coverage_dimensional_v0.4
+02415,MEDSCI,总分-72.25,护城河-74.68,技术壁垒-84.24,市场地位-65.58,商业质量-64.18,经营质量-46.92,行业前景-70.00,治理风险-69.93,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+00501,OMNIVISION,总分-72.24,护城河-69.00,技术壁垒-88.00,市场地位-68.00,商业质量-58.00,经营质量-56.00,行业前景-72.00,治理风险-70.00,Semiconductors,above_average,full_coverage_dimensional_v0.4
+01991,TA YANG GROUP,总分-72.23,护城河-76.83,技术壁垒-78.79,市场地位-66.76,商业质量-60.51,经营质量-41.64,行业前景-78.00,治理风险-70.03,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+00550,ALLEGRO CULTURE,总分-72.21,护城河-75.10,技术壁垒-79.66,市场地位-63.28,商业质量-66.65,经营质量-44.50,行业前景-78.00,治理风险-71.41,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+03709,EEKA FASHION,总分-72.21,护城河-88.18,技术壁垒-54.39,市场地位-83.48,商业质量-69.33,经营质量-55.20,行业前景-70.00,治理风险-68.65,纺织及服饰,above_average,full_coverage_dimensional_v0.4
+01473,PANGAEA CONNECT,总分-72.20,护城河-70.74,技术壁垒-80.10,市场地位-71.75,商业质量-61.10,经营质量-52.75,行业前景-78.00,治理风险-69.14,资讯科技器材,above_average,full_coverage_dimensional_v0.4
+00178,SA SA INT'L,总分-72.18,护城河-75.24,技术壁垒-76.02,市场地位-79.31,商业质量-59.80,经营质量-50.24,行业前景-70.00,治理风险-69.45,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+06166,CIG,总分-72.16,护城河-73.00,技术壁垒-86.00,市场地位-68.00,商业质量-58.00,经营质量-44.00,行业前景-72.00,治理风险-70.00,IT Hardware,above_average,full_coverage_dimensional_v0.4
+00797,7ROAD,总分-72.15,护城河-76.64,技术壁垒-72.46,市场地位-70.32,商业质量-70.87,经营质量-45.54,行业前景-78.00,治理风险-68.95,软件服务,above_average,full_coverage_dimensional_v0.4
+02120,KN HOSPITAL,总分-72.14,护城河-71.76,技术壁垒-77.58,市场地位-78.16,商业质量-63.31,经营质量-57.36,行业前景-70.00,治理风险-69.59,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+02181,MABPHARM-B,总分-72.12,护城河-68.97,技术壁垒-84.15,市场地位-70.13,商业质量-69.59,经营质量-55.51,行业前景-70.00,治理风险-68.21,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+02701,NSING TECH,总分-72.10,护城河-73.00,技术壁垒-85.71,市场地位-67.14,商业质量-57.51,经营质量-46.43,行业前景-72.00,治理风险-70.33,半导体,above_average,full_coverage_dimensional_v0.4
+00302,CMGE,总分-72.08,护城河-75.28,技术壁垒-78.37,市场地位-69.79,商业质量-55.05,经营质量-45.81,行业前景-78.00,治理风险-72.55,软件服务,above_average,full_coverage_dimensional_v0.4
+02576,TAIMEI TECH,总分-72.08,护城河-76.44,技术壁垒-78.95,市场地位-64.76,商业质量-59.84,经营质量-45.55,行业前景-78.00,治理风险-70.45,软件服务,above_average,full_coverage_dimensional_v0.4
+00553,NANJING PANDA,总分-72.06,护城河-72.97,技术壁垒-79.67,市场地位-67.52,商业质量-65.41,经营质量-45.01,行业前景-78.00,治理风险-70.04,软件服务,above_average,full_coverage_dimensional_v0.4
+00690,UNI-BIO GROUP,总分-72.06,护城河-71.50,技术壁垒-84.25,市场地位-69.15,商业质量-63.98,经营质量-53.17,行业前景-70.00,治理风险-67.24,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+09886,DINGDANG HEALTH,总分-72.06,护城河-68.34,技术壁垒-83.75,市场地位-76.80,商业质量-63.31,经营质量-49.95,行业前景-70.00,治理风险-70.10,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+01801,INNOVENT BIO,总分-72.05,护城河-66.67,技术壁垒-85.33,市场地位-75.42,商业质量-62.33,经营质量-56.00,行业前景-70.00,治理风险-70.00,医疗保健,above_average,full_coverage_dimensional_v0.4
+02172,MICROPORT NEURO,总分-72.05,护城河-72.92,技术壁垒-77.17,市场地位-75.31,商业质量-68.78,经营质量-53.38,行业前景-70.00,治理风险-67.72,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+00638,FIBOCOM,总分-72.04,护城河-73.00,技术壁垒-84.00,市场地位-68.00,商业质量-58.00,经营质量-50.00,行业前景-72.00,治理风险-70.00,IT Hardware,above_average,full_coverage_dimensional_v0.4
+06660,AIM VACCINE,总分-72.03,护城河-77.16,技术壁垒-82.74,市场地位-66.47,商业质量-54.20,经营质量-47.60,行业前景-70.00,治理风险-71.19,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+01362,SIS MOBILE,总分-72.01,护城河-77.90,技术壁垒-72.36,市场地位-71.62,商业质量-59.87,经营质量-49.97,行业前景-78.00,治理风险-68.32,资讯科技器材,above_average,full_coverage_dimensional_v0.4
+01831,SHIFANG HLDG,总分-71.98,护城河-77.69,技术壁垒-72.17,市场地位-71.55,商业质量-57.63,经营质量-52.89,行业前景-78.00,治理风险-69.76,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+09863,LEAPMOTOR,总分-71.98,护城河-72.55,技术壁垒-79.03,市场地位-79.45,商业质量-58.57,经营质量-58.25,行业前景-66.00,治理风险-69.26,汽车,above_average,full_coverage_dimensional_v0.4
+03998,BOSIDENG,总分-71.97,护城河-88.28,技术壁垒-53.67,市场地位-84.62,商业质量-73.46,经营质量-45.14,行业前景-70.00,治理风险-69.02,纺织及服饰,above_average,full_coverage_dimensional_v0.4
+02633,JACOBSON PHARMA,总分-71.95,护城河-69.30,技术壁垒-84.49,市场地位-71.77,商业质量-65.37,经营质量-51.45,行业前景-70.00,治理风险-68.37,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+08645,BYTE META,总分-71.94,护城河-70.00,技术壁垒-80.00,市场地位-69.00,商业质量-67.03,经营质量-50.00,行业前景-78.00,治理风险-70.00,软件服务,above_average,full_coverage_dimensional_v0.4
+01661,CH FRONTIER TEC,总分-71.93,护城河-76.57,技术壁垒-78.38,市场地位-64.48,商业质量-60.16,经营质量-44.03,行业前景-78.00,治理风险-71.30,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+02566,JIUYUAN GENE,总分-71.93,护城河-66.42,技术壁垒-85.34,市场地位-75.00,商业质量-64.64,经营质量-54.90,行业前景-70.00,治理风险-68.05,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+02635,NUOBIKAN,总分-71.92,护城河-65.30,技术壁垒-81.89,市场地位-70.91,商业质量-70.47,经营质量-57.41,行业前景-78.00,治理风险-67.61,软件服务,above_average,full_coverage_dimensional_v0.4
+02522,RIMAG GROUP,总分-71.91,护城河-70.16,技术壁垒-83.92,市场地位-71.18,商业质量-63.37,经营质量-51.01,行业前景-70.00,治理风险-70.50,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+02656,160 HEALTH,总分-71.91,护城河-76.03,技术壁垒-83.25,市场地位-67.29,商业质量-58.57,经营质量-40.84,行业前景-70.00,治理风险-71.47,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+00175,GEELY AUTO,总分-71.89,护城河-73.03,技术壁垒-77.42,市场地位-83.90,商业质量-58.56,经营质量-51.05,行业前景-66.00,治理风险-68.77,汽车,above_average,full_coverage_dimensional_v0.4
+02282,MGM CHINA,总分-71.87,护城河-86.00,技术壁垒-47.00,市场地位-91.00,商业质量-79.88,经营质量-58.99,行业前景-70.00,治理风险-67.35,酒店、赌场及消闲设施,above_average,full_coverage_dimensional_v0.4
+02432,DOBOT,总分-71.87,护城河-76.24,技术壁垒-78.74,市场地位-63.17,商业质量-61.66,经营质量-44.84,行业前景-78.00,治理风险-70.69,软件服务,above_average,full_coverage_dimensional_v0.4
+06610,FLOWING CLOUD,总分-71.87,护城河-77.70,技术壁垒-78.13,市场地位-66.14,商业质量-53.08,经营质量-43.57,行业前景-78.00,治理风险-72.11,软件服务,above_average,full_coverage_dimensional_v0.4
+06883,ETERNAL BEAUTY,总分-71.87,护城河-73.64,技术壁垒-76.69,市场地位-76.65,商业质量-64.17,经营质量-51.90,行业前景-70.00,治理风险-67.82,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+00419,HONY MEDIA,总分-71.85,护城河-76.57,技术壁垒-79.22,市场地位-64.81,商业质量-57.51,经营质量-41.44,行业前景-78.00,治理风险-71.95,软件服务,above_average,full_coverage_dimensional_v0.4
+01087,INVESTECH HLDGS,总分-71.84,护城河-76.92,技术壁垒-78.33,市场地位-64.15,商业质量-61.15,经营质量-40.16,行业前景-78.00,治理风险-71.68,资讯科技器材,above_average,full_coverage_dimensional_v0.4
+02390,ZHIHU-W,总分-71.84,护城河-80.28,技术壁垒-70.10,市场地位-73.00,商业质量-57.61,经营质量-42.53,行业前景-78.00,治理风险-70.56,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+02299,BILLION IND,总分-71.83,护城河-88.79,技术壁垒-54.07,市场地位-85.55,商业质量-66.64,经营质量-45.21,行业前景-70.00,治理风险-69.51,纺织及服饰,above_average,full_coverage_dimensional_v0.4
+02383,TOM GROUP,总分-71.83,护城河-71.47,技术壁垒-79.10,市场地位-68.03,商业质量-57.89,经营质量-58.30,行业前景-78.00,治理风险-71.04,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+03317,XUNCE,总分-71.83,护城河-70.00,技术壁垒-81.20,市场地位-69.00,商业质量-62.00,经营质量-50.00,行业前景-78.00,治理风险-70.00,Software & Services,above_average,full_coverage_dimensional_v0.4
+00511,TVB,总分-71.79,护城河-69.36,技术壁垒-73.31,市场地位-81.72,商业质量-63.02,经营质量-53.92,行业前景-78.00,治理风险-69.02,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+09973,CHERY AUTO,总分-71.77,护城河-72.71,技术壁垒-77.42,市场地位-83.39,商业质量-57.77,经营质量-53.08,行业前景-66.00,治理风险-68.57,汽车,above_average,full_coverage_dimensional_v0.4
+00570,TRAD CHI MED,总分-71.75,护城河-76.21,技术壁垒-75.67,市场地位-76.03,商业质量-58.04,经营质量-49.30,行业前景-70.00,治理风险-70.02,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+06823,HKT-SS,总分-71.74,护城河-91.00,技术壁垒-51.20,市场地位-80.60,商业质量-80.49,经营质量-57.93,行业前景-62.00,治理风险-68.26,电讯,above_average,full_coverage_dimensional_v0.4
+00326,CN STAR ENT-2K,总分-71.71,护城河-77.78,技术壁垒-78.41,市场地位-65.48,商业质量-53.57,经营质量-40.81,行业前景-78.00,治理风险-71.51,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+01617,NANFANG COMM,总分-71.71,护城河-69.75,技术壁垒-80.23,市场地位-69.79,商业质量-63.64,经营质量-50.30,行业前景-78.00,治理风险-68.83,资讯科技器材,above_average,full_coverage_dimensional_v0.4
+01234,CHINA LILANG,总分-71.70,护城河-83.98,技术壁垒-54.23,市场地位-83.16,商业质量-79.09,经营质量-55.07,行业前景-70.00,治理风险-68.22,纺织及服饰,above_average,full_coverage_dimensional_v0.4
+02000,SIM TECH,总分-71.69,护城河-75.93,技术壁垒-79.51,市场地位-63.56,商业质量-55.24,经营质量-47.95,行业前景-78.00,治理风险-70.56,资讯科技器材,above_average,full_coverage_dimensional_v0.4
+08033,VODATEL NETWORK,总分-71.68,护城河-69.70,技术壁垒-80.52,市场地位-69.56,商业质量-61.00,经营质量-53.00,行业前景-78.00,治理风险-68.74,软件服务,above_average,full_coverage_dimensional_v0.4
+00455,TIANDA PHARMA,总分-71.65,护城河-74.84,技术壁垒-83.77,市场地位-64.03,商业质量-58.73,经营质量-47.66,行业前景-70.00,治理风险-71.15,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+02945,CN STAR ENT-10K,总分-71.65,护城河-77.78,技术壁垒-78.41,市场地位-65.48,商业质量-53.57,经营质量-39.91,行业前景-78.00,治理风险-71.51,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+03880,MEDTIDE,总分-71.64,护城河-71.64,技术壁垒-77.87,市场地位-70.47,商业质量-72.03,经营质量-57.15,行业前景-70.00,治理风险-67.32,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+06651,51WORLD,总分-71.64,护城河-70.00,技术壁垒-80.40,市场地位-69.00,商业质量-62.00,经营质量-50.00,行业前景-78.00,治理风险-70.00,Software & Services,above_average,full_coverage_dimensional_v0.4
+01236,LDROBOT,总分-71.63,护城河-73.50,技术壁垒-78.64,市场地位-67.33,商业质量-61.97,经营质量-42.98,行业前景-78.00,治理风险-71.58,软件服务,above_average,full_coverage_dimensional_v0.4
+01815,EVEREST GOLD,总分-71.62,护城河-86.00,技术壁垒-54.47,市场地位-77.80,商业质量-81.07,经营质量-53.86,行业前景-70.00,治理风险-67.64,纺织、服饰及个人护理,above_average,full_coverage_dimensional_v0.4
+01111,HUASHI GROUP,总分-71.61,护城河-73.00,技术壁垒-73.17,市场地位-72.62,商业质量-64.54,经营质量-55.32,行业前景-78.00,治理风险-67.32,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+01083,TG SMART ENERGY,总分-71.60,护城河-92.13,技术壁垒-51.20,市场地位-83.57,商业质量-71.92,经营质量-54.84,行业前景-62.00,治理风险-68.15,公用事业,above_average,full_coverage_dimensional_v0.4
+02688,ENN ENERGY,总分-71.60,护城河-86.73,技术壁垒-52.00,市场地位-90.61,商业质量-74.31,经营质量-58.32,行业前景-62.00,治理风险-67.08,公用事业,above_average,full_coverage_dimensional_v0.4
+09966,ALPHAMAB-B,总分-71.58,护城河-75.57,技术壁垒-83.54,市场地位-65.52,商业质量-54.48,经营质量-46.79,行业前景-70.00,治理风险-70.58,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+01830,PERFECT MEDICAL,总分-71.55,护城河-68.56,技术壁垒-84.53,市场地位-69.97,商业质量-65.07,经营质量-53.66,行业前景-70.00,治理风险-67.48,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+00775,CKLIFE SCIENCES,总分-71.54,护城河-69.28,技术壁垒-83.06,市场地位-75.41,商业质量-58.05,经营质量-48.90,行业前景-70.00,治理风险-71.13,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+02228,XTALPI,总分-71.54,护城河-86.67,技术壁垒-53.53,市场地位-80.47,商业质量-81.28,经营质量-45.33,行业前景-70.00,治理风险-68.93,纺织、服饰及个人护理,above_average,full_coverage_dimensional_v0.4
+01913,PRADA,总分-71.51,护城河-85.60,技术壁垒-46.80,市场地位-89.51,商业质量-79.22,经营质量-59.50,行业前景-70.00,治理风险-67.92,纺织及服饰,above_average,full_coverage_dimensional_v0.4
+02393,YESTAR HEALTH,总分-71.50,护城河-78.52,技术壁垒-74.74,市场地位-71.25,商业质量-56.73,经营质量-49.44,行业前景-70.00,治理风险-71.70,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+02670,YUNJI,总分-71.49,护城河-75.25,技术壁垒-78.08,市场地位-59.44,商业质量-57.88,经营质量-57.46,行业前景-78.00,治理风险-72.64,软件服务,above_average,full_coverage_dimensional_v0.4
+08051,CIRCUTECH,总分-71.49,护城河-69.43,技术壁垒-81.02,市场地位-67.69,商业质量-67.75,经营质量-45.40,行业前景-78.00,治理风险-67.81,资讯科技器材,above_average,full_coverage_dimensional_v0.4
+00571,ESUN HOLDINGS,总分-71.47,护城河-73.26,技术壁垒-72.52,市场地位-71.48,商业质量-62.97,经营质量-56.98,行业前景-78.00,治理风险-69.50,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+00902,HUANENG POWER,总分-71.46,护城河-89.07,技术壁垒-50.88,市场地位-87.95,商业质量-74.08,经营质量-52.47,行业前景-62.00,治理风险-70.70,公用事业,above_average,full_coverage_dimensional_v0.4
+02211,UNI HEALTH,总分-71.46,护城河-74.58,技术壁垒-83.70,市场地位-64.64,商业质量-56.36,经营质量-48.83,行业前景-70.00,治理风险-70.06,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+01384,DEEPEXI TECH,总分-71.44,护城河-70.00,技术壁垒-79.60,市场地位-69.00,商业质量-62.00,经营质量-50.00,行业前景-78.00,治理风险-70.00,Software & Services,above_average,full_coverage_dimensional_v0.4
+06955,BOAN BIOTECH,总分-71.44,护城河-69.56,技术壁垒-84.15,市场地位-70.68,商业质量-60.75,经营质量-50.39,行业前景-70.00,治理风险-69.74,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+00536,TRADELINK,总分-71.42,护城河-67.91,技术壁垒-81.02,市场地位-66.22,商业质量-68.26,经营质量-54.45,行业前景-78.00,治理风险-67.28,软件服务,above_average,full_coverage_dimensional_v0.4
+01982,NAMESON HLDGS,总分-71.41,护城河-86.87,技术壁垒-53.87,市场地位-79.69,商业质量-73.04,经营质量-54.17,行业前景-70.00,治理风险-68.41,纺织及服饰,above_average,full_coverage_dimensional_v0.4
+01063,SUNCORP TECH,总分-71.40,护城河-72.98,技术壁垒-80.16,市场地位-59.03,商业质量-72.39,经营质量-45.47,行业前景-78.00,治理风险-67.10,资讯科技器材,above_average,full_coverage_dimensional_v0.4
+02658,TIANYU SEMI,总分-71.40,护城河-70.07,技术壁垒-84.86,市场地位-68.43,商业质量-61.78,经营质量-42.81,行业前景-72.00,治理风险-70.78,半导体,above_average,full_coverage_dimensional_v0.4
+06600,ONEROBOTICS,总分-71.40,护城河-69.00,技术壁垒-86.00,市场地位-68.00,商业质量-58.00,经营质量-50.00,行业前景-72.00,治理风险-70.00,Household Appliances & Electronics,above_average,full_coverage_dimensional_v0.4
+02291,SCIENTECH,总分-71.37,护城河-65.12,技术壁垒-85.55,市场地位-73.45,商业质量-64.91,经营质量-54.75,行业前景-70.00,治理风险-67.43,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+00018,ORIENTAL M G,总分-71.35,护城河-69.48,技术壁垒-80.31,市场地位-68.59,商业质量-61.75,经营质量-49.75,行业前景-78.00,治理风险-69.60,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+01097,I-CABLE COMM,总分-71.35,护城河-71.03,技术壁垒-78.90,市场地位-66.10,商业质量-54.62,经营质量-60.13,行业前景-78.00,治理风险-72.95,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+01518,NC HEALTHCARE,总分-71.32,护城河-76.36,技术壁垒-82.35,市场地位-64.72,商业质量-52.68,经营质量-45.95,行业前景-70.00,治理风险-72.38,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+00420,FOUNTAIN SET,总分-71.31,护城河-87.88,技术壁垒-53.34,市场地位-80.45,商业质量-69.14,经营质量-52.02,行业前景-70.00,治理风险-69.82,纺织及服饰,above_average,full_coverage_dimensional_v0.4
+09958,LITIAN PICTURES,总分-71.29,护城河-74.33,技术壁垒-79.24,市场地位-59.55,商业质量-57.33,经营质量-55.43,行业前景-78.00,治理风险-71.57,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+00257,EB ENVIRONMENT,总分-71.28,护城河-88.40,技术壁垒-51.47,市场地位-85.76,商业质量-75.91,经营质量-54.57,行业前景-62.00,治理风险-69.05,公用事业,above_average,full_coverage_dimensional_v0.4
+08637,METASURFACE,总分-71.28,护城河-64.93,技术壁垒-87.43,市场地位-66.29,商业质量-66.30,经营质量-56.99,行业前景-72.00,治理风险-67.22,半导体,above_average,full_coverage_dimensional_v0.4
+02422,REGO INTERACT,总分-71.26,护城河-71.12,技术壁垒-79.03,市场地位-67.69,商业质量-62.75,经营质量-44.01,行业前景-78.00,治理风险-72.10,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+01100,MAINLAND HOLD,总分-71.25,护城河-86.57,技术壁垒-54.03,市场地位-77.14,商业质量-76.35,经营质量-53.67,行业前景-70.00,治理风险-68.53,纺织及服饰,above_average,full_coverage_dimensional_v0.4
+00434,BOYAA,总分-71.24,护城河-75.97,技术壁垒-78.53,市场地位-61.72,商业质量-53.25,经营质量-50.34,行业前景-78.00,治理风险-71.30,软件服务,above_average,full_coverage_dimensional_v0.4
+06657,BAIWANG CO,总分-71.23,护城河-70.43,技术壁垒-79.27,市场地位-69.21,商业质量-62.82,经营质量-43.97,行业前景-78.00,治理风险-70.16,软件服务,above_average,full_coverage_dimensional_v0.4
+02678,TEXHONG INTL GP,总分-71.22,护城河-88.99,技术壁垒-46.47,市场地位-86.35,商业质量-71.90,经营质量-56.29,行业前景-70.00,治理风险-68.90,纺织及服饰,above_average,full_coverage_dimensional_v0.4
+06288,FAST RETAIL-DRS,总分-71.21,护城河-86.00,技术壁垒-47.00,市场地位-90.76,商业质量-73.60,经营质量-55.93,行业前景-70.00,治理风险-68.29,纺织及服饰,above_average,full_coverage_dimensional_v0.4
+02298,COSMO LADY,总分-71.20,护城河-87.17,技术壁垒-53.42,市场地位-79.32,商业质量-72.13,经营质量-52.36,行业前景-70.00,治理风险-69.27,纺织及服饰,above_average,full_coverage_dimensional_v0.4
+00484,FORGAME,总分-71.19,护城河-75.44,技术壁垒-78.20,市场地位-60.21,商业质量-62.00,经营质量-44.58,行业前景-78.00,治理风险-71.88,资讯科技器材,above_average,full_coverage_dimensional_v0.4
+02438,MOBVOI,总分-71.18,护城河-75.44,技术壁垒-79.27,市场地位-61.34,商业质量-56.78,经营质量-44.51,行业前景-78.00,治理风险-71.82,软件服务,above_average,full_coverage_dimensional_v0.4
+03390,TYCOON GROUP,总分-71.17,护城河-73.03,技术壁垒-76.30,市场地位-72.22,商业质量-65.94,经营质量-51.11,行业前景-70.00,治理风险-69.26,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+01980,TIANGE,总分-71.13,护城河-74.41,技术壁垒-79.90,市场地位-60.41,商业质量-61.17,经营质量-44.45,行业前景-78.00,治理风险-69.71,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+06185,CANSINOBIO,总分-71.08,护城河-74.31,技术壁垒-83.40,市场地位-62.87,商业质量-58.52,经营质量-46.37,行业前景-70.00,治理风险-69.94,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+08003,GREAT WORLD,总分-71.08,护城河-72.95,技术壁垒-81.24,市场地位-60.45,商业质量-67.52,经营质量-39.17,行业前景-78.00,治理风险-67.05,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+08436,TAKBO GROUP,总分-71.08,护城河-73.64,技术壁垒-83.98,市场地位-61.61,商业质量-60.61,经营质量-47.84,行业前景-70.00,治理风险-69.35,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+02162,KEYMED BIO-B,总分-71.02,护城河-76.36,技术壁垒-82.16,市场地位-64.49,商业质量-53.53,经营质量-42.03,行业前景-70.00,治理风险-71.43,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+02487,CUTIA-B,总分-71.02,护城河-75.04,技术壁垒-82.45,市场地位-61.73,商业质量-61.94,经营质量-41.59,行业前景-70.00,治理风险-72.07,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+03638,HUNLICAR GROUP,总分-71.02,护城河-73.97,技术壁垒-79.90,市场地位-60.02,商业质量-59.26,经营质量-47.39,行业前景-78.00,治理风险-70.36,资讯科技器材,above_average,full_coverage_dimensional_v0.4
+08317,FINET GROUP,总分-71.02,护城河-72.43,技术壁垒-80.38,市场地位-57.55,商业质量-67.03,经营质量-50.03,行业前景-78.00,治理风险-68.43,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+01460,ICO GROUP,总分-71.01,护城河-69.17,技术壁垒-80.41,市场地位-68.23,商业质量-63.39,经营质量-44.05,行业前景-78.00,治理风险-69.27,软件服务,above_average,full_coverage_dimensional_v0.4
+03332,SINOLIFE UTD,总分-71.00,护城河-72.84,技术壁垒-76.21,市场地位-72.11,商业质量-65.78,经营质量-50.68,行业前景-70.00,治理风险-68.58,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+03336,JU TENG INTL,总分-71.00,护城河-79.21,技术壁垒-70.07,市场地位-69.39,商业质量-56.79,经营质量-42.37,行业前景-78.00,治理风险-71.37,资讯科技器材,above_average,full_coverage_dimensional_v0.4
+00528,KINGDOM HOLDING,总分-70.99,护城河-86.97,技术壁垒-53.63,市场地位-77.67,商业质量-70.62,经营质量-54.36,行业前景-70.00,治理风险-69.63,纺织及服饰,above_average,full_coverage_dimensional_v0.4
+01079,PINE TECH,总分-70.99,护城河-74.79,技术壁垒-79.57,市场地位-60.93,商业质量-58.13,经营质量-42.40,行业前景-78.00,治理风险-71.78,资讯科技器材,above_average,full_coverage_dimensional_v0.4
+02149,BATELAB,总分-70.99,护城河-62.36,技术壁垒-88.00,市场地位-72.00,商业质量-60.87,经营质量-55.26,行业前景-72.00,治理风险-67.67,半导体,above_average,full_coverage_dimensional_v0.4
+02453,CONCORD HC GP,总分-70.99,护城河-75.64,技术壁垒-82.16,市场地位-62.13,商业质量-60.54,经营质量-41.00,行业前景-70.00,治理风险-71.51,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+01731,PROSPEROUS IND,总分-70.98,护城河-86.67,技术壁垒-53.91,市场地位-78.52,商业质量-71.08,经营质量-53.96,行业前景-70.00,治理风险-67.61,纺织及服饰,above_average,full_coverage_dimensional_v0.4
+01477,OCUMENSION-B,总分-70.97,护城河-69.63,技术壁垒-83.30,市场地位-68.01,商业质量-63.99,经营质量-47.08,行业前景-70.00,治理风险-70.34,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+01643,MODERN CHI MED,总分-70.97,护城河-73.91,技术壁垒-83.85,市场地位-62.63,商业质量-55.49,经营质量-48.91,行业前景-70.00,治理风险-70.18,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+08112,CORNERSTONE FIN,总分-70.97,护城河-74.76,技术壁垒-78.83,市场地位-60.14,商业质量-56.37,经营质量-49.50,行业前景-78.00,治理风险-71.73,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+01193,CHINA RES GAS,总分-70.96,护城河-93.47,技术壁垒-43.68,市场地位-88.59,商业质量-70.69,经营质量-57.60,行业前景-62.00,治理风险-68.48,公用事业,above_average,full_coverage_dimensional_v0.4
+00762,CHINA UNICOM,总分-70.94,护城河-92.50,技术壁垒-49.00,市场地位-85.40,商业质量-68.09,经营质量-50.00,行业前景-62.00,治理风险-70.00,电讯,above_average,full_coverage_dimensional_v0.4
+08319,EXPERT SYS,总分-70.94,护城河-69.04,技术壁垒-80.25,市场地位-67.23,商业质量-61.61,经营质量-48.47,行业前景-78.00,治理风险-69.64,软件服务,above_average,full_coverage_dimensional_v0.4
+09600,NEWLINK TECH,总分-70.90,护城河-75.31,技术壁垒-78.72,市场地位-59.94,商业质量-56.85,经营质量-45.47,行业前景-78.00,治理风险-72.23,软件服务,above_average,full_coverage_dimensional_v0.4
+03813,POU SHENG INT'L,总分-70.88,护城河-89.33,技术壁垒-44.87,市场地位-88.33,商业质量-71.68,经营质量-50.00,行业前景-70.00,治理风险-70.00,纺织、服饰及个人护理,above_average,full_coverage_dimensional_v0.4
+06855,ASCENTAGE-B,总分-70.85,护城河-75.70,技术壁垒-82.05,市场地位-62.15,商业质量-59.26,经营质量-39.51,行业前景-70.00,治理风险-72.44,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+06877,TE HEALTHCARE,总分-70.85,护城河-73.32,技术壁垒-84.01,市场地位-61.12,商业质量-60.53,经营质量-45.69,行业前景-70.00,治理风险-70.22,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+01244,3D MEDICINES,总分-70.84,护城河-75.11,技术壁垒-82.64,市场地位-63.66,商业质量-55.08,经营质量-42.64,行业前景-70.00,治理风险-71.63,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+08091,OOH HOLDINGS,总分-70.83,护城河-73.29,技术壁垒-80.14,市场地位-58.93,商业质量-59.90,经营质量-47.91,行业前景-78.00,治理风险-70.61,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+02126,JW THERAP-B,总分-70.80,护城河-74.77,技术壁垒-82.26,市场地位-59.96,商业质量-61.01,经营质量-44.78,行业前景-70.00,治理风险-72.60,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+01498,PURAPHARM,总分-70.79,护城河-70.91,技术壁垒-83.62,市场地位-64.78,商业质量-59.07,经营质量-50.68,行业前景-70.00,治理风险-70.50,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+00426,ONE MEDIA GROUP,总分-70.78,护城河-73.03,技术壁垒-79.31,市场地位-56.14,商业质量-58.31,经营质量-58.42,行业前景-78.00,治理风险-72.52,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+01316,NEXTEER,总分-70.78,护城河-71.58,技术壁垒-78.90,市场地位-76.94,商业质量-55.00,经营质量-55.06,行业前景-66.00,治理风险-68.18,汽车,above_average,full_coverage_dimensional_v0.4
+09996,PEIJIA-B,总分-70.78,护城河-72.68,技术壁垒-82.19,市场地位-65.23,商业质量-59.56,经营质量-44.87,行业前景-70.00,治理风险-71.85,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+00916,CHINA LONGYUAN,总分-70.75,护城河-91.07,技术壁垒-49.01,市场地位-80.91,商业质量-78.47,经营质量-50.00,行业前景-62.00,治理风险-70.00,公用事业,above_average,full_coverage_dimensional_v0.4
+02028,JOLIMARK,总分-70.74,护城河-71.11,技术壁垒-78.72,市场地位-58.90,商业质量-57.47,经营质量-63.30,行业前景-78.00,治理风险-72.90,资讯科技器材,above_average,full_coverage_dimensional_v0.4
+01776,GF SEC,总分-70.73,护城河-87.45,技术壁垒-54.71,市场地位-88.51,商业质量-70.61,经营质量-55.56,行业前景-54.00,治理风险-69.70,其他金融,above_average,full_coverage_dimensional_v0.4
+02125,STRAWBEAR ENT,总分-70.72,护城河-68.41,技术壁垒-72.03,市场地位-76.07,商业质量-67.76,经营质量-51.81,行业前景-78.00,治理风险-69.65,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+00046,COMPUTER & TECH,总分-70.71,护城河-67.85,技术壁垒-80.91,市场地位-64.76,商业质量-62.52,经营质量-53.19,行业前景-78.00,治理风险-68.58,软件服务,above_average,full_coverage_dimensional_v0.4
+02479,TIANJUDIHE,总分-70.71,护城河-68.05,技术壁垒-81.23,市场地位-64.76,商业质量-67.27,经营质量-43.61,行业前景-78.00,治理风险-69.59,软件服务,above_average,full_coverage_dimensional_v0.4
+01708,SAMPLE TECH,总分-70.70,护城河-69.37,技术壁垒-78.87,市场地位-63.78,商业质量-64.59,经营质量-51.64,行业前景-78.00,治理风险-70.61,软件服务,above_average,full_coverage_dimensional_v0.4
+06082,BIREN TECH,总分-70.70,护城河-70.00,技术壁垒-78.00,市场地位-69.00,商业质量-62.00,经营质量-44.00,行业前景-78.00,治理风险-70.00,Software & Services,above_average,full_coverage_dimensional_v0.4
+08148,WUXI LIFE,总分-70.70,护城河-67.25,技术壁垒-80.62,市场地位-62.54,商业质量-71.99,经营质量-50.41,行业前景-78.00,治理风险-67.65,软件服务,above_average,full_coverage_dimensional_v0.4
+01071,HUADIAN POWER,总分-70.68,护城河-89.87,技术壁垒-43.36,市场地位-91.15,商业质量-75.58,经营质量-58.34,行业前景-62.00,治理风险-68.73,公用事业,above_average,full_coverage_dimensional_v0.4
+07489,VOYAH AUTO,总分-70.68,护城河-67.74,技术壁垒-78.97,市场地位-78.55,商业质量-62.51,经营质量-57.46,行业前景-66.00,治理风险-67.89,汽车,above_average,full_coverage_dimensional_v0.4
+08158,CRMI,总分-70.68,护城河-68.44,技术壁垒-84.59,市场地位-59.79,商业质量-73.91,经营质量-51.54,行业前景-70.00,治理风险-67.29,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+06181,LAOPU GOLD,总分-70.66,护城河-85.19,技术壁垒-46.96,市场地位-88.13,商业质量-81.36,经营质量-47.73,行业前景-70.00,治理风险-67.06,纺织及服饰,above_average,full_coverage_dimensional_v0.4
+01419,HUMAN HEALTH,总分-70.65,护城河-74.84,技术壁垒-76.34,市场地位-65.84,商业质量-64.43,经营质量-50.40,行业前景-70.00,治理风险-69.64,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+01933,ONEFORCE HLDGS,总分-70.65,护城河-74.65,技术壁垒-78.77,市场地位-59.04,商业质量-55.69,经营质量-50.00,行业前景-78.00,治理风险-70.00,软件服务,above_average,full_coverage_dimensional_v0.4
+02239,SMIT,总分-70.65,护城河-74.62,技术壁垒-78.52,市场地位-58.31,商业质量-61.63,经营质量-43.75,行业前景-78.00,治理风险-71.17,资讯科技器材,above_average,full_coverage_dimensional_v0.4
+00648,SOFTMEDX,总分-70.63,护城河-72.28,技术壁垒-83.95,市场地位-57.81,商业质量-65.30,经营质量-51.31,行业前景-70.00,治理风险-67.38,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+00788,CHINA TOWER,总分-70.63,护城河-92.00,技术壁垒-43.40,市场地位-85.20,商业质量-79.76,经营质量-55.58,行业前景-62.00,治理风险-68.89,电讯,above_average,full_coverage_dimensional_v0.4
+08223,ZYY,总分-70.63,护城河-72.04,技术壁垒-82.86,市场地位-66.41,商业质量-57.82,经营质量-43.08,行业前景-70.00,治理风险-71.03,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+06886,HTSC,总分-70.62,护城河-87.33,技术壁垒-54.66,市场地位-88.24,商业质量-70.48,经营质量-55.20,行业前景-54.00,治理风险-69.81,其他金融,above_average,full_coverage_dimensional_v0.4
+02595,GENFLEET-B,总分-70.61,护城河-73.78,技术壁垒-82.03,市场地位-56.70,商业质量-56.27,经营质量-60.85,行业前景-70.00,治理风险-72.96,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+08093,WEB3 META,总分-70.60,护城河-74.59,技术壁垒-78.34,市场地位-60.90,商业质量-55.79,经营质量-45.61,行业前景-78.00,治理风险-71.19,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+01818,ZHAOJIN MINING,总分-70.59,护城河-74.25,技术壁垒-76.75,市场地位-74.75,商业质量-59.28,经营质量-48.75,行业前景-64.00,治理风险-71.50,黄金及贵金属,above_average,full_coverage_dimensional_v0.4
+02611,GTHT,总分-70.58,护城河-87.57,技术壁垒-54.51,市场地位-89.15,商业质量-67.72,经营质量-55.15,行业前景-54.00,治理风险-70.15,其他金融,above_average,full_coverage_dimensional_v0.4
+06066,CSC,总分-70.58,护城河-87.20,技术壁垒-54.61,市场地位-87.53,商业质量-71.38,经营质量-55.87,行业前景-54.00,治理风险-69.62,其他金融,above_average,full_coverage_dimensional_v0.4
+06938,RIBOLIFE-B,总分-70.58,护城河-69.00,技术壁垒-82.00,市场地位-68.75,商业质量-62.00,经营质量-50.00,行业前景-70.00,治理风险-70.00,Health Care,above_average,full_coverage_dimensional_v0.4
+02022,DIGIT HOLLYWOOD,总分-70.57,护城河-73.99,技术壁垒-79.70,市场地位-58.62,商业质量-56.80,经营质量-45.86,行业前景-78.00,治理风险-71.74,软件服务,above_average,full_coverage_dimensional_v0.4
+01490,AI X TECH,总分-70.56,护城河-68.62,技术壁垒-80.03,市场地位-65.24,商业质量-60.67,经营质量-50.61,行业前景-78.00,治理风险-69.87,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+00179,JOHNSON ELEC H,总分-70.54,护城河-70.13,技术壁垒-79.87,市场地位-73.84,商业质量-58.33,经营质量-56.92,行业前景-66.00,治理风险-67.98,汽车,above_average,full_coverage_dimensional_v0.4
+08247,BIOSINO BIO-TEC,总分-70.54,护城河-74.25,技术壁垒-83.09,市场地位-62.45,商业质量-54.47,经营质量-43.83,行业前景-70.00,治理风险-71.35,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+02199,REGINA MIRACLE,总分-70.53,护城河-83.78,技术壁垒-53.71,市场地位-81.14,商业质量-69.78,经营质量-54.25,行业前景-70.00,治理风险-69.76,纺织及服饰,above_average,full_coverage_dimensional_v0.4
+01346,LEVER STYLE,总分-70.52,护城河-86.36,技术壁垒-53.95,市场地位-76.70,商业质量-68.20,经营质量-56.09,行业前景-70.00,治理风险-67.12,纺织及服饰,above_average,full_coverage_dimensional_v0.4
+01606,CDB LEASING,总分-70.52,护城河-87.82,技术壁垒-54.58,市场地位-89.69,商业质量-62.69,经营质量-59.36,行业前景-54.00,治理风险-68.95,其他金融,above_average,full_coverage_dimensional_v0.4
+03625,FOURSEMI,总分-70.52,护城河-72.29,技术壁垒-84.29,市场地位-63.00,商业质量-53.61,经营质量-42.51,行业前景-72.00,治理风险-71.89,半导体,above_average,full_coverage_dimensional_v0.4
+00371,BJ ENT WATER,总分-70.51,护城河-88.27,技术壁垒-50.40,市场地位-84.11,商业质量-73.40,经营质量-52.84,行业前景-62.00,治理风险-70.04,公用事业,above_average,full_coverage_dimensional_v0.4
+08279,AGTECH HOLDINGS,总分-70.50,护城河-87.37,技术壁垒-53.11,市场地位-77.32,商业质量-68.31,经营质量-50.59,行业前景-70.00,治理风险-69.47,酒店、赌场及消闲设施,above_average,full_coverage_dimensional_v0.4
+08131,ABC MULTIACTIVE,总分-70.49,护城河-69.19,技术壁垒-80.36,市场地位-59.33,商业质量-66.41,经营质量-54.42,行业前景-78.00,治理风险-67.12,软件服务,above_average,full_coverage_dimensional_v0.4
+00311,LUEN THAI,总分-70.47,护城河-89.00,技术壁垒-45.40,市场地位-85.00,商业质量-68.56,经营质量-54.66,行业前景-70.00,治理风险-69.79,纺织、服饰及个人护理,above_average,full_coverage_dimensional_v0.4
+00458,TRISTATE HOLD,总分-70.47,护城河-83.47,技术壁垒-54.19,市场地位-79.93,商业质量-69.14,经营质量-57.20,行业前景-70.00,治理风险-68.96,纺织及服饰,above_average,full_coverage_dimensional_v0.4
+01120,ARTS OPTICAL,总分-70.46,护城河-83.67,技术壁垒-54.07,市场地位-80.07,商业质量-75.05,经营质量-47.83,行业前景-70.00,治理风险-69.57,纺织、服饰及个人护理,above_average,full_coverage_dimensional_v0.4
+02501,MAIYUE TECH,总分-70.46,护城河-64.84,技术壁垒-80.38,市场地位-66.75,商业质量-67.44,经营质量-52.91,行业前景-78.00,治理风险-69.68,软件服务,above_average,full_coverage_dimensional_v0.4
+08401,STREAM IDEAS,总分-70.46,护城河-73.21,技术壁垒-79.86,市场地位-58.48,商业质量-58.55,经营质量-45.02,行业前景-78.00,治理风险-71.67,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+00919,MODERNHEALTHTEC,总分-70.44,护城河-70.12,技术壁垒-83.89,市场地位-62.96,商业质量-60.03,经营质量-50.85,行业前景-70.00,治理风险-70.07,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+02251,AIRDOC-B,总分-70.43,护城河-73.80,技术壁垒-82.35,市场地位-59.37,商业质量-62.84,经营质量-43.10,行业前景-70.00,治理风险-71.22,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+02651,DAZHONG DENTAL,总分-70.42,护城河-71.24,技术壁垒-77.49,市场地位-67.82,商业质量-62.67,经营质量-57.92,行业前景-70.00,治理风险-68.25,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+01910,SAMSONITE,总分-70.41,护城河-85.09,技术壁垒-46.68,市场地位-87.36,商业质量-70.50,经营质量-59.84,行业前景-70.00,治理风险-68.71,纺织及服饰,above_average,full_coverage_dimensional_v0.4
+01782,IB DIGITAL TECH,总分-70.40,护城河-74.45,技术壁垒-78.98,市场地位-58.96,商业质量-57.49,经营质量-41.47,行业前景-78.00,治理风险-72.27,软件服务,above_average,full_coverage_dimensional_v0.4
+08121,GUOEN HOLDINGS,总分-70.40,护城河-68.10,技术壁垒-80.79,市场地位-64.72,商业质量-61.99,经营质量-47.47,行业前景-78.00,治理风险-69.28,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+01909,FIRE ROCK,总分-70.38,护城河-74.72,技术壁垒-78.56,市场地位-59.78,商业质量-55.14,经营质量-42.43,行业前景-78.00,治理风险-72.68,软件服务,above_average,full_coverage_dimensional_v0.4
+01398,ICBC,总分-70.37,护城河-88.00,技术壁垒-52.51,市场地位-90.50,商业质量-68.84,经营质量-51.56,行业前景-54.00,治理风险-71.67,银行,above_average,full_coverage_dimensional_v0.4
+01011,NT PHARMA,总分-70.36,护城河-72.26,技术壁垒-83.72,市场地位-57.44,商业质量-57.90,经营质量-55.09,行业前景-70.00,治理风险-70.95,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+02665,SEYOND,总分-70.34,护城河-74.62,技术壁垒-70.05,市场地位-67.70,商业质量-54.00,经营质量-59.09,行业前景-78.00,治理风险-72.92,软件服务,above_average,full_coverage_dimensional_v0.4
+08282,GAMEONE,总分-70.32,护城河-67.32,技术壁垒-80.44,市场地位-61.85,商业质量-68.21,经营质量-49.81,行业前景-78.00,治理风险-68.99,软件服务,above_average,full_coverage_dimensional_v0.4
+00239,PAK FAH YEOW,总分-70.29,护城河-70.38,技术壁垒-76.99,市场地位-65.76,商业质量-70.06,经营质量-57.50,行业前景-70.00,治理风险-67.48,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+00939,CCB,总分-70.28,护城河-87.73,技术壁垒-53.27,市场地位-89.42,商业质量-70.65,经营质量-49.60,行业前景-54.00,治理风险-70.33,银行,above_average,full_coverage_dimensional_v0.4
+02583,HIPINE,总分-70.28,护城河-85.25,技术壁垒-54.76,市场地位-73.34,商业质量-80.42,经营质量-45.04,行业前景-70.00,治理风险-67.80,纺织及服饰,above_average,full_coverage_dimensional_v0.4
+00465,FUTONG TECH,总分-70.26,护城河-74.58,技术壁垒-78.64,市场地位-59.01,商业质量-54.88,经营质量-43.18,行业前景-78.00,治理风险-72.31,软件服务,above_average,full_coverage_dimensional_v0.4
+06099,CMSC,总分-70.25,护城河-86.96,技术壁垒-54.51,市场地位-86.55,商业质量-70.65,经营质量-54.99,行业前景-54.00,治理风险-69.81,其他金融,above_average,full_coverage_dimensional_v0.4
+08603,FAMEGLOW,总分-70.23,护城河-74.60,技术壁垒-76.18,市场地位-65.55,商业质量-62.60,经营质量-49.54,行业前景-70.00,治理风险-68.39,其他医疗保健,above_average,full_coverage_dimensional_v0.4
+01159,SMART DIGI TECH,总分-70.18,护城河-69.29,技术壁垒-81.76,市场地位-62.76,商业质量-66.92,经营质量-34.63,行业前景-78.00,治理风险-67.00,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+01716,MOST KWAI CHUNG,总分-70.18,护城河-67.50,技术壁垒-80.45,市场地位-63.03,商业质量-63.34,经营质量-50.41,行业前景-78.00,治理风险-68.96,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+01877,JUNSHI BIO,总分-70.18,护城河-65.43,技术壁垒-83.88,市场地位-69.28,商业质量-63.17,经营质量-49.76,行业前景-70.00,治理风险-69.90,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+01883,CITIC TELECOM,总分-70.18,护城河-90.50,技术壁垒-50.80,市场地位-78.60,商业质量-72.54,经营质量-52.07,行业前景-62.00,治理风险-67.32,电讯,above_average,full_coverage_dimensional_v0.4
+00547,DIGITAL DOMAIN,总分-70.14,护城河-67.55,技术壁垒-79.28,市场地位-67.97,商业质量-57.83,经营质量-46.64,行业前景-78.00,治理风险-72.36,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+06033,TELECOM DIGIT,总分-70.14,护城河-72.59,技术壁垒-71.97,市场地位-67.75,商业质量-59.95,经营质量-52.23,行业前景-78.00,治理风险-70.05,资讯科技器材,above_average,full_coverage_dimensional_v0.4
+06636,EXTREME VISION,总分-70.14,护城河-72.00,技术壁垒-79.99,市场地位-55.04,商业质量-62.00,经营质量-50.00,行业前景-78.00,治理风险-70.00,软件服务,above_average,full_coverage_dimensional_v0.4
+08018,FINSOFT FIN,总分-70.13,护城河-73.32,技术壁垒-79.48,市场地位-57.48,商业质量-54.96,经营质量-47.49,行业前景-78.00,治理风险-71.91,软件服务,above_average,full_coverage_dimensional_v0.4
+02405,POWERWIN TECH,总分-70.12,护城河-74.07,技术壁垒-79.21,市场地位-57.69,商业质量-51.56,经营质量-50.48,行业前景-78.00,治理风险-70.40,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+03360,FE HORIZON,总分-70.08,护城河-87.88,技术壁垒-54.80,市场地位-89.49,商业质量-61.18,经营质量-53.17,行业前景-54.00,治理风险-69.14,其他金融,above_average,full_coverage_dimensional_v0.4
+08006,SINO SPLENDID,总分-70.07,护城河-70.24,技术壁垒-79.14,市场地位-59.93,商业质量-63.32,经营质量-45.24,行业前景-78.00,治理风险-71.94,媒体及娱乐,above_average,full_coverage_dimensional_v0.4
+09868,XPENG-W,总分-70.07,护城河-72.87,技术壁垒-76.32,市场地位-72.81,商业质量-55.84,经营质量-52.85,行业前景-66.00,治理风险-71.23,汽车,above_average,full_coverage_dimensional_v0.4
+03660,QFIN-S,总分-70.06,护城河-87.63,技术壁垒-55.00,市场地位-89.25,商业质量-63.12,经营质量-52.86,行业前景-54.00,治理风险-67.41,其他金融,above_average,full_coverage_dimensional_v0.4
+01059,KANTONE HOLDING,总分-70.05,护城河-66.92,技术壁垒-80.33,市场地位-61.21,商业质量-65.34,经营质量-52.74,行业前景-78.00,治理风险-69.19,软件服务,above_average,full_coverage_dimensional_v0.4
+03839,CT ENTERPRISE,总分-70.05,护城河-72.17,技术壁垒-76.07,市场地位-70.29,商业质量-60.03,经营质量-49.69,行业前景-70.00,治理风险-69.42,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+08606,KINETIX SYSTEMS,总分-70.05,护城河-64.51,技术壁垒-80.12,市场地位-65.42,商业质量-67.01,经营质量-52.46,行业前景-78.00,治理风险-69.47,软件服务,above_average,full_coverage_dimensional_v0.4
+01288,ABC,总分-70.04,护城河-87.46,技术壁垒-52.19,市场地位-88.34,商业质量-69.10,经营质量-53.80,行业前景-54.00,治理风险-72.33,银行,above_average,full_coverage_dimensional_v0.4
+08225,C HEALTH GP,总分-70.03,护城河-72.46,技术壁垒-83.93,市场地位-58.39,商业质量-56.00,经营质量-47.44,行业前景-70.00,治理风险-71.59,药品及生物科技,above_average,full_coverage_dimensional_v0.4
+01359,CHINA CINDA,总分-70.02,护城河-88.00,技术壁垒-53.55,市场地位-89.62,商业质量-61.66,经营质量-54.39,行业前景-54.00,治理风险-70.38,其他金融,above_average,full_coverage_dimensional_v0.4
+08329,NEP INTERLONG,总分-70.00,护城河-65.96,技术壁垒-83.83,市场地位-70.21,商业质量-57.69,经营质量-49.15,行业前景-70.00,治理风险-70.30,药品及生物科技,above_average,full_coverage_dimensional_v0.4

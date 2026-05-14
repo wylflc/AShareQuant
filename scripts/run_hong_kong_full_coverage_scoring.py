@@ -17,25 +17,25 @@ DEFAULT_PROFILES = Path("data/interim/hong_kong_company_profiles.csv")
 DEFAULT_FINANCIALS = Path("data/interim/hong_kong_financial_indicators.csv")
 DEFAULT_OUTPUT = Path("data/processed/hong_kong_full_coverage_scores.csv")
 DEFAULT_WATCHLIST = Path("data/processed/hong_kong_full_coverage_watchlist.csv")
-SCORING_MODEL_VERSION = "full_coverage_dimensional_v0.3"
+SCORING_MODEL_VERSION = "full_coverage_dimensional_v0.4"
 
 DIMENSIONS = [
-    ("business_moat", 0.22),
-    ("technology_barrier", 0.18),
+    ("business_moat", 0.28),
+    ("technology_barrier", 0.24),
     ("market_position", 0.14),
-    ("business_quality", 0.14),
-    ("operating_quality", 0.14),
-    ("industry_outlook", 0.10),
-    ("governance_risk", 0.08),
+    ("business_quality", 0.08),
+    ("operating_quality", 0.06),
+    ("industry_outlook", 0.14),
+    ("governance_risk", 0.06),
 ]
 DIMENSION_WEIGHT_POINTS = {
-    "business_moat": 22,
-    "technology_barrier": 18,
+    "business_moat": 28,
+    "technology_barrier": 24,
     "market_position": 14,
-    "business_quality": 14,
-    "operating_quality": 14,
-    "industry_outlook": 10,
-    "governance_risk": 8,
+    "business_quality": 8,
+    "operating_quality": 6,
+    "industry_outlook": 14,
+    "governance_risk": 6,
 }
 
 OUTPUT_COLUMNS = [
@@ -236,7 +236,8 @@ def percentile_maps(rows: list[dict[str, str]], peer_key: str, metric: str, reve
 
 
 def keyword_any(text: str, keywords: list[str]) -> bool:
-    return any(keyword in text for keyword in keywords)
+    lower = text.lower()
+    return any(keyword.lower() in lower for keyword in keywords)
 
 
 def resource_leader_signal(industry_text: str, profile_text: str) -> bool:
@@ -255,11 +256,41 @@ def resource_leader_signal(industry_text: str, profile_text: str) -> bool:
     return sum(signals) >= 3
 
 
+def strategic_critical_material_signal(industry_text: str, profile_text: str) -> bool:
+    text = f"{industry_text} {profile_text}"
+    if not keyword_any(text, ["锗", "镓", "铟", "钨", "钼", "锑", "钽", "稀散", "稀有小金属", "化合物半导体", "砷化镓", "磷化铟", "germanium", "gallium", "indium", "tungsten", "molybdenum", "critical mineral", "compound semiconductor"]):
+        return False
+    signals = [
+        keyword_any(text, ["矿", "资源", "储量", "采矿权", "探矿权", "自有矿山", "完整产业链", "mine", "mining", "reserve", "resource"]),
+        keyword_any(text, ["精深加工", "高纯", "晶片", "单晶", "红外", "光纤", "空间", "半导体材料", "purification", "wafer", "crystal", "infrared", "optical", "semiconductor material"]),
+        keyword_any(text, ["国家级企业技术中心", "工程技术研究中心", "行业标准", "国家标准", "单项冠军", "专精特新", "standard", "champion", "specialized"]),
+        keyword_any(text, ["出口管制", "战略资源", "关键材料", "卡脖子", "国产替代", "export control", "strategic resource", "supply security"]),
+    ]
+    return sum(signals) >= 2
+
+
+def grid_core_equipment_signal(industry_text: str, profile_text: str) -> bool:
+    text = f"{industry_text} {profile_text}"
+    if not keyword_any(text, ["输变电", "变压器", "电抗器", "互感器", "特高压", "超高压", "换流阀", "直流输电", "电网", "power transmission", "transformer", "reactor", "uhv", "ultra-high voltage", "high voltage direct current", "grid equipment"]):
+        return False
+    signals = [
+        keyword_any(text, ["特高压", "超高压", "交直流", "高压直流", "换流阀", "首台套", "uhv", "ultra-high voltage", "hvdc", "converter valve"]),
+        keyword_any(text, ["国家电网", "南方电网", "国家重大项目", "示范工程", "一体化集成", "境外机电行业输变电", "电力工程施工总承包特级资质", "state grid", "grid project", "integrated solution"]),
+        keyword_any(text, ["全球领先", "全球市场份额领先", "全球高端输变电", "世界领先", "国际领先", "行业领先", "行业前列", "产能稳居", "中国电气工业100强第1位", "大型能源装备", "global leader", "world leading", "international leader", "leading market share"]),
+        keyword_any(text, ["国家级", "企业技术中心", "高新技术企业", "专精特新", "进口替代", "创新100强", "national", "technology center", "import substitution"]),
+    ]
+    return sum(signals) >= 2
+
+
 def industry_prior(peer_group: str, profile_text: str) -> IndustryPrior:
     text = f"{peer_group} {profile_text}"
     lower_text = text.lower()
     industry_text = peer_group
     lower_industry = industry_text.lower()
+    if strategic_critical_material_signal(industry_text, profile_text):
+        return IndustryPrior(74, 82, 58, "strategic scarce materials combine resource access, purification, crystal or compound processing, standards, and customer qualification that capital alone cannot compress quickly")
+    if grid_core_equipment_signal(industry_text, profile_text):
+        return IndustryPrior(72, 78, 62, "ultra-high-voltage grid equipment requires long engineering accumulation, safety validation, grid qualification, and project references that capital alone cannot buy quickly")
     if keyword_any(industry_text, ["银行", "保险", "金融", "证券", "信托", "资产管理"]) or keyword_any(lower_industry, ["bank", "insurance", "financial", "securities", "asset management"]):
         return IndustryPrior(72, 45, 64, "licenses regulation customer relationships and risk systems reduce pure capital replicability")
     if keyword_any(industry_text, ["公用", "电力", "燃气", "水务", "电讯", "电信", "港口", "机场", "高速", "铁路"]) or keyword_any(lower_industry, ["utilities", "power", "gas", "water", "telecommunication", "port", "airport", "railway"]):
@@ -292,6 +323,10 @@ def industry_prior(peer_group: str, profile_text: str) -> IndustryPrior:
 def industry_outlook(peer_group: str, profile_text: str) -> IndustryOutlook:
     industry_text = peer_group
     lower_industry = industry_text.lower()
+    if strategic_critical_material_signal(industry_text, profile_text):
+        return IndustryOutlook(72, "strategic_critical_material_cycle", "resource_technology_optionality", "Strategic scarce materials can benefit from semiconductors, aerospace, AI infrastructure, optical communication, and supply-security demand; price cycles and capacity ramp risks still keep the score below elite compounders.")
+    if grid_core_equipment_signal(industry_text, profile_text):
+        return IndustryOutlook(68, "grid_capex_structural_growth", "installed_base_and_engineering_compounding", "Grid modernization, UHV transmission, renewable power integration, and overseas power-infrastructure demand support long-cycle growth, though customer capex cycles and project timing remain material.")
     if keyword_any(industry_text, ["软件", "资讯科技", "互联网", "媒体", "游戏", "电子商贸", "云", "人工智能", "数据"]) or keyword_any(lower_industry, ["software", "internet", "media", "games", "e-commerce", "cloud", "data", "artificial intelligence"]):
         return IndustryOutlook(78, "low_to_moderate_cyclicality", "compound_growth", "Digitalization, data, AI, platform, and online-service demand support multi-year growth, with leader quality depending on retention and network effects.")
     if keyword_any(industry_text, ["汽车", "电池", "新能源", "光伏", "能源设备"]) or keyword_any(lower_industry, ["automobile", "battery", "new energy", "solar", "energy equipment", "ev"]):
@@ -313,7 +348,7 @@ def industry_outlook(peer_group: str, profile_text: str) -> IndustryOutlook:
     if keyword_any(industry_text, ["博彩", "旅游", "酒店", "餐饮", "教育"]) or keyword_any(lower_industry, ["gaming", "tourism", "hotel", "restaurant", "leisure", "education"]):
         return IndustryOutlook(48, "demand_or_policy_cycle", "brand_location_compounding_if_leader", "Licenses, brands, or locations can matter, but tourism, gaming, education, and leisure depend on discretionary demand and policy settings.")
     if resource_leader_signal(industry_text, profile_text):
-        return IndustryOutlook(60, "strategic_resource_cycle", "resource_and_process_compounding", "Commodity prices still create cycles, but scarce reserves, reserve replacement, low-cost development, and global mine integration can support leader-level compounding.")
+        return IndustryOutlook(64, "strategic_resource_cycle", "resource_and_process_compounding", "Commodity prices still create cycles, but scarce reserves, reserve replacement, low-cost development, and global mine integration can support leader-level compounding.")
     if keyword_any(industry_text, ["矿", "石油", "煤", "钢", "金属", "材料", "化工"]) or keyword_any(lower_industry, ["mining", "oil", "coal", "steel", "metal", "materials", "chemical"]):
         return IndustryOutlook(42, "commodity_cycle", "low_compounding", "Commodity and upstream materials earnings usually reflect price and capex cycles more than internally controlled compounding.")
     if keyword_any(profile_text, ["研发", "专利", "平台技术", "算法", "科技", "创新"]) or keyword_any(profile_text.lower(), ["research", "r&d", "patent", "algorithm", "technology", "innovation"]):
@@ -348,6 +383,23 @@ def watchlist_row(row: dict[str, str]) -> dict[str, str]:
     for output_column, label, source_column in WATCHLIST_SCORE_FIELDS:
         result[output_column] = f"{label}-{row[source_column]}"
     return result
+
+
+def dedupe_watchlist_source_rows(rows: list[dict[str, str]]) -> list[dict[str, str]]:
+    def preferred_row_key(row: dict[str, str]) -> tuple[float, int, str]:
+        currency_rank = 0 if row.get("currency") == "HKD" else 1
+        return (-float(row["weighted_total_score"]), currency_rank, row["security_code"])
+
+    selected: list[dict[str, str]] = []
+    seen: set[str] = set()
+    for row in sorted(rows, key=preferred_row_key):
+        identity = row.get("isin") or row.get("listed_company_name") or row["security_code"]
+        if identity in seen:
+            continue
+        seen.add(identity)
+        selected.append(row)
+    selected.sort(key=lambda row: (-float(row["weighted_total_score"]), row["security_code"]))
+    return selected
 
 
 def source_join(*parts: str) -> str:
@@ -434,13 +486,19 @@ def score_row(
     if keyword_any(profile_text, ["研发", "专利", "算法", "云", "人工智能", "平台", "科技", "技术"]) or keyword_any(profile_text_lower, ["research", "r&d", "patent", "algorithm", "cloud", "artificial intelligence", " ai", "platform", "technology", "technical"]):
         keyword_bonus_tech += 8
 
-    business_moat = clamp(prior.business_moat + (revenue_pct - 50) * 0.18 + (profit_pct - 50) * 0.12 + keyword_bonus_moat)
-    technology_barrier = clamp(prior.technology_barrier + keyword_bonus_tech + (eps_pct - 50) * 0.08)
-    market_position = clamp(45 + revenue_pct * 0.35 + profit_pct * 0.30 + (prior.business_moat - 50) * 0.20)
-    business_quality = clamp(prior.business_quality + (net_pct - 50) * 0.28 + (growth_pct - 50) * 0.10 + (profit_growth_pct - 50) * 0.08)
-    operating_quality = clamp(50 + (roe_pct - 50) * 0.30 + (cash_pct - 50) * 0.15 + (debt_safety_pct - 50) * 0.18)
+    strategic_material = strategic_critical_material_signal(peer_group, profile_text)
+    grid_core_equipment = grid_core_equipment_signal(peer_group, profile_text)
+    capability_moat_bonus = 8 if strategic_material else 6 if grid_core_equipment else 0
+    capability_market_bonus = 12 if strategic_material else 10 if grid_core_equipment else 0
+    capability_tech_bonus = 10 if strategic_material else 8 if grid_core_equipment else 0
+
+    business_moat = clamp(prior.business_moat + (revenue_pct - 50) * 0.10 + keyword_bonus_moat + capability_moat_bonus)
+    technology_barrier = clamp(prior.technology_barrier + keyword_bonus_tech + capability_tech_bonus + (eps_pct - 50) * 0.04)
+    market_position = clamp(45 + revenue_pct * 0.28 + profit_pct * 0.12 + (prior.business_moat - 50) * 0.25 + capability_market_bonus)
+    business_quality = clamp(prior.business_quality + (net_pct - 50) * 0.14 + (growth_pct - 50) * 0.08 + (profit_growth_pct - 50) * 0.04)
+    operating_quality = clamp(50 + (roe_pct - 50) * 0.18 + (cash_pct - 50) * 0.12 + (debt_safety_pct - 50) * 0.10)
     industry_outlook_score = clamp(outlook.score)
-    governance_risk = clamp(68 + (debt_safety_pct - 50) * 0.12)
+    governance_risk = clamp(70 + (debt_safety_pct - 50) * 0.06)
     weighted = weighted_score(
         {
             "business_moat": business_moat,
@@ -463,19 +521,19 @@ def score_row(
             "compounding_profile": outlook.compounding_profile,
             "business_moat_score": fmt_score(business_moat),
             "business_moat_level": level(business_moat),
-            "business_moat_reason": f"Peer group {peer_group}; capital replicability view: {prior.capital_replicability}; revenue and profit peer percentiles are {revenue_pct:.0f}/{profit_pct:.0f}; profile keywords add {keyword_bonus_moat} points.",
+            "business_moat_reason": f"Peer group {peer_group}; capability-first capital replicability view: {prior.capital_replicability}; revenue peer percentile is {revenue_pct:.0f}; current profit percentile {profit_pct:.0f} is recorded but not used directly in moat scoring; profile keywords add {keyword_bonus_moat} points and strategic capability adds {capability_moat_bonus} points.",
             "technology_barrier_score": fmt_score(technology_barrier),
             "technology_barrier_level": level(technology_barrier),
-            "technology_barrier_reason": f"Technology prior comes from peer group and profile technology keywords; profile keywords add {keyword_bonus_tech} points and EPS percentile is {eps_pct:.0f}.",
+            "technology_barrier_reason": f"Technology prior comes from peer group and profile technology keywords; profile keywords add {keyword_bonus_tech} points, strategic-material/grid-equipment capability adds {capability_tech_bonus} points, and EPS percentile is {eps_pct:.0f}.",
             "market_position_score": fmt_score(market_position),
             "market_position_level": level(market_position),
-            "market_position_reason": f"Market position uses reported revenue {financial.get('total_operating_revenue', '')} and net profit {financial.get('parent_net_profit', '')} relative to peer group percentiles {revenue_pct:.0f}/{profit_pct:.0f}.",
+            "market_position_reason": f"Market position uses reported revenue {financial.get('total_operating_revenue', '')} and net profit {financial.get('parent_net_profit', '')} relative to peer group percentiles {revenue_pct:.0f}/{profit_pct:.0f}, but current profit has lower weight in v0.4; strategic capability adds {capability_market_bonus} points.",
             "business_quality_score": fmt_score(business_quality),
             "business_quality_level": level(business_quality),
-            "business_quality_reason": f"Business quality uses net margin {financial.get('net_margin_pct', '')}% revenue growth {financial.get('revenue_yoy_pct', '')}% and profit growth {financial.get('profit_yoy_pct', '')}% against peers.",
+            "business_quality_reason": f"Business quality uses net margin {financial.get('net_margin_pct', '')}% revenue growth {financial.get('revenue_yoy_pct', '')}% and profit growth {financial.get('profit_yoy_pct', '')}% against peers, with lower weight than capability dimensions in v0.4.",
             "operating_quality_score": fmt_score(operating_quality),
             "operating_quality_level": level(operating_quality),
-            "operating_quality_reason": f"Operating quality uses ROE {financial.get('roe_weighted_pct', '')}% operating cash flow per share {financial.get('operating_cashflow_per_share', '')} and debt ratio {financial.get('debt_asset_ratio_pct', '')}%.",
+            "operating_quality_reason": f"Operating quality uses ROE {financial.get('roe_weighted_pct', '')}% operating cash flow per share {financial.get('operating_cashflow_per_share', '')} and debt ratio {financial.get('debt_asset_ratio_pct', '')}%; it constrains risk but no longer dominates the watchlist score in v0.4.",
             "industry_outlook_score": fmt_score(industry_outlook_score),
             "industry_outlook_level": level(industry_outlook_score),
             "industry_outlook_reason": outlook.reason,
@@ -484,7 +542,7 @@ def score_row(
             "governance_risk_reason": f"Governance and risk score starts from public disclosure availability and adjusts for balance-sheet pressure; fiscal year end is {profile.get('fiscal_year_end', '')}.",
             "weighted_total_score": fmt_score(weighted),
             "overall_level": level(weighted),
-            "overall_reason": f"Weighted score from seven stored dimensions, including industry outlook and cyclicality profile {outlook.cyclicality_profile}. This first-pass algorithmic score is evidence-backed by Eastmoney HKF10 profile and financial indicators.",
+            "overall_reason": f"Weighted score from seven stored dimensions using the v0.4 capability-first weights, including industry outlook and cyclicality profile {outlook.cyclicality_profile}. This first-pass algorithmic score is evidence-backed by Eastmoney HKF10 profile and financial indicators.",
             "evidence_confidence": confidence,
         }
     )
@@ -525,6 +583,7 @@ def run(args: argparse.Namespace) -> tuple[int, int, int]:
         for row in output_rows
         if row["screening_status"] == "scored" and row["weighted_total_score"] and float(row["weighted_total_score"]) >= args.candidate_threshold
     ]
+    watchlist_source_rows = dedupe_watchlist_source_rows(watchlist_source_rows)
     watchlist_source_rows.sort(key=lambda row: (-float(row["weighted_total_score"]), row["security_code"]))
     watchlist_rows = [watchlist_row(row) for row in watchlist_source_rows]
     write_csv(args.watchlist, WATCHLIST_COLUMNS, watchlist_rows)

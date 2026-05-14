@@ -69,7 +69,7 @@ This legacy script reads manually curated evidence from `data/interim/moat_scree
 
 The screening workflow keeps `data/raw/` immutable. Source-backed research evidence belongs in `data/interim/`; generated screening outputs belong in `data/processed/`.
 
-For the A-share, Hong Kong, and U.S. universes, the target workflow is a **Full-Coverage Screening Run**: every listed security receives an explicit screening status, and every eligible listed-company common-equity security receives the same dimensional scoring treatment unless it meets the narrow **Insufficient Disclosure** definition. The current scoring model is `full_coverage_dimensional_v0.3`, with seven dimensions: business moat, technology/product/process barrier, market position, business quality, operating quality, industry outlook/cyclicality/compounding profile, and governance risk. Each dimension score and final weighted score is stored with two decimal places. See `docs/moat-scoring-rubric.md` and `docs/adr/0002-use-full-coverage-dimensional-moat-scoring.md`.
+For the A-share, Hong Kong, and U.S. universes, the target workflow is a **Full-Coverage Screening Run**: every listed security receives an explicit screening status, and every eligible listed-company common-equity security receives the same dimensional scoring treatment unless it meets the narrow **Insufficient Disclosure** definition. The current scoring model is `full_coverage_dimensional_v0.4`, with seven dimensions: business moat, technology/product/process barrier, market position, business quality, operating quality, industry outlook/cyclicality/compounding profile, and governance risk. Version 0.4 is capability-first: current profitability and cash flow constrain the risk score, but durable capability, technical or process barriers, market position, and long-term industry outlook drive watchlist inclusion. Each dimension score and final weighted score is stored with two decimal places. See `docs/moat-scoring-rubric.md` and `docs/adr/0002-use-full-coverage-dimensional-moat-scoring.md`.
 
 Fetch A-share screening evidence into resumable interim CSV files:
 
@@ -101,7 +101,7 @@ Generate dimensional Hong Kong scores from fetched evidence:
 python3 scripts/run_hong_kong_full_coverage_scoring.py
 ```
 
-The scorer writes `data/processed/hong_kong_full_coverage_scores.csv` and `data/processed/hong_kong_full_coverage_watchlist.csv`. The full scores file keeps market identity and complete audit fields. The watchlist is a compact reading view with security code, security name, labeled score fields, peer group, peer-relative position, and scoring model version.
+The scorer writes `data/processed/hong_kong_full_coverage_scores.csv` and `data/processed/hong_kong_full_coverage_watchlist.csv`. The full scores file keeps market identity and complete audit fields. The watchlist is a compact reading view with security code, security name, labeled score fields, peer group, peer-relative position, and scoring model version. When Hong Kong has duplicate currency counters for the same listed company, the full scores keep each security but the watchlist keeps one representative row.
 
 Fetch U.S. screening evidence into resumable interim CSV files:
 
@@ -117,4 +117,4 @@ Generate dimensional U.S. scores from fetched evidence:
 python3 scripts/run_us_full_coverage_scoring.py
 ```
 
-The scorer writes `data/processed/us_full_coverage_scores.csv` and `data/processed/us_full_coverage_watchlist.csv`. The full scores file keeps market identity and complete audit fields. The watchlist is a compact reading view with security code, security name, labeled score fields, peer group, peer-relative position, and scoring model version.
+The scorer writes `data/processed/us_full_coverage_scores.csv` and `data/processed/us_full_coverage_watchlist.csv`. The full scores file keeps market identity and complete audit fields. The watchlist is a compact reading view with security code, security name, labeled score fields, peer group, peer-relative position, and scoring model version. When the U.S. universe has multiple common-share classes for the same SEC CIK, the full scores keep each security but the watchlist keeps one representative row.

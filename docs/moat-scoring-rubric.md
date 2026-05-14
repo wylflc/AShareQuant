@@ -40,13 +40,13 @@ Each dimension is scored from 0 to 100 and stored with two decimal places. The f
 
 | Dimension | Weight | Required CSV columns |
 | --- | ---: | --- |
-| Business moat and capital-replication resistance | 22% | `business_moat_score`, `business_moat_level`, `business_moat_reason` |
-| Technology, product, process, or supply-chain barrier | 18% | `technology_barrier_score`, `technology_barrier_level`, `technology_barrier_reason` |
+| Business moat and capital-replication resistance | 28% | `business_moat_score`, `business_moat_level`, `business_moat_reason` |
+| Technology, product, process, or supply-chain barrier | 24% | `technology_barrier_score`, `technology_barrier_level`, `technology_barrier_reason` |
 | Market position and competitive structure | 14% | `market_position_score`, `market_position_level`, `market_position_reason` |
-| Business model quality | 14% | `business_quality_score`, `business_quality_level`, `business_quality_reason` |
-| Operating and financial quality | 14% | `operating_quality_score`, `operating_quality_level`, `operating_quality_reason` |
-| Industry outlook, cyclicality, and compounding profile | 10% | `industry_outlook_score`, `industry_outlook_level`, `industry_outlook_reason` |
-| Governance, disclosure, and risk quality | 8% | `governance_risk_score`, `governance_risk_level`, `governance_risk_reason` |
+| Business model quality | 8% | `business_quality_score`, `business_quality_level`, `business_quality_reason` |
+| Operating and financial quality | 6% | `operating_quality_score`, `operating_quality_level`, `operating_quality_reason` |
+| Industry outlook, cyclicality, and compounding profile | 14% | `industry_outlook_score`, `industry_outlook_level`, `industry_outlook_reason` |
+| Governance, disclosure, and risk quality | 6% | `governance_risk_score`, `governance_risk_level`, `governance_risk_reason` |
 
 ## 6. Dimension Bands
 
@@ -69,6 +69,8 @@ Score brands, channels, licenses, scarce assets, customer lock-in, network effec
 
 The core question is: if a new player had enough capital, could it enter this industry and beat this company mainly by spending money?
 
+Current profit should not be used as a direct moat proxy. Losses, temporarily weak margins, or early ramp costs can lower business quality and operating quality, but they should not erase source-backed evidence of scarce resources, hard technology, long qualification cycles, process know-how, or regulatory/customer lock-in.
+
 ### 7.2 Technology, Product, Process, Or Supply-Chain Barrier
 
 Score proprietary technology, patents, manufacturing process depth, product complexity, quality systems, engineering culture, data assets, supplier control, certification barriers, and time-to-scale.
@@ -78,6 +80,12 @@ The core question is: can a new player buy equipment and talent and quickly matc
 Do not treat R&D intensity as the only proxy for this dimension. For brand, food, beverage, consumer, and traditional manufacturing leaders, product formulation, origin constraints, long-cycle production process, quality systems, scarce capacity, channel control, and accumulated customer trust can create product or process barriers even when reported R&D intensity is low.
 
 For advanced manufacturing leaders such as batteries, semiconductors, medical devices, robotics, and high-end equipment, explicitly score customer qualification cycles, safety validation, process yield, supply-chain orchestration, global delivery capability, and market-share leadership. A company with clear global leadership evidence should not be scored as only a generic manufacturing-scale business.
+
+For strategic critical materials such as germanium, gallium, indium, tungsten, molybdenum, antimony, tantalum, rare metals, and compound-semiconductor materials, score resource access, purification, crystal growth, wafer or optical-material processing, standards participation, export-control relevance, and customer qualification as capability evidence. These companies remain cyclical, but they should not be treated as generic commodity producers when the evidence shows hard-to-replicate resource-plus-process capability.
+
+For grid core equipment such as ultra-high-voltage transmission equipment, transformers, reactors, converter valves, HVDC systems, and integrated power-transmission engineering, score long engineering accumulation, safety validation, grid-customer qualification, first-set or demonstration-project references, and overseas project execution as technical and process barriers.
+
+For food and beverage companies, separate ordinary recipe/process claims from scarce-origin and long-cycle production barriers. Top baijiu companies can deserve higher product/process scores when evidence shows origin scarcity, long-cycle brewing, base-liquor inventory, microbial or cellar-pool accumulation, quality consistency, and channel trust. Ordinary packaged food or condiment process language should receive a lower technical/process score unless the evidence shows similarly hard-to-replicate constraints.
 
 ### 7.3 Market Position And Competitive Structure
 
@@ -166,6 +174,8 @@ The full-coverage processed CSV should preserve source security identifiers and 
 7. Validate that every eligible raw A-share, Hong Kong, and U.S. row has either full dimensional scores or the narrow `insufficient_disclosure` status; U.S. non-company/non-common-equity instruments must have an explicit not-applicable status.
 8. Generate processed full-coverage outputs and a watchlist candidate view.
 
+The full scores CSV remains security-level because raw universes are security-level. The compact watchlist view should be company-level where possible: if a market has duplicate currency counters, share classes, or otherwise duplicate listed-company identifiers, keep the full rows in the score output but keep one representative row in the watchlist.
+
 ## 11. Calibration Notes
 
 Model version `full_coverage_dimensional_v0.2` adds industry outlook as an explicit 10% dimension and reduces the other six weights proportionally. This was introduced after reviewing whether the earlier model could over-rank large cyclical companies and under-rank compound-growth companies with strong long-term demand but less stable current profitability.
@@ -189,3 +199,14 @@ The v0.3 A-share scorer therefore:
 - Applies an A-share cross-market calibration discount unless the evidence shows global leadership, scarce-resource control, regulated concessions, or strong brand/origin advantages.
 
 This calibration is not a valuation view and does not say individual A-share leaders are weak. It prevents local evidence richness and local peer ranks from making the A-share high-score population structurally larger than the U.S. high-score population.
+
+Model version `full_coverage_dimensional_v0.4` changes the model to capability-first scoring. The calibration review found that v0.3 still used current revenue, net profit, margins, ROE, and cash flow too strongly in the total score, which could exclude companies with source-backed hard capabilities but temporarily weak profitability. The updated weights therefore raise business moat, technology/process/supply-chain barrier, and industry outlook to 66% combined, and reduce business quality, operating quality, and governance/risk to 20% combined.
+
+The v0.4 scorer keeps current profitability and cash conversion in the model, but mainly as maturity and risk constraints. A currently weak or loss-making company can enter a watchlist when reliable evidence shows hard-to-replicate capability, such as strategic critical materials, long-cycle food or beverage process barriers, UHV/grid-equipment qualification, battery/safety/process leadership, semiconductor or medical validation cycles, scarce resources, or customer/ecosystem lock-in. Conversely, companies with weak capabilities should not enter the watchlist merely because a favorable cycle temporarily lifts earnings.
+
+The v0.4 review also adds explicit distinctions for:
+
+- Strategic critical materials versus generic commodity producers.
+- Global or national UHV/grid-equipment leaders versus generic electrical-equipment manufacturers.
+- Top baijiu long-cycle origin/process barriers versus ordinary food and condiment process language.
+- Governance/disclosure quality versus balance-sheet or capex-cycle pressure, so the score is not misread as a pure corporate-governance grade.
