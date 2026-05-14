@@ -174,9 +174,22 @@ The full-coverage processed CSV should preserve source security identifiers and 
 5. Assign every dimensional score with a reason and sources.
 6. Compute the weighted total from stored dimension scores, preserving two decimal places in each stored score.
 7. Validate that every eligible raw A-share, Hong Kong, and U.S. row has either full dimensional scores or the narrow `insufficient_disclosure` status; U.S. non-company/non-common-equity instruments must have an explicit not-applicable status.
-8. Generate processed full-coverage outputs and a watchlist candidate view.
+8. Run market-staged calibration: process A-share first, audit the A-share triage and calibration cases, complete source-backed deep reviews for challenged and representative companies, then freeze reusable rules before applying them to Hong Kong and U.S. reviews.
+9. Generate processed full-coverage outputs and a watchlist candidate view.
 
 The full scores CSV remains security-level because raw universes are security-level. The compact watchlist view should be company-level where possible: if a market has duplicate currency counters, share classes, or otherwise duplicate listed-company identifiers, keep the full rows in the score output but keep one representative row in the watchlist.
+
+## 10.1 Market-Staged Calibration Gate
+
+Do not treat cross-market output as final while the review standard is still being challenged. A-share is the first calibration market. The A-share calibration gate should check:
+
+- The run is scoped to `A_SHARE` only.
+- Every eligible A-share listed company appears in the company-level triage output.
+- Reviewer-challenged companies enter the deep-review queue even when their baseline triage scores are below threshold.
+- Score-band distribution is visible for reviewer inspection, but no fixed candidate quota is imposed.
+- Known calibration cases cover brand/origin compounders, global advanced manufacturers, strategic resource-cycle leaders, vertically integrated EV platforms, CRDMO platforms, high-end medical devices, banks, and weak-profitability challenged companies.
+
+Passing this gate means the workflow has not structurally missed the A-share calibration cases. It does not mean those companies have been finally accepted into the watchlist. Final inclusion still requires source-backed **Deep Company Review** records using authoritative research sources.
 
 ## 11. Calibration Notes
 

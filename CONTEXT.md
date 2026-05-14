@@ -88,6 +88,10 @@ _Avoid_: treating all miners or upstream producers as interchangeable commodity-
 A scoring adjustment used when evidence source richness, local peer-group definitions, or market structure would otherwise make scores from different exchanges non-comparable.
 _Avoid_: forcing every market to have the same number of watchlist candidates or applying a valuation opinion inside moat screening.
 
+**Market-Staged Calibration**:
+A workflow for validating screening standards one market at a time before applying the accepted rules to another market.
+_Avoid_: mixing A-share, Hong Kong, and U.S. outputs while the standard itself is still being challenged.
+
 **Capability-First Scoring**:
 A scoring stance for **Moat Screening** that gives primary weight to durable business capability, technical or process barriers, market position, and long-term industry outlook, while using current profitability, ROE, and cash flow as risk constraints rather than the main reason a company enters or leaves the **Watchlist**.
 _Avoid_: treating current losses or weak margins as proof that a company lacks a moat when source-backed evidence shows hard-to-replicate capability.
@@ -143,6 +147,7 @@ _Avoid_: report date when the specific event type matters.
 - **Cyclicality Profile** and **Compounding Profile** explain how the industry outlook contributes to **Moat Screening** without turning it into a valuation or market-momentum signal.
 - A **Strategic Resource Cycle** company can enter a **Watchlist** if its resource and process advantages are strong enough, even though commodity prices still make its earnings cyclical.
 - **Cross-Market Calibration** should correct mechanical scoring bias while preserving company-level evidence and dimensional score traceability.
+- **Market-Staged Calibration** should validate one market's **Triage Review** and **Deep Company Review** behavior before turning the lessons into reusable rules for other markets.
 - **Moat Screening** determines whether a **Listed Company** deserves attention; **Valuation Assessment** determines whether a **Security** may be attractively priced.
 - **Market Data** belongs to a **Security** and trading date.
 - **Corporate Actions** belong to a **Security** or **Listed Company** and affect how **Market Data** should be interpreted.

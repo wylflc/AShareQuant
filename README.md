@@ -81,6 +81,15 @@ python3 scripts/run_two_layer_company_review.py
 
 The script reads the market-specific full-coverage score files and optional reviewer challenges from `data/interim/deep_review_challenges.csv`. It writes `data/processed/company_triage_reviews.csv` as the company-level first-layer triage output and `data/interim/deep_review_queue.csv` as the pending second-layer review queue. The queue is not a final watchlist; it is the auditable worklist for full deep reviews using authoritative sources. Reviewer-challenged companies enter the queue even when the baseline triage score is below the normal threshold.
 
+During calibration, run markets separately. A-share is the first calibration market:
+
+```bash
+python3 scripts/run_two_layer_company_review.py --markets A_SHARE --triage-output data/processed/a_share_company_triage_reviews.csv --queue-output data/interim/a_share_deep_review_queue.csv
+python3 scripts/audit_a_share_review_standard.py
+```
+
+The A-share run writes `data/processed/a_share_company_triage_reviews.csv` and `data/interim/a_share_deep_review_queue.csv`. The audit writes `data/processed/a_share_review_standard_audit.csv`, checking A-share-only scope, universe coverage, queue construction, score-band distribution, and reviewer-challenged calibration cases. Passing this audit only validates the workflow structure; source-backed deep reviews are still required before turning A-share lessons into rules for Hong Kong and U.S. reviews.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash

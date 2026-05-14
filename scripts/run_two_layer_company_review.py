@@ -17,6 +17,11 @@ DEFAULT_US_SCORES = Path("data/processed/us_full_coverage_scores.csv")
 DEFAULT_CHALLENGES = Path("data/interim/deep_review_challenges.csv")
 DEFAULT_TRIAGE_OUTPUT = Path("data/processed/company_triage_reviews.csv")
 DEFAULT_QUEUE_OUTPUT = Path("data/interim/deep_review_queue.csv")
+MARKET_SCORE_PATHS = {
+    "A_SHARE": DEFAULT_A_SHARE_SCORES,
+    "HONG_KONG": DEFAULT_HONG_KONG_SCORES,
+    "USA": DEFAULT_US_SCORES,
+}
 
 TRIAGE_COLUMNS = [
     "market_type",
@@ -169,6 +174,15 @@ def load_scored_rows(paths: list[Path]) -> list[dict[str, str]]:
             copied["_score"] = score
             rows.append(copied)
     return rows
+
+
+def score_paths_for_markets(args: argparse.Namespace) -> list[Path]:
+    overrides = {
+        "A_SHARE": args.a_share_scores,
+        "HONG_KONG": args.hong_kong_scores,
+        "USA": args.us_scores,
+    }
+    return [overrides[market] for market in args.markets]
 
 
 def representative_sort_key(row: dict[str, str]) -> tuple[float, int, str]:
@@ -331,7 +345,7 @@ def build_queue_rows(triage_rows: list[dict[str, str]], queued_at: str) -> list[
 
 
 def run(args: argparse.Namespace) -> tuple[int, int]:
-    paths = [args.a_share_scores, args.hong_kong_scores, args.us_scores]
+    paths = score_paths_for_markets(args)
     challenges = load_challenges(args.challenges)
     scored_rows = load_scored_rows(paths)
     groups = group_company_rows(scored_rows)
@@ -345,6 +359,13 @@ def run(args: argparse.Namespace) -> tuple[int, int]:
 
 def parse_args(argv: list[str]) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Build two-layer company review triage outputs.")
+    parser.add_argument(
+        "--markets",
+        nargs="+",
+        choices=sorted(MARKET_SCORE_PATHS),
+        default=sorted(MARKET_SCORE_PATHS),
+        help="Markets to include in this run. Use one market while calibrating before cross-market rollout.",
+    )
     parser.add_argument("--a-share-scores", type=Path, default=DEFAULT_A_SHARE_SCORES)
     parser.add_argument("--hong-kong-scores", type=Path, default=DEFAULT_HONG_KONG_SCORES)
     parser.add_argument("--us-scores", type=Path, default=DEFAULT_US_SCORES)
