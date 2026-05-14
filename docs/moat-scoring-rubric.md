@@ -203,6 +203,8 @@ Peer-group calibration can use reviewer-challenged companies as ordinary example
 
 Reviewer feedback is a calibration input, not an automatic override. When source-backed evidence indicates that a rejected company has durable capability or market position that the feedback may underweight, record an explicit analyst dissent and the evidence basis before revising the rule.
 
+When the reviewer is unfamiliar with a company but has provided a decision habit, infer the decision from that habit instead of marking the company unresolved. The current accepted habit is **Differentiated Peer Retention** plus the **Dominance Rejection Test**: keep multiple companies in a peer group only when each has a hard-to-replicate and meaningfully different advantage; reject companies that are comprehensively dominated by a retained peer and do not have an irreplaceable niche.
+
 ### 10.1.1 Accepted Baijiu Calibration
 
 The first accepted A-share peer-group calibration is baijiu. The reviewer accepted baijiu as worth monitoring but assigned the industry a discounted long-term growth outlook because younger consumers drink less and may shift future gifting and beverage preferences away from traditional baijiu.
@@ -213,11 +215,11 @@ This rule can be overridden only when future evidence shows that a company has b
 
 ### 10.1.2 Partial EV Battery Calibration
 
-The second A-share peer-group calibration is power batteries and new-energy vehicle platforms. The accepted watch companies so far are `宁德时代` and `比亚迪`.
+The second A-share peer-group calibration is power batteries and new-energy vehicle platforms. The accepted watch companies are `宁德时代` and `比亚迪`.
 
 `亿纬锂能` is rejected under the current standard because the reviewer judged that it lacks enough differentiated advantage versus `宁德时代` and does not currently show a distinct competitive position strong enough for watchlist attention.
 
-`国轩高科`, `欣旺达`, `孚能科技`, `鹏辉能源`, and `珠海冠宇` remain undecided, marked as `needs_more_evidence`. Do not convert preliminary analyst rejects into accepted rules when the reviewer has explicitly said they are not familiar enough to judge. These companies require targeted evidence on customer quality, product differentiation, profitability, market share, and whether they belong in a different peer group.
+`国轩高科`, `欣旺达`, `孚能科技`, `鹏辉能源`, and `珠海冠宇` are also rejected from the current power-battery and new-energy-platform watchlist under the **Dominance Rejection Test**. The reviewer did not know these companies well, but the accepted decision habit requires the analyst to reject weaker peers when the available evidence does not show a differentiated and hard-to-replace advantage versus `宁德时代` or `比亚迪`.
 
 ## 11. Calibration Notes
 

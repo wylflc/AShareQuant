@@ -96,6 +96,14 @@ _Avoid_: mixing A-share, Hong Kong, and U.S. outputs while the standard itself i
 A standard-setting workflow that compares multiple similar listed companies in the same industry or business type, summarizes their moat, advantages, weaknesses, market position, and preliminary attention decision, then uses reviewer feedback to refine reusable screening standards.
 _Avoid_: using a few familiar or randomly named companies as the standard anchor for an entire market.
 
+**Differentiated Peer Retention**:
+A peer-group calibration rule that allows multiple listed companies in the same industry to remain on the watchlist only when each has a hard-to-replicate and meaningfully different advantage.
+_Avoid_: retaining weaker peers merely because they also rank well or benefit from the same industry growth.
+
+**Dominance Rejection Test**:
+A peer-group calibration test that rejects a listed company when a stronger peer comprehensively dominates it across moat, technology or process capability, market position, customer validation, and business quality, and the weaker company lacks an irreplaceable niche.
+_Avoid_: keeping a company because it is unfamiliar, second-tier, or might rebound without a distinct durable advantage.
+
 **Capability-First Scoring**:
 A scoring stance for **Moat Screening** that gives primary weight to durable business capability, technical or process barriers, market position, and long-term industry outlook, while using current profitability, ROE, and cash flow as risk constraints rather than the main reason a company enters or leaves the **Watchlist**.
 _Avoid_: treating current losses or weak margins as proof that a company lacks a moat when source-backed evidence shows hard-to-replicate capability.
@@ -153,6 +161,7 @@ _Avoid_: report date when the specific event type matters.
 - **Cross-Market Calibration** should correct mechanical scoring bias while preserving company-level evidence and dimensional score traceability.
 - **Market-Staged Calibration** should validate one market's **Triage Review** and **Deep Company Review** behavior before turning the lessons into reusable rules for other markets.
 - **Peer-Group Calibration** is the preferred way to form reusable standards: the reviewer compares similar listed companies first, then the accepted/rejected examples become standard-setting evidence.
+- **Differentiated Peer Retention** and the **Dominance Rejection Test** should be applied together: keep multiple companies in one peer group only when their advantages are meaningfully different and hard to replace; reject a company when a stronger peer comprehensively covers its advantage.
 - **Moat Screening** determines whether a **Listed Company** deserves attention; **Valuation Assessment** determines whether a **Security** may be attractively priced.
 - **Market Data** belongs to a **Security** and trading date.
 - **Corporate Actions** belong to a **Security** or **Listed Company** and affect how **Market Data** should be interpreted.

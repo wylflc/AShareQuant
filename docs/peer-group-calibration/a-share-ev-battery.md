@@ -32,17 +32,20 @@ Reviewer feedback retained `宁德时代` and `比亚迪`.
 
 The reviewer rejected `亿纬锂能` at medium confidence because, compared with `宁德时代`, it does not currently show a strong advantage across moat, technology, market position, or differentiated competition. I accept this rejection without strong dissent. EVE may still have product niches, but the current evidence is not enough to justify watchlist attention under a leader-focused battery standard.
 
-The reviewer did not have enough familiarity to judge `国轩高科`, `欣旺达`, `孚能科技`, `鹏辉能源`, or `珠海冠宇`. These rows are therefore recorded as `needs_more_evidence`, not as accepted rejects. The prior analyst view remains visible in the calibration CSV, but it is not yet an accepted rule.
+The reviewer then clarified a broader decision habit: when multiple peers compete in the same area, retain more than one company only when they compete through meaningfully different and hard-to-replace advantages. If one company is comprehensively dominated by a retained leader and lacks an irreplaceable niche, reject it rather than marking it unresolved just because the reviewer is less familiar with it.
+
+Using that rule, `国轩高科`, `欣旺达`, `孚能科技`, `鹏辉能源`, and `珠海冠宇` are rejected from this power-battery and new-energy-platform group. The decision is inferred from the accepted rule, not from direct reviewer familiarity with each company.
 
 The structured reviewer decision table is `data/processed/a_share_ev_battery_peer_group_decisions.csv`.
 
-## 1.6 Partial Accepted Rules
+## 1.6 Accepted Rules
 
 1. `宁德时代` is a core watch company in the power-battery group. Price war, cyclicality, and overseas policy risk should be monitored, but they are not rejection reasons by themselves.
 2. `比亚迪` is a core watch company in the new-energy platform group. Its vertical integration, battery capability, cost engineering, and vehicle-platform scale justify attention despite vehicle price-war exposure.
 3. `亿纬锂能` is rejected under the current standard because it lacks enough differentiated advantage versus CATL/BYD.
-4. For second-tier battery companies, market growth and ranking are not enough. They need clear evidence of differentiated capability, durable customers, profitability quality, and resilience against the leaders.
-5. Companies not understood well enough by the reviewer should be marked `needs_more_evidence` rather than forced into watch or reject.
+4. `国轩高科`, `欣旺达`, `孚能科技`, `鹏辉能源`, and `珠海冠宇` are rejected from this peer group under the **Dominance Rejection Test**.
+5. For second-tier battery companies, market growth and ranking are not enough. They need clear evidence of differentiated capability, durable customers, profitability quality, and resilience against the leaders.
+6. `needs_more_evidence` should be reserved for missing key facts, not for cases where the reviewer is unfamiliar but has provided a decision rule that can be applied.
 
 ## 1.7 Analyst Dissent Policy
 
@@ -52,7 +55,7 @@ For this group:
 
 1. If `宁德时代` is rejected mainly because of price war or cyclicality, I would strongly dissent. It is the clearest global power-battery leader and should remain a core watch candidate unless evidence shows structural technology loss or customer flight.
 2. If `比亚迪` is rejected solely because it is exposed to vehicle price wars, I would dissent. Its vertical integration, battery capability, cost engineering, and global vehicle scale still justify continued attention, though governance, working-capital, and domestic margin pressure should be monitored.
-3. I would not strongly dissent if the reviewer rejects `亿纬锂能` or `国轩高科`, but I would keep them as second-tier execution cases because their market position is materially stronger than smaller battery names.
+3. I would not strongly dissent if the reviewer rejects `亿纬锂能` or `国轩高科`; the accepted dominance rule now rejects both.
 4. I would not dissent if the reviewer rejects `欣旺达`, `孚能科技`, `鹏辉能源`, or `珠海冠宇` for this power-battery group.
 
 ## 1.8 Original Rule Hypotheses
@@ -66,10 +69,8 @@ These are hypotheses for reviewer challenge, not final rules.
 
 ## 1.9 Remaining Reviewer Questions
 
-1. Should `国轩高科` remain a second-tier watch case after a deeper review of Volkswagen relationship, customer quality, profitability, and global share?
-2. Should `欣旺达`, `孚能科技`, and `鹏辉能源` remain reject-for-now after deeper evidence collection, or does any one of them have real differentiated capability?
-3. Should `珠海冠宇` be moved to a consumer-battery peer group before final rejection?
-4. Should battery-material companies such as `天赐材料`, `璞泰来`, `恩捷股份`, `容百科技`, `德方纳米`, and `贝特瑞` be calibrated in a separate upstream-materials group rather than mixed into this cell-manufacturer group?
+1. Should battery-material companies such as `天赐材料`, `璞泰来`, `恩捷股份`, `容百科技`, `德方纳米`, and `贝特瑞` be calibrated in a separate upstream-materials group rather than mixed into this cell-manufacturer group?
+2. Should `珠海冠宇` be evaluated in a separate consumer-battery peer group, where its main advantage is more relevant?
 
 ## 1.10 Sources
 
