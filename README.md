@@ -134,6 +134,13 @@ The seventh A-share peer-group calibration output is lithium resources and lithi
 
 This group separates lithium resource ownership and lithium-salt capacity from broader EV batteries, cathode materials, battery recycling, and strategic-resource mining rules.
 
+The eighth A-share peer-group calibration output is battery materials and nickel-cobalt integration:
+
+- `data/processed/a_share_battery_materials_peer_group_calibration.csv`
+- `docs/peer-group-calibration/a-share-battery-materials.md`
+
+This group compares precursor, nickel-cobalt resource integration, electrolyte, separator, anode, coating, and cathode companies. It is preliminary and awaits reviewer decisions before a decision table is created.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
