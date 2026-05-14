@@ -1,0 +1,65 @@
+# 1. A-Share Baijiu Peer-Group Calibration
+
+## 1.1 Purpose
+
+This note starts A-share **Peer-Group Calibration** for the baijiu industry. It is not a final watchlist and not a valuation view.
+
+The goal is to compare similar listed companies side by side, state their apparent moat and weaknesses, make a preliminary attention call, and then use reviewer feedback to turn the comparison into reusable screening rules.
+
+## 1.2 Evidence Boundary
+
+This first pass uses annual-report disclosures, annual-report summaries from designated disclosure media or announcement mirrors, and the KPMG / China Alcoholic Drinks Association 2025 mid-term baijiu market report.
+
+Aggregator company profile blurbs are not used as company-analysis evidence. Rows marked `needs_primary_pdf` in `data/processed/a_share_baijiu_peer_group_calibration.csv` should receive direct exchange or company annual-report PDFs before the rule is frozen.
+
+## 1.3 Industry Context
+
+The industry is in a deep adjustment period. The KPMG / China Alcoholic Drinks Association report describes policy adjustment, consumer-structure transition, and inventory pressure occurring together. It also reports that 2024 scale-above baijiu output declined while revenue and profit concentrated further in leading companies.
+
+Two calibration implications follow:
+
+1. A high-quality baijiu company should show brand pull, price discipline, channel control, and product quality barriers through the downturn.
+2. Regional or old-brand companies should not be accepted just because they are listed baijiu companies; their local market share, channel health, price stability, and cash conversion need evidence.
+
+## 1.4 Preliminary Attention Calls
+
+| Tier | Companies | Preliminary Call |
+| --- | --- | --- |
+| National high-end or category leaders | 贵州茅台, 五粮液, 山西汾酒 | Core watch |
+| Strong but needs operating verification | 泸州老窖, 古井贡酒, 今世缘, 迎驾贡酒 | Watch |
+| Possible turnaround or rule-boundary cases | 洋河股份, 口子窖 | Watch only if channel and price-system repair is evidenced |
+| Reject for now | 水井坊, 舍得酒业, 酒鬼酒, 老白干酒, 顺鑫农业, 金徽酒, 伊力特, 天佑德酒, 金种子酒, 皇台酒业, *ST岩石 | Do not include unless reviewer supplies stronger contrary evidence |
+
+## 1.5 Proposed Baijiu-Specific Rule Hypotheses
+
+These are hypotheses for reviewer challenge, not final rules.
+
+1. **Core Watch** requires at least one of:
+   - National high-end price anchor with strong consumer pull and hard-to-replicate origin/process/brand trust.
+   - Category-defining national leader whose brand and channel control remain resilient in downturns.
+2. **Watch** can include strong regional leaders when:
+   - The company has a dominant local banquet or gift-giving ecosystem.
+   - Channel inventory and terminal pricing remain controlled.
+   - The company can compound without relying mainly on channel stuffing or price-band expansion.
+3. **Reject For Now** should apply when:
+   - Advantage is mostly an old brand story without current pricing power.
+   - The company is a small regional player facing stronger local or national brands.
+   - The company is concentrated in the most pressured price band and lacks evidence of channel repair.
+   - Governance, risk-warning, or non-core business issues undermine comparability.
+
+## 1.6 Reviewer Questions
+
+1. Do you agree that `贵州茅台`, `五粮液`, and `山西汾酒` should be the first white-liquor core-watch group?
+2. Should `泸州老窖` stay in watch despite 2025 operating pressure?
+3. Among regional leaders, should `古井贡酒`, `今世缘`, and `迎驾贡酒` all remain watch candidates, or should some be downgraded?
+4. Should `洋河股份` be treated as a repairable former leader or rejected until clear channel repair is proven?
+5. Do you agree that the smaller regional and ST/problem companies should be rejected by default?
+
+## 1.7 Sources
+
+- KPMG and China Alcoholic Drinks Association, 2025 China Baijiu Market Mid-Term Research Report: `https://assets.kpmg.com/content/dam/kpmg/cn/pdf/zh/2025/06/mid-term-research-report-on-the-chinese-baijiu-market-2025.pdf`
+- 贵州茅台 2025 annual report: `https://big5.sse.com.cn/site/cht/www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-04-17/600519_20260417_9QS4.pdf`
+- 五粮液 2025 annual-report disclosure summary: `https://paper.cnstock.com/html/2026-05/06/content_2212529.htm`
+- 泸州老窖 2025 half-year report and 2025 annual-report mirror: `https://disc.static.szse.cn/disc/disk03/finalpage/2025-08-30/9b7b5a04-d2f1-4f2b-ac1d-35d1a6cb25de.PDF`, `https://pdf.dfcfw.com/pdf/H2_AN202604281821699992_1.pdf`
+- 古井贡酒 2025 annual-report text mirror: `https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12258306&stockid=000596`
+- White-liquor annual-report compilation used only as a secondary checklist for smaller companies: `https://fsc.foodmate.net/show.php?itemid=742696`

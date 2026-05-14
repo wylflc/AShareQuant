@@ -90,6 +90,11 @@ python3 scripts/audit_a_share_review_standard.py
 
 The A-share run writes `data/processed/a_share_company_triage_reviews.csv` and `data/interim/a_share_deep_review_queue.csv`. The audit writes `data/processed/a_share_review_standard_audit.csv`, checking A-share-only scope, universe coverage, queue construction, score-band distribution, and reviewer-challenge routing. Passing this audit only validates the workflow structure. Reviewer-challenged companies are not calibration anchors merely because they were named; reusable rules should come from peer-group calibration, where similar companies in one industry are compared side by side before the reviewer decides which deserve continued attention.
 
+The first A-share peer-group calibration output is baijiu:
+
+- `data/processed/a_share_baijiu_peer_group_calibration.csv`
+- `docs/peer-group-calibration/a-share-baijiu.md`
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
