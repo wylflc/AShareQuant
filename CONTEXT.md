@@ -44,6 +44,22 @@ _Avoid_: valuation screen, cheap-stock screen.
 Reliable source-backed information used to support a **Moat Screening** decision.
 _Avoid_: unsourced notes, model guesses.
 
+**Full-Coverage Screening Run**:
+A screening run that attempts to score every eligible listed company in a universe with the same rubric, rather than only companies that were manually selected first.
+_Avoid_: candidate sampling, partial watchlist when the run claims universe coverage.
+
+**Dimensional Score**:
+A 0-100 score for one explicit screening dimension, such as business moat, technology barrier, market position, business quality, operating quality, or governance and risk quality.
+_Avoid_: unweighted impression, single blended note.
+
+**Capital Replicability Test**:
+A way to evaluate competitive strength by asking whether a well-funded new entrant could quickly build the same capability, enter the industry, and overtake the listed company mainly through capital spending.
+_Avoid_: assuming a business is strong only because it is large or profitable today.
+
+**Insufficient Disclosure**:
+A narrow screening status for a listed company that is too newly listed to have enough periodic reports and also lacks authoritative public business descriptions from filings, regulators, credible media, or research institutions.
+_Avoid_: not yet researched, missing evidence row.
+
 **Moat Score**:
 A rough 0-100 quality score from **Moat Screening** based on source-backed evidence of business barriers, technical barriers, market position, cash flow quality, and margin quality.
 _Avoid_: valuation score, buy score.
@@ -78,6 +94,8 @@ _Avoid_: report date when the specific event type matters.
 - A **Universe** contains **Securities**, but a **Watchlist** contains **Listed Companies**.
 - A **Universe Snapshot** records the **Securities** available from a provider at retrieval time and can be used as input to later screening.
 - **Screening Evidence** supports a **Moat Score**; a high enough **Moat Score** can produce a **Watchlist Candidate**.
+- A **Full-Coverage Screening Run** must produce **Dimensional Scores** for every eligible **Listed Company**, except the narrow **Insufficient Disclosure** case.
+- A **Dimensional Score** should apply the **Capital Replicability Test** where relevant so the score reflects durable competitive strength rather than current size alone.
 - **Moat Screening** determines whether a **Listed Company** deserves attention; **Valuation Assessment** determines whether a **Security** may be attractively priced.
 - **Market Data** belongs to a **Security** and trading date.
 - **Corporate Actions** belong to a **Security** or **Listed Company** and affect how **Market Data** should be interpreted.
@@ -92,3 +110,4 @@ _Avoid_: report date when the specific event type matters.
 
 - "Company" and "stock" are easy to conflate. Use **Listed Company** for the business entity and **Security** for the exchange-traded instrument.
 - "Worth attention" is resolved as **Watchlist** inclusion based on **Moat Screening**, not as a purchase recommendation.
+- "Evidence insufficient" is narrow. It does not mean a company has not yet been reviewed; it means the company lacks enough public disclosure and authoritative external description to support a fair score.
