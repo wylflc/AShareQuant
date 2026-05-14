@@ -142,6 +142,13 @@ The eighth A-share peer-group calibration output is battery materials and nickel
 
 This group compares precursor, nickel-cobalt resource integration, electrolyte, separator, anode, coating, and cathode companies. Boundary companies are judged by margin quality, product technical content, whether a larger competitor could easily copy the business, and whether the company has a durable local industrial advantage.
 
+The ninth A-share peer-group calibration output is CXO and pharmaceutical R&D outsourcing:
+
+- `data/processed/a_share_cxo_peer_group_calibration.csv`
+- `docs/peer-group-calibration/a-share-cxo.md`
+
+This group compares CRDMO, CRO, CDMO, clinical CRO, SMO, molecular-building-block, and pharmaceutical R&D service companies. It is preliminary and awaits reviewer decisions before a decision table is created.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
