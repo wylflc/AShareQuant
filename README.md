@@ -70,3 +70,5 @@ The screening workflow keeps `data/raw/` immutable. Source-backed research evide
 Moat scoring is a rough 0-100 quality score, not a valuation score or buy recommendation. Suggested weighting: durable business barriers 30%, technical barriers 20%, market position 20%, cash-flow quality 15%, and margin quality 15%. A default threshold of 70 creates a **Watchlist Candidate** for later valuation work. Securities with no reliable source-backed evidence row are marked `insufficient_evidence` and are not scored.
 
 Evidence rows should cite reliable sources such as official annual reports, exchange announcements, company investor-relations pages, or regulator/filing portals. Scores should not be filled when the available evidence is only unsourced commentary, market rumor, or model inference.
+
+Candidate count reflects current evidence coverage, not a claim that other listed companies lack durable business advantages. Expand `data/interim/moat_screening_evidence.csv` iteratively as more companies receive source-backed review.
