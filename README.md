@@ -114,6 +114,11 @@ The fourth A-share peer-group calibration output is listed banks:
 - `data/processed/a_share_bank_peer_group_decisions.csv`
 - `docs/peer-group-calibration/a-share-bank.md`
 
+The fifth A-share peer-group calibration output is semiconductor equipment:
+
+- `data/processed/a_share_semiconductor_equipment_peer_group_calibration.csv`
+- `docs/peer-group-calibration/a-share-semiconductor-equipment.md`
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
