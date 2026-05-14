@@ -1,0 +1,571 @@
+#!/usr/bin/env python3
+"""Create dimensional U.S. moat scores from fetched SEC evidence."""
+
+from __future__ import annotations
+
+import argparse
+import csv
+import math
+from dataclasses import dataclass
+from datetime import UTC, datetime
+from pathlib import Path
+
+
+DEFAULT_RAW = Path("data/raw/us_securities.csv")
+DEFAULT_QUEUE = Path("data/interim/us_research_queue.csv")
+DEFAULT_PROFILES = Path("data/interim/us_company_profiles.csv")
+DEFAULT_FINANCIALS = Path("data/interim/us_financial_indicators.csv")
+DEFAULT_OUTPUT = Path("data/processed/us_full_coverage_scores.csv")
+DEFAULT_WATCHLIST = Path("data/processed/us_full_coverage_watchlist.csv")
+SCORING_MODEL_VERSION = "full_coverage_dimensional_v0.1"
+MARKET_TYPE = "USA"
+MARKET_LABEL = "美股"
+
+DIMENSIONS = [
+    ("business_moat", 0.25),
+    ("technology_barrier", 0.20),
+    ("market_position", 0.15),
+    ("business_quality", 0.15),
+    ("operating_quality", 0.15),
+    ("governance_risk", 0.10),
+]
+DIMENSION_WEIGHT_POINTS = {
+    "business_moat": 25,
+    "technology_barrier": 20,
+    "market_position": 15,
+    "business_quality": 15,
+    "operating_quality": 15,
+    "governance_risk": 10,
+}
+
+OUTPUT_COLUMNS = [
+    "market_type",
+    "market_label",
+    "security_code",
+    "symbol",
+    "exchange",
+    "market",
+    "listed_company_name",
+    "security_name",
+    "currency",
+    "asset_type_hint",
+    "is_etf",
+    "sec_cik",
+    "sec_ticker",
+    "security_eligibility",
+    "eligibility_status",
+    "screening_status",
+    "disclosure_status",
+    "listing_or_reporting_status",
+    "industry",
+    "peer_group",
+    "peer_relative_position",
+    "business_moat_score",
+    "business_moat_level",
+    "business_moat_reason",
+    "technology_barrier_score",
+    "technology_barrier_level",
+    "technology_barrier_reason",
+    "market_position_score",
+    "market_position_level",
+    "market_position_reason",
+    "business_quality_score",
+    "business_quality_level",
+    "business_quality_reason",
+    "operating_quality_score",
+    "operating_quality_level",
+    "operating_quality_reason",
+    "governance_risk_score",
+    "governance_risk_level",
+    "governance_risk_reason",
+    "weighted_total_score",
+    "overall_level",
+    "overall_reason",
+    "evidence_confidence",
+    "source_urls",
+    "reviewed_at_utc",
+    "scoring_model_version",
+]
+
+WATCHLIST_COLUMNS = [
+    "market_type",
+    "market_label",
+    "security_code",
+    "symbol",
+    "exchange",
+    "market",
+    "listed_company_name",
+    "security_name",
+    "currency",
+    "industry",
+    "peer_group",
+    "peer_relative_position",
+    "weighted_total_score",
+    "overall_level",
+    "overall_reason",
+    "source_urls",
+    "reviewed_at_utc",
+    "scoring_model_version",
+]
+
+
+class ScoringError(RuntimeError):
+    """Raised when U.S. full-coverage scoring inputs are invalid."""
+
+
+@dataclass(frozen=True)
+class IndustryPrior:
+    business_moat: int
+    technology_barrier: int
+    business_quality: int
+    capital_replicability: str
+
+
+def utc_now() -> str:
+    return datetime.now(UTC).replace(microsecond=0).isoformat()
+
+
+def read_csv(path: Path) -> tuple[list[str], list[dict[str, str]]]:
+    if not path.exists():
+        raise ScoringError(f"CSV not found: {path}")
+    with path.open(encoding="utf-8-sig", newline="") as handle:
+        reader = csv.DictReader(handle)
+        rows = list(reader)
+        if not reader.fieldnames:
+            raise ScoringError(f"CSV has no header: {path}")
+        return list(reader.fieldnames), rows
+
+
+def write_csv(path: Path, fieldnames: list[str], rows: list[dict[str, str]]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8-sig", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=fieldnames, extrasaction="ignore", lineterminator="\n")
+        writer.writeheader()
+        writer.writerows(rows)
+
+
+def by_code(path: Path) -> dict[str, dict[str, str]]:
+    if not path.exists():
+        return {}
+    _, rows = read_csv(path)
+    return {row["security_code"]: row for row in rows if row.get("security_code")}
+
+
+def f(value: str | None) -> float | None:
+    if value in (None, "", "--"):
+        return None
+    try:
+        number = float(value)
+    except ValueError:
+        return None
+    if math.isnan(number) or math.isinf(number):
+        return None
+    return number
+
+
+def clamp(value: float, low: int = 0, high: int = 100) -> int:
+    return max(low, min(high, int(round(value))))
+
+
+def weighted_score(scores: dict[str, int]) -> int:
+    numerator = sum(scores[name] * DIMENSION_WEIGHT_POINTS[name] for name in DIMENSION_WEIGHT_POINTS)
+    return max(0, min(100, (numerator + 50) // 100))
+
+
+def level(score: int) -> str:
+    if score >= 90:
+        return "S"
+    if score >= 80:
+        return "A"
+    if score >= 70:
+        return "B"
+    if score >= 55:
+        return "C"
+    if score >= 40:
+        return "D"
+    return "E"
+
+
+def percentile_maps(rows: list[dict[str, str]], peer_key: str, metric: str, reverse: bool = False) -> dict[str, float]:
+    by_peer: dict[str, list[tuple[str, float]]] = {}
+    for row in rows:
+        value = f(row.get(metric))
+        if value is None:
+            continue
+        by_peer.setdefault(row[peer_key], []).append((row["security_code"], value))
+    result: dict[str, float] = {}
+    for items in by_peer.values():
+        values = sorted(value for _, value in items)
+        if len(values) == 1:
+            for code, _ in items:
+                result[code] = 50.0
+            continue
+        for code, value in items:
+            rank = values.index(value)
+            pct = 100 * (1 - rank / (len(values) - 1)) if reverse else 100 * rank / (len(values) - 1)
+            result[code] = pct
+    return result
+
+
+def keyword_any(text: str, keywords: list[str]) -> bool:
+    lower = text.lower()
+    return any(keyword.lower() in lower for keyword in keywords)
+
+
+def source_join(*parts: str) -> str:
+    urls: list[str] = []
+    for part in parts:
+        urls.extend(url for url in part.split(";") if url)
+    return ";".join(dict.fromkeys(urls))
+
+
+def peer_position(score: int) -> str:
+    if score >= 80:
+        return "stronger_than_peers"
+    if score >= 65:
+        return "above_average"
+    if score >= 45:
+        return "average"
+    if score >= 30:
+        return "below_average"
+    return "weak"
+
+
+def infer_industry_from_name(raw: dict[str, str]) -> str:
+    text = f"{raw.get('listed_company_name', '')} {raw.get('security_name', '')}".lower()
+    if keyword_any(text, ["bank", "bancorp", "financial", "insurance", "capital"]):
+        return "Banking and financial services"
+    if keyword_any(text, ["biotech", "therapeutics", "pharma", "medical", "health"]):
+        return "Healthcare and biotechnology"
+    if keyword_any(text, ["software", "technology", "semiconductor", "ai ", "data", "systems"]):
+        return "Technology"
+    if keyword_any(text, ["energy", "oil", "gas", "mining", "gold", "uranium"]):
+        return "Energy and materials"
+    if keyword_any(text, ["restaurant", "food", "beverage", "consumer", "apparel"]):
+        return "Consumer"
+    if keyword_any(text, ["acquisition corp", "acquisition corporation", "blank check"]):
+        return "Blank check company"
+    return "Unknown"
+
+
+def industry_prior(peer_group: str, profile_text: str, security_name: str) -> IndustryPrior:
+    text = f"{peer_group} {profile_text} {security_name}".lower()
+    if keyword_any(text, ["acquisition corp", "blank check", "special purpose acquisition"]):
+        return IndustryPrior(20, 20, 20, "blank-check companies have no operating moat until an operating business is acquired")
+    if keyword_any(text, ["bank", "national commercial banks", "state commercial banks", "savings institution", "credit institution"]):
+        return IndustryPrior(72, 45, 64, "banking licenses deposits customer relationships and risk systems reduce pure capital replicability")
+    if keyword_any(text, ["insurance", "broker", "investment advice", "security brokers", "asset management"]):
+        return IndustryPrior(68, 48, 62, "licenses distribution trust and risk underwriting matter but capital can still compete in parts of finance")
+    if keyword_any(text, ["electric", "gas", "water", "utility", "pipeline", "railroad", "telephone", "telecommunications"]):
+        return IndustryPrior(78, 45, 72, "regulated networks concessions and infrastructure assets are hard to replicate quickly with capital alone")
+    if keyword_any(text, ["semiconductor", "electronic computers", "computer storage", "electronic components", "communications equipment"]):
+        return IndustryPrior(66, 80, 60, "design capability process know-how supply-chain qualification and customer validation take time")
+    if keyword_any(text, ["prepackaged software", "software", "data processing", "information retrieval", "internet", "cloud", "platform"]):
+        return IndustryPrior(70, 74, 64, "software platforms data ecosystems and switching costs can resist capital-only entry")
+    if keyword_any(text, ["pharmaceutical", "biological", "medical", "surgical", "diagnostic", "therapeutics", "biotechnology"]):
+        return IndustryPrior(65, 78, 60, "clinical validation patents regulation and physician or customer trust limit fast capital replication")
+    if keyword_any(text, ["aerospace", "aircraft", "defense", "guided missiles"]):
+        return IndustryPrior(70, 74, 62, "certification defense relationships engineering depth and manufacturing qualification are slow to replicate")
+    if keyword_any(text, ["food", "beverage", "tobacco", "cosmetics", "apparel", "restaurants"]):
+        return IndustryPrior(72, 45, 68, "brands distribution store base and customer habit are costly but not impossible to replicate")
+    if keyword_any(text, ["retail", "grocery", "department stores", "catalog", "mail-order"]):
+        return IndustryPrior(46, 38, 48, "retail formats inventory and stores are comparatively replicable with capital and execution")
+    if keyword_any(text, ["real estate", "reit", "construction", "homebuilding", "building"]):
+        return IndustryPrior(45, 40, 42, "asset access and execution matter but leverage and capital availability drive much of the structure")
+    if keyword_any(text, ["oil", "gas", "mining", "coal", "steel", "chemical", "metals", "paper"]):
+        return IndustryPrior(54, 58, 50, "resource cost scale process assets and cycles matter but commodity exposure lowers durability")
+    if keyword_any(text, ["air transportation", "airlines", "hotel", "casino", "cruise", "travel"]):
+        return IndustryPrior(50, 42, 46, "brand route slots locations or licenses matter but cyclical demand and capital intensity reduce durability")
+    if keyword_any(text, ["patent", "research", "algorithm", "technology", "engineering"]):
+        return IndustryPrior(55, 64, 52, "profile suggests technical capability but the industry classification is broad")
+    return IndustryPrior(50, 50, 50, "SEC industry evidence does not show a clearly hard-to-replicate structure")
+
+
+def pct(percentiles: dict[str, float], code: str, default: float = 50.0) -> float:
+    return percentiles.get(code, default)
+
+
+def base_row(raw: dict[str, str], profile: dict[str, str], queue: dict[str, str], reviewed_at: str) -> dict[str, str]:
+    return {
+        "market_type": MARKET_TYPE,
+        "market_label": MARKET_LABEL,
+        "security_code": raw["security_code"],
+        "symbol": raw["symbol"],
+        "exchange": raw["exchange"],
+        "market": raw["market"],
+        "listed_company_name": raw["listed_company_name"],
+        "security_name": raw["security_name"],
+        "currency": raw["currency"],
+        "asset_type_hint": raw.get("asset_type_hint", ""),
+        "is_etf": raw.get("is_etf", ""),
+        "sec_cik": profile.get("sec_cik", ""),
+        "sec_ticker": profile.get("sec_ticker", ""),
+        "security_eligibility": queue.get("security_eligibility", ""),
+        "industry": profile.get("sic_description") or infer_industry_from_name(raw),
+        "peer_group": profile.get("sic_description") or infer_industry_from_name(raw),
+        "source_urls": source_join(profile.get("source_url", "")),
+        "reviewed_at_utc": reviewed_at,
+        "scoring_model_version": SCORING_MODEL_VERSION,
+    }
+
+
+def blank_dimension_fields(row: dict[str, str]) -> None:
+    for name, _ in DIMENSIONS:
+        row[f"{name}_score"] = ""
+        row[f"{name}_level"] = ""
+        row[f"{name}_reason"] = ""
+    row["weighted_total_score"] = ""
+    row["overall_level"] = ""
+
+
+def financial_metric_count(financial: dict[str, str]) -> int:
+    fields = [
+        "revenue",
+        "net_income",
+        "operating_cash_flow",
+        "assets",
+        "liabilities",
+        "stockholders_equity",
+        "gross_margin_pct",
+        "roe_pct",
+    ]
+    return sum(1 for field in fields if financial.get(field))
+
+
+def score_row(
+    raw: dict[str, str],
+    profile: dict[str, str],
+    financial: dict[str, str],
+    queue: dict[str, str],
+    percentiles: dict[str, dict[str, float]],
+    reviewed_at: str,
+) -> dict[str, str]:
+    code = raw["security_code"]
+    row = base_row(raw, profile, queue, reviewed_at)
+    row["source_urls"] = source_join(profile.get("source_url", ""), financial.get("source_url", ""))
+
+    if queue.get("security_eligibility") != "eligible_common_equity":
+        row.update(
+            {
+                "eligibility_status": "not_eligible",
+                "screening_status": "not_eligible_non_company_security",
+                "disclosure_status": "not_applicable",
+                "listing_or_reporting_status": queue.get("security_eligibility_reason", ""),
+                "peer_relative_position": "hard_to_distinguish",
+                "overall_reason": "Excluded from company moat scoring because the raw U.S. security is not a common-equity company instrument.",
+                "evidence_confidence": "medium",
+            }
+        )
+        blank_dimension_fields(row)
+        return row
+
+    if profile.get("fetch_status") != "fetched":
+        row.update(
+            {
+                "eligibility_status": "eligible",
+                "screening_status": "pending_research",
+                "disclosure_status": "pending_research",
+                "listing_or_reporting_status": "SEC or fallback profile evidence unavailable",
+                "peer_relative_position": "hard_to_distinguish",
+                "overall_reason": "Awaiting profile evidence; this is a workflow state, not evidence insufficiency.",
+                "evidence_confidence": "low",
+            }
+        )
+        blank_dimension_fields(row)
+        return row
+
+    profile_text = " ".join(
+        part
+        for part in [
+            profile.get("sic_description", ""),
+            profile.get("description", ""),
+            profile.get("owner_org", ""),
+            raw.get("security_name", ""),
+        ]
+        if part
+    )
+    peer_group = profile.get("sic_description") or infer_industry_from_name(raw)
+    row["industry"] = peer_group
+    row["peer_group"] = peer_group
+    prior = industry_prior(peer_group, profile_text, raw.get("security_name", ""))
+
+    revenue_pct = pct(percentiles["revenue"], code)
+    net_income_pct = pct(percentiles["net_income"], code)
+    gross_margin_pct = pct(percentiles["gross_margin_pct"], code)
+    net_margin_pct = pct(percentiles["net_margin_pct"], code)
+    operating_margin_pct = pct(percentiles["operating_margin_pct"], code)
+    roe_pct = pct(percentiles["roe_pct"], code)
+    cashflow_pct = pct(percentiles["operating_cashflow_to_revenue_pct"], code)
+    debt_safety_pct = pct(percentiles["debt_asset_ratio_pct_inverse"], code)
+    rd_pct = pct(percentiles["rd_to_revenue_pct"], code)
+    growth_pct = pct(percentiles["revenue_yoy_pct"], code)
+    eps_pct = pct(percentiles["eps_diluted"], code)
+
+    keyword_bonus_moat = 0
+    if keyword_any(profile_text, ["leading", "largest", "exclusive", "license", "patent", "brand", "network", "platform"]):
+        keyword_bonus_moat += 7
+    if keyword_any(profile_text, ["customer", "subscription", "installed base", "ecosystem", "data"]):
+        keyword_bonus_moat += 4
+
+    keyword_bonus_tech = 0
+    if keyword_any(profile_text, ["research", "patent", "algorithm", "cloud", "artificial intelligence", "semiconductor", "biotechnology", "engineering"]):
+        keyword_bonus_tech += 8
+
+    metric_count = financial_metric_count(financial)
+    financial_penalty = 0 if metric_count >= 4 else 8 if metric_count >= 2 else 16
+    reporting_penalty = 0
+    if raw.get("financial_status") in {"D", "E", "H"}:
+        reporting_penalty = 18
+
+    business_moat = clamp(prior.business_moat + (revenue_pct - 50) * 0.16 + (net_income_pct - 50) * 0.10 + keyword_bonus_moat)
+    technology_barrier = clamp(prior.technology_barrier + (rd_pct - 50) * 0.18 + (eps_pct - 50) * 0.05 + keyword_bonus_tech)
+    market_position = clamp(45 + revenue_pct * 0.34 + net_income_pct * 0.28 + (prior.business_moat - 50) * 0.20)
+    business_quality = clamp(prior.business_quality + (gross_margin_pct - 50) * 0.18 + (net_margin_pct - 50) * 0.20 + (operating_margin_pct - 50) * 0.10 + (growth_pct - 50) * 0.08 - financial_penalty * 0.5)
+    operating_quality = clamp(50 + (roe_pct - 50) * 0.26 + (cashflow_pct - 50) * 0.22 + (debt_safety_pct - 50) * 0.14 - financial_penalty)
+    governance_risk = clamp(70 + (debt_safety_pct - 50) * 0.12 - reporting_penalty)
+    if keyword_any(profile_text, ["blank check", "acquisition corp"]):
+        business_moat = min(business_moat, 35)
+        technology_barrier = min(technology_barrier, 35)
+        market_position = min(market_position, 35)
+        business_quality = min(business_quality, 35)
+        operating_quality = min(operating_quality, 35)
+
+    weighted = weighted_score(
+        {
+            "business_moat": business_moat,
+            "technology_barrier": technology_barrier,
+            "market_position": market_position,
+            "business_quality": business_quality,
+            "operating_quality": operating_quality,
+            "governance_risk": governance_risk,
+        }
+    )
+    confidence = "high" if profile.get("source_provider") == "SEC EDGAR" and metric_count >= 4 else "medium" if metric_count else "low"
+
+    row.update(
+        {
+            "eligibility_status": "eligible",
+            "screening_status": "scored",
+            "disclosure_status": "sufficient_public_evidence",
+            "listing_or_reporting_status": raw.get("financial_status", "") or "listed",
+            "peer_relative_position": peer_position(weighted),
+            "business_moat_score": str(business_moat),
+            "business_moat_level": level(business_moat),
+            "business_moat_reason": f"Peer group {peer_group}; capital replicability view: {prior.capital_replicability}; SEC revenue and net income peer percentiles are {revenue_pct:.0f}/{net_income_pct:.0f}; profile keywords add {keyword_bonus_moat} points.",
+            "technology_barrier_score": str(technology_barrier),
+            "technology_barrier_level": level(technology_barrier),
+            "technology_barrier_reason": f"Technology prior comes from SEC SIC/profile text; R&D-to-revenue and EPS peer percentiles are {rd_pct:.0f}/{eps_pct:.0f}; profile technology keywords add {keyword_bonus_tech} points.",
+            "market_position_score": str(market_position),
+            "market_position_level": level(market_position),
+            "market_position_reason": f"Market position uses SEC companyfacts revenue {financial.get('revenue', '')} and net income {financial.get('net_income', '')} relative to peer percentiles {revenue_pct:.0f}/{net_income_pct:.0f}.",
+            "business_quality_score": str(business_quality),
+            "business_quality_level": level(business_quality),
+            "business_quality_reason": f"Business quality uses gross margin {financial.get('gross_margin_pct', '')}% net margin {financial.get('net_margin_pct', '')}% operating margin {financial.get('operating_margin_pct', '')}% and revenue growth {financial.get('revenue_yoy_pct', '')}% against peers.",
+            "operating_quality_score": str(operating_quality),
+            "operating_quality_level": level(operating_quality),
+            "operating_quality_reason": f"Operating quality uses ROE {financial.get('roe_pct', '')}% operating-cash-flow-to-revenue {financial.get('operating_cashflow_to_revenue_pct', '')}% and debt/assets {financial.get('debt_asset_ratio_pct', '')}%; missing metric penalty is {financial_penalty}.",
+            "governance_risk_score": str(governance_risk),
+            "governance_risk_level": level(governance_risk),
+            "governance_risk_reason": f"Governance and disclosure score starts from SEC reporting availability and adjusts for balance-sheet pressure and Nasdaq financial status {raw.get('financial_status', '') or 'not provided'}.",
+            "weighted_total_score": str(weighted),
+            "overall_level": level(weighted),
+            "overall_reason": "Weighted score from six stored dimensions. This first-pass algorithmic score is backed by Nasdaq Trader universe data plus SEC EDGAR profile and companyfacts evidence where available.",
+            "evidence_confidence": confidence,
+        }
+    )
+    return row
+
+
+def run(args: argparse.Namespace) -> tuple[int, int, int, int]:
+    _, raw_rows = read_csv(args.raw)
+    queues = by_code(args.queue)
+    profiles = by_code(args.profiles)
+    financials = by_code(args.financials)
+    reviewed_at = utc_now()
+    financial_rows = []
+    for row in raw_rows:
+        code = row["security_code"]
+        queue = queues.get(code, {})
+        if queue.get("security_eligibility") != "eligible_common_equity":
+            continue
+        financial = financials.get(code, {})
+        if financial.get("fetch_status") not in {"fetched", "not_available"}:
+            continue
+        profile = profiles.get(code, {})
+        peer_group = profile.get("sic_description") or infer_industry_from_name(row)
+        financial_rows.append(financial | {"peer_group": peer_group})
+
+    percentiles = {
+        "revenue": percentile_maps(financial_rows, "peer_group", "revenue"),
+        "net_income": percentile_maps(financial_rows, "peer_group", "net_income"),
+        "gross_margin_pct": percentile_maps(financial_rows, "peer_group", "gross_margin_pct"),
+        "operating_margin_pct": percentile_maps(financial_rows, "peer_group", "operating_margin_pct"),
+        "net_margin_pct": percentile_maps(financial_rows, "peer_group", "net_margin_pct"),
+        "roe_pct": percentile_maps(financial_rows, "peer_group", "roe_pct"),
+        "operating_cashflow_to_revenue_pct": percentile_maps(financial_rows, "peer_group", "operating_cashflow_to_revenue_pct"),
+        "debt_asset_ratio_pct_inverse": percentile_maps(financial_rows, "peer_group", "debt_asset_ratio_pct", reverse=True),
+        "rd_to_revenue_pct": percentile_maps(financial_rows, "peer_group", "rd_to_revenue_pct"),
+        "revenue_yoy_pct": percentile_maps(financial_rows, "peer_group", "revenue_yoy_pct"),
+        "eps_diluted": percentile_maps(financial_rows, "peer_group", "eps_diluted"),
+    }
+
+    output_rows = [
+        score_row(
+            raw=row,
+            profile=profiles.get(row["security_code"], {}),
+            financial=financials.get(row["security_code"], {}),
+            queue=queues.get(row["security_code"], {}),
+            percentiles=percentiles,
+            reviewed_at=reviewed_at,
+        )
+        for row in raw_rows
+    ]
+    pending_count = sum(1 for row in output_rows if row["screening_status"] == "pending_research")
+    if args.require_complete and pending_count:
+        raise ScoringError(f"{pending_count} U.S. rows are still pending research evidence")
+
+    write_csv(args.output, OUTPUT_COLUMNS, output_rows)
+    watchlist_rows = [
+        {column: row[column] for column in WATCHLIST_COLUMNS}
+        for row in output_rows
+        if row["screening_status"] == "scored" and row["weighted_total_score"] and int(row["weighted_total_score"]) >= args.candidate_threshold
+    ]
+    watchlist_rows.sort(key=lambda row: (-int(row["weighted_total_score"]), row["security_code"]))
+    write_csv(args.watchlist, WATCHLIST_COLUMNS, watchlist_rows)
+    return (
+        len(output_rows),
+        sum(1 for row in output_rows if row["screening_status"] == "scored"),
+        sum(1 for row in output_rows if row["screening_status"] == "not_eligible_non_company_security"),
+        len(watchlist_rows),
+    )
+
+
+def parse_args(argv: list[str]) -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Run U.S. full-coverage dimensional moat scoring.")
+    parser.add_argument("--raw", type=Path, default=DEFAULT_RAW)
+    parser.add_argument("--queue", type=Path, default=DEFAULT_QUEUE)
+    parser.add_argument("--profiles", type=Path, default=DEFAULT_PROFILES)
+    parser.add_argument("--financials", type=Path, default=DEFAULT_FINANCIALS)
+    parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
+    parser.add_argument("--watchlist", type=Path, default=DEFAULT_WATCHLIST)
+    parser.add_argument("--candidate-threshold", type=int, default=70)
+    parser.add_argument("--require-complete", action="store_true")
+    return parser.parse_args(argv)
+
+
+def main(argv: list[str] | None = None) -> int:
+    args = parse_args(argv)
+    total_count, scored_count, not_eligible_count, watchlist_count = run(args)
+    print(f"Wrote {total_count} U.S. screening rows to {args.output}")
+    print(f"Scored {scored_count} rows with fetched evidence")
+    print(f"Marked {not_eligible_count} rows as non-company/common-equity ineligible")
+    print(f"Wrote {watchlist_count} watchlist rows to {args.watchlist}")
+    return 0
+
+
+if __name__ == "__main__":
+    try:
+        raise SystemExit(main())
+    except ScoringError as exc:
+        print(f"error: {exc}")
+        raise SystemExit(1)

@@ -67,7 +67,7 @@ python3 scripts/run_moat_screening.py
 
 The screening workflow keeps `data/raw/` immutable. Source-backed research evidence belongs in `data/interim/`; generated screening outputs belong in `data/processed/`.
 
-For the A-share and Hong Kong universes, the target workflow is a **Full-Coverage Screening Run**: every listed security receives the same dimensional scoring treatment unless it meets the narrow **Insufficient Disclosure** definition. See `docs/moat-scoring-rubric.md` and `docs/adr/0002-use-full-coverage-dimensional-moat-scoring.md`.
+For the A-share, Hong Kong, and U.S. universes, the target workflow is a **Full-Coverage Screening Run**: every listed security receives an explicit screening status, and every eligible listed-company common-equity security receives the same dimensional scoring treatment unless it meets the narrow **Insufficient Disclosure** definition. See `docs/moat-scoring-rubric.md` and `docs/adr/0002-use-full-coverage-dimensional-moat-scoring.md`.
 
 Fetch A-share screening evidence into resumable interim CSV files:
 
@@ -100,3 +100,19 @@ python3 scripts/run_hong_kong_full_coverage_scoring.py
 ```
 
 The scorer writes `data/processed/hong_kong_full_coverage_scores.csv` and `data/processed/hong_kong_full_coverage_watchlist.csv`. The Hong Kong outputs explicitly include `market_type` and `market_label` so they can be merged with A-share outputs later without losing market identity.
+
+Fetch U.S. screening evidence into resumable interim CSV files:
+
+```bash
+python3 scripts/fetch_us_research_evidence.py
+```
+
+The fetcher writes `data/interim/us_research_queue.csv`, `data/interim/us_company_profiles.csv`, and `data/interim/us_financial_indicators.csv`. It uses Nasdaq Trader for the raw security universe and SEC EDGAR `company_tickers`, `submissions`, and `companyfacts` for company profile and financial evidence. ETF, ETN, unit, warrant, right, preferred, closed-end fund, and other non-common-equity instruments are kept in the output with an explicit not-applicable status rather than being scored as listed companies.
+
+Generate dimensional U.S. scores from fetched evidence:
+
+```bash
+python3 scripts/run_us_full_coverage_scoring.py
+```
+
+The scorer writes `data/processed/us_full_coverage_scores.csv` and `data/processed/us_full_coverage_watchlist.csv`. The U.S. outputs explicitly include `market_type` and `market_label` for later cross-market merging.
