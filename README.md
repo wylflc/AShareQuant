@@ -65,6 +65,8 @@ Run the legacy first-pass moat screening for A-share and Hong Kong securities:
 python3 scripts/run_moat_screening.py
 ```
 
+This legacy script reads manually curated evidence from `data/interim/moat_screening_evidence.csv` and writes `data/processed/moat_watchlist_candidates.csv`. That candidate file is kept for audit/history, but it is not the canonical current watchlist. Use the full-coverage market-specific outputs below for current A-share, Hong Kong, and U.S. screening.
+
 The screening workflow keeps `data/raw/` immutable. Source-backed research evidence belongs in `data/interim/`; generated screening outputs belong in `data/processed/`.
 
 For the A-share, Hong Kong, and U.S. universes, the target workflow is a **Full-Coverage Screening Run**: every listed security receives an explicit screening status, and every eligible listed-company common-equity security receives the same dimensional scoring treatment unless it meets the narrow **Insufficient Disclosure** definition. The current scoring model is `full_coverage_dimensional_v0.2`, with seven dimensions: business moat, technology/product/process barrier, market position, business quality, operating quality, industry outlook/cyclicality/compounding profile, and governance risk. Each dimension score and final weighted score is stored with two decimal places. See `docs/moat-scoring-rubric.md` and `docs/adr/0002-use-full-coverage-dimensional-moat-scoring.md`.
@@ -107,7 +109,7 @@ Fetch U.S. screening evidence into resumable interim CSV files:
 python3 scripts/fetch_us_research_evidence.py
 ```
 
-The fetcher writes `data/interim/us_research_queue.csv`, `data/interim/us_company_profiles.csv`, and `data/interim/us_financial_indicators.csv`. It uses Nasdaq Trader for the raw security universe and SEC EDGAR `company_tickers`, `submissions`, and `companyfacts` for company profile and financial evidence. ETF, ETN, unit, warrant, right, preferred, closed-end fund, and other non-common-equity instruments are kept in the output with an explicit not-applicable status rather than being scored as listed companies.
+The fetcher writes `data/interim/us_research_queue.csv`, `data/interim/us_company_profiles.csv`, and `data/interim/us_financial_indicators.csv`. It uses Nasdaq Trader for the raw security universe and SEC EDGAR `company_tickers`, `submissions`, and `companyfacts` for company profile and financial evidence. ETF, ETN, unit, warrant, right, preferred, closed-end fund, and other non-common-equity instruments are kept in the output with an explicit not-applicable status rather than being scored as listed companies. Use `--symbols UNH,MSFT` to refresh a targeted subset without rewriting unrelated evidence rows.
 
 Generate dimensional U.S. scores from fetched evidence:
 

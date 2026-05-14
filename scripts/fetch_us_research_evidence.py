@@ -397,9 +397,17 @@ def security_eligibility(row: dict[str, str]) -> tuple[str, str]:
         return "not_eligible_non_common_security", "Security name indicates a closed-end fund or investment trust rather than an operating listed company."
     if ("DEPOSITARY SH" in name or "DEP SHS" in name) and not any(term in name for term in ["AMERICAN DEPOSITAR", "PREFERRED", "PREFERENCE", " PFD", " PRD"]):
         return "eligible_common_equity", "Depositary share represents common equity or ADS rather than preferred stock."
-    if any(term in f" {name} " for term in non_company_terms):
+    if any(security_name_has_term(name, term) for term in non_company_terms):
         return "not_eligible_non_common_security", "Security name indicates a fund, derivative, unit, preferred share, note, or other non-common-equity instrument."
     return "eligible_common_equity", "Common equity, ordinary share, ADS, or similar listed-company security."
+
+
+def security_name_has_term(name: str, term: str) -> bool:
+    phrase = term.strip()
+    if not phrase:
+        return False
+    pattern = r"(?<![A-Z0-9])" + re.escape(phrase).replace(r"\ ", r"\s+") + r"(?![A-Z0-9])"
+    return re.search(pattern, name) is not None
 
 
 def latest_annual_filing(submission: dict[str, Any]) -> dict[str, str]:
@@ -833,19 +841,32 @@ def fetch_one(
 
 def run(args: argparse.Namespace) -> tuple[int, int, int, int]:
     _, raw_rows = read_csv(args.raw)
+    selected_symbols = {symbol.strip().upper() for symbol in args.symbols.split(",") if symbol.strip()}
+    target_rows = raw_rows
+    if selected_symbols:
+        target_rows = [row for row in raw_rows if row["symbol"].upper() in selected_symbols or row["security_code"].upper() in selected_symbols]
+        if not target_rows:
+            raise EvidenceFetchError(f"No U.S. raw rows matched --symbols {args.symbols}")
     cik_map = load_cik_map(args.timeout, args.retries, args.user_agent, args.min_request_interval)
     profiles_by_code = {} if args.refresh else read_existing_by_code(args.profiles)
     financials_by_code = {} if args.refresh else read_existing_by_code(args.financials)
 
     candidates: list[dict[str, str]] = []
-    for row in raw_rows:
+    for row in target_rows:
         code = row["security_code"]
         eligibility, _ = security_eligibility(row)
         existing_profile = profiles_by_code.get(code, {})
         existing_financial = financials_by_code.get(code, {})
-        profile_done = existing_profile.get("fetch_status") in {"fetched", "not_applicable"} and "not attempted" not in existing_profile.get("fetch_error", "").lower()
-        financial_done = existing_financial.get("fetch_status") in {"fetched", "not_available", "not_applicable"}
-        if not args.refresh and profile_done and financial_done:
+        stale_not_applicable = eligibility == "eligible_common_equity" and (
+            existing_profile.get("fetch_status") == "not_applicable" or existing_financial.get("fetch_status") == "not_applicable"
+        )
+        profile_done = (
+            not stale_not_applicable
+            and existing_profile.get("fetch_status") in {"fetched", "not_applicable"}
+            and "not attempted" not in existing_profile.get("fetch_error", "").lower()
+        )
+        financial_done = not stale_not_applicable and existing_financial.get("fetch_status") in {"fetched", "not_available", "not_applicable"}
+        if not args.refresh and profile_done and financial_done and not selected_symbols:
             continue
         if args.only_eligible and eligibility != "eligible_common_equity":
             continue
@@ -904,6 +925,7 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
     parser.add_argument("--retries", type=int, default=2)
     parser.add_argument("--refresh", action="store_true")
     parser.add_argument("--only-eligible", action="store_true")
+    parser.add_argument("--symbols", default="", help="Comma-separated symbols/security codes to fetch, leaving existing rows for other securities untouched.")
     parser.add_argument("--progress-every", type=int, default=250)
     parser.add_argument("--min-request-interval", type=float, default=0.11)
     parser.add_argument("--user-agent", default=DEFAULT_USER_AGENT)
