@@ -35,9 +35,26 @@ The watchlist standard should emphasize reserve quality, cost curve, production 
 
 The structured calibration table is `data/processed/a_share_lithium_resource_peer_group_calibration.csv`.
 
-There is no reviewer decision table yet for this group. It should be created after reviewer feedback on which lithium companies to retain or reject.
+The structured reviewer decision table is `data/processed/a_share_lithium_resource_peer_group_decisions.csv`.
 
-## 1.5 Preliminary Comparison
+## 1.5 Reviewer Decision
+
+Reviewer feedback explicitly retained:
+
+- 盐湖股份
+- 天齐锂业
+- 赣锋锂业
+- 中矿资源
+
+Boundary companies were then screened using the strategic-resource principles from the prior mining group: company-level resource position, margin source, resource or permit capacity constraint, cost competitiveness, reserve advantage, and whether a stronger retained peer already covers the thesis.
+
+Boundary decisions:
+
+| Company | Decision | Reason |
+| --- | --- | --- |
+| 川能动力 | Reject for now | 李家沟 is a real domestic hard-rock lithium asset and the 2025 report shows production ramp, but the listed company is still a mixed power-and-lithium platform with indirect lithium-resource exposure. The current evidence does not yet prove a company-level cost or reserve advantage strong enough to add a separate watch slot beside stronger retained peers. |
+| 藏格矿业 | Reject for now | The company has real Qarhan potash and lithium byproduct rights, high reported margins, and low leverage. But lithium scale is much smaller than 盐湖股份, 2025 profit quality needs decomposition, and the salt-lake potassium-lithium thesis is already better covered by 盐湖股份. |
+| 融捷股份 | Watch | The company owns the Kangding Jiajika No.134 spodumene mining right, has formed 1.05 million tonnes per year open-pit mining capacity and 450 thousand tonnes per year ore-processing capacity, and local financial data show strong 2025 margins. It is not a global anchor, but it gives the watchlist a distinct domestic in-production hard-rock lithium asset. |
 
 `盐湖股份` remains a watch company from the strategic-resource group. It is not a hard-rock lithium peer, but its 察尔汗盐湖钾锂 resource position, high margins, and domestic resource constraint justify keeping it as a salt-lake anchor.
 
@@ -57,7 +74,7 @@ There is no reviewer decision table yet for this group. It should be created aft
 
 `科达制造` should be reclassified. Its Blue Lithium exposure is through a material equity stake, while its own main business is machinery, overseas building materials, and lithium-battery materials. If the thesis is salt-lake lithium, `盐湖股份` is the cleaner listed-company representative.
 
-## 1.6 Draft Rules To Test With Reviewer
+## 1.6 Accepted Rules
 
 1. **Lithium Resource Watch Requires Resource Plus Execution**: retain companies that combine scarce lithium resource access with cost, production, processing, or project-execution proof.
 2. **Lithium-Salt Capacity Alone Is Not A Moat**: conversion capacity can be built with capital. Retain processing companies only when resource self-supply, customer validation, and process economics are source-backed.
@@ -67,20 +84,23 @@ There is no reviewer decision table yet for this group. It should be created aft
 6. **Do Not Reject Solely For Current Losses**: a loss-making lithium company can remain watchable if the loss comes from cycle timing while the resource and cost advantage are strong.
 7. **Do Reject Weak Cost Positions**: if losses or low margins reflect weak cost curve and no hard-to-replicate resource or process moat, rejection is appropriate.
 8. **Non-Controlled Resource Exposure Is Not Enough**: a company with only a financial stake in a lithium-resource asset should usually be reclassified unless it controls the operating resource thesis.
+9. **Retain At Most One Weakly Differentiated Domestic Hard-Rock Boundary Case**: 川能动力 and 融捷股份 both represent domestic hard-rock lithium. In this round, retain 融捷股份 because its lithium mining exposure is cleaner and its resource economics are better supported by margins. 川能动力 can re-enter if 李家沟 proves sustained low-cost production and the listed company's effective lithium-resource exposure becomes clearer.
+10. **Salt-Lake Second Peers Need A Separate Edge**: 藏格矿业 is not retained because 盐湖股份 already covers the stronger domestic salt-lake potassium and lithium thesis. A second salt-lake peer needs a distinct resource, cost, quota, or margin advantage.
 
 ## 1.7 Analyst Dissent Policy
 
 1. I would dissent if `天齐锂业` or `赣锋锂业` are rejected solely because lithium is cyclical or because one year's profit is weak.
 2. I would dissent if `中矿资源` is rejected without addressing its cesium, rubidium, Bikita, Tanco, and exploration advantages.
-3. I would accept rejecting `川能动力`, `藏格矿业`, or `融捷股份` if the reviewer wants a concentrated list and believes second-tier domestic lithium resources are covered by stronger retained peers.
+3. I would accept rejecting `川能动力` and `藏格矿业` under the current evidence because their lithium-resource theses are weaker or already covered by stronger retained peers.
 4. I would not dissent if `盛新锂能`, `雅化集团`, `永兴材料`, `江特电机`, `西藏矿业`, or `科达制造` remain excluded under current evidence.
-5. I would dissent if `江特电机` or `西藏矿业` are rejected only because they are currently loss-making. The defensible rejection reason is lack of proven low-cost and project-execution advantage versus stronger retained peers.
+5. I would softly dissent if `融捷股份` is rejected without addressing its in-production domestic spodumene mine and margin evidence. I would accept rejecting it later if a deeper review shows its cost curve or reserve life is not strong enough.
+6. I would dissent if `江特电机` or `西藏矿业` are rejected only because they are currently loss-making. The defensible rejection reason is lack of proven low-cost and project-execution advantage versus stronger retained peers.
 
 ## 1.8 Remaining Work
 
-1. Wait for reviewer decisions on this peer group.
-2. After feedback, create `data/processed/a_share_lithium_resource_peer_group_decisions.csv`.
-3. Apply accepted rules to the later A-share watchlist rebuild.
+1. Apply these accepted decisions to the later A-share watchlist rebuild.
+2. During final deep review, replace any remaining disclosure mirrors or result summaries with direct annual-report PDFs and mine reserve disclosures.
+3. Track `融捷股份` for production ramp, reserve life, cost curve, and whether the pending 35 万吨/年 on-site processing expansion improves its durability.
 4. Keep battery-material integration companies such as `华友钴业` for a separate battery-materials and nickel-cobalt group.
 
 ## 1.9 Sources
