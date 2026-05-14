@@ -74,6 +74,10 @@ Score proprietary technology, patents, manufacturing process depth, product comp
 
 The core question is: can a new player buy equipment and talent and quickly match the company's technical or operational capability, or are there learning curves and ecosystem constraints that capital cannot compress?
 
+Do not treat R&D intensity as the only proxy for this dimension. For brand, food, beverage, consumer, and traditional manufacturing leaders, product formulation, origin constraints, long-cycle production process, quality systems, scarce capacity, channel control, and accumulated customer trust can create product or process barriers even when reported R&D intensity is low.
+
+For advanced manufacturing leaders such as batteries, semiconductors, medical devices, robotics, and high-end equipment, explicitly score customer qualification cycles, safety validation, process yield, supply-chain orchestration, global delivery capability, and market-share leadership. A company with clear global leadership evidence should not be scored as only a generic manufacturing-scale business.
+
 ### 7.3 Market Position And Competitive Structure
 
 Score market share, rank, bargaining power, customer diversification, industry concentration, regulatory position, and ability to shape the category.

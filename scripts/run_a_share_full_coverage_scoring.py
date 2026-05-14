@@ -204,7 +204,7 @@ def industry_prior(peer_group: str, raw_industry: str, profile_text: str) -> Ind
     industry_text = f"{peer_group} {raw_industry}"
     fallback_text = f"{industry_text} {profile_text}"
     if keyword_any(industry_text, ["白酒", "饮料", "食品", "乳", "调味"]):
-        return IndustryPrior(76, 45, 72, "consumer brand and distribution advantages are costly to replicate quickly")
+        return IndustryPrior(78, 60, 74, "consumer brand origin process know-how product trust and distribution are costly to replicate quickly")
     if keyword_any(industry_text, ["银行", "保险", "证券", "金融"]):
         return IndustryPrior(72, 45, 64, "licenses regulation customer deposits and risk systems reduce pure capital replicability")
     if keyword_any(industry_text, ["电力", "水务", "燃气", "高速", "港口", "机场", "铁路", "公用"]):
@@ -215,7 +215,9 @@ def industry_prior(peer_group: str, raw_industry: str, profile_text: str) -> Ind
         return IndustryPrior(65, 76, 62, "clinical validation regulatory approvals and hospital trust limit pure capital entry")
     if keyword_any(industry_text, ["软件", "云", "互联网", "人工智能", "信息技术", "网络安全"]):
         return IndustryPrior(64, 72, 62, "software and data advantages can scale but require product execution and customer adoption")
-    if keyword_any(industry_text, ["新能源", "电池", "光伏", "储能", "汽车", "电气机械"]):
+    if keyword_any(industry_text, ["电池", "储能", "锂电", "电源设备"]):
+        return IndustryPrior(68, 82, 58, "battery leaders require chemistry process yield safety validation supply chain and customer qualification that capital alone cannot compress quickly")
+    if keyword_any(industry_text, ["新能源", "光伏", "汽车", "电气机械"]):
         return IndustryPrior(58, 70, 54, "manufacturing scale helps but process yield supply chain and customers are not instantly bought")
     if keyword_any(industry_text, ["机械", "设备", "自动化", "仪器仪表", "专用设备"]):
         return IndustryPrior(55, 66, 55, "engineering experience and customer qualification matter but some capacity is replicable")
@@ -331,19 +333,25 @@ def score_row(
     growth_pct = pct(percentiles["revenue_yoy_pct"], code)
 
     keyword_bonus_moat = 0
-    if keyword_any(profile_text, ["国家地理标志", "品牌价值", "独家", "特许", "垄断", "牌照", "专营", "专利"]):
+    if keyword_any(profile_text, ["国家地理标志", "品牌价值", "独家", "特许", "垄断", "牌照", "专营", "专利", "全球领先", "行业领先", "龙头", "最大"]):
         keyword_bonus_moat += 7
     if keyword_any(profile_text, ["主营", "生产与销售"]):
         keyword_bonus_moat += 2
 
+    product_process_bonus_tech = 0
+    if keyword_any(profile_text, ["国家地理标志", "有机食品", "典型代表", "传统工艺", "酱香", "发酵", "窖藏", "陈酿", "质量控制", "稀缺产区"]):
+        product_process_bonus_tech += 10
+
     keyword_bonus_tech = 0
-    if keyword_any(profile_text, ["研发", "专利", "核心技术", "算法", "平台", "实验室", "创新"]):
+    if keyword_any(profile_text, ["研发", "专利", "核心技术", "算法", "平台", "实验室", "创新", "全球领先", "行业领先"]):
         keyword_bonus_tech += 8
     if raw["board"] in {"star_market", "chinext"}:
         keyword_bonus_tech += 4
 
     business_moat = clamp(prior.business_moat + (revenue_pct - 50) * 0.18 + (profit_pct - 50) * 0.12 + keyword_bonus_moat)
-    technology_barrier = clamp(prior.technology_barrier + (rd_pct - 50) * 0.22 + keyword_bonus_tech)
+    technology_barrier = clamp(prior.technology_barrier + (rd_pct - 50) * 0.22 + keyword_bonus_tech + product_process_bonus_tech)
+    if business_moat >= 90 and product_process_bonus_tech:
+        technology_barrier = max(technology_barrier, 72)
     market_position = clamp(45 + revenue_pct * 0.35 + profit_pct * 0.30 + (prior.business_moat - 50) * 0.20)
     business_quality = clamp(prior.business_quality + (gross_pct - 50) * 0.20 + (net_pct - 50) * 0.22 + (growth_pct - 50) * 0.10)
     operating_quality = clamp(50 + (roe_pct - 50) * 0.25 + (roic_pct - 50) * 0.20 + (cash_pct - 50) * 0.25 + (debt_safety_pct - 50) * 0.15)
@@ -368,8 +376,8 @@ def score_row(
     confidence = "high" if annual_date and profile.get("org_profile") else "medium"
 
     reasons = {
-        "business_moat_reason": f"Peer group {peer_group}; capital replicability view: {prior.capital_replicability}; revenue and profit peer percentiles are {revenue_pct:.0f}/{profit_pct:.0f}; profile keywords add {keyword_bonus_moat} points.",
-        "technology_barrier_reason": f"Technology prior from peer group plus disclosed R&D ratio percentile {rd_pct:.0f}; board and profile technology keywords add {keyword_bonus_tech} points.",
+        "business_moat_reason": f"Peer group {peer_group}; capital replicability view: {prior.capital_replicability}; revenue and profit peer percentiles are {revenue_pct:.0f}/{profit_pct:.0f}; leadership, brand, license, or exclusivity profile keywords add {keyword_bonus_moat} points.",
+        "technology_barrier_reason": f"Technology prior from peer group plus disclosed R&D ratio percentile {rd_pct:.0f}; board and profile technology keywords add {keyword_bonus_tech} points; product/process/origin keywords add {product_process_bonus_tech} points.",
         "market_position_reason": f"Market position uses revenue RMB {revenue} and parent net profit RMB {net_profit} relative to peer group percentiles {revenue_pct:.0f}/{profit_pct:.0f}.",
         "business_quality_reason": f"Business quality uses gross margin {gross_margin}% net margin {financial.get('net_margin_pct', '')}% and revenue growth {financial.get('revenue_yoy_pct', '')}% against peers.",
         "operating_quality_reason": f"Operating quality uses ROE {roe}% ROIC {financial.get('roic_pct', '')}% cash-flow-to-revenue {financial.get('cashflow_to_revenue_pct', '')}% and debt ratio {debt_ratio}%.",
