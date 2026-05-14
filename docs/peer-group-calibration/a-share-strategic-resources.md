@@ -82,6 +82,7 @@ Other preliminary rejects remain rejected: `江西铜业`, `云南铜业`, and `
 8. **Capacity Constraint Is Useful Only When It Is Company-Relevant**: industry caps support pricing, but watchlist inclusion requires the company to own scarce capacity, permits, brine, mine reserves, or processing know-how.
 9. **Tungsten Can Retain More Than One Company**: `厦门钨业` and `中钨高新` are retained together because one is an integrated tungsten-molybdenum and materials platform, while the other is a Shizhuyuan-backed hard-alloy and tooling platform.
 10. **Pure Gold Needs A Separate Thesis**: a gold company should be retained only if its mine assets, exploration, cost curve, or deep-mining capability are worth observing independently of gold price and not already covered by a stronger diversified miner.
+11. **Cross-Industry Resource Packages Must Be Checked Before Final Rejection**: when a listed company combines multiple scarce-resource exposures, equity economics, controlling-shareholder operating capability, or differentiated processing systems, the final decision must consider the aggregate company-level thesis rather than only the narrow peer group where it was first compared.
 
 ## 1.7 Analyst Dissent Policy
 
@@ -94,10 +95,11 @@ Other preliminary rejects remain rejected: `江西铜业`, `云南铜业`, and `
 
 ## 1.8 Remaining Work
 
-1. Apply the accepted decisions to the later A-share watchlist rebuild.
+1. Keep accepted decisions synchronized with `data/processed/a_share_peer_group_calibrated_watchlist.csv`.
 2. Open separate peer groups for lithium resources and battery materials before deciding `赣锋锂业`, `天齐锂业`, and `华友钴业`.
 3. When finalizing the A-share watchlist, correct the baseline triage bias that placed `中国铝业` and `云南铜业` too high relative to `紫金矿业` and `洛阳钼业`.
 4. Replace media summaries with direct annual-report PDFs for every retained company before final deep-company review.
+5. Recheck resource companies rejected inside a narrow peer group for cross-industry scarce-resource packages before final exclusion. `藏格矿业` is the accepted correction case from the later lithium-resource calibration.
 
 ## 1.9 Sources
 

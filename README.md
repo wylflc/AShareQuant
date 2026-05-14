@@ -148,7 +148,15 @@ Generate dimensional A-share scores from fetched evidence:
 python3 scripts/run_a_share_full_coverage_scoring.py
 ```
 
-The scorer writes `data/processed/a_share_full_coverage_scores.csv` and `data/processed/a_share_full_coverage_watchlist.csv`. The full scores file keeps the complete audit fields, including `cyclicality_profile`, `compounding_profile`, `industry_outlook_*`, reasons, sources, and timestamps. The watchlist is a compact reading view with security code, security name, labeled score fields, peer group, peer-relative position, and scoring model version. Use `--require-complete` when the fetch queue is complete and the run should fail if any eligible A-share company remains unscored.
+The scorer writes `data/processed/a_share_full_coverage_scores.csv` and `data/processed/a_share_full_coverage_watchlist.csv`. The full scores file keeps the complete audit fields, including `cyclicality_profile`, `compounding_profile`, `industry_outlook_*`, reasons, sources, and timestamps. The generated watchlist is a compact algorithmic reading view with security code, security name, labeled score fields, peer group, peer-relative position, and scoring model version. It is not the peer-group-calibrated final watchlist. Use `--require-complete` when the fetch queue is complete and the run should fail if any eligible A-share company remains unscored.
+
+Build the current A-share peer-group-calibrated watchlist from accepted reviewer decisions:
+
+```bash
+python3 scripts/build_a_share_peer_group_calibrated_watchlist.py
+```
+
+The script reads `data/processed/a_share_*_peer_group_decisions.csv` and writes `data/processed/a_share_peer_group_calibrated_watchlist.csv`. Cross-industry rejection checks are tracked in `data/processed/a_share_cross_industry_review_audit.csv`; `藏格矿业` is the first corrected false-negative case, because its company-level resource thesis includes potash, lithium, Julong Copper equity economics, and Zijin control rather than only a weaker salt-lake lithium comparison.
 
 Fetch Hong Kong screening evidence into resumable interim CSV files:
 
