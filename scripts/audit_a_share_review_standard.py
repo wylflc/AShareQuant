@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Audit the A-share two-layer review output before applying rules cross-market."""
+"""Audit A-share workflow structure before peer-group calibration."""
 
 from __future__ import annotations
 
@@ -27,78 +27,78 @@ AUDIT_COLUMNS = [
     "next_action",
 ]
 
-CALIBRATION_CASES = [
+REVIEWER_CHALLENGE_CASES = [
     {
         "security_code": "600519",
         "security_name": "贵州茅台",
-        "expected_role": "Top-shelf brand/origin/process compounder must receive deep review.",
-        "standard_risk": "Understating scarce-origin brand power or long-cycle production would weaken the A-share standard.",
+        "routing_expectation": "Reviewer-challenged company should enter deep review.",
+        "workflow_risk": "A familiar company name should test routing only, not define the standard by itself.",
     },
     {
         "security_code": "300750",
         "security_name": "宁德时代",
-        "expected_role": "Global advanced-manufacturing leader must receive deep review.",
-        "standard_risk": "Treating global battery leadership as generic scale manufacturing would understate real capability.",
+        "routing_expectation": "Reviewer-challenged company should enter deep review.",
+        "workflow_risk": "A familiar company name should test routing only, not define the standard by itself.",
     },
     {
         "security_code": "601899",
         "security_name": "紫金矿业",
-        "expected_role": "Strategic resource-cycle leader must receive deep review.",
-        "standard_risk": "Treating global mine development and reserve replacement as generic commodity exposure would be too blunt.",
+        "routing_expectation": "Reviewer-challenged company should enter deep review.",
+        "workflow_risk": "A familiar company name should test routing only, not define the standard by itself.",
     },
     {
         "security_code": "002594",
         "security_name": "比亚迪",
-        "expected_role": "Vertically integrated EV platform must receive deep review.",
-        "standard_risk": "Price-war pressure should not erase battery, manufacturing, supply-chain, and platform capability evidence.",
+        "routing_expectation": "Reviewer-challenged company should enter deep review.",
+        "workflow_risk": "A familiar company name should test routing only, not define the standard by itself.",
     },
     {
         "security_code": "603259",
         "security_name": "药明康德",
-        "expected_role": "CRDMO platform leader must receive deep review.",
-        "standard_risk": "Geopolitical and regulatory risk should be separated from platform capability and customer validation.",
+        "routing_expectation": "Reviewer-challenged company should enter deep review.",
+        "workflow_risk": "A familiar company name should test routing only, not define the standard by itself.",
     },
     {
         "security_code": "688271",
         "security_name": "联影医疗",
-        "expected_role": "High-end medical-equipment platform must receive deep review.",
-        "standard_risk": "Long clinical validation, product breadth, and hospital qualification cycles can be missed by generic hardware scoring.",
+        "routing_expectation": "Reviewer-challenged company should enter deep review.",
+        "workflow_risk": "A familiar company name should test routing only, not define the standard by itself.",
     },
     {
         "security_code": "688617",
         "security_name": "惠泰医疗",
-        "expected_role": "Interventional medical-device leader must receive deep review.",
-        "standard_risk": "Clinical adoption and device iteration advantages should not be reduced to current scale only.",
+        "routing_expectation": "Reviewer-challenged company should enter deep review.",
+        "workflow_risk": "A familiar company name should test routing only, not define the standard by itself.",
     },
     {
         "security_code": "601600",
         "security_name": "中国铝业",
-        "expected_role": "Cyclical upstream leader must receive deep review, but its high score needs challenge.",
-        "standard_risk": "The standard must not let scale and state-owned resource position over-rank a commodity-cycle business without clear non-generic advantage.",
+        "routing_expectation": "Reviewer-challenged company should enter deep review.",
+        "workflow_risk": "A familiar company name should test routing only, not define the standard by itself.",
     },
     {
         "security_code": "002428",
         "security_name": "云南锗业",
-        "expected_role": "Strategic critical-material capability must receive deep review.",
-        "standard_risk": "Weak current profit should not automatically exclude hard-to-replicate compound-semiconductor material capability.",
+        "routing_expectation": "Reviewer-challenged company should enter deep review.",
+        "workflow_risk": "A familiar company name should test routing only, not define the standard by itself.",
     },
     {
         "security_code": "600089",
         "security_name": "特变电工",
-        "expected_role": "Grid and UHV equipment leader must receive deep review.",
-        "standard_risk": "Grid-customer qualification, engineering references, and overseas delivery should be tested separately from cycle pressure.",
+        "routing_expectation": "Reviewer-challenged company should enter deep review.",
+        "workflow_risk": "A familiar company name should test routing only, not define the standard by itself.",
     },
     {
         "security_code": "600036",
         "security_name": "招商银行",
-        "expected_role": "Bank-quality anchor must receive deep review.",
-        "standard_risk": "The standard needs a bank-specific check so macro-credit cyclicality does not hide franchise quality, and vice versa.",
+        "routing_expectation": "Reviewer-challenged company should enter deep review.",
+        "workflow_risk": "A familiar company name should test routing only, not define the standard by itself.",
     },
     {
         "security_code": "002176",
         "security_name": "江特电机",
-        "expected_role": "Reviewer-challenged low-score company must still enter deep review.",
-        "standard_risk": "The standard must explicitly distinguish true hard capability from thematic exposure plus weak execution.",
+        "routing_expectation": "Reviewer-challenged company should enter deep review.",
+        "workflow_risk": "A familiar company name should test routing only, not define the standard by itself.",
     },
 ]
 
@@ -171,7 +171,7 @@ def build_audit_rows(triage_rows: list[dict[str, str]], queue_rows: list[dict[st
                 "observed_value": "A_SHARE only",
                 "expected_value": "A_SHARE only",
                 "standard_risk": "",
-                "next_action": "Proceed with A-share-only calibration.",
+                "next_action": "Proceed with A-share-only peer-group calibration.",
             }
         )
 
@@ -184,7 +184,7 @@ def build_audit_rows(triage_rows: list[dict[str, str]], queue_rows: list[dict[st
             "market_type": "A_SHARE",
             "observed_value": f"{len(triage_rows)} triage rows; decisions={dict(decisions)}",
             "expected_value": "One company-level triage row for each eligible A-share listed company.",
-            "standard_risk": "Missing rows would mean the A-share standard is being calibrated on a partial universe.",
+            "standard_risk": "Missing rows would mean peer-group calibration is being drawn from a partial A-share universe.",
             "next_action": "Investigate raw-to-scored coverage if this count changes unexpectedly.",
         }
     )
@@ -198,8 +198,21 @@ def build_audit_rows(triage_rows: list[dict[str, str]], queue_rows: list[dict[st
             "market_type": "A_SHARE",
             "observed_value": f"{len(queue_rows)} queue rows; decisions={dict(queue_decisions)}",
             "expected_value": "A-share deep-review queue from threshold, borderline, and reviewer-challenge triggers.",
-            "standard_risk": "An empty or mixed queue would block A-share-first standard verification.",
+            "standard_risk": "An empty or mixed queue would block A-share-first peer-group calibration.",
             "next_action": "Use the queue for deep reviews; do not treat it as the final watchlist.",
+        }
+    )
+
+    audit_rows.append(
+        {
+            "check_id": "peer-group-calibration-required",
+            "check_area": "calibration_method",
+            "status": "observe",
+            "market_type": "A_SHARE",
+            "observed_value": "No reusable standard is frozen by this audit.",
+            "expected_value": "Freeze standards only after comparing similar companies inside selected peer groups.",
+            "standard_risk": "Randomly named familiar companies can bias the standard if treated as anchors.",
+            "next_action": "Choose one A-share peer group, compare multiple companies, collect reviewer decisions, then document rules.",
         }
     )
 
@@ -214,13 +227,13 @@ def build_audit_rows(triage_rows: list[dict[str, str]], queue_rows: list[dict[st
                 "observed_value": str(bands[band]),
                 "expected_value": "For reviewer inspection; not a fixed quota.",
                 "standard_risk": "Distribution drift can reveal an over-loose or over-tight triage standard.",
-                "next_action": "Inspect high-score and borderline samples before freezing the A-share rule set.",
+                "next_action": "Use the distribution to select peer groups; do not impose a fixed candidate quota.",
             }
         )
 
     triage_by_code = index_by_code(triage_rows, "representative_security_code")
     queue_by_code = index_by_code(queue_rows, "representative_security_code")
-    for case in CALIBRATION_CASES:
+    for case in REVIEWER_CHALLENGE_CASES:
         code = case["security_code"]
         triage = triage_by_code.get(code)
         queue = queue_by_code.get(code)
@@ -231,25 +244,25 @@ def build_audit_rows(triage_rows: list[dict[str, str]], queue_rows: list[dict[st
         elif not queue:
             status = "fail"
             observed = f"triage_score={triage['triage_score']}; decision={triage['triage_decision']}; not queued"
-            next_action = "Challenge the entry threshold or add explicit reviewer challenge before calibration proceeds."
+            next_action = "Fix reviewer-challenge routing before peer-group calibration proceeds."
         else:
             status = "pass"
             observed = (
                 f"queue_rank={queue['queue_rank']}; triage_score={queue['triage_score']}; "
                 f"decision={queue['triage_decision']}; trigger={queue['deep_review_trigger']}"
             )
-            next_action = "Complete a source-backed deep review before treating this case as resolved."
+            next_action = "Treat as routing-only; use it in calibration only if it belongs to the selected peer group."
         audit_rows.append(
             {
-                "check_id": f"calibration-{code}",
-                "check_area": "calibration_case",
+                "check_id": f"reviewer-challenge-routing-{code}",
+                "check_area": "reviewer_challenge_routing",
                 "status": status,
                 "market_type": "A_SHARE",
                 "security_code": code,
                 "security_name": case["security_name"],
                 "observed_value": observed,
-                "expected_value": case["expected_role"],
-                "standard_risk": case["standard_risk"],
+                "expected_value": case["routing_expectation"],
+                "standard_risk": case["workflow_risk"],
                 "next_action": next_action,
             }
         )
@@ -268,7 +281,7 @@ def run(args: argparse.Namespace) -> int:
 
 
 def parse_args(argv: list[str]) -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Audit A-share two-layer review calibration outputs.")
+    parser = argparse.ArgumentParser(description="Audit A-share workflow structure before peer-group calibration.")
     parser.add_argument("--triage", type=Path, default=DEFAULT_TRIAGE)
     parser.add_argument("--queue", type=Path, default=DEFAULT_QUEUE)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)

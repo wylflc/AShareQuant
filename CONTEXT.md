@@ -92,6 +92,10 @@ _Avoid_: forcing every market to have the same number of watchlist candidates or
 A workflow for validating screening standards one market at a time before applying the accepted rules to another market.
 _Avoid_: mixing A-share, Hong Kong, and U.S. outputs while the standard itself is still being challenged.
 
+**Peer-Group Calibration**:
+A standard-setting workflow that compares multiple similar listed companies in the same industry or business type, summarizes their moat, advantages, weaknesses, market position, and preliminary attention decision, then uses reviewer feedback to refine reusable screening standards.
+_Avoid_: using a few familiar or randomly named companies as the standard anchor for an entire market.
+
 **Capability-First Scoring**:
 A scoring stance for **Moat Screening** that gives primary weight to durable business capability, technical or process barriers, market position, and long-term industry outlook, while using current profitability, ROE, and cash flow as risk constraints rather than the main reason a company enters or leaves the **Watchlist**.
 _Avoid_: treating current losses or weak margins as proof that a company lacks a moat when source-backed evidence shows hard-to-replicate capability.
@@ -148,6 +152,7 @@ _Avoid_: report date when the specific event type matters.
 - A **Strategic Resource Cycle** company can enter a **Watchlist** if its resource and process advantages are strong enough, even though commodity prices still make its earnings cyclical.
 - **Cross-Market Calibration** should correct mechanical scoring bias while preserving company-level evidence and dimensional score traceability.
 - **Market-Staged Calibration** should validate one market's **Triage Review** and **Deep Company Review** behavior before turning the lessons into reusable rules for other markets.
+- **Peer-Group Calibration** is the preferred way to form reusable standards: the reviewer compares similar listed companies first, then the accepted/rejected examples become standard-setting evidence.
 - **Moat Screening** determines whether a **Listed Company** deserves attention; **Valuation Assessment** determines whether a **Security** may be attractively priced.
 - **Market Data** belongs to a **Security** and trading date.
 - **Corporate Actions** belong to a **Security** or **Listed Company** and affect how **Market Data** should be interpreted.
