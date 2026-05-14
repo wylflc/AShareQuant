@@ -40,6 +40,18 @@ _Avoid_: buy list, target list.
 Assessment of durable business advantages and resistance to competitive displacement.
 _Avoid_: valuation screen, cheap-stock screen.
 
+**Screening Evidence**:
+Reliable source-backed information used to support a **Moat Screening** decision.
+_Avoid_: unsourced notes, model guesses.
+
+**Moat Score**:
+A rough 0-100 quality score from **Moat Screening** based on source-backed evidence of business barriers, technical barriers, market position, cash flow quality, and margin quality.
+_Avoid_: valuation score, buy score.
+
+**Watchlist Candidate**:
+A listed company or security that passes the current **Moat Screening** threshold and is worth later **Valuation Assessment**.
+_Avoid_: buy candidate, undervalued stock.
+
 **Valuation Assessment**:
 Assessment of whether a security's current price is attractive relative to fundamentals or intrinsic value.
 _Avoid_: moat screening.
@@ -65,6 +77,7 @@ _Avoid_: report date when the specific event type matters.
 - A **Listed Company** can have one or more **Securities**.
 - A **Universe** contains **Securities**, but a **Watchlist** contains **Listed Companies**.
 - A **Universe Snapshot** records the **Securities** available from a provider at retrieval time and can be used as input to later screening.
+- **Screening Evidence** supports a **Moat Score**; a high enough **Moat Score** can produce a **Watchlist Candidate**.
 - **Moat Screening** determines whether a **Listed Company** deserves attention; **Valuation Assessment** determines whether a **Security** may be attractively priced.
 - **Market Data** belongs to a **Security** and trading date.
 - **Corporate Actions** belong to a **Security** or **Listed Company** and affect how **Market Data** should be interpreted.

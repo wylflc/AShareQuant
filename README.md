@@ -57,3 +57,13 @@ python3 scripts/fetch_us_universe.py --output data/raw/us_securities.csv
 ```
 
 The U.S. CSV combines Nasdaq Trader `nasdaqlisted.txt` and `otherlisted.txt`, excludes provider test issues by default, and keeps ETF/status/exchange fields for later screening.
+
+Run first-pass moat screening for A-share and Hong Kong securities:
+
+```bash
+python3 scripts/run_moat_screening.py
+```
+
+The screening workflow keeps `data/raw/` immutable. Source-backed research evidence belongs in `data/interim/moat_screening_evidence.csv`; generated screening outputs are written to `data/processed/a_share_securities_screened.csv`, `data/processed/hong_kong_securities_screened.csv`, and `data/processed/moat_watchlist_candidates.csv`.
+
+Moat scoring is a rough 0-100 quality score, not a valuation score or buy recommendation. Suggested weighting: durable business barriers 30%, technical barriers 20%, market position 20%, cash-flow quality 15%, and margin quality 15%. A default threshold of 70 creates a **Watchlist Candidate** for later valuation work. Securities with no reliable source-backed evidence row are marked `insufficient_evidence` and are not scored.
