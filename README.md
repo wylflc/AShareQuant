@@ -522,6 +522,13 @@ The sixty-second A-share peer-group review output is wind power equipment:
 
 This pass reviews all companies in `电气设备-电源设备-风能`. It separates wind-turbine OEMs, wind towers, offshore foundations, wind main shafts, castings, composite wind parts, and companies whose wind label is incidental to renewable-power operation. It retains turbine platforms and selected globally validated or process-critical component suppliers while rejecting ordinary capacity exposure.
 
+The sixty-third A-share peer-group review output is airlines:
+
+- `data/processed/a_share_airlines_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-airlines.md`
+
+This pass reviews all companies in `交通运输-航空机场-航空`. It separates national passenger airlines, low-cost airlines, private full-service airlines, air cargo and logistics platforms, regional airlines, and general-aviation helicopter services. It treats route and hub scarcity as real but discounts the sector's fuel, FX, recession, disease-shock, and capital-intensity risks.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
