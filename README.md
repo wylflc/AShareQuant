@@ -305,6 +305,13 @@ The thirty-first A-share peer-group review output is optical components:
 
 This pass reviews all companies in `电子设备-光电子器件-光学元件`. It separates AI optical-communication components, photomasks, OLED materials and evaporation-source equipment, precision optics, optical instruments, optical films and functional materials, infrared/sensor niches, laser and military optics, non-leading display panels, camera-module assemblers, low-barrier display/backlight/touch components, and recent optical pivots without proven capability.
 
+The thirty-second A-share peer-group review output is specialized computer equipment:
+
+- `data/processed/a_share_specialized_computer_equipment_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-specialized-computer-equipment.md`
+
+This pass reviews all companies in `信息技术-计算机硬件-专用计算机设备`. It separates compute-infrastructure platforms, global automotive diagnostic terminals, LED display-control systems, payment and barcode-recognition platforms, commercial-cryptography hardware, defense embedded-computing equipment, financial self-service machines, data-storage niches, rail and transport terminals, ordinary peripherals, mature financial equipment, video-surveillance followers, and project-based system integrators.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
