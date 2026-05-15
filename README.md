@@ -190,6 +190,16 @@ python3 scripts/build_a_share_peer_group_screening_queue.py
 
 The queue reads `data/processed/a_share_company_triage_reviews.csv` and existing peer-group decision tables, then writes `data/interim/a_share_peer_group_screening_queue.csv`. It marks peer groups as not started, partially screened, or complete, proposes review modes, and explicitly allows low-barrier whole-group rejection when an industry lacks durable barriers. Unclear or mixed peer groups can be routed back to reviewer discussion before decisions are finalized.
 
+Run the automated A-share completion pass for all remaining unscreened companies:
+
+```bash
+python3 scripts/run_a_share_automated_peer_group_screening.py
+python3 scripts/build_a_share_peer_group_calibrated_watchlist.py
+python3 scripts/build_a_share_peer_group_screening_queue.py
+```
+
+The automated pass writes `data/processed/a_share_automated_peer_group_decisions.csv` and `data/processed/a_share_automated_peer_group_screening_summary.csv`. It excludes companies already covered by manually calibrated peer-group decision files, screens the remaining companies by peer group, allows whole-group low-barrier rejection, marks all automated watch entries as `boundary_judged_watch`, and treats the result as first-pass coverage rather than a full deep company review. See `docs/peer-group-calibration/a-share-automated-screening.md`.
+
 Fetch Hong Kong screening evidence into resumable interim CSV files:
 
 ```bash
