@@ -235,6 +235,13 @@ The twenty-first A-share peer-group review output is traditional Chinese medicin
 
 This group separates national/category-defining TCM brands, modern evidence-backed TCM platforms, focused OTC niches, and weaker regional or duplicative companies. Brand, scarce formula, category leadership, pricing power, and channel trust are the core tests.
 
+The twenty-second A-share peer-group review output is API and chemical raw drugs:
+
+- `data/processed/a_share_api_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-api.md`
+
+This group separates API-CDMO platforms, regulated API manufacturers, sterile injectable platforms, radiopharmaceuticals, vitamins, excipients, contrast-agent APIs, and commodity intermediates. Process development, quality systems, regulatory filings, customer validation, cost position, and scarce licenses are the core tests.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
