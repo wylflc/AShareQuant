@@ -242,6 +242,13 @@ The twenty-second A-share peer-group review output is API and chemical raw drugs
 
 This group separates API-CDMO platforms, regulated API manufacturers, sterile injectable platforms, radiopharmaceuticals, vitamins, excipients, contrast-agent APIs, and commodity intermediates. Process development, quality systems, regulatory filings, customer validation, cost position, and scarce licenses are the core tests.
 
+The twenty-third A-share peer-group review output is consumer electronics:
+
+- `data/processed/a_share_consumer_electronics_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-consumer-electronics.md`
+
+This group separates global EMS/ODM platforms, terminal brands, cross-border brands, optical-display leaders, AI/5G modules, high-end audio niches, legacy consumer-electronics groups, distributors, accessories, and structural-part suppliers. Global platform scale, leading-customer qualification, semiconductor/system capability, differentiated terminal ecosystems, and distinct niche brands or modules are the core tests.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
