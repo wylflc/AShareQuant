@@ -487,6 +487,13 @@ The fifty-seventh A-share peer-group review output is other power equipment:
 
 This pass reviews all companies in `电气设备-电源设备-其他电源设备`. It separates energy-storage systems, high-reliability military and aerospace power supplies, power-electronics testing equipment, clean-energy thermal equipment, power-management ICs, photovoltaic transformers and magnetic components, defense power-electronics cases, charging power modules, generator sets, explosion-proof electrical equipment, communication power supplies, ST cases, and companies already retained under battery materials.
 
+The fifty-eighth A-share peer-group review output is PC, server, and hardware:
+
+- `data/processed/a_share_pc_server_hardware_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-pc-server-hardware.md`
+
+This pass reviews all companies in `信息技术-计算机硬件-PC、服务器及硬件`. It separates global security and video-IoT platforms, AI-server and data-center hardware, strategic domestic CPU architecture, domestic computing and trusted-hardware ecosystem exposure, printer and office-hardware ecosystems, commercial-vehicle video niches, consumer PC brands, legacy flash-storage IP stories, EMS manufacturing services, ST cases, and mixed technology holdings.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
