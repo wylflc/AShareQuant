@@ -340,6 +340,13 @@ The thirty-sixth A-share peer-group review output is other internet services:
 
 This pass reviews all companies in `互联网-互联网服务-其他互联网服务`. It separates cybersecurity platforms, visual-content copyright databases, financial IT, public cloud, industrial internet communication, network visibility, public-safety software, vertical data/content platforms, low-barrier advertising and MCN/live-commerce operators, generic IT outsourcing, game/content hit businesses, platform-dependent traffic services, and system integrators without product or data lock-in.
 
+The thirty-seventh A-share peer-group review output is display devices:
+
+- `data/processed/a_share_display_devices_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-display-devices.md`
+
+This pass reviews all companies in `电子设备-电子器件-显示器件`. It separates global display panel platforms, small/automotive/professional display specialists, substrate glass and polarizer materials, AMOLED/microdisplay, display automation equipment, optical/touch/coating materials, ordinary display modules/backlights, LED display projects, consumer electronics assemblers, ST cases, and mixed businesses without display-platform control.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
