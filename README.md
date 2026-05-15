@@ -466,6 +466,13 @@ The fifty-fourth A-share peer-group review output is shipping:
 
 This pass reviews all companies in `交通运输-港口航运-航运`. It separates global liner platforms, diversified shipping platforms, energy-shipping leaders, special-cargo shipping, product tanker operators, regional container lines, domestic container logistics, port-backed feeder operators, route-scarcity ferry operators, chemical and dangerous-goods shipping companies, shipping finance/leasing profiles, dry-bulk fleets, forwarding services, and unclear transformed shipping classifications.
 
+The fifty-fifth A-share peer-group review output is electrical automation:
+
+- `data/processed/a_share_electrical_automation_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-electrical-automation.md`
+
+This pass reviews all companies in `电气设备-输变电设备-电气自控设备`. It separates grid automation, relay protection, dispatch and distribution automation, UHV/DC and high-voltage equipment, global relays, industrial control, renewable power conversion, domain-specific automation, distribution switchgear, charging piles, project-heavy power IT, narrow control niches, and weak legacy electrical-equipment companies.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
