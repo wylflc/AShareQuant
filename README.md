@@ -368,6 +368,13 @@ The fortieth A-share peer-group review output is communication support services:
 
 This pass reviews all companies in `信息技术-通信设备-通信配套服务`. It separates cellular IoT module leadership, quantum communication, special communication and BeiDou/satellite systems, telecom/power surge-protection components, communication construction and O&M services, SMS/value-added telecom channels, generic system integration, ST cases, and mixed IDC/energy/repair service businesses.
 
+The forty-first A-share peer-group review output is remaining battery materials:
+
+- `data/processed/a_share_battery_materials_remaining_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-battery-materials.md`
+
+This pass completes the still-unreviewed companies in `有色金属-金属非金属新材料-电池材料` using the already documented battery-material calibration rules. It separates additional high-end cathode, carbon-nanotube conductive additive, electronic silver paste, manganese-material, copper-foil, anode-coating, fuel-cell, and multi-material niches from weaker duplicate cathode, anode, electrolyte, precursor, lithium-salt, battery-structure, and mixed material companies.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash

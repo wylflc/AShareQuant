@@ -149,3 +149,25 @@ Boundary decisions:
 - 德方纳米 2025 annual-report coverage and half-year report: `https://finance.sina.com.cn/stock/aigc/stockfs/2026-04-29/doc-inhwcqxe8052581.shtml`, `https://www.fxbaogao.com/detail/5394069`, `https://static.cninfo.com.cn/finalpage/2025-08-29/1224611528.PDF`
 - 当升科技 annual-report summary and half-year report: `https://www.cfi.net.cn/p20260330001155.html`, `https://disc.static.szse.cn/disc/disk03/finalpage/2025-08-27/1e7d494e-dc52-487f-ab6a-5f235c5df1ee.PDF`, `https://www.fxbaogao.com/detail/5328544`
 - 容百科技 2025 result and investor-relation coverage: `https://finance.sina.com.cn/stock/relnews/cn/2026-04-12/doc-inhufzfu6306130.shtml`, `https://finance.sina.com.cn/stock/aigc/stockfs/2026-04-10/doc-inhtznzt5086574.shtml`, `https://finance.sina.com.cn/roll/2025-10-21/doc-infuriet4492892.shtml`
+
+## 1.11 Exact Peer-Group Completion
+
+The completion decision file is `data/processed/a_share_battery_materials_remaining_peer_group_decisions.csv`.
+
+This pass covers the still-unreviewed companies in the exact `有色金属-金属非金属新材料-电池材料` peer group after the earlier battery-material and nickel-cobalt calibration decisions. The same rules apply: retain only when the company adds a distinct material step, resource/process advantage, customer qualification, or cross-industry material capability not already covered by stronger retained peers.
+
+Direct watch:
+
+- 厦钨新能
+- 天奈科技
+- 聚和材料
+
+Boundary watch after analyst judgment:
+
+- 湘潭电化
+- 道氏技术
+- 信德新材
+- 亿华通
+- 嘉元科技
+
+The remaining completion companies are rejected for now because they are weaker duplicate cathode, anode, electrolyte, precursor, lithium-salt, structural-part, or mixed material companies when stronger retained peers already cover the step and no separate cost, process, resource, or customer moat is visible.
