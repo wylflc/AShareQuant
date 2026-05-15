@@ -382,6 +382,13 @@ The forty-second A-share peer-group review output is other general machinery:
 
 This pass reviews all companies in `机械设备-通用设备-其他通用机械`. It separates global thermal-management parts, lithium-battery equipment, high-end mechanical seals, turbomachinery, filter presses, harmonic reducers, vacuum equipment, cryogenic/LNG equipment, liquid cooling, pumps, compressor systems, special bearings, tank containers, superhard tools, magnetic-levitation turbomachinery, logistics automation, ordinary pump/valve/bearing/gear/tool companies, project automation, ST cases, and mixed general machinery businesses.
 
+The forty-third A-share peer-group review output is food comprehensive:
+
+- `data/processed/a_share_food_comprehensive_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-food-comprehensive.md`
+
+This pass reviews all companies in `食品饮料-食品-食品综合`. It separates category-defining consumer brands, national frozen-food platforms, yeast/fermentation and nutrition-ingredient platforms, pet-food brands, vertically integrated protein supply chains, lower-barrier snack retailers, regional bakery/prepared-food brands, commodity agricultural processors, ST cases, and weak packaged-food brands without pricing power.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
