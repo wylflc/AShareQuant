@@ -557,6 +557,13 @@ The sixty-seventh A-share peer-group review output is condiments:
 
 This pass reviews all companies in `食品饮料-食品-调味品`. It separates national condiment brands, zero-additive premium brands, hotpot and compound-seasoning brands, vinegar brands, mushroom-sauce and spice niches, B2B restaurant seasoning-solution companies, functional sugar and sugar-alcohol ingredient companies, MSG brands, flavor/additive suppliers, sugar processors, and misclassified transformation stories. It retains category-defining brand/channel moats and selected differentiated ingredient or food-solution niches.
 
+The sixty-eighth A-share peer-group review output is integrated internet services:
+
+- `data/processed/a_share_integrated_internet_services_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-integrated-internet-services.md`
+
+This pass reviews all companies in `互联网-互联网服务-综合互联网服务`. It separates central-SOE digitalization companies, 5G wireless technology companies, AI training-data vendors, smart-campus platforms, environmental IoT and carbon-data platforms, internet marketing services, small IDC/cloud providers, digital-content companies, and provincial digital-media companies. It retains only selected boundary cases with domain workflow, data, customer-access, standards, or regulated-platform evidence.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
