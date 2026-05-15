@@ -249,6 +249,13 @@ The twenty-third A-share peer-group review output is consumer electronics:
 
 This group separates global EMS/ODM platforms, terminal brands, cross-border brands, optical-display leaders, AI/5G modules, high-end audio niches, legacy consumer-electronics groups, distributors, accessories, and structural-part suppliers. Global platform scale, leading-customer qualification, semiconductor/system capability, differentiated terminal ecosystems, and distinct niche brands or modules are the core tests.
 
+The twenty-fourth A-share peer-group review output is solar:
+
+- `data/processed/a_share_solar_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-solar.md`
+
+This group separates photovoltaic power electronics, equipment, glass, encapsulation materials, wafers, polysilicon, integrated modules, power-station operators, EPC/system integration, late pivots, and low-barrier component suppliers. Global leadership, cost curve, hard process know-how, bankability, and specialty material or equipment barriers are the core tests; cycle-trough profitability is not the primary screen.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
