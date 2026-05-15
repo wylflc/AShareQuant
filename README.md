@@ -550,6 +550,13 @@ The sixty-sixth A-share peer-group review output is telecom operators:
 
 This pass reviews all companies in `信息技术-通信运营-通信运营`. It separates national telecom operators, satellite operators, data-center and computing-infrastructure platforms, State Grid information-communication platforms, cloud communication providers, video-conferencing and AI interaction vendors, and telecom-adjacent smart-home service companies. It retains scarce infrastructure control while rejecting ordinary communication-service vendors.
 
+The sixty-seventh A-share peer-group review output is condiments:
+
+- `data/processed/a_share_condiments_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-condiments.md`
+
+This pass reviews all companies in `食品饮料-食品-调味品`. It separates national condiment brands, zero-additive premium brands, hotpot and compound-seasoning brands, vinegar brands, mushroom-sauce and spice niches, B2B restaurant seasoning-solution companies, functional sugar and sugar-alcohol ingredient companies, MSG brands, flavor/additive suppliers, sugar processors, and misclassified transformation stories. It retains category-defining brand/channel moats and selected differentiated ingredient or food-solution niches.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
