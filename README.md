@@ -221,6 +221,13 @@ The nineteenth A-share peer-group review output is chemical formulations:
 
 This group separates innovative-drug platforms, branded OTC and specialty pharma, differentiated niches, generic-drug manufacturers, and weaker formulation companies. Innovation, clinical/channel trust, brand, and integrated capability matter more than current profit alone.
 
+The twentieth A-share peer-group review output is auto parts:
+
+- `data/processed/a_share_auto_parts_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-auto-parts.md`
+
+This group separates intelligent vehicle electronics, safety-critical braking/chassis, drivetrain, powertrain, automotive glass, thermal management, lighting, lightweighting, sensors, and low-barrier component manufacturing. Global OEM validation, safety certification, software/electronics depth, and hard manufacturing process are the core tests.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
