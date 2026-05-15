@@ -508,6 +508,13 @@ The sixtieth A-share peer-group review output is other electrical equipment:
 
 This pass reviews all companies in `电气设备-其他电气设备-其他电气设备`. It separates high-voltage insulation materials, smart-grid diagnostics, intelligent controllers, industrial power electronics, PV trackers, PV modules, wind turbines, storage systems, consumer electrical brands, rail-signal systems, electrical contact materials, battery interconnects, appliance components, PV junction boxes, electrical cabinets, distributors, and ST transition cases. Misclassified company-level platforms are judged by their real business capability rather than by the residual peer-group label.
 
+The sixty-first A-share peer-group review output is other power generation:
+
+- `data/processed/a_share_other_power_generation_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-other-power-generation.md`
+
+This pass reviews all companies in `公用事业-电力-其他发电`. It separates nuclear power, grid technology services, regional coal-power platforms, provincial energy platforms, local heating utilities, provincial renewable operators, landfill-gas power, energy-finance holding companies, and ST transition cases. It retains scarce regulated assets, grid technology capability, and only selected regional utility platforms with load-center or franchise-like advantages.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
