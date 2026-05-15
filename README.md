@@ -298,6 +298,13 @@ The thirtieth A-share peer-group review output is communication terminal equipme
 
 This pass reviews all companies in `信息技术-通信设备-通信终端设备`. It separates global enterprise communication endpoint brands, professional/dedicated-network communications, enterprise networking, Beidou/GNSS and defense communications, grid communication niches, secure-card/eSIM, RF/antenna/materials, optical-module boundary cases, ordinary ODM/JDM terminal manufacturing, CPE/STB vendors, mature smart-card followers, and project-based communication system integrators.
 
+The thirty-first A-share peer-group review output is optical components:
+
+- `data/processed/a_share_optical_components_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-optical-components.md`
+
+This pass reviews all companies in `电子设备-光电子器件-光学元件`. It separates AI optical-communication components, photomasks, OLED materials and evaporation-source equipment, precision optics, optical instruments, optical films and functional materials, infrared/sensor niches, laser and military optics, non-leading display panels, camera-module assemblers, low-barrier display/backlight/touch components, and recent optical pivots without proven capability.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
