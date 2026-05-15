@@ -263,6 +263,13 @@ The twenty-fifth A-share peer-group review output is other electronic devices:
 
 This mixed group separates distributors, polymer and EMI/thermal materials, PCB/interconnect platforms, PMIC and MEMS chips, RF connectors, acoustic components, vacuum electronics, microwave devices, display technologies, portable energy-storage brands, fuses, and ordinary consumer-electronics components. Proprietary materials, hard-technology niches, customer certification, cross-industry capability, and whether stronger retained peers already cover the thesis are the core tests.
 
+The twenty-sixth A-share peer-group review output is communication transmission equipment:
+
+- `data/processed/a_share_communication_transmission_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-communication-transmission.md`
+
+This group separates telecom equipment, optical modules, optical chips/devices, optical fiber/preform/cable, submarine cable, industrial IoT gateways, cellular modules, RF filters, integrated photonics, special communication, industrial networking, high-reliability connectors, test instruments, ceramic filters, and legacy communication-equipment vendors. Network-infrastructure leadership, AI/data-center optical interconnects, deep-sea optical networks, special communication, and high-speed interconnect barriers are the core tests.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
