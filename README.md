@@ -438,6 +438,13 @@ The fiftieth A-share peer-group review output is discrete semiconductors:
 
 This pass reviews all companies in `电子设备-半导体-半导体分立器件`. It separates power-semiconductor IDMs and designers, IGBT and SiC module platforms, HVDC thyristor suppliers, diode and rectifier manufacturers, probe-card and probe-station companies, semiconductor test-equipment suppliers, photonics companies, memory-chip designers, auxiliary semiconductor-equipment subsystems, and mixed transition stories.
 
+The fifty-first A-share peer-group review output is hydropower:
+
+- `data/processed/a_share_hydropower_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-hydropower.md`
+
+This pass reviews all companies in `公用事业-电力-水电`. It separates world-class river-cascade platforms, basin-level hydropower operators, integrated power companies with scarce hydropower exposure, pumped-storage platforms, regional hydropower operators, local power and water utilities, and diversified local utility companies.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
