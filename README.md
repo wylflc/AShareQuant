@@ -284,6 +284,13 @@ The twenty-eighth A-share peer-group review output is the remaining storage-equi
 
 This pass completes the companies in `电气设备-电源设备-储能设备` that were not already decided in the EV-battery calibration pass. It separates digital-energy and UPS/data-center power platforms, storage-system and power-electronics platforms, special/aerospace power, BMS/PACK, inverter/storage niches, lithium-equipment niches, consumer-battery brands, ordinary battery manufacturing, lead-acid replacement markets, weak storage integrators, and late pivots.
 
+The twenty-ninth A-share peer-group review output is other special machinery:
+
+- `data/processed/a_share_other_special_machinery_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-other-special-machinery.md`
+
+This pass reviews all companies in `机械设备-专用设备-其他专用机械`. It separates hard-to-replicate process equipment, semiconductor and advanced-manufacturing tools, photovoltaic/lithium process equipment, precision thermal-control and testing platforms, qualification-heavy safety/nuclear equipment, cross-industry capability stacks, ordinary project-based special machines, lower-barrier traditional equipment, and weaker followers already covered by stronger retained peers.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
