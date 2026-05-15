@@ -564,6 +564,13 @@ The sixty-eighth A-share peer-group review output is integrated internet service
 
 This pass reviews all companies in `互联网-互联网服务-综合互联网服务`. It separates central-SOE digitalization companies, 5G wireless technology companies, AI training-data vendors, smart-campus platforms, environmental IoT and carbon-data platforms, internet marketing services, small IDC/cloud providers, digital-content companies, and provincial digital-media companies. It retains only selected boundary cases with domain workflow, data, customer-access, standards, or regulated-platform evidence.
 
+The sixty-ninth A-share peer-group review output is remaining rare small metals:
+
+- `data/processed/a_share_rare_small_metals_remaining_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-rare-small-metals-remaining.md`
+
+This pass completes the remaining undecided companies in `有色金属-稀有金属-其他稀有小金属`. It separates uranium, vanadium-titanium, precious-metal materials and recycling, tantalum-niobium, titanium, molybdenum, silver, nano-metal powder, zirconium, weak lithium/cobalt followers, and transformation-material stories. It corrects low baseline scores where resource scarcity, national-security relevance, aerospace/nuclear qualification, or hard material process technology matters more than current commodity-cycle profit.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
