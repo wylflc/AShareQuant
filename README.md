@@ -277,6 +277,13 @@ The twenty-seventh A-share peer-group review output is pharmaceutical commerce:
 
 This group separates integrated pharmaceutical industrial platforms, ordinary regional distribution, national regulated distribution platforms, leading pharmacy chains, medical-brand commercialization platforms, diagnostics leaders, and companies misclassified into commerce despite stronger drug-discovery or branded-drug capabilities. Distribution scale alone is not enough; regulated qualification, industrial capability, chain consolidation, differentiated commercialization, and real technology platforms are the core tests.
 
+The twenty-eighth A-share peer-group review output is the remaining storage-equipment group:
+
+- `data/processed/a_share_storage_equipment_remaining_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-storage-equipment-remaining.md`
+
+This pass completes the companies in `电气设备-电源设备-储能设备` that were not already decided in the EV-battery calibration pass. It separates digital-energy and UPS/data-center power platforms, storage-system and power-electronics platforms, special/aerospace power, BMS/PACK, inverter/storage niches, lithium-equipment niches, consumer-battery brands, ordinary battery manufacturing, lead-acid replacement markets, weak storage integrators, and late pivots.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
