@@ -515,6 +515,13 @@ The sixty-first A-share peer-group review output is other power generation:
 
 This pass reviews all companies in `公用事业-电力-其他发电`. It separates nuclear power, grid technology services, regional coal-power platforms, provincial energy platforms, local heating utilities, provincial renewable operators, landfill-gas power, energy-finance holding companies, and ST transition cases. It retains scarce regulated assets, grid technology capability, and only selected regional utility platforms with load-center or franchise-like advantages.
 
+The sixty-second A-share peer-group review output is wind power equipment:
+
+- `data/processed/a_share_wind_power_equipment_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-wind-power-equipment.md`
+
+This pass reviews all companies in `电气设备-电源设备-风能`. It separates wind-turbine OEMs, wind towers, offshore foundations, wind main shafts, castings, composite wind parts, and companies whose wind label is incidental to renewable-power operation. It retains turbine platforms and selected globally validated or process-critical component suppliers while rejecting ordinary capacity exposure.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
