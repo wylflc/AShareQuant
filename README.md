@@ -165,6 +165,13 @@ The eleventh A-share peer-group review output is residual electronic equipment m
 
 This group applies company-by-company analyst judgment to the broad residual electronic-equipment group. It retains clear hard-technology platforms and distinct boundary niches, rejects replaceable EMS/component/application vendors, and records defense-electronics questions in `docs/peer-group-calibration/a-share-pending-questions.md` for later dedicated handling.
 
+The twelfth A-share peer-group review output is industry application software:
+
+- `data/processed/a_share_industry_application_software_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-industry-application-software.md`
+
+This group separates hard software products and vertical workflow anchors from project-heavy system integrators. It retains EDA, industrial control, energy IT, cybersecurity, AI, financial core systems, construction software, CAD/CAE/PDF, GIS, and selected high-switching-cost vertical software while deferring aerospace and defense-software questions.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash

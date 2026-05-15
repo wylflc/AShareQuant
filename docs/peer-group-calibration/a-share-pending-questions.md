@@ -21,3 +21,16 @@ Pending companies:
 | 688511 | 天微电子 | Should military pyrotechnic/control electronics qualify despite narrow product disclosure? |
 | 300965 | 恒宇信通 | Should aviation electronics and military communications be retained under a defense-electronics rule? |
 | 300474 | 景嘉微 | Should domestic GPU and defense-computing capability be reviewed as semiconductor design, defense computing, or both? |
+
+## 1.2 Aerospace And Defense Software
+
+The `信息技术-计算机软件-行业应用软件` group includes aerospace, military simulation, and electromagnetic/antenna software companies. These should not be forced into ordinary civilian application-software rules because military customer validation and program continuity are difficult to observe in normal disclosure.
+
+Pending companies:
+
+| Security Code | Security Name | Pending Question |
+| --- | --- | --- |
+| 920116 | 星图测控 | Should commercial aerospace measurement/control and space-domain software be retained under a satellite/aerospace software rule? |
+| 301213 | 观想科技 | Should defense equipment digital-management software qualify despite limited public validation data? |
+| 301302 | 华如科技 | Should military simulation and defense training systems be retained under a defense-software rule? |
+| 688682 | 霍莱沃 | Should electromagnetic simulation and antenna/RCS test systems be reviewed as scarce defense/CAE software? |
