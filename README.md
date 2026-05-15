@@ -172,6 +172,13 @@ The twelfth A-share peer-group review output is industry application software:
 
 This group separates hard software products and vertical workflow anchors from project-heavy system integrators. It retains EDA, industrial control, energy IT, cybersecurity, AI, financial core systems, construction software, CAD/CAE/PDF, GIS, and selected high-switching-cost vertical software while deferring aerospace and defense-software questions.
 
+The thirteenth A-share peer-group review output is other software services:
+
+- `data/processed/a_share_other_software_services_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-other-software-services.md`
+
+This group keeps only product, infrastructure, workflow, or hard-domain software platforms. It rejects generic IT services, outsourcing, project delivery, and weaker copies, while deferring aviation, traffic-control, and defense-cyber cases.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash

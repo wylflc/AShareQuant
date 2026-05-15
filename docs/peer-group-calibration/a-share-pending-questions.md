@@ -34,3 +34,14 @@ Pending companies:
 | 301213 | 观想科技 | Should defense equipment digital-management software qualify despite limited public validation data? |
 | 301302 | 华如科技 | Should military simulation and defense training systems be retained under a defense-software rule? |
 | 688682 | 霍莱沃 | Should electromagnetic simulation and antenna/RCS test systems be reviewed as scarce defense/CAE software? |
+
+## 1.3 Aviation, Traffic-Control, And Defense-Cyber Software
+
+The `信息技术-计算机软件-其他软件服务` group includes civil aviation control and defense-cyber companies whose customer validation and procurement cycles are not comparable with ordinary software-service companies.
+
+Pending companies:
+
+| Security Code | Security Name | Pending Question |
+| --- | --- | --- |
+| 688631 | 莱斯信息 | Should civil aviation air-traffic/control and command information systems be retained under an aviation/traffic-control software rule? |
+| 301117 | 佳缘科技 | Should defense and special-industry cybersecurity products be retained under a defense-cyber rule? |
