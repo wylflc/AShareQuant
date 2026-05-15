@@ -207,6 +207,13 @@ The seventeenth A-share peer-group review output is environmental services:
 
 This group is treated as utility-like rather than high-growth. It keeps only selected concession/operator platforms and differentiated membrane or hazardous-waste technology cases, while rejecting ordinary engineering, sanitation, restoration, and project-contracting companies.
 
+The eighteenth A-share peer-group review output is integrated circuits:
+
+- `data/processed/a_share_integrated_circuit_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-integrated-circuit.md`
+
+This group separates foundry, OSAT, advanced packaging, analog, RF, image sensors, memory/MCU, SoC, communications chips, GPU, FPGA, semiconductor IP, and weaker fabless copies. Strategic compute and semiconductor-platform capability can qualify even before mature profitability.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
