@@ -396,6 +396,13 @@ The forty-fourth A-share peer-group review output is water utilities:
 
 This pass reviews all companies in `公用事业-水务-水务`. It separates large-city water and wastewater platforms, national/regional environmental infrastructure platforms, integrated water/waste/gas/solid-waste assets, water-saving irrigation and industrial-water niches, ordinary local water concessions, project-heavy environmental engineering firms, mixed utility portfolios, and ST cases.
 
+The forty-fifth A-share peer-group review output is LED:
+
+- `data/processed/a_share_led_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-led.md`
+
+This pass reviews all companies in `电子设备-光电子器件-LED`. It separates LED chip and compound-semiconductor platforms, global LED display platforms, Mini/MicroLED and packaging technology, LED driver/power component niches, ordinary lighting, city-lighting projects, weak display contractors, commodity chip/packaging followers, mixed lighting businesses, and ST cases.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
