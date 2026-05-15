@@ -480,6 +480,13 @@ The fifty-sixth A-share peer-group review output is railway equipment:
 
 This pass reviews all companies in `交运设备-铁路设备-铁路专用设备及器材`. It separates railway engineering and maintenance equipment, high-speed rail fasteners and track materials, high-reliability connectors, rail signal and safety systems, rail monitoring and inspection equipment, rail vehicle components, maintenance-platform stories, mature rail axle manufacturers, and ST rail-equipment cases.
 
+The fifty-seventh A-share peer-group review output is other power equipment:
+
+- `data/processed/a_share_other_power_equipment_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-other-power-equipment.md`
+
+This pass reviews all companies in `电气设备-电源设备-其他电源设备`. It separates energy-storage systems, high-reliability military and aerospace power supplies, power-electronics testing equipment, clean-energy thermal equipment, power-management ICs, photovoltaic transformers and magnetic components, defense power-electronics cases, charging power modules, generator sets, explosion-proof electrical equipment, communication power supplies, ST cases, and companies already retained under battery materials.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
