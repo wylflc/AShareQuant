@@ -326,6 +326,13 @@ The thirty-fourth A-share peer-group review output is semiconductor materials:
 
 This pass reviews all companies in `电子设备-半导体-半导体材料`. It separates silicon wafers, SiC substrates, CMP materials, electronic specialty gases, precursors, sputtering targets, photomasks, wet electronic chemicals, ceramic/quartz parts, independent testing, foundry/package-adjacent capability, semiconductor laser chips, consumer-electronics materials, IC-card/package commodity parts, diluted non-semiconductor businesses, and weaker silicon-wafer followers.
 
+The thirty-fifth A-share peer-group review output is gas utilities:
+
+- `data/processed/a_share_gas_utilities_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-gas-utilities.md`
+
+This pass reviews all companies in `公用事业-燃气-燃气`. It separates national gas and clean-energy platforms, dense city-gas franchises, LNG supply-chain platforms, provincial pipeline franchises, gas-equipment technology, ordinary small local gas utilities, mixed public-utility portfolios, commodity-exposed gas traders, ST cases, and regional concessions without scale or sourcing advantage.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
