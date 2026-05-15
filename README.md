@@ -431,6 +431,13 @@ The forty-ninth A-share peer-group review output is renewable power:
 
 This pass reviews all companies in `公用事业-电力-新能源发电`. It separates nuclear power, wind and solar flagship platforms, large central-SOE renewable platforms, provincial renewable operators, private project developers, integrated-energy service companies, EPC and solution providers, and companies whose renewable-power tag is incidental to a different business.
 
+The fiftieth A-share peer-group review output is discrete semiconductors:
+
+- `data/processed/a_share_discrete_semiconductors_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-discrete-semiconductors.md`
+
+This pass reviews all companies in `电子设备-半导体-半导体分立器件`. It separates power-semiconductor IDMs and designers, IGBT and SiC module platforms, HVDC thyristor suppliers, diode and rectifier manufacturers, probe-card and probe-station companies, semiconductor test-equipment suppliers, photonics companies, memory-chip designers, auxiliary semiconductor-equipment subsystems, and mixed transition stories.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
