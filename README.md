@@ -190,6 +190,8 @@ python3 scripts/build_a_share_peer_group_screening_queue.py
 
 The queue reads `data/processed/a_share_company_triage_reviews.csv` and existing peer-group decision tables, then writes `data/interim/a_share_peer_group_screening_queue.csv`. It marks peer groups as not started, partially screened, or complete, proposes review modes, and explicitly allows low-barrier whole-group rejection when an industry lacks durable barriers. Unclear or mixed peer groups can be routed back to reviewer discussion before decisions are finalized.
 
+Peer-group completion must not be done by a threshold-only automated screening script. A final `*_peer_group_decisions.csv` file should represent analyst judgment applied company by company within a comparable peer group, using source-backed evidence and the calibrated rules from prior groups. Scripts may build queues, merge accepted decisions into the watchlist, or validate coverage, but they should not create final watch/reject decisions from numeric thresholds alone. See `docs/adr/0004-require-analyst-peer-group-decisions.md`.
+
 Fetch Hong Kong screening evidence into resumable interim CSV files:
 
 ```bash
