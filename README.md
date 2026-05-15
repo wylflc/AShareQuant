@@ -319,6 +319,13 @@ The thirty-third A-share peer-group review output is other power-transmission eq
 
 This pass reviews all companies in `电气设备-输变电设备-其他输变电设备`. It separates UHV/high-voltage core equipment, full transmission platforms, transformer and tap-changer leadership, inverter and module-level power electronics, low-voltage electrical brands, high-voltage insulation and grid-protection components, smart-distribution niches, ordinary distribution equipment, transmission-tower fabrication, low-barrier relays and components, and ST or diversified cases without scarce grid technology.
 
+The thirty-fourth A-share peer-group review output is semiconductor materials:
+
+- `data/processed/a_share_semiconductor_materials_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-semiconductor-materials.md`
+
+This pass reviews all companies in `电子设备-半导体-半导体材料`. It separates silicon wafers, SiC substrates, CMP materials, electronic specialty gases, precursors, sputtering targets, photomasks, wet electronic chemicals, ceramic/quartz parts, independent testing, foundry/package-adjacent capability, semiconductor laser chips, consumer-electronics materials, IC-card/package commodity parts, diluted non-semiconductor businesses, and weaker silicon-wafer followers.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
