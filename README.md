@@ -410,6 +410,13 @@ The forty-sixth A-share peer-group review output is remaining medical services:
 
 This pass completes the still-unreviewed companies in `医药生物-医疗服务-医疗服务`. It separates specialist medical chains, third-party medical laboratories, genomics platforms, clinical CRO/data-management niches, dental and neurosurgery specialists, weak duplicate eye hospitals, hospital asset operators, medical cleanroom/engineering providers, small CROs, and ST cases.
 
+The forty-seventh A-share peer-group review output is expressways:
+
+- `data/processed/a_share_expressway_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-expressways.md`
+
+This pass reviews all companies in `交通运输-公路铁路-高速公路`. It separates national toll-road platforms, high-quality coastal and economic-corridor assets, strong provincial expressway platforms, lower-quality regional concessions, mixed real-estate/tourism/investment portfolios, small bridge/road assets, and ordinary local toll concessions.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
