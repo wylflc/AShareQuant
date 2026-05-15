@@ -256,6 +256,13 @@ The twenty-fourth A-share peer-group review output is solar:
 
 This group separates photovoltaic power electronics, equipment, glass, encapsulation materials, wafers, polysilicon, integrated modules, power-station operators, EPC/system integration, late pivots, and low-barrier component suppliers. Global leadership, cost curve, hard process know-how, bankability, and specialty material or equipment barriers are the core tests; cycle-trough profitability is not the primary screen.
 
+The twenty-fifth A-share peer-group review output is other electronic devices:
+
+- `data/processed/a_share_other_electronic_devices_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-other-electronic-devices.md`
+
+This mixed group separates distributors, polymer and EMI/thermal materials, PCB/interconnect platforms, PMIC and MEMS chips, RF connectors, acoustic components, vacuum electronics, microwave devices, display technologies, portable energy-storage brands, fuses, and ordinary consumer-electronics components. Proprietary materials, hard-technology niches, customer certification, cross-industry capability, and whether stronger retained peers already cover the thesis are the core tests.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
