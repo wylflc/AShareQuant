@@ -389,6 +389,13 @@ The forty-third A-share peer-group review output is food comprehensive:
 
 This pass reviews all companies in `食品饮料-食品-食品综合`. It separates category-defining consumer brands, national frozen-food platforms, yeast/fermentation and nutrition-ingredient platforms, pet-food brands, vertically integrated protein supply chains, lower-barrier snack retailers, regional bakery/prepared-food brands, commodity agricultural processors, ST cases, and weak packaged-food brands without pricing power.
 
+The forty-fourth A-share peer-group review output is water utilities:
+
+- `data/processed/a_share_water_utilities_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-water-utilities.md`
+
+This pass reviews all companies in `公用事业-水务-水务`. It separates large-city water and wastewater platforms, national/regional environmental infrastructure platforms, integrated water/waste/gas/solid-waste assets, water-saving irrigation and industrial-water niches, ordinary local water concessions, project-heavy environmental engineering firms, mixed utility portfolios, and ST cases.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
