@@ -494,6 +494,13 @@ The fifty-eighth A-share peer-group review output is PC, server, and hardware:
 
 This pass reviews all companies in `信息技术-计算机硬件-PC、服务器及硬件`. It separates global security and video-IoT platforms, AI-server and data-center hardware, strategic domestic CPU architecture, domestic computing and trusted-hardware ecosystem exposure, printer and office-hardware ecosystems, commercial-vehicle video niches, consumer PC brands, legacy flash-storage IP stories, EMS manufacturing services, ST cases, and mixed technology holdings.
 
+The fifty-ninth A-share peer-group review output is game entertainment:
+
+- `data/processed/a_share_game_entertainment_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-game-entertainment.md`
+
+This pass reviews all companies in `互联网-互联网服务-游戏娱乐`. It separates self-developed boutique studios, scaled mobile-game publishers, legacy IP operators, MMORPG/RPG developers, social-entertainment and internet-cafe service platforms, acquired game studios, mixed cultural-media groups, and ST turnaround cases. It retains only companies where content, IP, R&D, publishing, long-life operation, or cross-business capability is harder to copy than simply funding a new studio or buying traffic.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
