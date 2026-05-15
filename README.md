@@ -361,6 +361,13 @@ The thirty-ninth A-share peer-group review output is instruments:
 
 This pass reviews all companies in `机械设备-通用设备-仪器仪表`. It separates high-end electronic measurement, industrial process-control instruments, motion-control platforms, machine-vision/metrology, analytical and mass-spectrometry instruments, differentiated sensors, utility-meter installed-base platforms, lower-barrier metering followers, project-heavy environmental monitoring, generic automation hardware, and small instrument niches without category control.
 
+The fortieth A-share peer-group review output is communication support services:
+
+- `data/processed/a_share_communication_support_services_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-communication-support-services.md`
+
+This pass reviews all companies in `信息技术-通信设备-通信配套服务`. It separates cellular IoT module leadership, quantum communication, special communication and BeiDou/satellite systems, telecom/power surge-protection components, communication construction and O&M services, SMS/value-added telecom channels, generic system integration, ST cases, and mixed IDC/energy/repair service businesses.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
