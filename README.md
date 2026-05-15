@@ -270,6 +270,13 @@ The twenty-sixth A-share peer-group review output is communication transmission 
 
 This group separates telecom equipment, optical modules, optical chips/devices, optical fiber/preform/cable, submarine cable, industrial IoT gateways, cellular modules, RF filters, integrated photonics, special communication, industrial networking, high-reliability connectors, test instruments, ceramic filters, and legacy communication-equipment vendors. Network-infrastructure leadership, AI/data-center optical interconnects, deep-sea optical networks, special communication, and high-speed interconnect barriers are the core tests.
 
+The twenty-seventh A-share peer-group review output is pharmaceutical commerce:
+
+- `data/processed/a_share_pharma_commerce_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-pharma-commerce.md`
+
+This group separates integrated pharmaceutical industrial platforms, ordinary regional distribution, national regulated distribution platforms, leading pharmacy chains, medical-brand commercialization platforms, diagnostics leaders, and companies misclassified into commerce despite stronger drug-discovery or branded-drug capabilities. Distribution scale alone is not enough; regulated qualification, industrial capability, chain consolidation, differentiated commercialization, and real technology platforms are the core tests.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
