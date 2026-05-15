@@ -536,6 +536,13 @@ The sixty-fourth A-share peer-group review output is B2B e-commerce:
 
 This pass reviews all companies in `互联网-互联网商务-电子商务B2B`. It separates industrial B2B platforms, commodity data and pricing platforms, cross-border B2B marketplaces, electronic-component supply-chain platforms, cross-border brand operators, e-commerce service providers, brand-licensing models, cashback and marketing platforms, and legacy e-commerce companies. It retains data, workflow, and transaction-network moats while rejecting traffic, service, authorization, and trading models without durable lock-in.
 
+The sixty-fifth A-share peer-group review output is cogeneration and heat power:
+
+- `data/processed/a_share_cogeneration_heat_power_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-cogeneration-heat-power.md`
+
+This pass reviews all companies in `公用事业-电力-热电`. It separates local cogeneration utilities, industrial-park steam suppliers, municipal heating companies, heat-service and energy-saving operators, and mixed local-development or materials companies with incidental heat-power assets. It treats heat power as local utility infrastructure and keeps only selected boundary cases with pipe-network, park-customer, or energy-saving operating advantages.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
