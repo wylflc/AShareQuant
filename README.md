@@ -312,6 +312,13 @@ The thirty-second A-share peer-group review output is specialized computer equip
 
 This pass reviews all companies in `信息技术-计算机硬件-专用计算机设备`. It separates compute-infrastructure platforms, global automotive diagnostic terminals, LED display-control systems, payment and barcode-recognition platforms, commercial-cryptography hardware, defense embedded-computing equipment, financial self-service machines, data-storage niches, rail and transport terminals, ordinary peripherals, mature financial equipment, video-surveillance followers, and project-based system integrators.
 
+The thirty-third A-share peer-group review output is other power-transmission equipment:
+
+- `data/processed/a_share_power_transmission_equipment_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-power-transmission-equipment.md`
+
+This pass reviews all companies in `电气设备-输变电设备-其他输变电设备`. It separates UHV/high-voltage core equipment, full transmission platforms, transformer and tap-changer leadership, inverter and module-level power electronics, low-voltage electrical brands, high-voltage insulation and grid-protection components, smart-distribution niches, ordinary distribution equipment, transmission-tower fabrication, low-barrier relays and components, and ST or diversified cases without scarce grid technology.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
