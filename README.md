@@ -291,6 +291,13 @@ The twenty-ninth A-share peer-group review output is other special machinery:
 
 This pass reviews all companies in `机械设备-专用设备-其他专用机械`. It separates hard-to-replicate process equipment, semiconductor and advanced-manufacturing tools, photovoltaic/lithium process equipment, precision thermal-control and testing platforms, qualification-heavy safety/nuclear equipment, cross-industry capability stacks, ordinary project-based special machines, lower-barrier traditional equipment, and weaker followers already covered by stronger retained peers.
 
+The thirtieth A-share peer-group review output is communication terminal equipment:
+
+- `data/processed/a_share_communication_terminal_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-communication-terminal.md`
+
+This pass reviews all companies in `信息技术-通信设备-通信终端设备`. It separates global enterprise communication endpoint brands, professional/dedicated-network communications, enterprise networking, Beidou/GNSS and defense communications, grid communication niches, secure-card/eSIM, RF/antenna/materials, optical-module boundary cases, ordinary ODM/JDM terminal manufacturing, CPE/STB vendors, mature smart-card followers, and project-based communication system integrators.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
