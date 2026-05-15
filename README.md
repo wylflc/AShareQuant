@@ -445,6 +445,13 @@ The fifty-first A-share peer-group review output is hydropower:
 
 This pass reviews all companies in `公用事业-电力-水电`. It separates world-class river-cascade platforms, basin-level hydropower operators, integrated power companies with scarce hydropower exposure, pumped-storage platforms, regional hydropower operators, local power and water utilities, and diversified local utility companies.
 
+The fifty-second A-share peer-group review output is metal products:
+
+- `data/processed/a_share_metal_products_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-metal-products.md`
+
+This pass reviews all companies in `机械设备-金属制品-金属制品`. It separates powder metallurgy, MIM and soft-magnetic materials, global hand tools, battery structural parts, aerospace superalloys, high-end cutting tools, special-alloy materials, high-end pressure vessels, prestressed rail materials, welding materials, magnet wire, wind-power metal parts, semiconductor-equipment precision parts, consumer hardware, metal packaging, wire rope, coated steel sheet, ordinary casting, and generic precision machining.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
