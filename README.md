@@ -214,6 +214,13 @@ The eighteenth A-share peer-group review output is integrated circuits:
 
 This group separates foundry, OSAT, advanced packaging, analog, RF, image sensors, memory/MCU, SoC, communications chips, GPU, FPGA, semiconductor IP, and weaker fabless copies. Strategic compute and semiconductor-platform capability can qualify even before mature profitability.
 
+The nineteenth A-share peer-group review output is chemical formulations:
+
+- `data/processed/a_share_chemical_formulation_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-chemical-formulation.md`
+
+This group separates innovative-drug platforms, branded OTC and specialty pharma, differentiated niches, generic-drug manufacturers, and weaker formulation companies. Innovation, clinical/channel trust, brand, and integrated capability matter more than current profit alone.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
