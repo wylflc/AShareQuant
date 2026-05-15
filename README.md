@@ -186,6 +186,13 @@ The fourteenth A-share peer-group review output is biopharma:
 
 This group separates global innovative-drug platforms, scarce biological-resource platforms, IVD, companion diagnostics, life-science tools, bioactive materials, vaccines, and weaker early-pipeline companies. Current profit is not the primary screen; clinical/regulatory validation and hard-to-replicate capability are the core tests.
 
+The fifteenth A-share peer-group review output is electronic components:
+
+- `data/processed/a_share_electronic_components_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-electronic-components.md`
+
+This group separates PCB/material leaders, passive and high-reliability components, optical/RF/MEMS/power niches, and weaker duplicate manufacturers. Process know-how, customer qualification, reliability history, and high-end product mix are the core tests.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
