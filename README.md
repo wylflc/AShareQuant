@@ -375,6 +375,13 @@ The forty-first A-share peer-group review output is remaining battery materials:
 
 This pass completes the still-unreviewed companies in `有色金属-金属非金属新材料-电池材料` using the already documented battery-material calibration rules. It separates additional high-end cathode, carbon-nanotube conductive additive, electronic silver paste, manganese-material, copper-foil, anode-coating, fuel-cell, and multi-material niches from weaker duplicate cathode, anode, electrolyte, precursor, lithium-salt, battery-structure, and mixed material companies.
 
+The forty-second A-share peer-group review output is other general machinery:
+
+- `data/processed/a_share_other_general_machinery_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-other-general-machinery.md`
+
+This pass reviews all companies in `机械设备-通用设备-其他通用机械`. It separates global thermal-management parts, lithium-battery equipment, high-end mechanical seals, turbomachinery, filter presses, harmonic reducers, vacuum equipment, cryogenic/LNG equipment, liquid cooling, pumps, compressor systems, special bearings, tank containers, superhard tools, magnetic-levitation turbomachinery, logistics automation, ordinary pump/valve/bearing/gear/tool companies, project automation, ST cases, and mixed general machinery businesses.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
