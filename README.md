@@ -172,7 +172,15 @@ Build the current A-share peer-group-calibrated watchlist from accepted reviewer
 python3 scripts/build_a_share_peer_group_calibrated_watchlist.py
 ```
 
-The script reads `data/processed/a_share_*_peer_group_decisions.csv` and writes `data/processed/a_share_peer_group_calibrated_watchlist.csv`. Cross-industry rejection checks are tracked in `data/processed/a_share_cross_industry_review_audit.csv`; `藏格矿业` is the first corrected false-negative case, because its company-level resource thesis includes potash, lithium, Julong Copper equity economics, and Zijin control rather than only a weaker salt-lake lithium comparison.
+The script reads `data/processed/a_share_*_peer_group_decisions.csv` and writes `data/processed/a_share_peer_group_calibrated_watchlist.csv`. Decision files and the watchlist preserve `watch_selection_route`, distinguishing direct reviewer-accepted watch companies from boundary companies retained after analyst judgment under calibrated rules. Cross-industry rejection checks are tracked in `data/processed/a_share_cross_industry_review_audit.csv`; `藏格矿业` is the first corrected false-negative case, because its company-level resource thesis includes potash, lithium, Julong Copper equity economics, and Zijin control rather than only a weaker salt-lake lithium comparison.
+
+Build the A-share remaining peer-group screening queue:
+
+```bash
+python3 scripts/build_a_share_peer_group_screening_queue.py
+```
+
+The queue reads `data/processed/a_share_company_triage_reviews.csv` and existing peer-group decision tables, then writes `data/interim/a_share_peer_group_screening_queue.csv`. It marks peer groups as not started, partially screened, or complete, proposes review modes, and explicitly allows low-barrier whole-group rejection when an industry lacks durable barriers. Unclear or mixed peer groups can be routed back to reviewer discussion before decisions are finalized.
 
 Fetch Hong Kong screening evidence into resumable interim CSV files:
 

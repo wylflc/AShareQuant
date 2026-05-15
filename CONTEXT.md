@@ -36,6 +36,10 @@ _Avoid_: current stock list when provider and retrieval time matter.
 The set of listed companies retained for ongoing attention after business-quality screening.
 _Avoid_: buy list, target list.
 
+**Watch Selection Route**:
+A label showing whether a listed company entered a **Watchlist** as a direct reviewer-accepted watch company or as a boundary company retained after analyst judgment under calibrated rules.
+_Avoid_: mixing explicit reviewer selections and analyst-inferred boundary decisions without traceability.
+
 **Moat Screening**:
 Assessment of durable business advantages and resistance to competitive displacement.
 _Avoid_: valuation screen, cheap-stock screen.
@@ -108,6 +112,10 @@ _Avoid_: retaining weaker peers merely because they also rank well or benefit fr
 A peer-group calibration test that rejects a listed company when a stronger peer comprehensively dominates it across moat, technology or process capability, market position, customer validation, and business quality, and the weaker company lacks an irreplaceable niche.
 _Avoid_: keeping a company because it is unfamiliar, second-tier, or might rebound without a distinct durable advantage.
 
+**Low-Barrier Group Rejection**:
+A peer-group decision that can reject every listed company in an industry or subindustry when the business model is easy for capital and management execution to copy, durable margins are weak, and incremental profit is likely to attract new competition.
+_Avoid_: forcing at least one watchlist company to exist in every industry.
+
 **Capability-First Scoring**:
 A scoring stance for **Moat Screening** that gives primary weight to durable business capability, technical or process barriers, market position, and long-term industry outlook, while using current profitability, ROE, and cash flow as risk constraints rather than the main reason a company enters or leaves the **Watchlist**.
 _Avoid_: treating current losses or weak margins as proof that a company lacks a moat when source-backed evidence shows hard-to-replicate capability.
@@ -152,6 +160,7 @@ _Avoid_: report date when the specific event type matters.
 
 - A **Listed Company** can have one or more **Securities**.
 - A **Universe** contains **Securities**, but a **Watchlist** contains **Listed Companies**.
+- A **Watch Selection Route** preserves whether a **Watchlist** entry came from direct reviewer acceptance or boundary-company judgment.
 - A **Universe Snapshot** records the **Securities** available from a provider at retrieval time and can be used as input to later screening.
 - **Screening Evidence** supports a **Moat Score**; a high enough **Moat Score** can produce a **Watchlist Candidate**.
 - **Authoritative Research Sources** are required for a **Deep Company Review**; aggregator profile text can only be used as a discovery hint, not as analysis evidence.
@@ -167,6 +176,7 @@ _Avoid_: report date when the specific event type matters.
 - **Peer-Group Calibration** is the preferred way to form reusable standards: the reviewer compares similar listed companies first, then the accepted/rejected examples become standard-setting evidence.
 - **Cross-Industry Advantage Review** should be applied before final rejection when a listed company has material assets or capabilities outside the selected peer group. Cross-industry breadth qualifies only when the aggregate company-level thesis is source-backed, material, hard to replicate, and not merely a conglomerate discount story.
 - **Differentiated Peer Retention** and the **Dominance Rejection Test** should be applied together: keep multiple companies in one peer group only when their advantages are meaningfully different and hard to replace; reject a company when a stronger peer comprehensively covers its advantage.
+- **Low-Barrier Group Rejection** is allowed when an entire peer group lacks durable barriers; peer-group calibration does not require every industry to contribute at least one **Watchlist** company.
 - **Moat Screening** determines whether a **Listed Company** deserves attention; **Valuation Assessment** determines whether a **Security** may be attractively priced.
 - **Market Data** belongs to a **Security** and trading date.
 - **Corporate Actions** belong to a **Security** or **Listed Company** and affect how **Market Data** should be interpreted.

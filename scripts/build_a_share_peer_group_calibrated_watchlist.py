@@ -19,6 +19,7 @@ OUTPUT_COLUMNS = [
     "security_name",
     "peer_groups",
     "decision_sources",
+    "watch_selection_routes",
     "watch_reasons",
     "calibrated_standard_implications",
     "decided_at_utc",
@@ -52,6 +53,33 @@ def coalesce_reason(row: dict[str, str]) -> str:
     )
 
 
+def infer_watch_selection_route(row: dict[str, str]) -> str:
+    """Return how a watched company entered the calibrated watchlist."""
+    explicit_route = row.get("watch_selection_route", "")
+    if explicit_route:
+        return explicit_route
+
+    if row.get("reviewer_decision") != "watch":
+        return ""
+
+    decision_source = row.get("decision_source", "")
+    if decision_source == "reviewer_explicit":
+        return "direct_watch"
+    if decision_source.startswith("analyst_"):
+        return "boundary_judged_watch"
+
+    reviewer_confidence = row.get("reviewer_confidence", "")
+    if reviewer_confidence == "inferred_from_principle":
+        return "boundary_judged_watch"
+    if reviewer_confidence:
+        return "direct_watch"
+
+    prior_attention = row.get("prior_preliminary_attention", "")
+    if prior_attention.startswith("watch_if") or prior_attention == "boundary_watch":
+        return "boundary_judged_watch"
+    return "direct_watch"
+
+
 def build_watchlist(decision_rows: list[tuple[Path, dict[str, str]]]) -> list[dict[str, str]]:
     watchlist: OrderedDict[str, dict[str, list[str] | str]] = OrderedDict()
 
@@ -69,6 +97,7 @@ def build_watchlist(decision_rows: list[tuple[Path, dict[str, str]]]) -> list[di
                 "security_name": row["security_name"],
                 "peer_groups": [],
                 "decision_sources": [],
+                "watch_selection_routes": [],
                 "watch_reasons": [],
                 "calibrated_standard_implications": [],
                 "decided_at_utc": row.get("decided_at_utc", ""),
@@ -79,6 +108,7 @@ def build_watchlist(decision_rows: list[tuple[Path, dict[str, str]]]) -> list[di
         for column, value in [
             ("peer_groups", row.get("peer_group", "")),
             ("decision_sources", row.get("decision_source") or "reviewer_explicit_or_group_rule"),
+            ("watch_selection_routes", infer_watch_selection_route(row)),
             ("watch_reasons", coalesce_reason(row)),
             ("calibrated_standard_implications", row.get("calibrated_standard_implication", "")),
             ("source_decision_files", str(path)),
