@@ -150,6 +150,14 @@ The ninth A-share peer-group calibration output is CXO and pharmaceutical R&D ou
 
 This group compares CRDMO, CRO, CDMO, clinical CRO, SMO, molecular-building-block, and pharmaceutical R&D service companies. Boundary companies are judged by margin quality, technical or service complexity, customer trust, regulatory/quality-system history, project continuity, and whether a larger retained platform could easily copy the service.
 
+The tenth A-share peer-group calibration output is infrared thermal imaging and special optoelectronic sensing:
+
+- `data/processed/a_share_infrared_sensing_peer_group_calibration.csv`
+- `data/processed/a_share_infrared_sensing_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-infrared-sensing.md`
+
+This group is the first carved-out subgroup from the broad residual electronic-equipment queue. It compares infrared detector, thermal imaging, laser/optical, and special optoelectronic sensing companies. High industry barrier does not imply automatic inclusion; weaker companies are rejected when their role is covered by stronger retained leaders.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
