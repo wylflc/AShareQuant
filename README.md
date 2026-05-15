@@ -403,6 +403,13 @@ The forty-fifth A-share peer-group review output is LED:
 
 This pass reviews all companies in `电子设备-光电子器件-LED`. It separates LED chip and compound-semiconductor platforms, global LED display platforms, Mini/MicroLED and packaging technology, LED driver/power component niches, ordinary lighting, city-lighting projects, weak display contractors, commodity chip/packaging followers, mixed lighting businesses, and ST cases.
 
+The forty-sixth A-share peer-group review output is remaining medical services:
+
+- `data/processed/a_share_medical_services_remaining_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-medical-services.md`
+
+This pass completes the still-unreviewed companies in `医药生物-医疗服务-医疗服务`. It separates specialist medical chains, third-party medical laboratories, genomics platforms, clinical CRO/data-management niches, dental and neurosurgery specialists, weak duplicate eye hospitals, hospital asset operators, medical cleanroom/engineering providers, small CROs, and ST cases.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
