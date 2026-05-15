@@ -179,6 +179,13 @@ The thirteenth A-share peer-group review output is other software services:
 
 This group keeps only product, infrastructure, workflow, or hard-domain software platforms. It rejects generic IT services, outsourcing, project delivery, and weaker copies, while deferring aviation, traffic-control, and defense-cyber cases.
 
+The fourteenth A-share peer-group review output is biopharma:
+
+- `data/processed/a_share_biopharma_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-biopharma.md`
+
+This group separates global innovative-drug platforms, scarce biological-resource platforms, IVD, companion diagnostics, life-science tools, bioactive materials, vaccines, and weaker early-pipeline companies. Current profit is not the primary screen; clinical/regulatory validation and hard-to-replicate capability are the core tests.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
