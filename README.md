@@ -529,6 +529,13 @@ The sixty-third A-share peer-group review output is airlines:
 
 This pass reviews all companies in `交通运输-航空机场-航空`. It separates national passenger airlines, low-cost airlines, private full-service airlines, air cargo and logistics platforms, regional airlines, and general-aviation helicopter services. It treats route and hub scarcity as real but discounts the sector's fuel, FX, recession, disease-shock, and capital-intensity risks.
 
+The sixty-fourth A-share peer-group review output is B2B e-commerce:
+
+- `data/processed/a_share_b2b_ecommerce_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-b2b-ecommerce.md`
+
+This pass reviews all companies in `互联网-互联网商务-电子商务B2B`. It separates industrial B2B platforms, commodity data and pricing platforms, cross-border B2B marketplaces, electronic-component supply-chain platforms, cross-border brand operators, e-commerce service providers, brand-licensing models, cashback and marketing platforms, and legacy e-commerce companies. It retains data, workflow, and transaction-network moats while rejecting traffic, service, authorization, and trading models without durable lock-in.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
