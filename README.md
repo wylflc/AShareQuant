@@ -424,6 +424,13 @@ The forty-eighth A-share peer-group review output is wire and cable:
 
 This pass reviews all companies in `电气设备-输变电设备-电线电缆`. It separates submarine-cable leaders, high-voltage cable-accessory specialists, UHV transformer material suppliers, aerospace/nuclear/industrial special-cable companies, broad regional cable manufacturers, ordinary construction and power-cable producers, electronic-wire suppliers, and mixed portfolios where cable is no longer the main moat.
 
+The forty-ninth A-share peer-group review output is renewable power:
+
+- `data/processed/a_share_renewable_power_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-renewable-power.md`
+
+This pass reviews all companies in `公用事业-电力-新能源发电`. It separates nuclear power, wind and solar flagship platforms, large central-SOE renewable platforms, provincial renewable operators, private project developers, integrated-energy service companies, EPC and solution providers, and companies whose renewable-power tag is incidental to a different business.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
