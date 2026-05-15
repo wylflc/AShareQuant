@@ -543,6 +543,13 @@ The sixty-fifth A-share peer-group review output is cogeneration and heat power:
 
 This pass reviews all companies in `公用事业-电力-热电`. It separates local cogeneration utilities, industrial-park steam suppliers, municipal heating companies, heat-service and energy-saving operators, and mixed local-development or materials companies with incidental heat-power assets. It treats heat power as local utility infrastructure and keeps only selected boundary cases with pipe-network, park-customer, or energy-saving operating advantages.
 
+The sixty-sixth A-share peer-group review output is telecom operators:
+
+- `data/processed/a_share_telecom_operators_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-telecom-operators.md`
+
+This pass reviews all companies in `信息技术-通信运营-通信运营`. It separates national telecom operators, satellite operators, data-center and computing-infrastructure platforms, State Grid information-communication platforms, cloud communication providers, video-conferencing and AI interaction vendors, and telecom-adjacent smart-home service companies. It retains scarce infrastructure control while rejecting ordinary communication-service vendors.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
