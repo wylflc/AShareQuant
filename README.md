@@ -452,6 +452,13 @@ The fifty-second A-share peer-group review output is metal products:
 
 This pass reviews all companies in `机械设备-金属制品-金属制品`. It separates powder metallurgy, MIM and soft-magnetic materials, global hand tools, battery structural parts, aerospace superalloys, high-end cutting tools, special-alloy materials, high-end pressure vessels, prestressed rail materials, welding materials, magnet wire, wind-power metal parts, semiconductor-equipment precision parts, consumer hardware, metal packaging, wire rope, coated steel sheet, ordinary casting, and generic precision machining.
 
+The fifty-third A-share peer-group review output is ports:
+
+- `data/processed/a_share_ports_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-ports.md`
+
+This pass reviews all companies in `交通运输-港口航运-港口`. It separates national and global port platforms, world-scale deepwater gateways, international container hubs, regional comprehensive ports, bulk ports, emerging strategic gateway ports, single-port container assets, inland ports, and mixed local logistics or utility profiles.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
