@@ -417,6 +417,13 @@ The forty-seventh A-share peer-group review output is expressways:
 
 This pass reviews all companies in `交通运输-公路铁路-高速公路`. It separates national toll-road platforms, high-quality coastal and economic-corridor assets, strong provincial expressway platforms, lower-quality regional concessions, mixed real-estate/tourism/investment portfolios, small bridge/road assets, and ordinary local toll concessions.
 
+The forty-eighth A-share peer-group review output is wire and cable:
+
+- `data/processed/a_share_wire_cable_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-wire-cable.md`
+
+This pass reviews all companies in `电气设备-输变电设备-电线电缆`. It separates submarine-cable leaders, high-voltage cable-accessory specialists, UHV transformer material suppliers, aerospace/nuclear/industrial special-cable companies, broad regional cable manufacturers, ordinary construction and power-cable producers, electronic-wire suppliers, and mixed portfolios where cable is no longer the main moat.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
