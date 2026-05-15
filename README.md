@@ -333,6 +333,13 @@ The thirty-fifth A-share peer-group review output is gas utilities:
 
 This pass reviews all companies in `公用事业-燃气-燃气`. It separates national gas and clean-energy platforms, dense city-gas franchises, LNG supply-chain platforms, provincial pipeline franchises, gas-equipment technology, ordinary small local gas utilities, mixed public-utility portfolios, commodity-exposed gas traders, ST cases, and regional concessions without scale or sourcing advantage.
 
+The thirty-sixth A-share peer-group review output is other internet services:
+
+- `data/processed/a_share_other_internet_services_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-other-internet-services.md`
+
+This pass reviews all companies in `互联网-互联网服务-其他互联网服务`. It separates cybersecurity platforms, visual-content copyright databases, financial IT, public cloud, industrial internet communication, network visibility, public-safety software, vertical data/content platforms, low-barrier advertising and MCN/live-commerce operators, generic IT outsourcing, game/content hit businesses, platform-dependent traffic services, and system integrators without product or data lock-in.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
