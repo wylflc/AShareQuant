@@ -228,6 +228,13 @@ The twentieth A-share peer-group review output is auto parts:
 
 This group separates intelligent vehicle electronics, safety-critical braking/chassis, drivetrain, powertrain, automotive glass, thermal management, lighting, lightweighting, sensors, and low-barrier component manufacturing. Global OEM validation, safety certification, software/electronics depth, and hard manufacturing process are the core tests.
 
+The twenty-first A-share peer-group review output is traditional Chinese medicine:
+
+- `data/processed/a_share_traditional_chinese_medicine_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-traditional-chinese-medicine.md`
+
+This group separates national/category-defining TCM brands, modern evidence-backed TCM platforms, focused OTC niches, and weaker regional or duplicative companies. Brand, scarce formula, category leadership, pricing power, and channel trust are the core tests.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
