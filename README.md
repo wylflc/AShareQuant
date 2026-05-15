@@ -501,6 +501,13 @@ The fifty-ninth A-share peer-group review output is game entertainment:
 
 This pass reviews all companies in `互联网-互联网服务-游戏娱乐`. It separates self-developed boutique studios, scaled mobile-game publishers, legacy IP operators, MMORPG/RPG developers, social-entertainment and internet-cafe service platforms, acquired game studios, mixed cultural-media groups, and ST turnaround cases. It retains only companies where content, IP, R&D, publishing, long-life operation, or cross-business capability is harder to copy than simply funding a new studio or buying traffic.
 
+The sixtieth A-share peer-group review output is other electrical equipment:
+
+- `data/processed/a_share_other_electrical_equipment_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-other-electrical-equipment.md`
+
+This pass reviews all companies in `电气设备-其他电气设备-其他电气设备`. It separates high-voltage insulation materials, smart-grid diagnostics, intelligent controllers, industrial power electronics, PV trackers, PV modules, wind turbines, storage systems, consumer electrical brands, rail-signal systems, electrical contact materials, battery interconnects, appliance components, PV junction boxes, electrical cabinets, distributors, and ST transition cases. Misclassified company-level platforms are judged by their real business capability rather than by the residual peer-group label.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
