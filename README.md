@@ -200,6 +200,13 @@ The sixteenth A-share peer-group review output is the remaining medical-device g
 
 This pass applies the earlier medical-device calibration to the rest of the device universe. It keeps selected platform and high-barrier niche companies, while rejecting low-barrier consumables, weaker IVD copies, distribution-led businesses, and capacity-driven manufacturers.
 
+The seventeenth A-share peer-group review output is environmental services:
+
+- `data/processed/a_share_environmental_services_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-environmental-services.md`
+
+This group is treated as utility-like rather than high-growth. It keeps only selected concession/operator platforms and differentiated membrane or hazardous-waste technology cases, while rejecting ordinary engineering, sanitation, restoration, and project-contracting companies.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
