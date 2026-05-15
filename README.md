@@ -459,6 +459,13 @@ The fifty-third A-share peer-group review output is ports:
 
 This pass reviews all companies in `交通运输-港口航运-港口`. It separates national and global port platforms, world-scale deepwater gateways, international container hubs, regional comprehensive ports, bulk ports, emerging strategic gateway ports, single-port container assets, inland ports, and mixed local logistics or utility profiles.
 
+The fifty-fourth A-share peer-group review output is shipping:
+
+- `data/processed/a_share_shipping_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-shipping.md`
+
+This pass reviews all companies in `交通运输-港口航运-航运`. It separates global liner platforms, diversified shipping platforms, energy-shipping leaders, special-cargo shipping, product tanker operators, regional container lines, domestic container logistics, port-backed feeder operators, route-scarcity ferry operators, chemical and dangerous-goods shipping companies, shipping finance/leasing profiles, dry-bulk fleets, forwarding services, and unclear transformed shipping classifications.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
