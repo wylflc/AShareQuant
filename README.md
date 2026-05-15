@@ -473,6 +473,13 @@ The fifty-fifth A-share peer-group review output is electrical automation:
 
 This pass reviews all companies in `电气设备-输变电设备-电气自控设备`. It separates grid automation, relay protection, dispatch and distribution automation, UHV/DC and high-voltage equipment, global relays, industrial control, renewable power conversion, domain-specific automation, distribution switchgear, charging piles, project-heavy power IT, narrow control niches, and weak legacy electrical-equipment companies.
 
+The fifty-sixth A-share peer-group review output is railway equipment:
+
+- `data/processed/a_share_railway_equipment_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-railway-equipment.md`
+
+This pass reviews all companies in `交运设备-铁路设备-铁路专用设备及器材`. It separates railway engineering and maintenance equipment, high-speed rail fasteners and track materials, high-reliability connectors, rail signal and safety systems, rail monitoring and inspection equipment, rail vehicle components, maintenance-platform stories, mature rail axle manufacturers, and ST rail-equipment cases.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
