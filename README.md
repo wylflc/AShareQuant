@@ -347,6 +347,13 @@ The thirty-seventh A-share peer-group review output is display devices:
 
 This pass reviews all companies in `电子设备-电子器件-显示器件`. It separates global display panel platforms, small/automotive/professional display specialists, substrate glass and polarizer materials, AMOLED/microdisplay, display automation equipment, optical/touch/coating materials, ordinary display modules/backlights, LED display projects, consumer electronics assemblers, ST cases, and mixed businesses without display-platform control.
 
+The thirty-eighth A-share peer-group review output is thermal power:
+
+- `data/processed/a_share_thermal_power_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-thermal-power.md`
+
+This pass reviews all companies in `公用事业-电力-火电`. It separates national generation platforms, high-load regional integrated-energy platforms, coal-power/resource integration, clean-energy transition platforms, ordinary local thermal generators, small heat/cogeneration utilities, weaker duplicate SOE platforms, and broad energy stories without clear platform control.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
