@@ -354,6 +354,13 @@ The thirty-eighth A-share peer-group review output is thermal power:
 
 This pass reviews all companies in `公用事业-电力-火电`. It separates national generation platforms, high-load regional integrated-energy platforms, coal-power/resource integration, clean-energy transition platforms, ordinary local thermal generators, small heat/cogeneration utilities, weaker duplicate SOE platforms, and broad energy stories without clear platform control.
 
+The thirty-ninth A-share peer-group review output is instruments:
+
+- `data/processed/a_share_instruments_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-instruments.md`
+
+This pass reviews all companies in `机械设备-通用设备-仪器仪表`. It separates high-end electronic measurement, industrial process-control instruments, motion-control platforms, machine-vision/metrology, analytical and mass-spectrometry instruments, differentiated sensors, utility-meter installed-base platforms, lower-barrier metering followers, project-heavy environmental monitoring, generic automation hardware, and small instrument niches without category control.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
