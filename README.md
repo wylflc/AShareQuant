@@ -158,6 +158,13 @@ The tenth A-share peer-group calibration output is infrared thermal imaging and 
 
 This group is the first carved-out subgroup from the broad residual electronic-equipment queue. It compares infrared detector, thermal imaging, laser/optical, and special optoelectronic sensing companies. High industry barrier does not imply automatic inclusion; weaker companies are rejected when their role is covered by stronger retained leaders.
 
+The eleventh A-share peer-group review output is residual electronic equipment manufacturing:
+
+- `data/processed/a_share_electronic_equipment_manufacturing_peer_group_decisions.csv`
+- `docs/peer-group-calibration/a-share-electronic-equipment-manufacturing.md`
+
+This group applies company-by-company analyst judgment to the broad residual electronic-equipment group. It retains clear hard-technology platforms and distinct boundary niches, rejects replaceable EMS/component/application vendors, and records defense-electronics questions in `docs/peer-group-calibration/a-share-pending-questions.md` for later dedicated handling.
+
 Fetch A-share screening evidence into resumable interim CSV files:
 
 ```bash
